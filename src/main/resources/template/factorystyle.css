@@ -1,0 +1,38 @@
+.boding{
+    background-color:lightgreen;
+    border: 40px;
+
+
+}
+#head1{
+    background: url("factory.jpeg");
+    height: 165px;
+
+}
+#ha{
+    alignment: center;
+    font-family: KacstNaskh;
+    font-style: normal;
+    color: yellow;
+
+}
+#im1,#im2,#im3,#im4{
+    border: 400px;
+    text-align: center;
+    text-decoration-color: #721c24;
+}
+#th1,#heading2{
+    color:red;
+    text-align:center;
+    text-underline:darkblue;
+    font-style: italic;
+
+}
+#subh1,#subh2,#subh3,#subh4{
+    text-align: center;
+    color: #6610f2;
+    font-style: italic;
+}
+#footers{
+    background-color: darkgoldenrod;
+}
