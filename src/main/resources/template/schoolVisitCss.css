@@ -7,7 +7,8 @@
 
 }
 #naving{
-    background-color: whitesmoke;
+    color:gold;
+    border-spacing: 20px;
 }
 #hb{
     color: blueviolet;
@@ -15,8 +16,8 @@
 #footing2{
     color: red;
 }
-#btnmod,#btnmod2{
-    color: #533f03;
+#btnmod,#btnmod2,#btnmod3{
+    text-decoration-color: deeppink;
     font-style: italic;
     font-family: AnjaliOldLipi;
     alignment: center;

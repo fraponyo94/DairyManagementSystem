@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Schools Visit Form</title>
@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="bootstrap.min.css" >
     <link rel="stylesheet" href="bootstrap.js" >
 </head>
+
 <body id="formbdy">
     <div class="container responsive">
         <br>
         <!-- header part-->
         <header id="head2">
             <br><br>
+            <script type="text/javascript">
+                alert("Do you really want to proceed with resgistration");
 
+            </script>
 
 
         </header>
@@ -26,8 +30,19 @@
         <br><br>
         <div class="row" id="">
             <div class="col-md-3">
+                <br>Registration Details<br>
                 <!--navbar creation-->
                 <div class="navbar navbar-collapse navbar-primary-info  navbar-fixed-side float-lg-left  " id="naving">
+                    <p>Egerton University Dairy Department offer students of different instutions to come
+                    to our factory.The institutions who would like to visit us must first register and fill the form
+                    on the right hand side .</p>
+                    <p>You have to give your  full correct details ,failure to do so you will not be guaranteed a chance.
+                    If given a chance ,you will receive the notification through the email that you have given us
+                        <br>
+                    Thank you for having a chance to visit us<br>
+
+                    For more information you can visit
+                        <a href="www.egerton.ac.ke">www.egerton.ac.ke</a></p>
                 </div>
             </div>
             <!--second column-->
@@ -43,6 +58,12 @@
                     </p>
                 <br>
                 <p>
+                    <b>number of students</b>
+                    <br>
+                    <input type="number" value="200">
+                </p>
+                <br>
+                <p>
                     <b>School mail</b>
                     <br>
                     <input type="email" value=" email">
@@ -53,7 +74,37 @@
                     <br>
                     <input type="text" value="enter county">
                 </p>
+                <br><br>
+                <h5 id="btnmod3"> Give the date you would like to visit</h5>
 
+                <div class="dropdown">
+                    <button type="button"  class="dropdown-toggle btn-info btn-lg" data-toggle="dropdown" >
+                    <span class="caret"></span><ul><li>February</li>
+                        <li>march</li></ul></button>
+                    <ul>
+                            <li></li>
+                            <li>February</li>
+                            <li>march</li>
+                            <li>april</li>
+                            <li>may</li>
+                            <li>june</li>
+                            <li>july</li>
+                            <li>august</li>
+                            <li>september</li>
+                            <li>october</li>
+                            <li>november</li>
+                            <li>December</li>
+                        </ul>
+
+
+                </div>
+                <br><br>
+                <button type="button" class=" btn btn-danger btn-lg " onclick="btnsubmit()" value="SUBMIT">SUBMIT</button>
+        <script type="text/javascript">
+            function btnsubmit() {
+                window.location("Factory Data.html");
+            }
+        </script>
 
             </div>
             <!--third collumn-->
@@ -64,26 +115,10 @@
 
                     <form>
                         <br>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="primary school">
-                                Primary school
-                            </label>
-                        </div>
-                        <br>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="secondary school">
-                                Secondary school
-                            </label>
-                        </div>
-                        <br>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="college/ university">
-                                College/ University
-                            </label>
-                        </div>
+                        <input type="radio" value="Primary school"> Primary school
+                        <input type="radio" value="Primary school"> High schoo
+                        <input type="radio" value="Primary school"> Universty / collage
+
                     </form>
                 </div>
                 <br>
