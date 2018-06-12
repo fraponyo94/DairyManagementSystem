@@ -1,4 +1,4 @@
-package team.project.dairymanagementsystem.domain;
+package team.project.dairymanagementsystem.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.repository.UserRepository;
 import team.project.dairymanagementsystem.component.DairyUserPrincipal;
-import team.project.dairymanagementsystem.domain.User;
+import team.project.dairymanagementsystem.model.User;
 import team.project.dairymanagementsystem.model.RoleGroup;
 import team.project.dairymanagementsystem.repository.RoleGroupRepository;
 
