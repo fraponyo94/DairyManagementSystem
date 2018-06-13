@@ -1,4 +1,4 @@
-package team.project.dairymanagementsystem.auth;
+package team.project.dairymanagementsystem.model;
 
 public enum Roles {
     USER("user"), ADMIN("admin"), SUPPLIER("supplier");

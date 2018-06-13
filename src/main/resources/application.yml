@@ -16,7 +16,6 @@ spring:
     url: jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1
-
 # ===============================
 # = JPA / HIBERNATE
 # ===============================
@@ -36,5 +35,6 @@ spring:
   thymeleaf:
       cache: false
       mode: LEGACYHTML5
+
 
 

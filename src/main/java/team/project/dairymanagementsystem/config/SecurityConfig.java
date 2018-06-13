@@ -1,4 +1,4 @@
-package team.project.dairymanagementsystem;
+package team.project.dairymanagementsystem.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +13,8 @@ import org.springframework.security.core.authority.mapping.GrantedAuthoritiesMap
 import org.springframework.security.core.authority.mapping.SimpleAuthorityMapper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import team.project.dairymanagementsystem.auth.DairyUserDetailsService;
-import team.project.dairymanagementsystem.auth.Roles;
+import team.project.dairymanagementsystem.service.DairyUserDetailsService;
+import team.project.dairymanagementsystem.model.Roles;
 
 @Configuration
 @EnableWebSecurity

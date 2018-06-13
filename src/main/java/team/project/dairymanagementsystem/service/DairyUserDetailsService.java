@@ -1,10 +1,14 @@
-package team.project.dairymanagementsystem.auth;
+package team.project.dairymanagementsystem.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import team.project.dairymanagementsystem.repository.UserRepository;
+import team.project.dairymanagementsystem.component.DairyUserPrincipal;
 import team.project.dairymanagementsystem.model.User;
+import team.project.dairymanagementsystem.model.RoleGroup;
+import team.project.dairymanagementsystem.repository.RoleGroupRepository;
 
 import java.util.List;
 

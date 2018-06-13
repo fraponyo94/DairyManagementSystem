@@ -1,6 +1,7 @@
-package team.project.dairymanagementsystem.auth;
+package team.project.dairymanagementsystem.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import team.project.dairymanagementsystem.model.RoleGroup;
 
 import java.util.List;
 

@@ -10,6 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dairymanagementsystem" target="1.8" />
       <module name="DairyManagementSystem" target="1.8" />
     </bytecodeTargetLevel>
   </component>

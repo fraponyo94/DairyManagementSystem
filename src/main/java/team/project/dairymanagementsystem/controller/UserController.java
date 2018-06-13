@@ -1,4 +1,4 @@
-package team.project.dairymanagementsystem;
+package team.project.dairymanagementsystem.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;

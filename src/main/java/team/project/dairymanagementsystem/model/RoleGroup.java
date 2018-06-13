@@ -1,4 +1,4 @@
-package team.project.dairymanagementsystem.auth;
+package team.project.dairymanagementsystem.model;
 
 import javax.persistence.*;
 

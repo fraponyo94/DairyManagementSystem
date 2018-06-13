@@ -1,8 +1,10 @@
-package team.project.dairymanagementsystem.auth;
+package team.project.dairymanagementsystem.component;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
+import team.project.dairymanagementsystem.model.RoleGroup;
 import team.project.dairymanagementsystem.model.User;
 
 import java.util.*;

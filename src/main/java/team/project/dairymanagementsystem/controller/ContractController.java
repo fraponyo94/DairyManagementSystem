@@ -13,13 +13,26 @@ import java.util.List;
 
 
 @Controller
-@RequestMapping("/api")
+
 public class ContractController {
     private ContractService contractService;
     @Autowired
     public ContractController(ContractService contractService){
         this.contractService = contractService;
     }
+    @RequestMapping(value = "/showform", method = RequestMethod.GET)
+    public String showForm(Model model){
+        Contract contract = new Contract();
+        model.addAttribute("newcontract", contract);
+        return "newcontract";
+    }
+
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    public String ShowWelcome(){
+        return "welcome";
+    }
+
+
     @PostMapping("/contract")
     public Contract createContract(@Valid @RequestBody Contract contract){
          return this.contractService.createContract(contract);
@@ -30,14 +43,19 @@ public class ContractController {
         model.addAttribute("contracts", contracts);
         return "contracts";
     }
-    @DeleteMapping("/contractors/{id}")
-    public ResponseEntity deleteContract(@PathVariable(value = "id") int contractId){
-        return this.contractService.deleteContract(contractId);
+    @GetMapping("/contractors/{id}")
+    public String deleteContract(@PathVariable(value = "id") int contractId, Model model){
+        Contract contract = this.contractService.deleteContract(contractId);
+        model.addAttribute("contracts", contract);
+        return "contracts";
     }
-    @PutMapping("/update/{id}")
-    public ResponseEntity updateContract(@PathVariable(value = "id") int contractId, @Valid @RequestBody Contract contract){
-        return this.contractService.updateContract(contractId, contract);
+    @GetMapping("/update/{id}")
+    public String updateContract(@PathVariable(value = "id") int contractId, @Valid @RequestBody Contract contract, Model model){
+        Contract contract1 = this.contractService.updateContract(contractId, contract);
+        model.addAttribute("contracts", contract1);
+        return "contracts";
     }
+
 
 
 }
