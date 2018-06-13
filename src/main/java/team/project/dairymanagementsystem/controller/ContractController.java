@@ -2,6 +2,7 @@ package team.project.dairymanagementsystem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +15,7 @@ import java.util.List;
 
 
 @Controller
-@RequestMapping("/api")
+@RequestMapping("/contract")
 public class ContractController {
     private ContractService contractService;
     @Autowired
@@ -26,7 +27,6 @@ public class ContractController {
          return this.contractService.createContract(contract);
     }
     @GetMapping("/contracts")
-    @RolesAllowed(value = "")
     public String getAllContracts(Model model){
         List<Contract> contracts = this.contractService.getAllContracts();
         model.addAttribute("contracts", contracts);
