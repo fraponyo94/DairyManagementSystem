@@ -25,27 +25,29 @@ public class ContractService {
         return contractRepository.findAll();
     }
 
-    public ResponseEntity<?> deleteContract(Integer contractId) {
+    public Contract deleteContract(Integer contractId) {
+        Contract contract = new Contract();
         Optional<Contract> optional = contractRepository.findById(contractId);
         if (optional.isPresent()) {
-            Contract contract = optional.get();
-            contractRepository.delete(contract);
-            return ResponseEntity.ok(contract);
+            Contract contract1 = optional.get();
+            contractRepository.delete(contract1);
+            return contract1;
         }
-        return ResponseEntity.notFound().build();
+        return contract;
 
     }
 
-    public ResponseEntity<?> updateContract(Integer id, Contract contract){
+    public Contract updateContract(Integer id, Contract contract){
+        Contract contract1 = new Contract();
         Optional<Contract> optional = contractRepository.findById(id);
         if (optional.isPresent()){
-            Contract contract1 = optional.get();
-            contract1.setSupplierId(contract.getSupplierId());
-            contract1.setAmountPerDay(contract.getAmountPerDay());
-            contract1.setCostPerLitre(contract.getCostPerLitre());
-            contract1.setStatus(contract.getStatus());
-            return ResponseEntity.ok(contract1);
+            Contract contracts = optional.get();
+            contracts.setSupplierId(contract.getSupplierId());
+            contracts.setAmountPerDay(contract.getAmountPerDay());
+            contracts.setCostPerLitre(contract.getCostPerLitre());
+            contracts.setStatus(contract.getStatus());
+            return contracts;
         }
-        return ResponseEntity.notFound().build();
+        return contract1;
     }
 }

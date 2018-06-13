@@ -14,7 +14,7 @@ import org.springframework.security.core.authority.mapping.SimpleAuthorityMapper
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import team.project.dairymanagementsystem.service.DairyUserDetailsService;
-import team.project.dairymanagementsystem.model.Roles;
+import team.project.dairymanagementsystem.model.enums.Roles;
 
 @Configuration
 @EnableWebSecurity

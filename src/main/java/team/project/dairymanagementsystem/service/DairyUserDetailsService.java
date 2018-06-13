@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.component.DairyUserPrincipal;
 import team.project.dairymanagementsystem.model.RoleGroup;
 import team.project.dairymanagementsystem.model.User;
+import team.project.dairymanagementsystem.model.enums.Roles;
 import team.project.dairymanagementsystem.repository.RoleGroupRepository;
 import team.project.dairymanagementsystem.repository.UserRepository;
 
@@ -39,7 +40,7 @@ public class DairyUserDetailsService implements UserDetailsService {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(11);
         String hashedPassword = encoder.encode(user.getPassword());
         user.setPassword(hashedPassword);
-        RoleGroup roleGroup = new RoleGroup(user.getNationalId(), "admin");
+        RoleGroup roleGroup = new RoleGroup(user.getNationalId(), Roles.ADMIN.toString());
         roleGroupRepository.save(roleGroup);
         return userRepository.save(user);
     }
