@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="../static/css/style.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -13,9 +13,9 @@
     <h1> CREATE NEW CONTRACT </h1>
     <br>
     <br>
-    <form>
+    <form th:action="" th:object="${supplier}">
 
-        <label id="uname">username </label>  <input id="unamei" type="text" placeholder="supplierid" name="suppid"><br>
+        <label id="uname">username </label>  <input id="unamei" type="number" placeholder="supplierid" name="suppid" th:field="${national_id}"><br>
         <label id="email">email </label>  <input id="emaili"type="text" placeholder="email" name="email"><br>
         <label id="amou">amount/daily </label>  <input id="amoui" type="text" placeholder="amount" name="amount"><br>
         <label id="cost">cost per litre </label>  <input id="costi" type="text" placeholder="cost" name="cost"><br>

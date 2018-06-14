@@ -1,12 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: team.project.dairymanagementsystem.DairymanagementsystemApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 25.126 s <<< FAILURE! - in team.project.dairymanagementsystem.DairymanagementsystemApplicationTests
-contextLoads(team.project.dairymanagementsystem.DairymanagementsystemApplicationTests)  Time elapsed: 0 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 35.172 s <<< FAILURE! - in team.project.dairymanagementsystem.DairymanagementsystemApplicationTests
+contextLoads(team.project.dairymanagementsystem.DairymanagementsystemApplicationTests)  Time elapsed: 0.057 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-Caused by: java.sql.SQLException: Access denied for user 'enrico'@'localhost' (using password: YES)
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+Caused by: org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute statement
+Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
 

@@ -1,3 +1,4 @@
+
 package team.project.dairymanagementsystem.model;
 
 import javax.persistence.*;
@@ -11,23 +12,25 @@ public class Contract implements Serializable {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @NotNull
-    @Column(name = "supplierId", unique = false)
+
+
+    @Column(name = "supplierId", nullable = false,unique = true)
     private int supplierId;
-    @NotNull
-    @Column(name = "status")
+
+
+    @Column(name = "status",nullable = false)
     private String status;
-    @NotNull
-    @Column(name = "amountPerDay")
+
+    @Column(name = "amountPerDay",nullable = false)
     private int amountPerDay;
-    @NotNull
-    @Column(name = "costPerLitre")
+
+    @Column(name = "costPerLitre",nullable = false)
     private int costPerLitre;
 
     public Contract() {
     }
 
-    public Contract(@NotNull int supplierId, @NotNull String status, @NotNull int amountPerDay, @NotNull int costPerLitre) {
+    public Contract(int supplierId,String status, int amountPerDay, int costPerLitre) {
         this.supplierId = supplierId;
         this.status = status;
         this.amountPerDay = amountPerDay;
@@ -37,6 +40,7 @@ public class Contract implements Serializable {
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }

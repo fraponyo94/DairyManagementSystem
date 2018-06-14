@@ -2,23 +2,23 @@ package team.project.dairymanagementsystem.model;
 
 import javax.persistence.*;
 
+
 @Entity
-@Table(name = "roleGroup")
+@Table(name = "RoleGroup")
 public class RoleGroup {
     @Id
-    @Column(name = "id")
+    @Column(name = "roleGroupId")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @Column(name = "userId", nullable = false)
-    private int userId;
+
     @Column(name = "role")
     private String role;
+
 
     public RoleGroup() {
     }
 
-    public RoleGroup(int userId, String role) {
-        this.userId = userId;
+    public RoleGroup(String role) {
         this.role = role;
     }
 
@@ -30,14 +30,6 @@ public class RoleGroup {
         this.id = id;
     }
 
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
     public String getRole() {
         return role;
     }
@@ -46,12 +38,11 @@ public class RoleGroup {
         this.role = role;
     }
 
+
     @Override
     public String toString() {
         return "RoleGroup{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", role='" + role + '\'' +
+                "role='" + role + '\'' +
                 '}';
     }
 }

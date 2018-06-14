@@ -8,7 +8,7 @@ body {
 
     height: 100px;
     background-color: chartreuse;
-    background-image: url("../../templates/proj1.jpg");
+    background-image: url('img/proj1.jpg');
     background-repeat: repeat;
     background-position: center;
 }
@@ -170,7 +170,7 @@ body#contbody{
     height: 400px;
     position: center;
     width: 70%;
-    background-image: url("proj4.jpeg");
+    background-image: url('img/proj4.jpeg');
     margin-left: 200px;
     margin-top: 100px;
 }
