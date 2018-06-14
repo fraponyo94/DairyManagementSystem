@@ -1,8 +1,6 @@
 package team.project.dairymanagementsystem.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -24,15 +22,22 @@ public class Supplier  {
     @Column(name = "phone")
     private int phone;
 
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "contract")
+    private Contract contract;
+
     public Supplier(){
 
     }
-    public Supplier(int national_id, String address, String email_address, int phone){
+
+    public Supplier(int national_id, @NotNull String address, @NotNull String email_address, @NotNull int phone, Contract contract) {
         this.national_id = national_id;
         this.address = address;
         this.email_address = email_address;
         this.phone = phone;
+        this.contract = contract;
     }
+
     public void setNational_id(int national_id) {
         this.national_id = national_id;
     }
@@ -63,6 +68,14 @@ public class Supplier  {
 
     public int getPhone() {
         return phone;
+    }
+
+    public Contract getContract() {
+        return contract;
+    }
+
+    public void setContract(Contract contract) {
+        this.contract = contract;
     }
 
     @Override

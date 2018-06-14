@@ -10,17 +10,24 @@
 
 
 <div class="contrform">
-    <h1> CREATE NEW CONTRACT </h1>
+    <h1> APPLY FOR CONTRACT </h1>
     <br>
     <br>
-    <form th:action="" th:object="${supplier}">
+    <form th:method="post" th:action="@{/contract/newcontract}" th:object="${supplier}">
 
-        <label id="uname">username </label>  <input id="unamei" type="number" placeholder="supplierid" name="suppid" th:field="${national_id}"><br>
-        <label id="email">email </label>  <input id="emaili"type="text" placeholder="email" name="email"><br>
-        <label id="amou">amount/daily </label>  <input id="amoui" type="text" placeholder="amount" name="amount"><br>
-        <label id="cost">cost per litre </label>  <input id="costi" type="text" placeholder="cost" name="cost"><br>
-        <button id="submit" name="submit"> submit </button>
-        <button id="clear" name="clear"> clear</button>
+        <label id="national_id">National Id </label>
+        <input id="national_idi" type="number" th:field="*{national_id}"><br>
+        <label id="email">email </label>
+        <input id="emaili"type="text" th:field="*{email_address}"><br>
+        <label id="amou">amount/daily </label>
+        <input id="amoui" type="number" th:field="*{contract.amountPerDay}"><br>
+        <label id="cost">cost per litre </label>
+        <input id="costi" type="number" th:field="*{contract.costPerLitre}"><br>
+        <label id="address">address</label>
+        <input id="addressI" th:type="text" th:field="*{address}"><br>
+        <label id="phone">phone</label>
+        <input id="phoneI" th:type="number" th:field="*{address}"><br>
+        <button id="submit" name="submit"> APPLY </button>
 
     </form>
 
