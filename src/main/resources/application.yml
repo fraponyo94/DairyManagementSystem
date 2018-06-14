@@ -10,13 +10,11 @@ server:
 # ===============================
 spring:
   datasource:
-    username:
-    password:
+    username:  root
 
-    url: jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
+    url:  jdbc:mysql://localhost:3306/dairy?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1
-
 # ===============================
 # = JPA / HIBERNATE
 # ===============================
@@ -36,5 +34,6 @@ spring:
   thymeleaf:
       cache: false
       mode: LEGACYHTML5
+
 
 
