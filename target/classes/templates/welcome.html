@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
+
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css" th:src="@{css/style.css}">
 </head>
-<body>
-<p>Welcome to spring boot</p>
+<body onload="currentSlide(1);">
+<div class="welco">
+<img src="img/proj4.jpeg"  th:src="@{img/proj4.jpeg}" alt="egerton"  height="100px"/>
+    <h1> EGERTON UNIVERSITY DAIRY MANAGEMENT </h1>
+    <a id="login" href=""> log in </a>
+    <a id="signup" href=""> sign up</a>
+</div>
+
+    <div class="displaypics" >
+
+<p id="xtics"> Egerton dairy is devoted to production of up to standards milk and milk products..
+</p>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/proj1.jpg"  th:src="@{img/proj1.jpg}" width="100%" height="400px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/proj2.jpg"  th:src="@{img/proj2.jpg}" width="100%" height="400px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/proj3.jpg" th:src="@{img/proj3.jpg}" width="100%" height="400px">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="facts">
+          <h2>For a healthy living... </h2>
+            <h3><b> <u> Nutritional facts   </u> </h3> </b>
+            <p> Did you know ?  </br>
+            ..milk is ver essential in all what you do
+                    </p>
+        </div>
+
+</div>
+
+
+<script src ="js/homepage.js" type="text/javascript" th:src="@{js/homepage.js}"></script>
 </body>
 </html>

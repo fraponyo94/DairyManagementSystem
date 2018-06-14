@@ -3,6 +3,9 @@
 #===================================
 server:
   port: 8080
+  error:
+      whitelabel:
+        enabled: false
 
 
 # ===============================
@@ -11,6 +14,7 @@ server:
 spring:
   datasource:
     username: root
+    password: Dref@55_A
 
     url: jdbc:mysql://localhost:3306/dairy?autoReconnect=true&useSSL=false
     testWhileIdle: true
@@ -20,14 +24,14 @@ spring:
 # = JPA / HIBERNATE
 # ===============================
   jpa:
-    show_sql: true
-    format_sql: true
-    hibernate:
-      ddl-auto: update
-
-    properties:
+      show_sql: true
+      format_sql: true
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        ddl-auto: update
+
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 # ===============================
 # = Thymeleaf configurations
