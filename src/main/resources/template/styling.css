@@ -1,0 +1,45 @@
+  .formating{
+    background-color:yellowgreen;
+      border-spacing: 200px;
+
+}
+  #head{
+      background-color: rebeccapurple;
+
+  }
+   #heading1{
+       color: crimson;
+       font-family: Gubbi;
+       font-size:200%;
+   }
+   #table1{
+       background-color: blueviolet;
+       text-align: center;
+       border: lightcoral;
+       height: 400px;
+       width: 350px;
+       border-spacing: 10px;
+
+   }
+   #paragraph1{
+        text-align : center;
+       color: blue;
+       font-style: italic;
+   }
+   #readings{
+       font-style: italic;
+       color: lightcoral;
+       text-align: center;
+       background-color: aquamarine;
+   }
+   #heading2{
+       color: #721c24;
+
+   }
+  #heading3{
+      color: #721c24;
+  }
+  #footing{
+      background-color:darkgoldenrod;
+      text-decoration-color: red;
+  }
