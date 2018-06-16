@@ -29,7 +29,7 @@ public class Contract implements Serializable {
 
     public Contract() {
     }
-
+        
     public Contract(int supplierId,String status, int amountPerDay, int costPerLitre) {
         this.supplierId = supplierId;
         this.status = status;
