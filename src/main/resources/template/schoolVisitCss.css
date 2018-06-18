@@ -15,3 +15,9 @@
 #footing2{
     color: red;
 }
+#btnmod,#btnmod2{
+    color: #533f03;
+    font-style: italic;
+    font-family: AnjaliOldLipi;
+    alignment: center;
+}
