@@ -8,11 +8,7 @@ body {
 
     height: 100px;
     background-color: chartreuse;
-<<<<<<< HEAD
-    background-image: url('img/proj1.jpg');
-=======
-    background-image: url("../../templates/proj1.jpg");
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
+    background-image: url("proj1.jpg");
     background-repeat: repeat;
     background-position: center;
 }
@@ -164,30 +160,9 @@ img {vertical-align: middle;}
     float:right;
     width:30%;
 }
-body#contbody{
-
-    background-color: lightgreen;
-}
 
 .contrform{
-    background-color: gray;
     height: 400px;
-    position: center;
-    width: 70%;
-<<<<<<< HEAD
-    background-image: url('img/proj4.jpeg');
-=======
-    background-image: url("proj4.jpeg");
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
-    margin-left: 200px;
-    margin-top: 100px;
-}
-.contrform h1{
-    font-size: 40px;
-    color: green;
-    position: center;
-    margin-left: 200px;
-
 }
 .contrform label {
     font-size: 20px;
@@ -206,7 +181,7 @@ body#contbody{
     height: 60px;
 
 }.contrform input#amoui {
-     margin-left: 78px;
+     margin-left: 80px;
      width: 400px;
     height: 60px;
 
@@ -217,16 +192,8 @@ body#contbody{
     height: 60px;
 
 }
-.contrform button#submit{
+.contrform button{
     float: right;
-    background-color: white;
-    margin-right: 320px;
-    width: 100px;
-    text-emphasis-color: white;
-}
-.contrform button#clear{
-    float: right;
-    background-color: black;
-    margin-left: 100px;
-    width: 100px;
+    background-color: gray;
+    margin-right: 750px;
 }
