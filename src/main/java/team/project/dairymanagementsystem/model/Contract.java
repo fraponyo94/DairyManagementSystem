@@ -27,20 +27,14 @@ public class Contract implements Serializable {
     @Column(name = "costPerLitre",nullable = false)
     private int costPerLitre;
 
-    @Column(name = "description", nullable = false)
-    private String description;
-
-
-
     public Contract() {
     }
-
-    public Contract(int supplierId,String status, int amountPerDay, int costPerLitre, String description) {
+        
+    public Contract(int supplierId,String status, int amountPerDay, int costPerLitre) {
         this.supplierId = supplierId;
         this.status = status;
         this.amountPerDay = amountPerDay;
         this.costPerLitre = costPerLitre;
-        this.description = description;
     }
 
     public int getId() {
@@ -83,14 +77,6 @@ public class Contract implements Serializable {
         this.costPerLitre = costPerLitre;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
     @Override
     public String toString() {
         return "Contract{" +
@@ -99,7 +85,6 @@ public class Contract implements Serializable {
                 ", status='" + status + '\'' +
                 ", amountPerDay=" + amountPerDay +
                 ", costPerLitre=" + costPerLitre +
-                ", description=" + description +
                 '}';
     }
 }

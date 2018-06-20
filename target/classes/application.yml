@@ -3,6 +3,9 @@
 #===================================
 server:
   port: 8080
+  error:
+      whitelabel:
+        enabled: false
 
 
 # ===============================
@@ -10,33 +13,25 @@ server:
 # ===============================
 spring:
   datasource:
-<<<<<<< HEAD
     username: root
-    password: 2535
-=======
-    username:
-    password:
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
+    password: panther
 
-    url: jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/dairy?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1
-<<<<<<< HEAD
-=======
 
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
 # ===============================
 # = JPA / HIBERNATE
 # ===============================
   jpa:
-    show_sql: true
-    format_sql: true
-    hibernate:
-      ddl-auto: update
-
-    properties:
+      show_sql: true
+      format_sql: true
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        ddl-auto: update
+
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 # ===============================
 # = Thymeleaf configurations
@@ -46,7 +41,3 @@ spring:
       mode: LEGACYHTML5
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
