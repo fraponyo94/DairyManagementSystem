@@ -1,5 +1,5 @@
-/*
-package team.project.dairymanagementsystem.model;
+
+package team.project.dairymanagementsystem.model.enumerated;
 
 public enum Roles {
     USER("user"), ADMIN("admin"), SUPPLIER("supplier");
@@ -15,4 +15,4 @@ public enum Roles {
         return this.roleName;
     }
 }
-*/
+

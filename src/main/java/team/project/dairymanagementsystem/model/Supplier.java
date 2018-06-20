@@ -11,6 +11,10 @@ public class Supplier  {
     private int national_id;
 
     @NotNull
+    @Column(name = "name")
+    private String name;
+
+    @NotNull
     @Column(name = "address")
     private String address;
 
@@ -22,6 +26,11 @@ public class Supplier  {
     @Column(name = "phone")
     private int phone;
 
+    @Lob
+    @Column(name = "pic")
+    private byte[] pic;
+
+
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "contract")
     private Contract contract;
@@ -30,11 +39,12 @@ public class Supplier  {
 
     }
 
-    public Supplier(int national_id, @NotNull String address, @NotNull String email_address, @NotNull int phone, Contract contract) {
+    public Supplier(int national_id, @NotNull String address, @NotNull String email_address, @NotNull int phone, @NotNull byte[] pic, Contract contract) {
         this.national_id = national_id;
         this.address = address;
         this.email_address = email_address;
         this.phone = phone;
+        this.pic = pic;
         this.contract = contract;
     }
 
@@ -44,6 +54,14 @@ public class Supplier  {
 
     public int getNational_id() {
         return national_id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setAddress(String address) {
@@ -70,6 +88,14 @@ public class Supplier  {
         return phone;
     }
 
+    public void setPic(byte[] pic) {
+        this.pic = pic;
+    }
+
+    public byte[] getPic() {
+        return pic;
+    }
+
     public Contract getContract() {
         return contract;
     }
@@ -80,6 +106,9 @@ public class Supplier  {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Supplier{" +
+                "national_id=" + national_id +
+
+                '}';
     }
 }
