@@ -4,23 +4,23 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "user")
 public class User implements Serializable{
     @Id
-    @Column(name = "nationalId", nullable = false, unique = true)
+    @Column(name = "nationalId", length = 15)
     private int nationalId;
-    @NotNull
-    @Column(name = "password")
+
+
+    @Column(name = "password",nullable = false)
     private String password;
 
     public User() {
     }
 
-    public User(@NotNull int nationalId, @NotNull String password) {
+    public User(int nationalId, String password) {
         this.nationalId = nationalId;
         this.password = password;
     }

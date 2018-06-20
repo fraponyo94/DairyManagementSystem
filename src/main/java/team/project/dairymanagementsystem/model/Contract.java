@@ -1,3 +1,4 @@
+
 package team.project.dairymanagementsystem.model;
 
 import javax.persistence.*;
@@ -11,32 +12,41 @@ public class Contract implements Serializable {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @NotNull
-    @Column(name = "supplierId", unique = false)
+
+
+    @Column(name = "supplierId", nullable = false,unique = true)
     private int supplierId;
-    @NotNull
-    @Column(name = "status")
+
+
+    @Column(name = "status",nullable = false)
     private String status;
-    @NotNull
-    @Column(name = "amountPerDay")
+
+    @Column(name = "amountPerDay",nullable = false)
     private int amountPerDay;
-    @NotNull
-    @Column(name = "costPerLitre")
+
+    @Column(name = "costPerLitre",nullable = false)
     private int costPerLitre;
+
+    @Column(name = "description", nullable = false)
+    private String description;
+
+
 
     public Contract() {
     }
 
-    public Contract(@NotNull int supplierId, @NotNull String status, @NotNull int amountPerDay, @NotNull int costPerLitre) {
+    public Contract(int supplierId,String status, int amountPerDay, int costPerLitre, String description) {
         this.supplierId = supplierId;
         this.status = status;
         this.amountPerDay = amountPerDay;
         this.costPerLitre = costPerLitre;
+        this.description = description;
     }
 
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -73,6 +83,14 @@ public class Contract implements Serializable {
         this.costPerLitre = costPerLitre;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
     @Override
     public String toString() {
         return "Contract{" +
@@ -81,6 +99,7 @@ public class Contract implements Serializable {
                 ", status='" + status + '\'' +
                 ", amountPerDay=" + amountPerDay +
                 ", costPerLitre=" + costPerLitre +
+                ", description=" + description +
                 '}';
     }
 }

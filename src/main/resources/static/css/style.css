@@ -8,7 +8,11 @@ body {
 
     height: 100px;
     background-color: chartreuse;
+<<<<<<< HEAD
+    background-image: url('img/proj1.jpg');
+=======
     background-image: url("../../templates/proj1.jpg");
+>>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
     background-repeat: repeat;
     background-position: center;
 }
@@ -170,7 +174,11 @@ body#contbody{
     height: 400px;
     position: center;
     width: 70%;
+<<<<<<< HEAD
+    background-image: url('img/proj4.jpeg');
+=======
     background-image: url("proj4.jpeg");
+>>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
     margin-left: 200px;
     margin-top: 100px;
 }
