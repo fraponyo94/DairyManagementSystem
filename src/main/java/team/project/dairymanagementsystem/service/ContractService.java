@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.model.Contract;
+import team.project.dairymanagementsystem.model.enums.Status;
 import team.project.dairymanagementsystem.repository.ContractRepository;
 
 import java.util.ArrayList;
@@ -25,29 +26,22 @@ public class ContractService {
         return contractRepository.findAll();
     }
 
-    public Contract deleteContract(Integer contractId) {
-        Contract contract = new Contract();
-        Optional<Contract> optional = contractRepository.findById(contractId);
-        if (optional.isPresent()) {
-            Contract contract1 = optional.get();
-            contractRepository.delete(contract1);
-            return contract1;
-        }
-        return contract;
-
+    public void approveContract(int id) {
+        changeStatus(id, Status.APPROVED.toString());
     }
 
-    public Contract updateContract(Integer id, Contract contract){
-        Contract contract1 = new Contract();
+    //method to change status of contract
+    private void changeStatus(int id, String status){
+        //get  this contract from the database
         Optional<Contract> optional = contractRepository.findById(id);
-        if (optional.isPresent()){
-            Contract contracts = optional.get();
-            contracts.setSupplierId(contract.getSupplierId());
-            contracts.setAmountPerDay(contract.getAmountPerDay());
-            contracts.setCostPerLitre(contract.getCostPerLitre());
-            contracts.setStatus(contract.getStatus());
-            return contracts;
+        //check if contract is available
+        if(optional.isPresent()){
+            //get contract
+            Contract contract = optional.get();
+            //change status of contract
+            contract.setStatus(status);
+            //save contract back to database
+            contractRepository.save(contract);
         }
-        return contract1;
     }
 }
