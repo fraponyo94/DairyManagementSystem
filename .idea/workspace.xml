@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="844993ca-db04-436f-88c3-d5afd9d54f1a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/template/schoolVisitCss.css" afterPath="$PROJECT_DIR$/src/main/resources/template/schoolVisitCss.css" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/template/schoolVisitform.html" afterPath="$PROJECT_DIR$/src/main/resources/template/schoolVisitform.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,7 +72,7 @@
       <file leaf-file-name="Factory Data.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/template/Factory Data.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="391">
               <caret line="23" column="17" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="23" selection-end-column="17" />
               <folding>
                 <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -85,8 +84,8 @@
       <file leaf-file-name="schoolVisitform.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/template/schoolVisitform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+            <state relative-caret-position="542">
+              <caret line="118" column="86" lean-forward="false" selection-start-line="118" selection-start-column="86" selection-end-line="118" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -95,7 +94,7 @@
       <file leaf-file-name="schoolVisitCss.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/template/schoolVisitCss.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
+            <state relative-caret-position="153">
               <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
@@ -184,7 +183,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="16" />
     <option name="y" value="22" />
     <option name="width" value="1344" />
@@ -206,23 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="dairymanagementsystem" type="58d84e3e:PackageViewProjectNode" />
-              <item name="dairymanagementsystem" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="dairymanagementsystem" type="58d84e3e:PackageViewProjectNode" />
-              <item name="dairymanagementsystem" type="616d4139:PackageViewModuleNode" />
-              <item name="template" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -271,7 +253,24 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="dairymanagementsystem" type="58d84e3e:PackageViewProjectNode" />
+              <item name="dairymanagementsystem" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="dairymanagementsystem" type="58d84e3e:PackageViewProjectNode" />
+              <item name="dairymanagementsystem" type="616d4139:PackageViewModuleNode" />
+              <item name="template" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,15 +453,17 @@
       <workItem from="1529158539180" duration="449000" />
       <workItem from="1529161830724" duration="603000" />
       <workItem from="1455209317862" duration="12683000" />
-      <workItem from="1455208450686" duration="6122000" />
+      <workItem from="1455208450686" duration="6926000" />
+      <workItem from="1455213561878" duration="875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95450000" />
+    <option name="totallyTimeSpent" value="97129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="736" extended-state="7" />
+    <frame x="16" y="22" width="1366" height="732" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -472,13 +473,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924694" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22923589" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22923589" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22121212" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -486,8 +487,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.027906977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -879,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/template/Factory Data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="391">
           <caret line="23" column="17" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -889,7 +890,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/template/schoolVisitCss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
+        <state relative-caret-position="153">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
@@ -897,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/template/schoolVisitform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+        <state relative-caret-position="542">
+          <caret line="118" column="86" lean-forward="false" selection-start-line="118" selection-start-column="86" selection-end-line="118" selection-end-column="86" />
           <folding />
         </state>
       </provider>
