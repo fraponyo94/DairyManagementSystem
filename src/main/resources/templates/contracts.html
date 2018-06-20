@@ -42,7 +42,8 @@
                 </form>
 
                 <!--if the status is denied, a delete button should appear-->
-                <form th:if="${contract.status == 'denied'}">
+                <form th:if="${contract.status == 'denied'}" th:action="@{/contract/delete/{id}(id=${contract.id})}" th:method="POST"
+                      th:object="${contract.id}">
                     <input type="submit" value="delete">
                 </form>
             </td>
