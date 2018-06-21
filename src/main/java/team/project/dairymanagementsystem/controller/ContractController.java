@@ -72,6 +72,29 @@ public class ContractController {
         model.addAttribute("contract", contracts);
         return "contractx";
     }
+    @PostMapping("/approve/{id}")
+    public String approveContract(@PathVariable(name = "id") int id) {
+        String msg = this.contractService.approveContract(id);
+        return "redirect:/contract/contracts";
+    }
+
+    @PostMapping("/deny/{id}")
+    public String denyContract(@PathVariable(name = "id") int id) {
+        String msg = this.contractService.denyContract(id);
+        return "redirect:/contract/contracts";
+    }
+
+    @PostMapping("/cancel/{id}")
+    public String cancelContract(@PathVariable(name = "id") int id) {
+        String msg = this.contractService.cancelContract(id);
+        return "redirect:/contract/contracts";
+    }
+
+    @PostMapping("/delete/{id}")
+    public String deleteContract(@PathVariable(name = "id") int id) {
+        String msg = this.contractService.deleteContract(id);
+        return "redirect:/contract/contracts";
+    }
 
 
 }

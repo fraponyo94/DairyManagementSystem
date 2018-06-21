@@ -10,21 +10,12 @@ server:
 # ===============================
 spring:
   datasource:
-<<<<<<< HEAD
     username: root
     password: 2535
-=======
-    username:
-    password:
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
 
     url: jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1
-<<<<<<< HEAD
-=======
-
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
 # ===============================
 # = JPA / HIBERNATE
 # ===============================
@@ -46,7 +37,4 @@ spring:
       mode: LEGACYHTML5
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
