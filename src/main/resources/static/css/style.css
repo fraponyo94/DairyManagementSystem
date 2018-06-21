@@ -8,11 +8,7 @@ body {
 
     height: 100px;
     background-color: chartreuse;
-<<<<<<< HEAD
     background-image: url('img/proj1.jpg');
-=======
-    background-image: url("../../templates/proj1.jpg");
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
     background-repeat: repeat;
     background-position: center;
 }
@@ -164,69 +160,12 @@ img {vertical-align: middle;}
     float:right;
     width:30%;
 }
-body#contbody{
-
+body#newcontract{
     background-color: lightgreen;
-}
 
-.contrform{
-    background-color: gray;
-    height: 400px;
-    position: center;
-    width: 70%;
-<<<<<<< HEAD
-    background-image: url('img/proj4.jpeg');
-=======
-    background-image: url("proj4.jpeg");
->>>>>>> f6302b47680cd9f34917461f7119f3cbc6e07102
-    margin-left: 200px;
-    margin-top: 100px;
 }
-.contrform h1{
+.newcontractheader h1 {
+
     font-size: 40px;
-    color: green;
-    position: center;
-    margin-left: 200px;
-
-}
-.contrform label {
-    font-size: 20px;
-    font-style: oblique;
-
-}
-.contrform input#emaili {
-    margin-left: 155px;
-    width: 400px;
-    height: 60px;
-
-}
-.contrform input#unamei {
-    margin-left: 109px;
-    width: 400px;
-    height: 60px;
-
-}.contrform input#amoui {
-     margin-left: 78px;
-     width: 400px;
-    height: 60px;
-
- }
-.contrform input#costi {
-    margin-left: 80px;
-    width: 400px;
-    height: 60px;
-
-}
-.contrform button#submit{
-    float: right;
-    background-color: white;
-    margin-right: 320px;
-    width: 100px;
-    text-emphasis-color: white;
-}
-.contrform button#clear{
-    float: right;
-    background-color: black;
-    margin-left: 100px;
-    width: 100px;
+    margin-left: 450px;
 }

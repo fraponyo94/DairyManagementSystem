@@ -63,7 +63,7 @@ public class ContractController {
         }
 
         this.supplierService.createSupplier(supplier);
-        return "welcome";
+        return "redirect:/";
     }
 
     @GetMapping("/contracts")
