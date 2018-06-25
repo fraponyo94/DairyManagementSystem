@@ -16,7 +16,7 @@
     <form th:method="post" th:action="@{/contract/newcontract}" th:object="${supplier}" enctype="multipart/form-data">
 
         <label id="national_id">National Id </label>
-        <input id="national_idi" type="number" th:field="*{national_id}"><br>
+        <input id="national_idi" type="number" th:field="*{nationalId}"><br>
         <label id="name">Name</label>
         <input id="nameI" type="text" th:field="*{name}"><br>
         <label id="email">email </label>
