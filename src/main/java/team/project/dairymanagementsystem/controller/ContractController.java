@@ -54,7 +54,7 @@ public class ContractController {
     @PostMapping("/newcontract")
     public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file){
         supplier.getContract().setStatus(Status.PENDING.toString());
-        supplier.getContract().setSupplierId(supplier.getNational_id());
+        supplier.getContract().setSupplierId(supplier.getNationalId());
         try{
             byte[] bytes = file.getBytes();
             supplier.setPic(bytes);

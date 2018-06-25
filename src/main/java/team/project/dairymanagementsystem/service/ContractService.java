@@ -73,9 +73,8 @@ public class ContractService {
 
     private Contract checkContract(int id){
         //check if contract is present
-        Optional<Contract> contractOptional = contractRepository.findById(id);
         //return saved contract from the database
-        return contractOptional.orElse(null);
+        return contractRepository.findById(id);
     }
 
     private Contract changeStatus(int id, String status){

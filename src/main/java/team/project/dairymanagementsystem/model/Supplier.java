@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 public class Supplier  {
     @Id
     @Column(name = "nationalId")
-    private int national_id;
+    private int nationalId;
 
     @NotNull
     @Column(name = "name")
@@ -39,8 +39,8 @@ public class Supplier  {
 
     }
 
-    public Supplier(int national_id, @NotNull String address, @NotNull String email_address, @NotNull int phone, @NotNull byte[] pic, Contract contract) {
-        this.national_id = national_id;
+    public Supplier(int nationalId, @NotNull String address, @NotNull String email_address, @NotNull int phone, @NotNull byte[] pic, Contract contract) {
+        this.nationalId = nationalId;
         this.address = address;
         this.email_address = email_address;
         this.phone = phone;
@@ -48,12 +48,12 @@ public class Supplier  {
         this.contract = contract;
     }
 
-    public void setNational_id(int national_id) {
-        this.national_id = national_id;
+    public void setNationalId(int national_id) {
+        this.nationalId = nationalId;
     }
 
-    public int getNational_id() {
-        return national_id;
+    public int getNationalId() {
+        return nationalId;
     }
 
     public void setName(String name) {
@@ -107,7 +107,7 @@ public class Supplier  {
     @Override
     public String toString() {
         return "Supplier{" +
-                "national_id=" + national_id +
+                "nationalId=" + nationalId +
 
                 '}';
     }
