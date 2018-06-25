@@ -55,6 +55,7 @@ public class ContractController {
     public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file){
         supplier.getContract().setStatus(Status.PENDING.toString());
         supplier.getContract().setSupplierId(supplier.getNationalId());
+        System.out.println(supplier.getNationalId());
         try{
             byte[] bytes = file.getBytes();
             supplier.setPic(bytes);
@@ -70,7 +71,7 @@ public class ContractController {
     public String getAllContracts(Model model){
         List<Contract> contracts = this.contractService.getAllContracts();
         model.addAttribute("contract", contracts);
-        return "contractx";
+        return "contracts";
     }
     @PostMapping("/approve/{id}")
     public String approveContract(@PathVariable(name = "id") int id) {
