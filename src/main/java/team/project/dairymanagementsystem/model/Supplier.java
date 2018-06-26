@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull;
 
 public class Supplier  {
     @Id
-    @Column(name = "nationalId")
+    @Column(name = "national_id")
     private int nationalId;
 
     @NotNull
@@ -48,7 +48,7 @@ public class Supplier  {
         this.contract = contract;
     }
 
-    public void setNationalId(int national_id) {
+    public void setNationalId(int nationalId) {
         this.nationalId = nationalId;
     }
 

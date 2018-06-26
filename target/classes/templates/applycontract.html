@@ -16,7 +16,13 @@
     <form th:method="post" th:action="@{/contract/newcontract}" th:object="${supplier}">
 
         <label id="national_id">National Id </label>
+<<<<<<< HEAD:target/classes/templates/applycontract.html
         <input id="national_idi" type="number" th:field="*{national_id}"><br>
+=======
+        <input type="number" th:field="*{nationalId}"><br>
+        <label id="name">Name</label>
+        <input id="nameI" type="text" th:field="*{name}"><br>
+>>>>>>> 071887dbfec26e4b220194dd8babddd60bf4846c:target/classes/templates/newcontract.html
         <label id="email">email </label>
         <input id="emaili" type="text" th:field="*{email_address}"><br>
         <label id="amou">amount/daily </label>
