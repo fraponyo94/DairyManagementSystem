@@ -1,4 +1,4 @@
-package team.project.dairymanagementsystem.model.enums;
+package team.project.dairymanagementsystem.model.enumerated;
 
 public enum Roles {
     USER("user"), ADMIN("admin"), SUPPLIER("supplier");
