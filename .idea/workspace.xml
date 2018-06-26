@@ -2,44 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dc94af-ac92-4285-97ba-f02eceee58b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/SecurityConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dairymanagementsystem-0.0.1-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dairymanagementsystem-0.0.1-SNAPSHOT.jar.original" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/DairymanagementsystemApplication.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/DairymanagementsystemApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/auth/RoleGroup.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/auth/RoleGroup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomSuccessHandler.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomSuccessHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomUser.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/CustomUserDetailsService.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/CustomUserDetailsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/DefaultController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/DefaultController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Contract.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Contract.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/DairyStaff.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/DairyStaff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/User.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Gender.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Gender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Roles.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Roles.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Status.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/repository/DairyStaffRepository.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/repository/DairyStaffRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/DairyStaffService.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/DairyStaffService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Status.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Status.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enums/Roles.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enums/Roles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="$PROJECT_DIR$/target/classes/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-team.project.dairymanagementsystem.DairymanagementsystemApplicationTests.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-team.project.dairymanagementsystem.DairymanagementsystemApplicationTests.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/team.project.dairymanagementsystem.DairymanagementsystemApplicationTests.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/team.project.dairymanagementsystem.DairymanagementsystemApplicationTests.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/newcontract.html" afterPath="$PROJECT_DIR$/target/classes/templates/applycontract.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/templates/newcontract.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/applycontract.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -354,27 +317,26 @@
       <option name="presentableId" value="Default" />
       <updated>1529997444719</updated>
       <workItem from="1529997447002" duration="2853000" />
-      <workItem from="1530001429275" duration="20000" />
+      <workItem from="1530001429275" duration="1441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2873000" />
+    <option name="totallyTimeSpent" value="4294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2908012" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2908012" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2908012" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2408492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -455,7 +417,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
