@@ -36,11 +36,11 @@
                 <!--if the status is pending, an approve button should appear-->
                 <form th:if="${contract.status == 'pending'}" th:action="@{/contract/approve/{id}(id=${contract.id})}" th:method="POST"
                       th:object="${contract.id}">
-                    <button name="id" type="submit">approve</button>
+                    <input type="submit" value="approve">
                 </form>
                 <form th:if="${contract.status == 'pending'}" th:action="@{/contract/deny/{id}(id=${contract.id})}" th:method="POST"
                       th:object="${contract.id}">
-                    <button name="id" type="submit">deny</button>
+                    <input type="submit" value="deny">
                 </form>
 
                 <!--if the status is approved, a cancel button should appear-->
