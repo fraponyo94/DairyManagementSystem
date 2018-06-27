@@ -70,7 +70,7 @@ public class ContractController {
     @GetMapping("/contracts")
     public String getAllContracts(Model model){
         List<Contract> contracts = this.contractService.getAllContracts();
-        model.addAttribute("contract", contracts);
+        model.addAttribute("contracts", contracts);
         return "contracts";
     }
     @PostMapping("/approve/{id}")
