@@ -7,16 +7,24 @@
 <body>
 <!--/*@thymesVar id="contracts" type="team.dairymanagement.dairymanagementserver.domain.contracts"*/-->
 <form th:method="get" th:object="${contracts}">
-    <table style="border-width: thick" width="100px">
-        <thead>
-        <tr>
-            <td>Id</td>
-            <td>Supplier Id</td>
-            <td>Status</td>
-            <td>Amount Per Day</td>
-            <td>CostPerLitre</td>
-        </tr>
-        </thead>
+
+        <table class="table table-bordered">
+
+            <!--Table head-->
+            <thead>
+            <tr>
+
+                <th>id</th>
+                <th>supplier id</th>
+                <th>status</th>
+
+                <th>amount/daily</th>
+                <th>cost/litre</th>
+            </tr>
+            </thead>
+            <!--Table head-->
+
+            <!--Table body-->
         <tbody>
         <tr th:each="contract:${contracts}" >
             <td th:text="${contract.id}"></td>
@@ -24,6 +32,30 @@
             <td th:text="${contract.status}"></td>
             <td th:text="${contract.amountPerDay}"></td>
             <td th:text="${contract.costPerLitre}"></td>
+            <td>
+                <!--if the status is pending, an approve button should appear-->
+                <form th:if="${contract.status == 'pending'}" th:action="@{/contract/approve/{id}(id=${contract.id})}" th:method="POST"
+                      th:object="${contract.id}">
+                    <button name="id" type="submit">approve</button>
+                </form>
+                <form th:if="${contract.status == 'pending'}" th:action="@{/contract/deny/{id}(id=${contract.id})}" th:method="POST"
+                      th:object="${contract.id}">
+                    <button name="id" type="submit">deny</button>
+                </form>
+
+                <!--if the status is approved, a cancel button should appear-->
+                <form th:if="${contract.status == 'approved'}" th:action="@{/contract/cancel/{id}(id=${contract.id})}" th:method="POST"
+                      th:object="${contract.id}">
+                    <input type="submit" value="cancel">
+                </form>
+
+                <!--if the status is denied, a delete button should appear-->
+                <form th:if="${contract.status == 'denied'}" th:action="@{/contract/delete/{id}(id=${contract.id})}" th:method="POST"
+                      th:object="${contract.id}">
+                    <input type="submit" value="delete">
+                </form>
+            </td>
+
 
         </tr>
         </tbody>

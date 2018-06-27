@@ -6,6 +6,7 @@ import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.repository.SupplierRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class SupplierService {
@@ -14,6 +15,11 @@ public class SupplierService {
 
     public Supplier createSupplier(Supplier supplier){
         return this.supplierRepository.save(supplier);
+    }
+
+    public Supplier getContract(Integer id){
+        Supplier supplier = this.supplierRepository.findByNationalId(id);
+        return supplier;
     }
 
     public List<Supplier> getAllSuppliers(){

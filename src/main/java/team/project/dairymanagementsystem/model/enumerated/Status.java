@@ -1,11 +1,10 @@
 package team.project.dairymanagementsystem.model.enumerated;
 
 public enum Status {
-    PENDING("pending"), APPROVED("approved"), DENIED("denied");
-
+    PENDING("pending"), APPROVED("approved"), DENIED("denied"), CANCELLED("cancelled");
     private String status;
 
-    private Status(String status) {
+    private Status(String status){
         this.status = status;
     }
 
