@@ -1,0 +1,11 @@
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+td.form {
+    display: inline-block;
+}
+th,td {
+    text-align: center;
+}
