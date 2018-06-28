@@ -1,3 +1,4 @@
+
 package team.project.dairymanagementsystem.model.enumerated;
 
 public enum Roles {
@@ -14,3 +15,4 @@ public enum Roles {
         return this.roleName;
     }
 }
+
