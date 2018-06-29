@@ -32,7 +32,7 @@ public class ContractController {
     @GetMapping("/contract")
     public String addContract(Model model){
         model.addAttribute("supplier",new Supplier());
-        return "newcontract";
+        return "ContractForm";
     }
 
     @GetMapping("/supplier/{national_id}")
@@ -48,7 +48,7 @@ public class ContractController {
         }catch (Exception e){
             e.printStackTrace();
         }
-        return "contractx";
+        return "contracts";
     }
 
     @PostMapping("/newcontract")
