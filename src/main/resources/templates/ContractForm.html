@@ -2,6 +2,9 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <link href="/css/contractform.css" rel="stylesheet" th:href="@{/css/contractform.css}">
+    <link rel="stylesheet" type="text/css" href="src/main/resources/static/css/contractform.css"/>
+    <link rel="stylesheet" type="text/css" href="src/main/resources/static/css/contractform.css"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -13,13 +16,13 @@
     <!-- Material Design Bootstrap -->
     <link href="/css/bootstrap/mdb.min.css" rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
     <!-- custom styles -->
-    <link href="/css/contract.css" rel="stylesheet" th:href="@{/css/contract.css}">
+
 </head>
 
 <body>
 
 <!-- Section: form dark -->
-<section class="form-dark mb-5" style="width: 60%; height: 100vh">
+<section class="contract-form form-dark" style="width: 60%">
     <form th:action="@{/contract/newcontract}" th:method="post" th:object="${supplier}" enctype="multipart/form-data">
         <!--Form without header-->
         <div class="card card-image" style="">
@@ -46,7 +49,7 @@
                     <label for="form102">email</label>
                 </div>
 
-                <div>
+                <div class="md-form">
                     <table width="100%">
                         <tr>
                             <td>
@@ -64,17 +67,26 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <div class="md-form">
+                                    <input type="text" id="form105" class="form-control"
+                                           th:field="*{address}">
+                                    <label for="form105">Address</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="md-form">
+                                    <input type="number" id="form106" class="form-control"
+                                           th:field="*{phone}">
+                                    <label for="form106">Phone</label>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
 
-                <div class="md-form">
-                    <input type="text" id="form105" class="form-control" th:field="*{address}">
-                    <label for="form105">Address</label>
-                </div>
-                <div class="md-form">
-                    <input type="number" id="form106" class="form-control" th:field="*{phone}">
-                    <label for="form106">Phone</label>
-                </div>
+
 
                 <div class="md-form">
                     <textarea type="text" id="form107" class="md-textarea form-control" rows="5"
