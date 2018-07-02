@@ -1,65 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:data-th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Contracts</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap/font-awesome.min.css}">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
+    <!--custom css-->
+    <link rel="stylesheet" th:href="@{/css/contracts.css}">
 </head>
 <body>
-<form th:method="get" th:object="${contracts}">
+<table class="table table-bordered table-striped" th:object="${contracts}" th:if="${contracts.size() > 0}">
 
-        <table class="table table-bordered">
+    <!--Table head-->
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>supplier id</th>
+        <th>status</th>
+        <th>amount/daily</th>
+        <th>cost/litre</th>
+        <th>manage</th>
+    </tr>
+    </thead>
+    <!--Table head-->
 
-            <!--Table head-->
-            <thead>
-            <tr>
-
-                <th>id</th>
-                <th>supplier id</th>
-                <th>status</th>
-
-                <th>amount/daily</th>
-                <th>cost/litre</th>
-            </tr>
-            </thead>
-            <!--Table head-->
-
-            <!--Table body-->
-        <tbody>
-        <tr th:each="contract:${contracts}" >
-            <td th:text="${contract.id}"></td>
-            <td th:text="${contract.supplierId}"></td>
-            <td th:text="${contract.status}"></td>
-            <td th:text="${contract.amountPerDay}"></td>
-            <td th:text="${contract.costPerLitre}"></td>
-            <td>
-                <!--if the status is pending, an approve button should appear-->
-                <form th:if="${contract.status == 'pending'}" th:action="@{/contract/approve/{id}(id=${contract.id})}" th:method="POST"
-                      th:object="${contract.id}">
-                    <button name="id" type="submit">approve</button>
+    <!--Table body-->
+    <tbody>
+    <tr th:each="contract:${contracts}">
+        <td th:text="${contract.id}"></td>
+        <td th:text="${contract.supplierId}"></td>
+        <td th:text="${contract.status}"></td>
+        <td th:text="${contract.amountPerDay}"></td>
+        <td th:text="${contract.costPerLitre}"></td>
+        <td>
+            <!--if the status is pending, an approve button should appear-->
+            <div th:if="${contract.status.equalsIgnoreCase('pending')}">
+                <form th:action="@{/contract/approve/{id}(id=${contract.id})}" th:method="POST">
+                    <input type="submit" value="approve">
                 </form>
-                <form th:if="${contract.status == 'pending'}" th:action="@{/contract/deny/{id}(id=${contract.id})}" th:method="POST"
+                <form th:action="@{/contract/deny/{id}(id=${contract.id})}" th:method="POST"
                       th:object="${contract.id}">
-                    <button name="id" type="submit">deny</button>
+                    <input type="submit" value="deny">
                 </form>
+            </div>
 
-                <!--if the status is approved, a cancel button should appear-->
-                <form th:if="${contract.status == 'approved'}" th:action="@{/contract/cancel/{id}(id=${contract.id})}" th:method="POST"
+            <!--if the status is approved, a cancel button should appear-->
+            <div th:if="${contract.status.equalsIgnoreCase('approved')}">
+                <form th:action="@{/contract/cancel/{id}(id=${contract.id})}" th:method="POST"
                       th:object="${contract.id}">
                     <input type="submit" value="cancel">
                 </form>
+            </div>
 
-                <!--if the status is denied, a delete button should appear-->
-                <form th:if="${contract.status == 'denied'}" th:action="@{/contract/delete/{id}(id=${contract.id})}" th:method="POST"
+            <!--if the status is denied, a delete button should appear-->
+            <div th:if="${contract.status.equalsIgnoreCase('denied')}">
+                <form th:action="@{/contract/delete/{id}(id=${contract.id})}" th:method="POST"
                       th:object="${contract.id}">
                     <input type="submit" value="delete">
                 </form>
-            </td>
+            </div>
+
+            <!--if the status is cancelled, a delete button should appear-->
+            <div th:if="${contract.status.equalsIgnoreCase('cancelled')}">
+                <form th:action="@{/contract/delete/{id}(id=${contract.id})}" th:method="POST"
+                      th:object="${contract.id}">
+                    <input type="submit" value="delete">
+                </form>
+            </div>
+        </td>
 
 
-        </tr>
-        </tbody>
-    </table>
-</form>
+    </tr>
 
+    </tbody>
+</table>
+<p th:if="${contracts.size() == 0}">No contracts to display</p>
 </body>
 </html>

@@ -26,4 +26,7 @@ public class SupplierService {
         return this.supplierRepository.findAll();
     }
 
+    public void deleteSupplier(int supplierId) {
+        supplierRepository.delete(supplierId);
+    }
 }

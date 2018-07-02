@@ -6,5 +6,4 @@ import team.project.dairymanagementsystem.model.Contract;
 
 @Repository
 public interface ContractRepository extends JpaRepository<Contract, Integer>{
-    Contract findById(int id);
 }
