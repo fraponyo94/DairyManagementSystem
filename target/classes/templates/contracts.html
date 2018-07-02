@@ -9,8 +9,13 @@
     <link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap/table.css}">
+
     <!--custom css-->
     <link rel="stylesheet" th:href="@{/css/contracts.css}">
+    <script th:src="@{/js/bootstrap/table.js}"></script>
+    <script th:src="@{/js/bootstrap/table.jquery.js}"></script>
+    <script th:src="@{/js/bootstrap/jquery-3.3.1.min.js}"></script>
 </head>
 <body>
 <table class="table table-bordered table-striped" th:object="${contracts}" th:if="${contracts.size() > 0}">
