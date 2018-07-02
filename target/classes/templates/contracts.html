@@ -11,9 +11,13 @@
     <link rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
     <!--custom css-->
     <link rel="stylesheet" th:href="@{/css/contracts.css}">
+    <link rel="stylesheet" th:href="@{/css/jquery/sort.css}">
+    <script th:src="@{/js/jquery/jquery.js}"></script>
+    <script th:src="@{/js/jquery/sort.js}"></script>
+    <script th:src="@{/js/jquery/contracts.js}"></script>
 </head>
 <body>
-<table class="table table-bordered table-striped" th:object="${contracts}" th:if="${contracts.size() > 0}">
+<table id="myTable" class="table table-bordered table-striped table-responsive-md" th:object="${contracts}" th:if="${contracts.size() > 0}">
 
     <!--Table head-->
     <thead>
