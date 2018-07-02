@@ -38,7 +38,7 @@
         <td th:text="${contract.costPerLitre}"></td>
         <td>
             <!--if the status is pending, an approve button should appear-->
-            <div th:if="${contract.status == 'pending'}">
+            <div th:if="${contract.status.equalsIgnoreCase('pending')}">
                 <form th:action="@{/contract/approve/{id}(id=${contract.id})}" th:method="POST">
                     <input type="submit" value="approve">
                 </form>
@@ -49,7 +49,7 @@
             </div>
 
             <!--if the status is approved, a cancel button should appear-->
-            <div th:if="${contract.status == 'approved'}">
+            <div th:if="${contract.status.equalsIgnoreCase('approved')}">
                 <form th:action="@{/contract/cancel/{id}(id=${contract.id})}" th:method="POST"
                       th:object="${contract.id}">
                     <input type="submit" value="cancel">
@@ -57,7 +57,7 @@
             </div>
 
             <!--if the status is denied, a delete button should appear-->
-            <div th:if="${contract.status == 'denied'}">
+            <div th:if="${contract.status.equalsIgnoreCase('denied')}">
                 <form th:action="@{/contract/delete/{id}(id=${contract.id})}" th:method="POST"
                       th:object="${contract.id}">
                     <input type="submit" value="delete">
@@ -65,7 +65,7 @@
             </div>
 
             <!--if the status is cancelled, a delete button should appear-->
-            <div th:if="${contract.status == 'cancelled'}">
+            <div th:if="${contract.status.equalsIgnoreCase('cancelled')}">
                 <form th:action="@{/contract/delete/{id}(id=${contract.id})}" th:method="POST"
                       th:object="${contract.id}">
                     <input type="submit" value="delete">

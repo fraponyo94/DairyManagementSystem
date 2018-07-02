@@ -35,12 +35,6 @@ public class DairymanagementsystemApplication {
 	CommandLineRunner runner(){
 		return (String...args) -> {
             dairyStaffService.addDairyStaff(new DairyStaff("1234","Admin","admin@info.co.ke",Gender.MALE,new RoleGroup("admin"),new BCryptPasswordEncoder().encode("12345")));
-//            contractService.createContract(new Contract(47294729, "pending", 34, 43, "sweet"));
-//            contractService.createContract(new Contract(42739472, "approved", 43, 32, "nice"));
-//            contractService.createContract(new Contract(83295739, "denied", 42, 53, "thanks"));
-//            contractService.createContract(new Contract(73294729, "pending", 21, 23, "welcome"));
-//            contractService.createContract(new Contract(63282945, "cancelled", 43, 75, "white"));
-//            contractService.createContract(new Contract(29237593, "cancelled", 22, 43, "early"));
 		};
 	}
 }

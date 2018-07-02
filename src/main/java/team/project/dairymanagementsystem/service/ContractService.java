@@ -16,6 +16,8 @@ public class ContractService {
     ArrayList<Contract> contract = new ArrayList<>();
     @Autowired
     private ContractRepository contractRepository;
+    @Autowired
+    private SupplierService supplierService;
 
     public Contract createContract(Contract contract) {
         return contractRepository.save(contract);
@@ -60,10 +62,13 @@ public class ContractService {
     public String deleteContract(int id) {
         //get saved contract
         Contract savedContract = checkContract(id);
+
         if (savedContract != null) {
+            //get supplierId
+            int supplierId = savedContract.getSupplierId();
             //delete this contract
-            contractRepository.delete(savedContract);
-            return savedContract.getSupplierId() + " 's contract deleted successfully";
+            supplierService.deleteSupplier(supplierId);
+            return supplierId + " 's contract deleted successfully";
         }
         // TODO: 20-Jun-18 Throw deletion exception
         return "delete unsuccessful";
