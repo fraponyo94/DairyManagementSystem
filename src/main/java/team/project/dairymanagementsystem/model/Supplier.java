@@ -27,8 +27,8 @@ public class Supplier  {
     private int phone;
 
     @Lob
-    @Column(name = "pic")
-    private byte[] pic;
+    @Column(name = "cv")
+    private byte[] cv;
 
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -39,12 +39,12 @@ public class Supplier  {
 
     }
 
-    public Supplier(int nationalId, @NotNull String address, @NotNull String email_address, @NotNull int phone, @NotNull byte[] pic, Contract contract) {
+    public Supplier(int nationalId, @NotNull String address, @NotNull String email_address, @NotNull int phone, @NotNull byte[] cv, Contract contract) {
         this.nationalId = nationalId;
         this.address = address;
         this.email_address = email_address;
         this.phone = phone;
-        this.pic = pic;
+        this.cv = cv;
         this.contract = contract;
     }
 
@@ -88,12 +88,12 @@ public class Supplier  {
         return phone;
     }
 
-    public void setPic(byte[] pic) {
-        this.pic = pic;
+    public void setCv(byte[] cv) {
+        this.cv = cv;
     }
 
-    public byte[] getPic() {
-        return pic;
+    public byte[] getCv() {
+        return cv;
     }
 
     public Contract getContract() {

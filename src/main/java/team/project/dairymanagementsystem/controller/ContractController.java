@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.ModelAndView;
 import team.project.dairymanagementsystem.model.Contract;
 import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.model.enumerated.Status;
@@ -41,7 +40,7 @@ public class ContractController {
         List<Supplier> supplier = new ArrayList<>();
         String UPLOADED_FOLDER = "/home/maxmilly/";
         supplier.add(supplierService.getSupplier(national_id));
-        byte[] pic = supplierService.getSupplier(national_id).getPic();
+        byte[] pic = supplierService.getSupplier(national_id).getCv();
 
         try{
             Path path = Paths.get(UPLOADED_FOLDER+"moses.pdf");
@@ -59,7 +58,7 @@ public class ContractController {
         System.out.println(supplier.getNationalId());
         try{
             byte[] bytes = file.getBytes();
-            supplier.setPic(bytes);
+            supplier.setCv(bytes);
         }catch (Exception e){
             e.printStackTrace();
         }
