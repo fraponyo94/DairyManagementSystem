@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 import team.project.dairymanagementsystem.model.Contract;
 import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.model.enumerated.Status;
@@ -39,8 +40,8 @@ public class ContractController {
     public String supplierDetails(@PathVariable(name = "national_id") Integer national_id, Model model){
         List<Supplier> supplier = new ArrayList<>();
         String UPLOADED_FOLDER = "/home/maxmilly/";
-        supplier.add(supplierService.getContract(national_id));
-        byte[] pic = supplierService.getContract(national_id).getPic();
+        supplier.add(supplierService.getSupplier(national_id));
+        byte[] pic = supplierService.getSupplier(national_id).getPic();
 
         try{
             Path path = Paths.get(UPLOADED_FOLDER+"moses.pdf");
@@ -70,7 +71,9 @@ public class ContractController {
     @GetMapping("/contracts")
     public String getAllContracts(Model model){
         List<Contract> contracts = this.contractService.getAllContracts();
+        List<Supplier> suppliers = this.supplierService.getAllSuppliers();
         model.addAttribute("contracts", contracts);
+        model.addAttribute("suppliers", suppliers);
         return "contracts";
     }
     @PostMapping("/approve/{id}")
@@ -97,5 +100,11 @@ public class ContractController {
         return "redirect:/contract/contracts";
     }
 
+    @PostMapping("/supplier/{id}")
+    public String viewSupplier(@PathVariable(name = "id") int id, Model model) {
+        Supplier supplier = this.supplierService.getSupplier(id);
+        model.addAttribute("supplier", supplier);
+        return "view-supplier";
+    }
 
 }

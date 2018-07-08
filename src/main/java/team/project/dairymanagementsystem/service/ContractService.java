@@ -35,7 +35,7 @@ public class ContractService {
             changeStatus(id, Status.APPROVED.toString());
             return "Contract approved successfully";
         }
-        return "ApproveA operation failed";
+        return "Approve operation failed";
     }
 
     //deny a contract
@@ -74,7 +74,7 @@ public class ContractService {
         return "delete unsuccessful";
     }
 
-    private Contract checkContract(int id){
+    public Contract checkContract(int id){
         //check if contract is present
         //return saved contract from the database
         return contractRepository.findOne(id);
@@ -89,5 +89,4 @@ public class ContractService {
         }
         return null;
     }
-
 }
