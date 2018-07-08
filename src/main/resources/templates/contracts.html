@@ -30,7 +30,6 @@
         <th>status</th>
         <th>amount/daily</th>
         <th>cost/litre</th>
-        <th>manage</th>
     </tr>
     </thead>
     <!--Table head-->
@@ -38,46 +37,14 @@
     <!--Table body-->
     <tbody>
     <tr th:each="supplier:${suppliers}">
-        <td th:text="${supplier.nationalId}"></td>
+        <td>
+            <form th:action="@{/contract/view-supplier/{id}(id=${supplier.nationalId})}">
+                <input type="submit" th:value="${supplier.nationalId}">
+            </form>
+        </td>
         <td th:text="${supplier.contract.status}"></td>
         <td th:text="${supplier.contract.amountPerDay}"></td>
         <td th:text="${supplier.contract.costPerLitre}"></td>
-        <td>
-            <!--if the status is pending, an approve button should appear-->
-            <div th:if="${supplier.contract.status.equalsIgnoreCase('pending')}">
-                <form th:action="@{/contract/approve/{id}(id=${supplier.contract.id})}" th:method="POST">
-                    <input type="submit" value="approve">
-                </form>
-                <form th:action="@{/contract/deny/{id}(id=${supplier.contract.id})}" th:method="POST"
-                      th:object="${supplier.contract.id}">
-                    <input type="submit" value="deny">
-                </form>
-            </div>
-
-            <!--if the status is approved, a cancel button should appear-->
-            <div th:if="${supplier.contract.status.equalsIgnoreCase('approved')}">
-                <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
-                      th:object="${supplier.contract.id}">
-                    <input type="submit" value="cancel">
-                </form>
-            </div>
-
-            <!--if the status is denied, a delete button should appear-->
-            <div th:if="${supplier.contract.status.equalsIgnoreCase('denied')}">
-                <form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"
-                      th:object="${supplier.contract.id}">
-                    <input type="submit" value="delete">
-                </form>
-            </div>
-
-            <!--if the status is cancelled, a delete button should appear-->
-            <div th:if="${supplier.contract.status.equalsIgnoreCase('cancelled')}">
-                <form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"
-                      th:object="${supplier.contract.id}">
-                    <input type="submit" value="delete">
-                </form>
-            </div>
-        </td>
     </tr>
     </tbody>
 </table>

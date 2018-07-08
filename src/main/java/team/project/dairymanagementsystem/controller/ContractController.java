@@ -100,11 +100,11 @@ public class ContractController {
         return "redirect:/contract/contracts";
     }
 
-    @PostMapping("/supplier/{id}")
+    @GetMapping("/view-supplier/{id}")
     public String viewSupplier(@PathVariable(name = "id") int id, Model model) {
         Supplier supplier = this.supplierService.getSupplier(id);
         model.addAttribute("supplier", supplier);
-        return "view-supplier";
+        return "viewSupplier";
     }
 
 }

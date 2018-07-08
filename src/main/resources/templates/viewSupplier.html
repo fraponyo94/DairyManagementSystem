@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View | Supplier</title>
+    <!--jquery-->
+    <script th:src="@{/js/jquery/jquery.js}"></script>
+    <!--boostrap-->
+    <script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap/font-awesome.min.css}">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
+    <!--custom css-->
+    <link rel="stylesheet" th:href="@{/css/viewContract.css}">
+</head>
+<body>
+<div class="d-flex justify-content-center align-items-center centered">
+    <!--Jumbotron-->
+    <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2" th:object="${supplier}">
+
+        <!--Title-->
+        <h1 class="card-title h2-responsive mt-2 font-bold"><b th:text="${supplier.name}"></b></h1>
+
+        <!--Text-->
+        <div class="d-flex justify-content-center" style="min-width: 40rem;">
+            <div class="card-text my-2" style="max-width: 43rem;">
+                <Label for="id">National Id: </Label> <span id="id" th:text="${supplier.nationalId}"></span><br>
+                <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
+                <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
+                <Label for="phone">Phone: </Label> <span id="phone" th:text="${supplier.phone}"></span><br>
+                <Label for="status">Contract Status: </Label> <span id="status" th:text="${supplier.contract.status}"></span><br>
+                <Label for="amount">Daily Amount: </Label> <span id="amount" th:text="${supplier.contract.amountPerDay}"></span><br>
+                <Label for="cost">Litre Cost: </Label> <span id="cost" th:text="${supplier.contract.costPerLitre}"></span><br>
+                <Label for="description">Description: </Label> <span id="description" th:text="${supplier.contract.description}"></span>
+            </div>
+        </div>
+
+        <hr class="my-4 rgba-white-light">
+
+        <!--if the status is pending, an approve button should appear-->
+        <div th:if="${supplier.contract.status.equalsIgnoreCase('pending')}">
+            <form th:action="@{/contract/approve/{id}(id=${supplier.contract.id})}" th:method="POST">
+                <input class="btn btn-success btn-rounded" type="submit" value="approve">
+            </form>
+            <form th:action="@{/contract/deny/{id}(id=${supplier.contract.id})}" th:method="POST"
+                  th:object="${supplier.contract.id}">
+                <input class="btn btn-danger btn-rounded" type="submit" value="deny">
+            </form>
+        </div>
+
+        <!--if the status is approved, a cancel button should appear-->
+        <div th:if="${supplier.contract.status.equalsIgnoreCase('approved')}">
+            <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
+                  th:object="${supplier.contract.id}">
+                <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
+            </form>
+        </div>
+
+        <!--if the status is denied, a delete button should appear-->
+        <div th:if="${supplier.contract.status.equalsIgnoreCase('denied')}">
+            <form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"
+                  th:object="${supplier.contract.id}">
+                <input class="btn btn-danger btn-rounded" type="submit" value="delete">
+            </form>
+        </div>
+
+        <!--if the status is cancelled, a delete button should appear-->
+        <div th:if="${supplier.contract.status.equalsIgnoreCase('cancelled')}">
+            <form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"
+                  th:object="${supplier.contract.id}">
+                <input class="btn btn-danger btn-rounded" type="submit" value="delete">
+            </form>
+        </div>
+
+    </div>
+    <!--Jumbotron-->
+</div>
+</body>
+</html>
