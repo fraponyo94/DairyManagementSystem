@@ -40,7 +40,7 @@ public class ContractController {
         List<Supplier> supplier = new ArrayList<>();
         String UPLOADED_FOLDER = "/home/maxmilly/";
         supplier.add(supplierService.getSupplier(national_id));
-        byte[] pic = supplierService.getSupplier(national_id).getCv();
+        byte[] pic = supplierService.getSupplier(national_id).getPic();
 
         try{
             Path path = Paths.get(UPLOADED_FOLDER+"moses.pdf");
@@ -58,7 +58,7 @@ public class ContractController {
         System.out.println(supplier.getNationalId());
         try{
             byte[] bytes = file.getBytes();
-            supplier.setCv(bytes);
+            supplier.setPic(bytes);
         }catch (Exception e){
             e.printStackTrace();
         }
