@@ -35,7 +35,7 @@
                 <Label for="amount">Daily Amount: </Label> <span id="amount" th:text="${supplier.contract.amountPerDay}"></span><br>
                 <Label for="cost">Litre Cost: </Label> <span id="cost" th:text="${supplier.contract.costPerLitre}"></span><br>
                 <Label for="description">Description: </Label> <span id="description" th:text="${supplier.contract.description}"></span><br>
-                <Label for="cv">CV: </Label> <a id="cv" th:object="${supplier.cv}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">Download</a>
+                <Label for="pic">CV: </Label> <a id="pic" th:object="${supplier.pic}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">Download</a>
             </div>
         </div>
 
