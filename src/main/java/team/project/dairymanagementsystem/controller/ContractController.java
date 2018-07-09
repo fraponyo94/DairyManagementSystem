@@ -1,6 +1,10 @@
 package team.project.dairymanagementsystem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -32,7 +36,7 @@ public class ContractController {
     @GetMapping("/contract")
     public String addContract(Model model){
         model.addAttribute("supplier",new Supplier());
-        return "ContractForm";
+        return "contract/ContractForm";
     }
 
     @GetMapping("/supplier/{national_id}")
@@ -48,7 +52,23 @@ public class ContractController {
         }catch (Exception e){
             e.printStackTrace();
         }
-        return "contracts";
+        return "redirect:/";
+    }
+    @GetMapping("/view/{national_id}")
+    public ResponseEntity<byte[]> getPDF1(@PathVariable(name = "national_id") Integer national_id) {
+
+
+        HttpHeaders headers = new HttpHeaders();
+
+        headers.setContentType(MediaType.parseMediaType("application/pdf"));
+        String filename = "pdf1.pdf";
+
+        headers.add("content-disposition", "inline;filename=" + filename);
+
+        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
+        byte[] pic = supplierService.getContract(national_id).getPic();
+        ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(pic, headers, HttpStatus.OK);
+        return response;
     }
 
     @PostMapping("/newcontract")
@@ -71,7 +91,7 @@ public class ContractController {
     public String getAllContracts(Model model){
         List<Contract> contracts = this.contractService.getAllContracts();
         model.addAttribute("contracts", contracts);
-        return "contracts";
+        return "contract/contracts";
     }
     @PostMapping("/approve/{id}")
     public String approveContract(@PathVariable(name = "id") int id) {

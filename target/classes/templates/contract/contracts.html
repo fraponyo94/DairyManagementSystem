@@ -13,12 +13,15 @@
 
     <!--custom css-->
     <link rel="stylesheet" th:href="@{/css/contracts.css}">
-    <script th:src="@{/js/bootstrap/table.js}"></script>
-    <script th:src="@{/js/bootstrap/table.jquery.js}"></script>
-    <script th:src="@{/js/bootstrap/jquery-3.3.1.min.js}"></script>
+
+    <link rel="stylesheet" th:href="@{/css/contracts.css}">
+    <link rel="stylesheet" th:href="@{/css/jquery/sort.css}">
+    <script th:src="@{/js/jquery/jquery.js}"></script>
+    <script th:src="@{/js/jquery/sort.js}"></script>
+    <script th:src="@{/js/jquery/contracts.js}"></script>
 </head>
 <body>
-<table class="table table-bordered table-striped" th:object="${contracts}" th:if="${contracts.size() > 0}">
+<table id="myTable" class="table table-bordered table-striped " th:object="${contracts}" th:if="${contracts.size() > 0}">
 
     <!--Table head-->
     <thead>

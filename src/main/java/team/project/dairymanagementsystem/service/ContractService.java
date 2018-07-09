@@ -19,7 +19,7 @@ public class ContractService {
     @Autowired
     private SupplierService supplierService;
 
-    public Contract createContract(Contract contract) {
+    public Contract createContract(Contract contract){
         return contractRepository.save(contract);
     }
 
