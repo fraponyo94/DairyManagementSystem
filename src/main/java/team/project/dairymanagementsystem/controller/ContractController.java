@@ -36,33 +36,29 @@ public class ContractController {
     }
 
     @GetMapping("/supplier/{national_id}")
-    public String supplierDetails(@PathVariable(name = "national_id") Integer national_id, Model model){
-        List<Supplier> supplier = new ArrayList<>();
-        String UPLOADED_FOLDER = "/home/maxmilly/";
-        supplier.add(supplierService.getSupplier(national_id));
+    public String supplierDetails(@PathVariable(name = "national_id") Integer national_id){
+        String UPLOADED_FOLDER = "C:\\Users\\enrico\\Desktop\\";
         byte[] pic = supplierService.getSupplier(national_id).getPic();
 
         try{
-            Path path = Paths.get(UPLOADED_FOLDER+"moses.pdf");
+            Path path = Paths.get(UPLOADED_FOLDER+"try.pdf");
             Files.write(path, pic);
         }catch (Exception e){
             e.printStackTrace();
         }
-        return "contracts";
+        return "redirect:/";
     }
 
     @PostMapping("/newcontract")
-    public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file, MultipartFile photo){
+    public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file){
         supplier.getContract().setStatus(Status.PENDING.toString());
         supplier.getContract().setSupplierId(supplier.getNationalId());
         System.out.println(supplier.getNationalId());
         try{
             //get uploaded files in bytes
             byte[] bytes = file.getBytes();
-            byte[] photoBytes = photo.getBytes();
             //set bytes to corresponding supplier attributes
             supplier.setPic(bytes);
-            supplier.setCv(photoBytes);
         }catch (Exception e){
             e.printStackTrace();
         }

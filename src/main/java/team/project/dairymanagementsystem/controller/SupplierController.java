@@ -9,9 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.service.SupplierService;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.net.URLConnection;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @Controller
 public class SupplierController {
@@ -22,9 +26,13 @@ public class SupplierController {
     public String getCv(@PathVariable(name = "id") int id) throws IOException {
         String home = System.getProperty("user.home");  //get home directory
         Supplier supplier = this.supplierService.getSupplier(id);
-        FileCopyUtils.copy(supplier.getPic(),
-                new FileOutputStream(new File(home + "/Downloads/"+ supplier.getName().trim() + ".png")));
-
+        byte[] picBytes = supplier.getPic();
+        try{
+            Path path = Paths.get(home + "/Downloads/" + supplier.getName().trim() + "-ContractCV.pdf");
+            Files.write(path, picBytes);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return "redirect:/contract/contracts";
     }
 }

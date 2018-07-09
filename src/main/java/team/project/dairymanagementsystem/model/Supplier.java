@@ -30,10 +30,6 @@ public class Supplier  {
     @Column(name = "pic")
     private byte[] pic;
 
-    @Lob
-    @Column(name = "cv")
-    private byte[] cv;
-
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "contract")
     private Contract contract;
@@ -105,14 +101,6 @@ public class Supplier  {
 
     public void setContract(Contract contract) {
         this.contract = contract;
-    }
-
-    public byte[] getCv() {
-        return cv;
-    }
-
-    public void setCv(byte[] cv) {
-        this.cv = cv;
     }
 
     @Override
