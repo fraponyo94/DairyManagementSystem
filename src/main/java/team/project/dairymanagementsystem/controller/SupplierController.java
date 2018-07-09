@@ -1,6 +1,10 @@
 package team.project.dairymanagementsystem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.util.FileSystemUtils;
@@ -23,16 +27,18 @@ public class SupplierController {
     private SupplierService supplierService;
 
     @GetMapping("/getCv/{id}")
-    public String getCv(@PathVariable(name = "id") int id) throws IOException {
+    public ResponseEntity<byte[]> getCv(@PathVariable(name = "id") int id) throws IOException {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.parseMediaType("application/pdf"));
         String home = System.getProperty("user.home");  //get home directory
         Supplier supplier = this.supplierService.getSupplier(id);
+        String fileName = supplier.getName().trim() + "-ContractCV.pdf";
+
+        headers.add("content-disposition", "inline;filename=" + fileName);
+        headers.setCacheControl("must-revalidate,post-check=0,pre-check=0");
         byte[] picBytes = supplier.getPic();
-        try{
-            Path path = Paths.get(home + "/Downloads/" + supplier.getName().trim() + "-ContractCV.pdf");
-            Files.write(path, picBytes);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return "redirect:/contract/contracts";
+
+        ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(picBytes,headers, HttpStatus.OK);
+        return response;
     }
 }
