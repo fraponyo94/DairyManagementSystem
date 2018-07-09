@@ -49,7 +49,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/","/login").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -75,7 +74,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     public void configure(WebSecurity web) throws Exception {
         web
                 .ignoring()
-                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/img/**");
+                .antMatchers("/","/resources/**", "/static/**", "/css/**", "/js/**", "/img/**");
     }
 
 }

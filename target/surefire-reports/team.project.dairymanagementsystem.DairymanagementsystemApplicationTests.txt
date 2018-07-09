@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: team.project.dairymanagementsystem.DairymanagementsystemApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 35.172 s <<< FAILURE! - in team.project.dairymanagementsystem.DairymanagementsystemApplicationTests
-contextLoads(team.project.dairymanagementsystem.DairymanagementsystemApplicationTests)  Time elapsed: 0.057 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
-Caused by: org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
-Caused by: org.hibernate.exception.GenericJDBCException: could not execute statement
-Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.251 s - in team.project.dairymanagementsystem.DairymanagementsystemApplicationTests

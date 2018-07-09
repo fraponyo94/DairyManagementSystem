@@ -17,13 +17,16 @@ public class SupplierService {
         return this.supplierRepository.save(supplier);
     }
 
-    public Supplier getContract(Integer id){
-        Optional<Supplier> optional = this.supplierRepository.findById(id);
-        return optional.orElse(null);
+    public Supplier getSupplier(Integer id){
+        Supplier supplier = this.supplierRepository.findOne(id);
+        return supplier;
     }
 
     public List<Supplier> getAllSuppliers(){
         return this.supplierRepository.findAll();
     }
 
+    public void deleteSupplier(int supplierId) {
+        supplierRepository.delete(supplierId);
+    }
 }
