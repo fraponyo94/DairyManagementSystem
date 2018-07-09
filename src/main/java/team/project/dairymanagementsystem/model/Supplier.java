@@ -30,6 +30,10 @@ public class Supplier  {
     @Column(name = "pic")
     private byte[] pic;
 
+    @Lob
+    @Column(name = "cv")
+    private byte[] cv;
+
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "contract")

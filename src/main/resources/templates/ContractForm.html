@@ -23,6 +23,7 @@
 
 <!-- Section: form dark -->
 <section class="contract-form form-dark" style="width: 60%">
+    <!--/*@thymesVar id="supplier" type="team.project.dairymanagementsystem.model.Supplier"*/-->
     <form th:action="@{/contract/newcontract}" th:method="post" th:object="${supplier}" enctype="multipart/form-data">
         <!--Form without header-->
         <div class="card card-image" style="">
