@@ -38,6 +38,7 @@
     <!--Table body-->
     <tbody>
     <!--/*@thymesVar id="suppliers" type="java.util.List<team.project.dairymanagementsystem.model.Supplier>"*/-->
+    <!--/*@thymesVar id="supplier" type="team.project.dairymanagementsystem.model.Supplier"*/-->
     <tr th:each="supplier:${suppliers}">
         <td>
             <form th:action="@{/contract/view-supplier/{id}(id=${supplier.nationalId})}">
