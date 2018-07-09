@@ -21,7 +21,7 @@ public class SupplierController {
     public String getCv(@PathVariable(name = "id") int id) throws IOException {
         String home = System.getProperty("user.home");  //get home directory
         Supplier supplier = this.supplierService.getSupplier(id);
-        FileCopyUtils.copy(supplier.getPic(), new FileOutputStream(new File(home + "/Downloads/"+ supplier.getName().trim() + "-Contract.png")));
+        FileCopyUtils.copy(supplier.getPic(), new FileOutputStream(new File(home + "/Downloads/"+ supplier.getName().trim() + ".png")));
         return "redirect:/contract/contracts";
     }
 }

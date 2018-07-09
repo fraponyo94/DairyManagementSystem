@@ -20,6 +20,7 @@
     <link rel="stylesheet" th:href="@{/css/contracts.css}">
 </head>
 <body>
+<!--/*@thymesVar id="contracts" type="java.util.List<team.project.dairymanagementsystem.model.Contract>"*/-->
 <table id="myTable" class="table table-bordered table-striped table-responsive-md" th:object="${contracts}"
        th:if="${contracts.size() > 0}">
 
@@ -36,6 +37,7 @@
 
     <!--Table body-->
     <tbody>
+    <!--/*@thymesVar id="suppliers" type="java.util.List<team.project.dairymanagementsystem.model.Supplier>"*/-->
     <tr th:each="supplier:${suppliers}">
         <td>
             <form th:action="@{/contract/view-supplier/{id}(id=${supplier.nationalId})}">
