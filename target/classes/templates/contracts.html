@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contracts</title>
+</head>
+<body>
+<!--/*@thymesVar id="contracts" type="team.dairymanagement.dairymanagementserver.domain.contracts"*/-->
+<form th:method="get" th:object="${contracts}">
+
+        <table class="table table-bordered">
+
+            <!--Table head-->
+            <thead>
+            <tr>
+
+                <th>id</th>
+                <th>supplier id</th>
+                <th>status</th>
+
+                <th>amount/daily</th>
+                <th>cost/litre</th>
+            </tr>
+            </thead>
+            <!--Table head-->
+
+            <!--Table body-->
+        <tbody>
+        <tr th:each="contract:${contracts}" >
+            <td th:text="${contract.id}"></td>
+            <td th:text="${contract.supplierId}"></td>
+            <td th:text="${contract.status}"></td>
+            <td th:text="${contract.amountPerDay}"></td>
+            <td th:text="${contract.costPerLitre}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+</body>
+</html>
