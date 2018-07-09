@@ -37,4 +37,25 @@ spring:
       mode: LEGACYHTML5
 
 
+# ===============================
+# = Mail configurations
+# ===============================
 
+
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: mozdemilly
+    password: 20463183
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            port: 25
+          ssl:
+            enable: true
+            required: false
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
