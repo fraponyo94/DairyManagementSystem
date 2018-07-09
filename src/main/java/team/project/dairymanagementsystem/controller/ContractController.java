@@ -52,13 +52,17 @@ public class ContractController {
     }
 
     @PostMapping("/newcontract")
-    public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file){
+    public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file, MultipartFile photo){
         supplier.getContract().setStatus(Status.PENDING.toString());
         supplier.getContract().setSupplierId(supplier.getNationalId());
         System.out.println(supplier.getNationalId());
         try{
+            //get uploaded files in bytes
             byte[] bytes = file.getBytes();
+            byte[] photoBytes = photo.getBytes();
+            //set bytes to corresponding supplier attributes
             supplier.setPic(bytes);
+            supplier.setCv(photoBytes);
         }catch (Exception e){
             e.printStackTrace();
         }

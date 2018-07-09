@@ -2,21 +2,22 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <link href="/css/contractform.css" rel="stylesheet" th:href="@{/css/contractform.css}">
-    <link rel="stylesheet" type="text/css" href="src/main/resources/static/css/contractform.css"/>
-    <link rel="stylesheet" type="text/css" href="src/main/resources/static/css/contractform.css"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Dairy Portal Login</title>
+    <!--jquery-->
+    <script th:src="@{/js/jquery/jquery.js}"></script>
+    <!--boostrap-->
+    <script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/css/bootstrap/font-awesome.min.css" th:href="@{/css/bootstrap/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap/font-awesome.min.css}">
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
     <!-- Material Design Bootstrap -->
-    <link href="/css/bootstrap/mdb.min.css" rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
-    <!-- custom styles -->
-
+    <link rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
+    <!--custom styles-->
+    <link rel="stylesheet" th:href="@{/css/contractform.css}">
 </head>
 
 <body>
@@ -94,12 +95,14 @@
                               th:field="*{contract.description}"></textarea>
                     <label for="form107">Description</label>
                 </div>
-                <label>C.V</label>
-                <div class="md-form">
-                    <input type="file" id="form108" class="form-control" th:name="file">
-
+                <label for="photo">Passport-sized Photo</label>
+                <div id="photo">
+                    <input type="file" accept="image/*" class="form-control" th:name="photo">
                 </div>
-
+                <label for="cv">C.V</label>
+                <div class="md-form" id="cv">
+                    <input type="file" accept="application/pdf" id="form108" class="form-control" th:name="file">
+                </div>
 
                 <!--Grid row-->
                 <div class="row d-flex align-items-center">

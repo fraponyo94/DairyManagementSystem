@@ -94,12 +94,14 @@
                               th:field="*{contract.description}"></textarea>
                     <label for="form107">Description</label>
                 </div>
-                <label>C.V</label>
-                <div class="md-form">
-                    <input type="file" id="form108" class="form-control" th:name="file">
-
+                <label for="photo">Passport-sized Photo</label>
+                <div id="photo">
+                    <input type="file" accept="image/*" class="form-control" th:name="photo">
                 </div>
-
+                <label for="cv">C.V</label>
+                <div class="md-form" id="cv">
+                    <input type="file" accept="application/pdf" id="form108" class="form-control" th:name="file">
+                </div>
 
                 <!--Grid row-->
                 <div class="row d-flex align-items-center">
