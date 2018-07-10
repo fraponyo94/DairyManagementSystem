@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e48dea03-67aa-4bc0-8bb9-1634fd785ea9" name="Default" comment="" />
+    <list default="true" id="e48dea03-67aa-4bc0-8bb9-1634fd785ea9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -341,12 +343,12 @@
       <updated>1531128341358</updated>
       <workItem from="1531128343076" duration="3750000" />
       <workItem from="1531205686772" duration="772000" />
-      <workItem from="1531207704583" duration="2323000" />
+      <workItem from="1531207704583" duration="2424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6845000" />
+    <option name="totallyTimeSpent" value="6946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="59" width="1366" height="741" extended-state="6" />
