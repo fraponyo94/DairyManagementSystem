@@ -2,210 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e48dea03-67aa-4bc0-8bb9-1634fd785ea9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_20.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_20.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_5_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_7_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_5_7_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_7_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_7_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_11_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_11_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/contractform.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/contracts.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery/sort.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/viewContract.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/contracts.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/sort.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/ContractForm.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/viewSupplier.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/domain/Contract.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/domain/User.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/dairymanagementsystem-0.0.1-SNAPSHOT.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/dairymanagementsystem-0.0.1-SNAPSHOT.jar.original" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/.idea/DairyManagementSystem.iml" afterPath="$PROJECT_DIR$/dairymanagementsystem.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_44.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_20.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_20.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_20.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_3_0_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_2_6_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_3_0_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_2_6_7_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_24_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_23_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_3_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_4_2_3_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_11_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admindashboard.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/SupplierController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/SupplierController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Contract.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Contract.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Supplier.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Supplier.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Roles.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Roles.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Status.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Status.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractRepository.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/SupplierRepository.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/SupplierRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contracts.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contracts.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contractx.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/hdd.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/newcontract.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/welcome.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/welcome.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap/mdb.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/login.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/welcome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/cow.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/dairy.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/milk.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/pasturized_milk.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/plant.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/yourgurt.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/yourgurt1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/yourgurt2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/jquery-3.3.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/mdb.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/popper.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/homepage.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/map.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/DairymanagementsystemApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomSuccessHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomUser.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/CustomUserDetailsService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/SecurityConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/SupplierController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/UserController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Contract.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Contract.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/DairyStaff.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/DairyStaff.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Supplier.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Supplier.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Roles.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Status.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/repository/DairyStaffRepository.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/repository/SupplierRepository.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/repository/SupplierRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/ContractService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/DairyStaffService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/SupplierService.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/SupplierService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contracts.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contractx.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/editContracts.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/error.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/hdd.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/logout.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/proj1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/proj2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/proj3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/proj4.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/welcome.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-team.project.dairymanagementsystem.DairymanagementsystemApplicationTests.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-team.project.dairymanagementsystem.DairymanagementsystemApplicationTests.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/team.project.dairymanagementsystem.DairymanagementsystemApplicationTests.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/team.project.dairymanagementsystem.DairymanagementsystemApplicationTests.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/DefaultController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/DefaultController.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -216,18 +16,65 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1746">
+              <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="52" lean-forward="false" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/logout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -237,11 +84,26 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/admindashboard.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admindashboard.html" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="8" />
@@ -265,6 +127,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,6 +147,39 @@
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dairymanagementsystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dairymanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dairymanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
@@ -310,10 +208,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,6 +217,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -437,49 +344,84 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531128341358</updated>
-      <workItem from="1531128343076" duration="106000" />
+      <workItem from="1531128343076" duration="3750000" />
+      <workItem from="1531205686772" duration="772000" />
+      <workItem from="1531207704583" duration="218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106000" />
+    <option name="totallyTimeSpent" value="4740000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="7" />
+    <frame x="8" y="59" width="1366" height="741" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47446457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5782537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5782537" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -492,10 +434,121 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1746">
+          <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="52" lean-forward="false" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admindashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1746">
+          <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="52" lean-forward="false" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
