@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Schools Visit Form</title>
     <link rel="stylesheet" type="text/css" href="schoolVisitCss.css">
     <link rel="stylesheet" href="bootstrap.min.css" >
     <link rel="stylesheet" href="bootstrap.js" >
+    <script src="formvalidation.js"> </script>
 </head>
 
 <body id="formbdy">
@@ -15,7 +16,7 @@
         <header id="head2">
             <br><br>
             <script type="text/javascript">
-                alert("Do you really want to proceed with resgistration");
+                alert("Do you really want to proceed with registration");
 
             </script>
 
@@ -47,31 +48,32 @@
             </div>
             <!--second column-->
             <div class="col-md-5" id="middle">
-                    <p><b> Full School Name</b>
-                    <br>
-                    <input type="text" value=" name"> </p>
+                <form id="foming" >
+                    <p><label><b> Full School Name</b></label>
+
+                    <input type="text" value=" name" id="fname"> </p>
                     <br>
                     <p>
-                        <b>School code</b>
+                        <label></label><b>School code</b></label
                         <br>
                        <input type="number" value="1983678">
                     </p>
                 <br>
                 <p>
-                    <b>number of students</b>
-                    <br>
+                    <label><b>number of students</b></label>
+
                     <input type="number" value="200">
                 </p>
                 <br>
                 <p>
-                    <b>School mail</b>
-                    <br>
+                    <label><b>School mail</b></label>
+
                     <input type="email" value=" email">
                 </p>
                 <br>
                 <p>
-                    <b>County</b>
-                    <br>
+                    <label><b>County</b></label>
+
                     <input type="text" value="enter county">
                 </p>
                 <br><br>
@@ -101,15 +103,13 @@
 
                     </select>
                 </div>
-                <br><br>
-                <button type="button" class=" btn btn-danger btn-lg " onclick="btnsubmit()" value="SUBMIT">SUBMIT</button>
-        <script type="text/javascript">
-            function btnsubmit() {
-                window.location("Factory Data.html");
+                <br>
 
-            }
-        </script>
 
+                <button type="submit" class=" btn btn-danger btn-lg " onsubmit="validateform()" action="Factory Data.html" method="post"" >SUBMIT</button>
+
+
+            </form>
             </div>
             <!--third collumn-->
             <div class="col-md-4">
