@@ -27,6 +27,7 @@ public class ContractController {
 
     @Autowired
     private SupplierService supplierService;
+    private String message;
 
 
     @GetMapping("/contract")
@@ -73,29 +74,30 @@ public class ContractController {
         List<Supplier> suppliers = this.supplierService.getAllSuppliers();
         model.addAttribute("contracts", contracts);
         model.addAttribute("suppliers", suppliers);
+        model.addAttribute("message", message);
         return "contracts";
     }
     @PostMapping("/approve/{id}")
     public String approveContract(@PathVariable(name = "id") int id) {
-        String msg = this.contractService.approveContract(id);
+        message = this.contractService.approveContract(id);
         return "redirect:/contract/contracts";
     }
 
     @PostMapping("/deny/{id}")
     public String denyContract(@PathVariable(name = "id") int id) {
-        String msg = this.contractService.denyContract(id);
+        message = this.contractService.denyContract(id);
         return "redirect:/contract/contracts";
     }
 
     @PostMapping("/cancel/{id}")
     public String cancelContract(@PathVariable(name = "id") int id) {
-        String msg = this.contractService.cancelContract(id);
+        message = this.contractService.cancelContract(id);
         return "redirect:/contract/contracts";
     }
 
     @PostMapping("/delete/{id}")
     public String deleteContract(@PathVariable(name = "id") int id) {
-        String msg = this.contractService.deleteContract(id);
+        message = this.contractService.deleteContract(id);
         return "redirect:/contract/contracts";
     }
 

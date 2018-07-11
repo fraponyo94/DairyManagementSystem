@@ -20,6 +20,13 @@
     <link rel="stylesheet" th:href="@{/css/contracts.css}">
 </head>
 <body>
+
+<!--hidden link that shows an information message as a toast-->
+<!--/*@thymesVar id="message" type="java.lang.String"*/-->
+<div th:if="${message!=null}">
+    <a id="toast_link" class="btn btn-success" onclick="toastr.success('thanks');"></a>
+</div>
+
 <!--/*@thymesVar id="contracts" type="java.util.List<team.project.dairymanagementsystem.model.Contract>"*/-->
 <table id="myTable" class="table table-bordered table-striped table-responsive-md" th:object="${contracts}"
        th:if="${contracts.size() > 0}">
