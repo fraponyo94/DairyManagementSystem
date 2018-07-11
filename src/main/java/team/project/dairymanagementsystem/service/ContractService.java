@@ -1,9 +1,9 @@
 package team.project.dairymanagementsystem.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.model.Contract;
+
 import team.project.dairymanagementsystem.repository.ContractRepository;
 
 import java.util.ArrayList;

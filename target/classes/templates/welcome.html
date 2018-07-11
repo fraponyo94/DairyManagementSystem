@@ -2,18 +2,10 @@
 <html lang="en" xmlns:th="www.thymeleaf.org">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <div th:replace="template :: head">
+    </div>
     <title>Dairy plant</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/bootstrap/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/welcome.css" rel="stylesheet">
+
     <style type="text/css">
         html,
         body,
@@ -50,188 +42,49 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
+ <div th:replace="template :: welcome-nav">
 
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">
-            <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
-        </a>
-
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <!-- Left -->
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-
-            <!-- Right -->
-            <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
-                    <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">Our products</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">About us</span></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#tende"> <span class="clearfix d-none d-sm-inline-block">Contact us</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/login"> <span class="clearfix d-none d-sm-inline-block">Staff Login</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block">Log out</span></a>
-                </li>
-            </ul>
-
-        </div>
-
-    </div>
-</nav>
+ </div>
 <!-- Navbar -->
 
 <!-- Full Page Intro -->
 <div class="view full-page-intro" >
 
-    <!-- Mask & flexbox options-->
-    <div class="mask  d-flex justify-content-center align-items-center">
+    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/93.jpg');
+    background-repeat: no-repeat; background-size: cover;">
 
-        <!-- Content -->
-        <div class="container">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
 
-            <!--Grid row-->
-            <div class="row wow fadeIn">
+                <!--Content dispalayed incase there is tender info-->
+                <div  th:if="${tenderInfo}">
+                    <h1 class="mb-4">
+                        <strong>Tender</strong>
+                    </h1>
 
-                <!--Grid column-->
-                <div class="col-md-7 mb-4 white-text text-center text-md-left">
-                    <div view overlay z-depth-1-half>
-                    <!--Carousel Wrapper-->
-                    <div id="carousel-1" class="carousel slide carousel-fade" data-ride="carousel">
-                        <!--Indicators-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-1" data-slide-to="1"></li>
-                            <li data-target="#carousel-1" data-slide-to="2"></li>
+                    <p>
+                        <strong th:text="${tenderInfo.tenderTitle}">Tender title</strong>
+                    </p>
 
-                        </ol>
-                        <!--/.Indicators-->
-                        <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <div class="view">
-                                    <img class="d-block w-100" src="img/cow.jpg"  alt="First slide">
-                                    <div class="mask rgba-black-light"></div>
-                                </div>
-                                <div class="carousel-caption">
-                                    <h3 class="h3-responsive rgba-black-light">Our milk cows</h3>
+                    <p class="mb-4 d-none d-md-block">
+                        <strong th:text="${tenderInfo.tenderDescription}">Tender Brief Description</strong>
+                    </p>
 
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <!--Mask color-->
-                                <div class="view">
-                                    <img class="d-block w-100" src="img/yourgurt1.jpg"  alt="Second slide">
-                                    <div class="mask rgba-black-strong"></div>
-                                </div>
-                                <div class="carousel-caption">
-                                    <h3 class="h3-responsive rgba-black-light">Extra tasty yourgurt</h3>
+                    <a href="#" class="btn btn-outline-white btn-lg">Click to view more details
 
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <!--Mask color-->
-                                <div class="view">
-                                    <img class="d-block w-100" src="img/yourgurt2.jpg" alt="Third slide">
-                                    <div class="mask rgba-black-slight"></div>
-                                </div>
-                                <div class="carousel-caption">
-                                    <h3 class="h3-responsive rgba-black-light">Packaged as shown</h3>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--/.Slides-->
-                        <!--Controls-->
-                        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                        <!--/.Controls-->
-                    </div>
-                    <!--/.Carousel Wrapper-->
-                    </div>
-                    <div class="card" style="margin-top: 10px">
-                        <div class="card-body">
-                            <!-- Heading -->
-                            <h3 class="dark-grey-text text-center">
-                                <strong>EGERTON DAIRY PLANT</strong>
-                            </h3>
-                            <hr>
-                            <div class="dark-grey-text">
-                                It is situated close to the university’s Science Complex and provides value addition
-                                services to milk and milk products from the 20,000 acre Ng’ongogeri Farm, which houses
-                                more than 500 dairy cattle.The dairy production unit collects close to 3,000 litres
-                                of milk daily.
-
-                            </div>
-                        </div>
-
-                    </div>
-
+                    </a>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-5 col-xl-5 mb-4" >
-
-                    <!--Card-->
-                    <div class="card">
-
-                        <!--Card content-->
-                        <div class="card-body">
-
-                            <!--Excerpt-->
-                            <a href="" class="green-text">
-                                <h3 class="font-bold pb-1 text-center"><strong><u>TENDER UPDATES</u></strong></h3>
-                            </a>
-                            <h4 class="mb-4"><strong>This is title of the tender update</strong></h4>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam
-                                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
-                            <p>by <a><strong>Carine Fox</strong></a>, 19/08/2016</p>
-                            <a class="btn btn-success">Read more</a>
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-
+                <!--Content displayed if no tender info-->
+                <div th:unless="${tender}">
+                    <a href="#" class="btn btn-outline-white btn-lg text-uppercase">About Us </a>
                 </div>
-                <!--Grid column-->
 
             </div>
-            <!--Grid row-->
-
+            <!-- Content -->
         </div>
-        <!-- Content -->
-
     </div>
-    <!-- Mask & flexbox options-->
 
 </div>
 <!-- Full Page Intro -->
@@ -258,11 +111,12 @@
                 <div class="col-md-5 mb-4">
 
                     <!-- Main heading -->
-                    <h3 class="h3 mb-3">Caption</h3>
-                   <p>  asfdghjkl;'
-                    erftgyhjkl;'
-                    fdghjkl;'rtyhkjl;'gjhkl;wertyuloi;pwretyuiopwetryuiopwretyuiop
-                       [retyuiop;['wretyuiop[tyui
+                    <h3 class="h3 mb-3">EGERTON DAIRY PLANT</h3>
+                    <p class="">
+                        It is situated close to the university’s Science Complex and provides value addition
+                        services to milk and milk products from the 20,000 acre Ng’ongogeri Farm, which houses
+                        more than 500 dairy cattle.The dairy production unit collects close to 3,000 litres
+                        of milk daily.
                     </p>
                     <!-- Main heading -->
                 </div>
@@ -345,13 +199,13 @@
                             <!-- Info -->
                             <p class="card-text">
 
-                                     Yoghurt has a higher nutritional value than fresh milk due to the live cultures which
-                                    provide immune boosting to the digestive system.
-                                    A part from boosting immunity, it is a rich source of protein,
-                                    nutrients such as calcium, vitamin B2, vitamin B12, Potassium etc. Children and the elderly will benefit more from it
-                                    due to their enormous calcium requirement. Calcium is also important
-                                    in the prevention of bone loss in women and bone mass
-                                    development in all ages.
+                                Yoghurt has a higher nutritional value than fresh milk due to the live cultures which
+                                provide immune boosting to the digestive system.
+                                A part from boosting immunity, it is a rich source of protein,
+                                nutrients such as calcium, vitamin B2, vitamin B12, Potassium etc. Children and the elderly will benefit more from it
+                                due to their enormous calcium requirement. Calcium is also important
+                                in the prevention of bone loss in women and bone mass
+                                development in all ages.
                             </p>
 
 
@@ -448,101 +302,101 @@
         <hr class="mb-5">
 
 
-            <!-- Section: Contact us -->
-            <section class="my-5">
+        <!-- Section: Contact us -->
+        <section class="my-5">
 
-                <!-- Section heading -->
-                <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
-                <!-- Section description -->
-                <p class="text-center w-responsive mx-auto pb-5">For any inquiries, please feel free to contact us or reach out to our premises </p>
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
+            <!-- Section description -->
+            <p class="text-center w-responsive mx-auto pb-5">For any inquiries, please feel free to contact us or reach out to our premises </p>
 
-                <!-- Grid row -->
-                <div class="row">
+            <!-- Grid row -->
+            <div class="row">
 
-                    <!-- Grid column -->
-                    <div class="col-lg-5 mb-lg-0 mb-4">
+                <!-- Grid column -->
+                <div class="col-lg-5 mb-lg-0 mb-4">
 
-                        <!-- Contact us form  -->
-                        <div class="card">
+                    <!-- Contact us form  -->
+                    <div class="card">
 
-                            <div class="card-body">
-                                <!-- Heading -->
-                                <h4 class="dark-grey-text text-center">
-                                    <strong>Write to us</strong>
-                                </h4>
-                                <hr>
+                        <div class="card-body">
+                            <!-- Heading -->
+                            <h4 class="dark-grey-text text-center">
+                                <strong>Write to us</strong>
+                            </h4>
+                            <hr>
 
-                                <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
-                                <!-- Body -->
-                                <div class="md-form">
-                                    <i class="fa fa-user prefix grey-text"></i>
-                                    <input type="text" id="form-name" class="form-control">
-                                    <label for="form-name">Your name</label>
-                                </div>
-                                <div class="md-form">
-                                    <i class="fa fa-envelope prefix grey-text"></i>
-                                    <input type="text" id="form-email" class="form-control">
-                                    <label for="form-email">Your email</label>
-                                </div>
-                                <div class="md-form">
-                                    <i class="fa fa-tag prefix grey-text"></i>
-                                    <input type="text" id="form-Subject" class="form-control">
-                                    <label for="form-Subject">Subject</label>
-                                </div>
-                                <div class="md-form" >
-                                    <textarea class="form-control z-depth-1" id="message" rows="3"></textarea>
-                                    <label for="message">Write something to us here...</label>
+                            <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+                            <!-- Body -->
+                            <div class="md-form">
+                                <i class="fa fa-user prefix grey-text"></i>
+                                <input type="text" id="form-name" class="form-control">
+                                <label for="form-name">Your name</label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="text" id="form-email" class="form-control">
+                                <label for="form-email">Your email</label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fa fa-tag prefix grey-text"></i>
+                                <input type="text" id="form-Subject" class="form-control">
+                                <label for="form-Subject">Subject</label>
+                            </div>
+                            <div class="md-form" >
+                                <textarea class="form-control z-depth-1" id="message" rows="3"></textarea>
+                                <label for="message">Write something to us here...</label>
 
-                                </div>
-                                <div class="text-center">
-                                    <button class="btn btn-light-blue">Submit</button>
-                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-light-blue">Submit</button>
                             </div>
                         </div>
-                        <!-- End of Contact us form -->
-
                     </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-lg-7">
-
-                        <!-- Google map-->
-                        <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px"></div>
-                        <br>
-                        <!-- Buttons-->
-                        <div class="row text-center">
-                            <div class="col-md-4">
-                                <a class="btn-floating blue accent-1">
-                                    <i class="fa fa-map-marker"></i>
-                                </a>
-                                <p>P.O BOX 536-20255</p>
-                                <p class="mb-md-0">Egerton,Njoro</p>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="btn-floating blue accent-1">
-                                    <i class="fa fa-phone"></i>
-                                </a>
-                                <p>+ 2547000000000</p>
-                                <p class="mb-md-0">Mon - Fri, 8:00-5:00 PM</p>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="btn-floating blue accent-1">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                                <p>dairyplant.info@egerton.ac.ke</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Grid column -->
+                    <!-- End of Contact us form -->
 
                 </div>
-                <!-- Grid row -->
+                <!-- Grid column -->
 
-            </section>
-            <!-- Section: Contact us -->
+                <!-- Grid column -->
+                <div class="col-lg-7">
+
+                    <!-- Google map-->
+                    <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px"></div>
+                    <br>
+                    <!-- Buttons-->
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <a class="btn-floating blue accent-1">
+                                <i class="fa fa-map-marker"></i>
+                            </a>
+                            <p>P.O BOX 536-20255</p>
+                            <p class="mb-md-0">Egerton,Njoro</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn-floating blue accent-1">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            <p>+ 2547000000000</p>
+                            <p class="mb-md-0">Mon - Fri, 8:00-5:00 PM</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn-floating blue accent-1">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <p>dairyplant.info@egerton.ac.ke</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </section>
+        <!-- Section: Contact us -->
 
 
 
@@ -566,17 +420,9 @@
 <!--/.Footer-->
 
 <!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/bootstrap/jquery-3.3.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/bootstrap/mdb.min.js"></script>
-<!--Custom js file-->
-<script type="text/javascript" src="js/map.js"></script>
+<!-- SCRIPTS -->
+<div th:replace="template :: js-files"></div>
 
 </body>
 
-</html></html>
+</html>

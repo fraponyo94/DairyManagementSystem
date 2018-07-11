@@ -9,6 +9,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import team.project.dairymanagementsystem.model.DairyStaff;
 import team.project.dairymanagementsystem.model.enumerated.Gender;
 import team.project.dairymanagementsystem.model.RoleGroup;
+import team.project.dairymanagementsystem.model.enumerated.Roles;
 import team.project.dairymanagementsystem.service.DairyStaffService;
 
 @SpringBootApplication
@@ -30,7 +31,7 @@ public class DairymanagementsystemApplication {
 	@Bean
 	CommandLineRunner runner(){
 		return (String...args) -> {
-            dairyStaffService.addDairyStaff(new DairyStaff("1234","Admin","admin@info.co.ke",Gender.MALE,new RoleGroup("admin"),new BCryptPasswordEncoder().encode("12345")));
+            dairyStaffService.addDairyStaff(new DairyStaff("1234","Admin","admin@info.co.ke",Gender.MALE,new RoleGroup("Admin"),new BCryptPasswordEncoder().encode("12345")));
 		};
 	}
 }

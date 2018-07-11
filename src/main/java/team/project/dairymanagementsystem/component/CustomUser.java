@@ -9,7 +9,7 @@ import team.project.dairymanagementsystem.service.DairyStaffService;
 
 @Component
 public class CustomUser {
-
+                                                                                                                                                                                                                                    
       @Autowired
      private DairyStaffService dairyStaffService;
 

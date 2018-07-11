@@ -4,6 +4,7 @@ package team.project.dairymanagementsystem.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -14,6 +15,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.firewall.DefaultHttpFirewall;
+import org.springframework.security.web.firewall.HttpFirewall;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import team.project.dairymanagementsystem.component.CustomLogoutSuccessHandler;
 import team.project.dairymanagementsystem.component.CustomSuccessHandler;
@@ -44,13 +47,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         return userDetailsService;
     }
 
+
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/","/login").permitAll()
-                .anyRequest().authenticated()
+                .antMatchers("/admin/**").hasAuthority("Admin")
                 .and()
                 .formLogin()
                 .loginPage("/login")
@@ -65,19 +70,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .logoutSuccessUrl("/logout.html?logSucc=true")
                 .deleteCookies("JSESSIONID")
                 .permitAll();
-                //.and()
-                //.exceptionHandling()
-              //  .accessDeniedHandler(accessDeniedHandler);;
+                
     }
 
 
     @Override
     public void configure(WebSecurity web) throws Exception {
         web
+
                 .ignoring()
                 .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/img/**");
     }
 
+//mv
+//    @Bean
+//    public HttpFirewall defaultHttpFirewall() {
+//        return new DefaultHttpFirewall();
+//    }
 }
 
 
