@@ -6,3 +6,7 @@ function validateform() {
         return false;
     }
 }
+
+function alerting(){
+    alert("would like to continue with registration");
+}

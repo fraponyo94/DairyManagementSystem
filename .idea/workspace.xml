@@ -63,8 +63,8 @@
       <file leaf-file-name="formvalidation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/template/formvalidation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="23" />
+            <state relative-caret-position="153">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -73,8 +73,8 @@
       <file leaf-file-name="schoolVisitform.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/template/schoolVisitform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-807">
-              <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            <state relative-caret-position="255">
+              <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -434,12 +434,12 @@
       <workItem from="1455213561878" duration="1665000" />
       <workItem from="1455208564393" duration="2511000" />
       <workItem from="1455212619522" duration="69000" />
-      <workItem from="1531303866479" duration="5913000" />
+      <workItem from="1531303866479" duration="6439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108922000" />
+    <option name="totallyTimeSpent" value="109448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1374" height="736" extended-state="6" />
@@ -876,16 +876,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/template/formvalidation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="23" />
+        <state relative-caret-position="153">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/template/schoolVisitform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="255">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding />
         </state>
       </provider>
