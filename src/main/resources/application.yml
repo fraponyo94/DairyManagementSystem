@@ -1,13 +1,14 @@
 #==================================
 #= server port
 #===================================
+
 server:
   port: 8080
-
 
 # ===============================
 # = DATA SOURCE
 # ===============================
+
 spring:
   datasource:
     username:  root
@@ -16,9 +17,11 @@ spring:
     url:  jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1
+
 # ===============================
 # = JPA / HIBERNATE
 # ===============================
+
   jpa:
     show_sql: true
     format_sql: true
@@ -32,15 +35,14 @@ spring:
 # ===============================
 # = Thymeleaf configurations
 # ===============================
+
   thymeleaf:
       cache: false
       mode: LEGACYHTML5
 
-
 # ===============================
 # = Mail configurations
 # ===============================
-
 
   mail:
     host: smtp.gmail.com
@@ -50,9 +52,7 @@ spring:
     properties:
       mail:
         smtp:
-          socketFactory:
-            port: 25
-          ssl:
+          starttls:
             enable: true
             required: false
           auth: true
