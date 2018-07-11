@@ -31,6 +31,7 @@
         <th>status</th>
         <th>amount/daily</th>
         <th>cost/litre</th>
+        <th>details</th>
     </tr>
     </thead>
     <!--Table head-->
@@ -48,6 +49,11 @@
         <td th:text="${supplier.contract.status}"></td>
         <td th:text="${supplier.contract.amountPerDay}"></td>
         <td th:text="${supplier.contract.costPerLitre}"></td>
+        <td>
+            <form th:action="@{/contract/view-supplier/{id}(id=${supplier.nationalId})}">
+                <input type="submit" value="view">
+            </form>
+        </td>
     </tr>
     </tbody>
 </table>

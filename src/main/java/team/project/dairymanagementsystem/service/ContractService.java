@@ -3,11 +3,14 @@ package team.project.dairymanagementsystem.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.model.Contract;
+import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.model.enumerated.Status;
 import team.project.dairymanagementsystem.repository.ContractRepository;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 //import javax.mail.*;
 //import javax.mail.internet.*;
@@ -21,6 +24,8 @@ public class ContractService {
     private ContractRepository contractRepository;
     @Autowired
     private SupplierService supplierService;
+    @Autowired
+    private EmailService emailService;
 
     public Contract createContract(Contract contract) {
         return contractRepository.save(contract);
@@ -34,8 +39,20 @@ public class ContractService {
     public String approveContract(int id) {
         //check if contract is present
         Contract savedContract = checkContract(id);
+
         if (savedContract != null) {
             changeStatus(id, Status.APPROVED.toString());
+
+            //get supplier id
+            int supplierId = savedContract.getSupplierId();
+            //get supplier
+            Supplier supplier = supplierService.getSupplier(supplierId);
+            //get supplier email
+            String supplierEmail = supplier.getEmail_address();
+            Map<String,Object> variable = new HashMap<>();
+            variable.put("supplier", supplier);
+            emailService.sendEmail("mozdemilly@gmail.com",supplierEmail,"Contract Application Approval",variable,"emailtrial");
+
             return "Contract approved successfully";
         }
         return "Approve operation failed";
@@ -93,7 +110,4 @@ public class ContractService {
         return null;
     }
 
-    private void sendMail(String email){
-
-    }
 }
