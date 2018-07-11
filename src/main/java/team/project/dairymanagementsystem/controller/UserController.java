@@ -26,6 +26,7 @@ public class UserController {
         model.addAttribute("user", new User());
         model.addAttribute("id", id);
         model.addAttribute("error", message);
+        message = "";
         variable_id = id;
         return "createuser";
     }
