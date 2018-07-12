@@ -18,13 +18,15 @@ public class SupplierService {
     }
 
     public Supplier getContract(Integer id){
-         Optional<Supplier> optional = this.supplierRepository.findByNationalId(id);
-        return optional.orElse(null);
-
+        Supplier supplier = this.supplierRepository.findByNationalId(id);
+        return supplier;
     }
 
     public List<Supplier> getAllSuppliers(){
         return this.supplierRepository.findAll();
     }
 
+    public void deleteSupplier(int supplierId) {
+        supplierRepository.delete(supplierId);
+    }
 }

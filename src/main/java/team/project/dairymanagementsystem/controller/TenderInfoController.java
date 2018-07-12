@@ -17,27 +17,26 @@ import java.security.Principal;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/admin" )
 public class TenderInfoController {
 
     @Autowired
     private TenderInfoService tenderInfoService;
 
-    //Admin home
+   /* //Admin home
     @GetMapping("/")
     public ModelAndView adminHome(ModelAndView modelAndView){
 
         modelAndView.setViewName("admin/admin-home");
         return modelAndView;
-    }
+    }*/
 
-   /*Add Tender---GET----*/
+   /*Add Tender---GET----*//*
     @GetMapping("/tender-info")
     public ModelAndView addTenderInfo(ModelAndView modelAndView){
         modelAndView.addObject("tenderInfo",new TenderInfo());
         modelAndView.setViewName("admin/admin-home");
         return modelAndView;
-    }
+    }*/
 
     /*Add Tender -------POST-----*/
     @PostMapping("/tender/add")
@@ -59,25 +58,29 @@ public class TenderInfoController {
             tenderInfoService.addTenderInfo(tenderInfo);
             modelAndView.setViewName("redirect: /");
 
-
-
         }
 
            return modelAndView;
 
         }
 
+  //Go to tender information
+    @GetMapping("/tender/tender-info")
+    public ModelAndView tenderInfo(ModelAndView modelAndView){
+        modelAndView.addObject("tender", tenderInfoService.findActiveTender());
+        modelAndView.setViewName("tender/tender-info");
+        return  modelAndView;
+    }
 
-
-//    /*Show pdf*/
-    @RequestMapping(value = "/preview.pdf", method = RequestMethod.GET)
-    public String preivewSection(HttpServletRequest request,HttpSession httpSession, HttpServletResponse response) {
+   //   Access dairy tender description pdf
+    @RequestMapping(value = "/tender/tender-pdf", method = RequestMethod.GET)
+    public String getDairyTenderPdfDescription(HttpServletRequest request,HttpSession httpSession, HttpServletResponse response) {
 
 
         try {
             TenderInfo tenderInfo = tenderInfoService.findActiveTender();
             byte[] bytes = tenderInfo.getFileAttachment();
-            response.setHeader("Content-Disposition", "inline; filename=\"report.pdf\"");
+            response.setHeader("Content-Disposition", "inline; filename=\"dairy-tender.pdf\"");
             //response.setDateHeader("Expires", -1);
             response.setContentType("application/pdf");
             response.setContentLength(bytes.length);

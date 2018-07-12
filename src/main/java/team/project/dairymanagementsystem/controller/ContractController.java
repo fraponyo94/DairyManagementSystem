@@ -1,6 +1,10 @@
 package team.project.dairymanagementsystem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -32,7 +36,7 @@ public class ContractController {
     @GetMapping("/contract")
     public String addContract(Model model){
         model.addAttribute("supplier",new Supplier());
-        return "newcontract";
+        return "contract/ContractForm";
     }
 
     @GetMapping("/supplier/{national_id}")
@@ -48,13 +52,30 @@ public class ContractController {
         }catch (Exception e){
             e.printStackTrace();
         }
-        return "contractx";
+        return "redirect:/";
+    }
+    @GetMapping("/view/{national_id}")
+    public ResponseEntity<byte[]> getPDF1(@PathVariable(name = "national_id") Integer national_id) {
+
+
+        HttpHeaders headers = new HttpHeaders();
+
+        headers.setContentType(MediaType.parseMediaType("application/pdf"));
+        String filename = "pdf1.pdf";
+
+        headers.add("content-disposition", "inline;filename=" + filename);
+
+        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
+        byte[] pic = supplierService.getContract(national_id).getPic();
+        ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(pic, headers, HttpStatus.OK);
+        return response;
     }
 
     @PostMapping("/newcontract")
     public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file){
         supplier.getContract().setStatus(Status.PENDING.toString());
         supplier.getContract().setSupplierId(supplier.getNationalId());
+        System.out.println(supplier.getNationalId());
         try{
             byte[] bytes = file.getBytes();
             supplier.setPic(bytes);
@@ -63,14 +84,37 @@ public class ContractController {
         }
 
         this.supplierService.createSupplier(supplier);
-        return "welcome";
+        return "redirect:/";
     }
 
     @GetMapping("/contracts")
     public String getAllContracts(Model model){
         List<Contract> contracts = this.contractService.getAllContracts();
-        model.addAttribute("contract", contracts);
-        return "contractx";
+        model.addAttribute("contracts", contracts);
+        return "contract/contracts";
+    }
+    @PostMapping("/approve/{id}")
+    public String approveContract(@PathVariable(name = "id") int id) {
+        String msg = this.contractService.approveContract(id);
+        return "redirect:/contract/contracts";
+    }
+
+    @PostMapping("/deny/{id}")
+    public String denyContract(@PathVariable(name = "id") int id) {
+        String msg = this.contractService.denyContract(id);
+        return "redirect:/contract/contracts";
+    }
+
+    @PostMapping("/cancel/{id}")
+    public String cancelContract(@PathVariable(name = "id") int id) {
+        String msg = this.contractService.cancelContract(id);
+        return "redirect:/contract/contracts";
+    }
+
+    @PostMapping("/delete/{id}")
+    public String deleteContract(@PathVariable(name = "id") int id) {
+        String msg = this.contractService.deleteContract(id);
+        return "redirect:/contract/contracts";
     }
 
 
