@@ -18,13 +18,17 @@
     <link rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
     <!--custom css-->
     <link rel="stylesheet" th:href="@{/css/contracts.css}">
+    <!--toast-->
+    <link rel="stylesheet" th:href="@{/css/toast/toastr.css}">
+    <script th:src="@{/js/toast/toastr.js}"></script>
 </head>
 <body>
 
 <!--hidden link that shows an information message as a toast-->
 <!--/*@thymesVar id="message" type="java.lang.String"*/-->
 <div th:if="${message!=null}">
-    <a id="toast_link" class="btn btn-success" onclick="toastr.success('thanks');"></a>
+    <span id="toast_msg" th:text="${message}"></span>
+    <a id="toast_link"></a>
 </div>
 
 <!--/*@thymesVar id="contracts" type="java.util.List<team.project.dairymanagementsystem.model.Contract>"*/-->

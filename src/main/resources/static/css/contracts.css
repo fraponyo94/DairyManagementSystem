@@ -22,3 +22,6 @@ form {
 #toast_link{
     display: none;
 }
+#toast_msg{
+    display: none;
+}
