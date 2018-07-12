@@ -19,12 +19,14 @@ $(document).on('click', '#toast_link', function () {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     };
-    //get the information in the message
-    info = msg.substr(msg.indexOf(':') + 1, msg.length).trim();
-    if (msgType === "SUCCESS") {
-        toastr["success"](info);
-    } else if (msgType === "ERROR") {
-        toastr["error"](info);
+    if(msg !== ""){
+        //get the information in the message
+        info = msg.substr(msg.indexOf(':') + 1, msg.length).trim();
+        if (msgType === "SUCCESS") {
+            toastr["success"](info);
+        } else if (msgType === "ERROR") {
+            toastr["error"](info);
+        }
     }
 });
 $(document).ready(function () {

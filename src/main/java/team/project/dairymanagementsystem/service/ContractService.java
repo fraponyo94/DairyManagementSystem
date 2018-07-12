@@ -26,6 +26,7 @@ public class ContractService {
     private String SUCCESS = "SUCCESS: ";
 //    constant to identify error messages
     private String ERROR = "ERROR: ";
+    private String SAME_STATUS = "SAME_STATUS";
 
     public Contract createContract(Contract contract) {
         return contractRepository.save(contract);
@@ -41,22 +42,26 @@ public class ContractService {
         Contract savedContract = checkContract(id);
 
         if (savedContract != null) {
-            changeStatus(id, Status.APPROVED.toString());
+            if(!isSameStatus(savedContract, Status.APPROVED.toString())){
+                changeStatus(id, Status.APPROVED.toString());
 
-            //get supplier id
-            int supplierId = savedContract.getSupplierId();
-            //get supplier
-            Supplier supplier = supplierService.getSupplier(supplierId);
-            //get supplier email
-            String supplierEmail = supplier.getEmail_address();
-            Map<String, Object> variable = new HashMap<>();
-            variable.put("supplier", supplier);
-            String message = emailService.sendEmail(
-                    "mozdemilly@gmail.com", supplierEmail, "Contract Application Approval", variable, "emailtrial");
-            if (message.equalsIgnoreCase("SUCCESS")) {
-                return message+" Contract approved successfully";
+                //get supplier id
+                int supplierId = savedContract.getSupplierId();
+                //get supplier
+                Supplier supplier = supplierService.getSupplier(supplierId);
+                //get supplier email
+                String supplierEmail = supplier.getEmail_address();
+                Map<String, Object> variable = new HashMap<>();
+                variable.put("supplier", supplier);
+                String message = emailService.sendEmail(
+                        "mozdemilly@gmail.com", supplierEmail, "Contract Application Approval", variable, "emailtrial");
+                if (message.equalsIgnoreCase("SUCCESS")) {
+                    return message+" Contract approved successfully";
+                }else{
+                    return message+"Failed to notify supplier by email. Kindly notify him by phone";
+                }
             }else{
-                return message+"Failed to notify supplier by email. Kindly notify him by phone";
+                return SAME_STATUS;
             }
         }
         return ERROR + "Contract does not exist";
@@ -67,8 +72,12 @@ public class ContractService {
         //check if contract is present
         Contract savedContract = checkContract(id);
         if (savedContract != null) {
-            changeStatus(id, Status.DENIED.toString());
-            return SUCCESS + "Contract denied successfully";
+            if(!isSameStatus(savedContract, Status.DENIED.toString())){
+                changeStatus(id, Status.DENIED.toString());
+                return SUCCESS + "Contract denied successfully";
+            }else{
+                return SAME_STATUS;
+            }
         }
         return ERROR + "Contract does not exist";
     }
@@ -77,8 +86,12 @@ public class ContractService {
         //check if contract is present
         Contract savedContract = checkContract(id);
         if (savedContract != null) {
-            changeStatus(id, Status.CANCELLED.toString());
-            return SUCCESS + "Contract cancelled successfully";
+            if(!isSameStatus(savedContract, Status.CANCELLED.toString())){
+                changeStatus(id, Status.CANCELLED.toString());
+                return SUCCESS + "Contract cancelled successfully";
+            }else{
+                return SAME_STATUS;
+            }
         }
         return ERROR + "Contract does not exist";
     }
@@ -97,7 +110,7 @@ public class ContractService {
         return ERROR + "Contract does not exist";
     }
 
-    public Contract checkContract(int id) {
+    private Contract checkContract(int id) {
         //check if contract is present
         //return saved contract from the database
         return contractRepository.findOne(id);
@@ -109,6 +122,14 @@ public class ContractService {
             savedContract.setStatus(status);
             //save the contract back to the database
             contractRepository.save(savedContract);
+        }
+    }
+
+    private boolean isSameStatus(Contract contract, String status){
+        if(status.equalsIgnoreCase(contract.getStatus())){
+            return true;
+        }else{
+            return false;
         }
     }
 

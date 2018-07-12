@@ -70,40 +70,41 @@ public class ContractController {
 
     @GetMapping("/contracts")
     public String getAllContracts(Model model){
-        List<Contract> contracts = this.contractService.getAllContracts();
-        List<Supplier> suppliers = this.supplierService.getAllSuppliers();
-        model.addAttribute("contracts", contracts);
-        model.addAttribute("suppliers", suppliers);
-        model.addAttribute("message", message);
         //add an attribute to determine whether you came from this controller
-        model.addAttribute("managed_contract",managed_contract);
+//        model.addAttribute("managed_contract",managed_contract);
+        setModelAttributes(model, "");
         return "contracts";
     }
+
     @PostMapping("/approve/{id}")
-    public String approveContract(@PathVariable(name = "id") int id) {
+    public String approveContract(@PathVariable(name = "id") int id, Model model) {
+//        managed_contract = true;
         message = this.contractService.approveContract(id);
-        managed_contract = true;
-        return "redirect:/contract/contracts";
+        setModelAttributes(model,message);
+        return checkStatusChange(message);
     }
 
     @PostMapping("/deny/{id}")
-    public String denyContract(@PathVariable(name = "id") int id) {
+    public String denyContract(@PathVariable(name = "id") int id, Model model) {
+//        managed_contract = true;
         message = this.contractService.denyContract(id);
-        managed_contract = true;
-        return "redirect:/contract/contracts";
+        setModelAttributes(model, message);
+        return checkStatusChange(message);
     }
 
     @PostMapping("/cancel/{id}")
-    public String cancelContract(@PathVariable(name = "id") int id) {
+    public String cancelContract(@PathVariable(name = "id") int id, Model model) {
+//        managed_contract = true;
         message = this.contractService.cancelContract(id);
-        managed_contract = true;
-        return "redirect:/contract/contracts";
+        setModelAttributes(model, message);
+        return checkStatusChange(message);
     }
 
     @PostMapping("/delete/{id}")
-    public String deleteContract(@PathVariable(name = "id") int id) {
+    public String deleteContract(@PathVariable(name = "id") int id, Model model) {
+//        managed_contract = true;
         message = this.contractService.deleteContract(id);
-        managed_contract = true;
+        setModelAttributes(model, message);
         return "redirect:/contract/contracts";
     }
 
@@ -114,4 +115,19 @@ public class ContractController {
         return "viewSupplier";
     }
 
+    private void setModelAttributes(Model model, String message){
+        List<Contract> contracts = this.contractService.getAllContracts();
+        List<Supplier> suppliers = this.supplierService.getAllSuppliers();
+        model.addAttribute("contracts", contracts);
+        model.addAttribute("suppliers", suppliers);
+        model.addAttribute("message", message);
+    }
+
+    private String checkStatusChange(String message){
+        if(message.equals("SAME_STATUS")){
+            return "redirect:/contract/contracts";
+        }else{
+            return "contracts";
+        }
+    }
 }
