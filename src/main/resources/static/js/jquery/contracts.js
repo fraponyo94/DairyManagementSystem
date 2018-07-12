@@ -1,4 +1,5 @@
 var msg;
+var info;
 var msgType;
 $(document).on('click', '#toast_link', function () {
     toastr.options = {
@@ -18,14 +19,17 @@ $(document).on('click', '#toast_link', function () {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     };
+    //get the information in the message
+    info = msg.substr(msg.indexOf(':')+1,msg.length).trim();
     if (msgType === "SUCCESS") {
-        toastr["success"](msg);
+        toastr["success"](info);
     }else if(msgType === "ERROR"){
-        toastr["error"](msg);
+        toastr["error"](info);
     }
 });
 $(document).ready(function () {
     msg = $("#toast_msg").text();
+    //get the type of the message from the first word of the message
     msgType = msg.substr(0, msg.indexOf(':'));
     $('#myTable').DataTable();
     // msg_display.show();
