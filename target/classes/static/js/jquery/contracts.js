@@ -12,7 +12,7 @@ $(document).on('click', '#toast_link', function () {
         "onclick": null,
         "showDuration": 300,
         "hideDuration": 1000,
-        "timeOut": 5000,
+        "timeOut": 10000,
         "extendedTimeOut": 1000,
         "showEasing": "swing",
         "hideEasing": "linear",
@@ -21,11 +21,11 @@ $(document).on('click', '#toast_link', function () {
     };
     //get the information in the message
     info = msg.substr(msg.indexOf(':') + 1, msg.length).trim();
-        if (msgType === "SUCCESS") {
-            toastr["success"](info);
-        } else if (msgType === "ERROR") {
-            toastr["error"](info);
-        }
+    if (msgType === "SUCCESS") {
+        toastr["success"](info);
+    } else if (msgType === "ERROR") {
+        toastr["error"](info);
+    }
 });
 $(document).ready(function () {
     msg = $("#toast_msg").text();
