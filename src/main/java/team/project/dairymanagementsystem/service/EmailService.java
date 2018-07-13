@@ -3,6 +3,7 @@ package team.project.dairymanagementsystem.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 
+import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
@@ -25,7 +27,7 @@ public class EmailService {
 
 
     @Async
-    public void sendEmail(String from, String to, String subject, Map<String,Object> variables,String emailTemplate) {
+    public String sendEmail(String from, String to, String subject, Map<String, Object> variables, String emailTemplate) {
         MimeMessagePreparator messagePreparator = mimeMessage -> {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage,
                     MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED, StandardCharsets.UTF_8.name());
@@ -43,8 +45,13 @@ public class EmailService {
             messageHelper.setText(contentTemplate, true);
         };
 
-
-        mailSender.send(messagePreparator);
+        try {
+            mailSender.send(messagePreparator);
+            return "SUCCESS: ";
+        }catch(MailException ex){
+            ex.printStackTrace();
+            return "ERROR: ";
+        }
     }
 
 

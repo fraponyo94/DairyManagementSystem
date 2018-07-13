@@ -1,27 +1,23 @@
 #==================================
 #= server port
 #===================================
-
 server:
   port: 8080
+
 
 # ===============================
 # = DATA SOURCE
 # ===============================
-
 spring:
   datasource:
     username:  root
-    password: 2535
 
-    url:  jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
+    url:  jdbc:mysql://localhost:3306/dairy?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1
-
 # ===============================
 # = JPA / HIBERNATE
 # ===============================
-
   jpa:
     show_sql: true
     format_sql: true
@@ -31,31 +27,26 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-
 # ===============================
 # = Thymeleaf configurations
 # ===============================
-
   thymeleaf:
       cache: false
       mode: LEGACYHTML5
-
 # ===============================
-# = Mail configurations
+# = SPRING MAIL
 # ===============================
-
   mail:
-    host: smtp.gmail.com
-    port: 465
-    username:
-    password:
-    properties:
-      mail:
-        smtp:
-          starttls:
-            enable: true
-            required: false
-          auth: true
-          connectiontimeout: 5000
-          timeout: 5000
-          writetimeout: 5000
+      default-encoding: UTF-8
+      host: smtp.gmail.com
+      username: mozdemilly@gmail.com
+      password: 20463183
+      port: 587
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+      protocol: smtp
+      test-connection: false

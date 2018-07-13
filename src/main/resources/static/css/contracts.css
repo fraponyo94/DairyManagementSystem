@@ -19,3 +19,9 @@ th,td {
 form {
     display: inline-block;
 }
+#toast_link{
+    display: none;
+}
+#toast_msg{
+     display: none;
+ }
