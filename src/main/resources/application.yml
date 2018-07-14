@@ -10,9 +10,10 @@ server:
 # ===============================
 spring:
   datasource:
-    username:  root
+    username: root
+    password: 2535
 
-    url:  jdbc:mysql://localhost:3306/dairy?autoReconnect=true&useSSL=false
+    url:  jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1
 # ===============================

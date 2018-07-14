@@ -14,7 +14,6 @@ import team.project.dairymanagementsystem.service.SupplierService;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -33,7 +32,7 @@ public class ContractController {
     @GetMapping("/contract")
     public String addContract(Model model){
         model.addAttribute("supplier",new Supplier());
-        return "ContractForm";
+        return "contract/ContractForm";
     }
 
     @GetMapping("/supplier/{national_id}")
@@ -73,7 +72,7 @@ public class ContractController {
         //add an attribute to determine whether you came from this controller
 //        model.addAttribute("managed_contract",managed_contract);
         setModelAttributes(model, "");
-        return "contracts";
+        return "contract/contracts";
     }
 
     @PostMapping("/approve/{id}")
@@ -127,7 +126,7 @@ public class ContractController {
         if(message.equals("SAME_STATUS")){
             return "redirect:/contract/contracts";
         }else{
-            return "contracts";
+            return "contract/contracts";
         }
     }
 }

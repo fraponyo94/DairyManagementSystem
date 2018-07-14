@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "user")
-public class User implements Serializable{
+public class User extends Authenticate implements Serializable{
     @Id
     @Column(name = "nationalId", length = 15, nullable = false)
     private int nationalId;
@@ -72,4 +72,6 @@ public class User implements Serializable{
                 ", username='" + username + '\'' +
                 '}';
     }
+
+
 }
