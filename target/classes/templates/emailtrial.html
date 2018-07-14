@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contract Approval Confirmation</title>
+    <style>
+        .centered {
+            min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+            min-height: 100vh; /* These two lines are counted as one       */
+
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            font-style: italic;
+            color: aqua;
+        }
+    </style>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="d-flex justify-content-center align-items-center centered">
+    <!--Jumbotron-->
+    <!--/*@thymesVar id="supplier" type="team.project.dairymanagementsystem.model.Supplier"*/-->
+    <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2" th:object="${supplier}">
+
+        <!--Title-->
+        <h1 class="card-title h2-responsive mt-2 font-bold"><b>Confirmation of Approval for your Contract Application</b>
+        </h1>
+
+        <!--Text-->
+        <div class="d-flex justify-content-center" style="min-width: 40rem;">
+            <div class="card-text my-2" style="max-width: 43rem;">
+                <p>Congratulations! Your contract application with the details shown below has been successfully
+                    approved.<br>
+                    Kindly press the button below to create an account.<br></p>
+                <Label for="id">National Id: </Label> <span id="id" th:text="${supplier.nationalId}"></span><br>
+                <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
+                <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
+                <Label for="phone">Phone: </Label> <span id="phone" th:text="${supplier.phone}"></span><br>
+                <Label for="amount">Daily Amount: </Label> <span id="amount"
+                                                                 th:text="${supplier.contract.amountPerDay}"></span><br>
+                <Label for="cost">Litre Cost: </Label> <span id="cost"
+                                                             th:text="${supplier.contract.costPerLitre}"></span><br>
+            </div>
+        </div>
+
+        <hr class="my-4 rgba-white-light">
+
+        <form action="http://localhost:8080/create-user/{id}(id=${supplier.nationalId})}" th:method="POST">
+            <input class="btn btn-success btn-rounded" type="submit" value="Create Account">
+        </form>
+
+    </div>
+    <!--Jumbotron-->
+</div>
+
+</body>
+</html>

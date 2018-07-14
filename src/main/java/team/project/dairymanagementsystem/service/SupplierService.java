@@ -17,7 +17,7 @@ public class SupplierService {
         return this.supplierRepository.save(supplier);
     }
 
-    public Supplier getContract(Integer id){
+    public Supplier getSupplier(Integer id){
         Supplier supplier = this.supplierRepository.findByNationalId(id);
         return supplier;
     }
@@ -26,4 +26,7 @@ public class SupplierService {
         return this.supplierRepository.findAll();
     }
 
+    public void deleteSupplier(int supplierId) {
+        supplierRepository.delete(supplierId);
+    }
 }

@@ -14,7 +14,6 @@ import team.project.dairymanagementsystem.service.SupplierService;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -27,28 +26,28 @@ public class ContractController {
 
     @Autowired
     private SupplierService supplierService;
+    private String message;
+    private boolean managed_contract; //determines if the admin has just managed a contract
 
 
     @GetMapping("/contract")
     public String addContract(Model model){
         model.addAttribute("supplier",new Supplier());
-        return "newcontract";
+        return "contract/ContractForm";
     }
 
     @GetMapping("/supplier/{national_id}")
-    public String supplierDetails(@PathVariable(name = "national_id") Integer national_id, Model model){
-        List<Supplier> supplier = new ArrayList<>();
-        String UPLOADED_FOLDER = "/home/maxmilly/";
-        supplier.add(supplierService.getContract(national_id));
-        byte[] pic = supplierService.getContract(national_id).getPic();
+    public String supplierDetails(@PathVariable(name = "national_id") Integer national_id){
+        String UPLOADED_FOLDER = "C:\\Users\\enrico\\Desktop\\";
+        byte[] pic = supplierService.getSupplier(national_id).getPic();
 
         try{
-            Path path = Paths.get(UPLOADED_FOLDER+"moses.pdf");
+            Path path = Paths.get(UPLOADED_FOLDER+"try.pdf");
             Files.write(path, pic);
         }catch (Exception e){
             e.printStackTrace();
         }
-        return "contractx";
+        return "redirect:/";
     }
 
     @PostMapping("/newcontract")
@@ -57,7 +56,9 @@ public class ContractController {
         supplier.getContract().setSupplierId(supplier.getNationalId());
         System.out.println(supplier.getNationalId());
         try{
+            //get uploaded files in bytes
             byte[] bytes = file.getBytes();
+            //set bytes to corresponding supplier attributes
             supplier.setPic(bytes);
         }catch (Exception e){
             e.printStackTrace();
@@ -69,33 +70,64 @@ public class ContractController {
 
     @GetMapping("/contracts")
     public String getAllContracts(Model model){
-        List<Contract> contracts = this.contractService.getAllContracts();
-        model.addAttribute("contracts", contracts);
-        return "contracts";
+        //add an attribute to determine whether you came from this controller
+//        model.addAttribute("managed_contract",managed_contract);
+        setModelAttributes(model, "");
+        return "contract/contracts";
     }
+
     @PostMapping("/approve/{id}")
-    public String approveContract(@PathVariable(name = "id") int id) {
-        String msg = this.contractService.approveContract(id);
-        return "redirect:/contract/contracts";
+    public String approveContract(@PathVariable(name = "id") int id, Model model) {
+//        managed_contract = true;
+        message = this.contractService.approveContract(id);
+        setModelAttributes(model,message);
+        return checkStatusChange(message);
     }
 
     @PostMapping("/deny/{id}")
-    public String denyContract(@PathVariable(name = "id") int id) {
-        String msg = this.contractService.denyContract(id);
-        return "redirect:/contract/contracts";
+    public String denyContract(@PathVariable(name = "id") int id, Model model) {
+//        managed_contract = true;
+        message = this.contractService.denyContract(id);
+        setModelAttributes(model, message);
+        return checkStatusChange(message);
     }
 
     @PostMapping("/cancel/{id}")
-    public String cancelContract(@PathVariable(name = "id") int id) {
-        String msg = this.contractService.cancelContract(id);
-        return "redirect:/contract/contracts";
+    public String cancelContract(@PathVariable(name = "id") int id, Model model) {
+//        managed_contract = true;
+        message = this.contractService.cancelContract(id);
+        setModelAttributes(model, message);
+        return checkStatusChange(message);
     }
 
     @PostMapping("/delete/{id}")
-    public String deleteContract(@PathVariable(name = "id") int id) {
-        String msg = this.contractService.deleteContract(id);
+    public String deleteContract(@PathVariable(name = "id") int id, Model model) {
+//        managed_contract = true;
+        message = this.contractService.deleteContract(id);
+        setModelAttributes(model, message);
         return "redirect:/contract/contracts";
     }
 
+    @GetMapping("/view-supplier/{id}")
+    public String viewSupplier(@PathVariable(name = "id") int id, Model model) {
+        Supplier supplier = this.supplierService.getSupplier(id);
+        model.addAttribute("supplier", supplier);
+        return "viewSupplier";
+    }
 
+    private void setModelAttributes(Model model, String message){
+        List<Contract> contracts = this.contractService.getAllContracts();
+        List<Supplier> suppliers = this.supplierService.getAllSuppliers();
+        model.addAttribute("contracts", contracts);
+        model.addAttribute("suppliers", suppliers);
+        model.addAttribute("message", message);
+    }
+
+    private String checkStatusChange(String message){
+        if(message.equals("SAME_STATUS")){
+            return "redirect:/contract/contracts";
+        }else{
+            return "contract/contracts";
+        }
+    }
 }
