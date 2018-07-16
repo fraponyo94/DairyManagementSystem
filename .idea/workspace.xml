@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844993ca-db04-436f-88c3-d5afd9d54f1a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/contract.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/newcontract.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/js/contract.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Authenticate.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Authenticate.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Gender.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Gender.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Status.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Status.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/toast/toastr.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/toast/toastr.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/user.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/user.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/toast/toastr.js" afterPath="$PROJECT_DIR$/target/classes/static/js/toast/toastr.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/SecurityConfig.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/SecurityConfig.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Authenticate.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Authenticate.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/User.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Status.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Status.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/ContractService.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/ContractService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/SupplierService.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/SupplierService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" afterPath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" afterPath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/template.html" afterPath="$PROJECT_DIR$/target/classes/templates/template.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,21 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomSuccessHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -70,11 +39,63 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="53" column="14" lean-forward="false" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createuser.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createuser.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="329">
-              <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+              <caret line="61" column="74" lean-forward="true" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsernameCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/UsernameCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,40 +104,18 @@
       <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="38" column="58" lean-forward="false" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+            <state relative-caret-position="177">
+              <caret line="112" column="111" lean-forward="true" selection-start-line="112" selection-start-column="111" selection-end-line="112" selection-end-column="111" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/User.java">
+      <file leaf-file-name="SupplierService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DairyStaff.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="146">
+              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -147,12 +146,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/SupplierController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/tender/tender-info.html" />
         <option value="/Thymeleaf Templates Expressions Fragment (tender-info.html:682).thymes" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/template.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Authenticate.java" />
@@ -161,6 +158,12 @@
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/template.html" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/user.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/createuser.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login/login.html" />
       </list>
     </option>
   </component>
@@ -478,12 +481,12 @@
       <workItem from="1531555540578" duration="1235000" />
       <workItem from="1531563496090" duration="63000" />
       <workItem from="1531564112365" duration="192000" />
-      <workItem from="1531749362570" duration="1751000" />
+      <workItem from="1531749362570" duration="6233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17829000" />
+    <option name="totallyTimeSpent" value="22311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="4" width="1282" height="812" extended-state="6" />
@@ -505,7 +508,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31563422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -572,23 +575,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/TenderInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -777,20 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/UsernameCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE.jar!/org/springframework/security/core/GrantedAuthority.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -809,13 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -853,7 +818,7 @@
         <state relative-caret-position="1520">
           <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -896,23 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="91" column="41" lean-forward="true" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createuser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emailtrial.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -922,33 +870,91 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="52" column="149" lean-forward="false" selection-start-line="52" selection-start-column="149" selection-end-line="52" selection-end-column="149" />
+        <state relative-caret-position="146">
+          <caret line="52" column="73" lean-forward="true" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="48" column="182" lean-forward="false" selection-start-line="48" selection-start-column="182" selection-end-line="48" selection-end-column="182" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+        <state relative-caret-position="114">
+          <caret line="53" column="14" lean-forward="false" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="38" column="58" lean-forward="false" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+        <state relative-caret-position="146">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/UsernameCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="281">
+          <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="112" column="111" lean-forward="true" selection-start-line="112" selection-start-column="111" selection-end-line="112" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="61" column="74" lean-forward="true" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

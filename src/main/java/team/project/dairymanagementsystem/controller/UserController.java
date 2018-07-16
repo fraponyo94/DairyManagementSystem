@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import team.project.dairymanagementsystem.component.UsernameCheck;
 import team.project.dairymanagementsystem.model.User;
+import team.project.dairymanagementsystem.repository.SupplierRepository;
 import team.project.dairymanagementsystem.service.UserService;
 
 @Controller
@@ -14,6 +15,9 @@ import team.project.dairymanagementsystem.service.UserService;
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private SupplierRepository supplierRepository;
 
     private int variable_id;
 
@@ -37,7 +41,7 @@ public class UserController {
         user.setNationalId(id);
         System.out.println(user.getUsername());
         if (usernameCheck.getUser(user)!= null){
-            return "success";
+            return "welcome";
         }
         else {
             message = "Username or national id exist!";

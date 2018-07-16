@@ -37,19 +37,6 @@ public class ContractController {
         return "contract/ContractForm";
     }
 
-    @GetMapping("/supplier/{national_id}")
-    public String supplierDetails(@PathVariable(name = "national_id") Integer national_id){
-        String UPLOADED_FOLDER = "C:\\Users\\enrico\\Desktop\\";
-        byte[] pic = supplierService.getSupplier(national_id).getPic();
-
-        try{
-            Path path = Paths.get(UPLOADED_FOLDER+"try.pdf");
-            Files.write(path, pic);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return "redirect:/";
-    }
 
     @PostMapping("/newcontract")
     public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file, Model model){

@@ -9,7 +9,7 @@ pass2.focus(function () {
 });
 pass2.keyup(function () {
    var p = pass2.val();
-   if (p === password && username.val().length>3){
+   if ((p === password) && (username.val().length>3) && (p.length > 7)){
        signup.prop("disabled", false);
    } else {
        signup.prop("disabled", true);
@@ -20,7 +20,7 @@ pass1.focus(function () {
 });
 pass1.keyup(function () {
     var p = pass1.val();
-    if (p === password && username.val().length>3){
+    if ((p === password) && (username.val().length>3) && (p.length > 7)){
         signup.prop("disabled", false);
     } else {
         signup.prop("disabled", true);
@@ -29,7 +29,7 @@ pass1.keyup(function () {
 username.keyup(function () {
     var p = pass1.val();
     error.remove();
-    if (p === password && username.val().length>3){
+    if ((p === password) && (username.val().length>3) && (p.length > 7)){
         signup.prop("disabled", false);
     } else {
         signup.prop("disabled", true);
