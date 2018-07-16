@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844993ca-db04-436f-88c3-d5afd9d54f1a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/DairymanagementsystemApplication.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/DairymanagementsystemApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" afterPath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1615">
+            <state relative-caret-position="459">
               <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -59,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailtrial.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="emailtrial.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emailtrial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="136">
+              <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -482,7 +476,7 @@
       <workItem from="1531433061165" duration="2069000" />
       <workItem from="1531435343390" duration="1715000" />
       <workItem from="1531725709346" duration="7473000" />
-      <workItem from="1531737927666" duration="346000" />
+      <workItem from="1531737927666" duration="785000" />
     </task>
     <task id="LOCAL-00001" summary="ui renovation">
       <created>1529318474391</created>
@@ -516,7 +510,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257269000" />
+    <option name="totallyTimeSpent" value="257708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -876,21 +870,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emailtrial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
+        <state relative-caret-position="459">
           <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emailtrial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
