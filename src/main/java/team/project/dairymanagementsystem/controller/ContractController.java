@@ -27,7 +27,6 @@ public class ContractController {
     @Autowired
     private SupplierService supplierService;
     private String message;
-    private boolean managed_contract; //determines if the admin has just managed a contract
 
 
     @GetMapping("/contract")
@@ -74,15 +73,12 @@ public class ContractController {
 
     @GetMapping("/contracts")
     public String getAllContracts(Model model){
-        //add an attribute to determine whether you came from this controller
-//        model.addAttribute("managed_contract",managed_contract);
         setModelAttributes(model, "");
         return "contract/contracts";
     }
 
     @PostMapping("/approve/{id}")
     public String approveContract(@PathVariable(name = "id") int id, Model model) {
-//        managed_contract = true;
         message = this.contractService.approveContract(id);
         setModelAttributes(model,message);
         return checkStatusChange(message);
@@ -90,7 +86,6 @@ public class ContractController {
 
     @PostMapping("/deny/{id}")
     public String denyContract(@PathVariable(name = "id") int id, Model model) {
-//        managed_contract = true;
         message = this.contractService.denyContract(id);
         setModelAttributes(model, message);
         return checkStatusChange(message);
@@ -98,7 +93,6 @@ public class ContractController {
 
     @PostMapping("/cancel/{id}")
     public String cancelContract(@PathVariable(name = "id") int id, Model model) {
-//        managed_contract = true;
         message = this.contractService.cancelContract(id);
         setModelAttributes(model, message);
         return checkStatusChange(message);
@@ -106,7 +100,6 @@ public class ContractController {
 
     @PostMapping("/delete/{id}")
     public String deleteContract(@PathVariable(name = "id") int id, Model model) {
-//        managed_contract = true;
         message = this.contractService.deleteContract(id);
         setModelAttributes(model, message);
         return "redirect:/contract/contracts";
