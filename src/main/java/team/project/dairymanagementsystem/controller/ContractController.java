@@ -33,6 +33,7 @@ public class ContractController {
     @GetMapping("/contract")
     public String addContract(Model model){
         model.addAttribute("supplier",new Supplier());
+        model.addAttribute("error", "");
         return "contract/ContractForm";
     }
 
@@ -51,7 +52,7 @@ public class ContractController {
     }
 
     @PostMapping("/newcontract")
-    public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file){
+    public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file, Model model){
         supplier.getContract().setStatus(Status.PENDING.toString());
         supplier.getContract().setSupplierId(supplier.getNationalId());
         System.out.println(supplier.getNationalId());
@@ -63,9 +64,12 @@ public class ContractController {
         }catch (Exception e){
             e.printStackTrace();
         }
-
-        this.supplierService.createSupplier(supplier);
-        return "redirect:/";
+        if(this.supplierService.createSupplier(supplier)==null){
+            model.addAttribute("error", "National Id exists!");
+            return "contract/ContractForm";
+        }else {
+            return "redirect:/";
+        }
     }
 
     @GetMapping("/contracts")

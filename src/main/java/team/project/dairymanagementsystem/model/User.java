@@ -19,7 +19,7 @@ public class User extends Authenticate implements Serializable{
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "roleGroupId")
-    private RoleGroup roleGroup;
+    public RoleGroup roleGroup;
 
 
     public User() {

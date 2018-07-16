@@ -60,13 +60,10 @@
 
         <hr class="my-4 rgba-white-light">
 
-        <form action="http://localhost:8080/create-user/{id}(id=${supplier.nationalId})}" th:method="POST">
+        <form th:action="@{http://localhost:8080/create-user/{id}(id=${supplier.nationalId})}" th:method="GET">
             <input class="btn btn-success btn-rounded" type="submit" value="Create Account">
         </form>
 
-    </div>
-    <!--Jumbotron-->
-</div>
 
 </body>
 </html>

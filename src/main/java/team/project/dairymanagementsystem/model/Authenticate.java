@@ -3,7 +3,9 @@ package team.project.dairymanagementsystem.model;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
+import javax.persistence.*;
 import java.util.*;
+
 
 public class Authenticate {
     public Collection<? extends GrantedAuthority> getAuthorities(String userRole) {
@@ -17,5 +19,6 @@ public class Authenticate {
 
         return simpleGrantedAuthorities;
     }
+
 
 }

@@ -80,7 +80,9 @@
                     <h3 class="text-green mb-5 mt-4 font-weight-bold text-uppercase"><strong>Apply Contract</strong>
                     </h3>
                 </div>
-
+                <div>
+                    <p th:text="${error}" style="color: red" id="error"></p>
+                </div>
                 <div class="md-form">
                     <input type="number" id="form100" class="form-control" th:field="*{nationalId}">
                     <label for="form100">National Id</label>
@@ -176,6 +178,8 @@
 <script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" th:src="@{/js/bootstrap/mdb.min.js}"></script>
+<-- Contract jquery-->
+<script type="text/javascript" th:src="@{/js/contract.js}"></script>
 </body>
 
 </html>
