@@ -24,4 +24,8 @@ form {
 }
 #toast_msg{
      display: none;
- }
+}
+#contracts-dropdown{
+    background-color: green;
+    color: white;
+}

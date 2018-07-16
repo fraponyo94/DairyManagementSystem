@@ -36,6 +36,10 @@ public class ContractService {
         return contractRepository.findAll();
     }
 
+    public List<Contract> getContractsWithStatus(String status){
+        return contractRepository.findByStatus(status);
+    }
+
     //approve a contract
     public String approveContract(int id) {
         //check if contract is present

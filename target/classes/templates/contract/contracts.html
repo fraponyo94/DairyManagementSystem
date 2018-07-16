@@ -9,6 +9,7 @@
     <script th:src="@{/js/jquery/sort.js}"></script>
     <script th:src="@{/js/jquery/contracts.js}"></script>
     <!--boostrap-->
+    <script th:src="@{/js/bootstrap/popper.min.js}"></script>
     <script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" th:href="@{/css/bootstrap/font-awesome.min.css}">
@@ -21,6 +22,7 @@
     <!--toast-->
     <link rel="stylesheet" th:href="@{/css/toast/toastr.css}">
     <script th:src="@{/js/toast/toastr.js}"></script>
+    <link rel="stylesheet" href="../../static/css/contracts.css">
 </head>
 <body>
 
@@ -29,6 +31,20 @@
 <div th:if="${message!=null}">
     <span id="toast_msg" th:text="${message}"></span>
     <a id="toast_link"></a>
+</div>
+
+<!--dropdown-->
+<div class="btn-group">
+    <button id="contracts-dropdown" class="btn btn-primary btn-sm dropdown-success" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By Status</button>
+
+    <div class="dropdown-menu">
+        <a class="dropdown-item" th:href="@{/contract/approved}">Approved Contracts</a>
+        <a class="dropdown-item" th:href="@{/contract/pending}">Pending Contracts</a>
+        <a class="dropdown-item" th:href="@{/contract/denied}">Denied Contracts</a>
+        <a class="dropdown-item" th:href="@{/contract/cancelled}">Cancelled Contracts</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" th:href="@{/contract/contracts}">All Contracts</a>
+    </div>
 </div>
 
 <!--/*@thymesVar id="contracts" type="java.util.List<team.project.dairymanagementsystem.model.Contract>"*/-->

@@ -27,7 +27,7 @@ public class ContractController {
     @Autowired
     private SupplierService supplierService;
     private String message;
-
+    private String statusDisplay;  //determines the contracts to show according to their status
 
     @GetMapping("/contract")
     public String addContract(Model model){
@@ -59,6 +59,35 @@ public class ContractController {
 
     @GetMapping("/contracts")
     public String getAllContracts(Model model){
+        statusDisplay = null; //set field to null so that all contracts are displayed
+        setModelAttributes(model, "");
+        return "contract/contracts";
+    }
+
+    @GetMapping("/pending")
+    public String getPendingContracts(Model model){
+        statusDisplay = Status.PENDING.toString();
+        setModelAttributes(model, "");
+        return "contract/contracts";
+    }
+
+    @GetMapping("/denied")
+    public String getDeniedContracts(Model model){
+        statusDisplay = Status.DENIED.toString();
+        setModelAttributes(model, "");
+        return "contract/contracts";
+    }
+
+    @GetMapping("/cancelled")
+    public String getCancelledContracts(Model model){
+        statusDisplay = Status.CANCELLED.toString();
+        setModelAttributes(model, "");
+        return "contract/contracts";
+    }
+
+    @GetMapping("/approved")
+    public String getApprovedContracts(Model model){
+        statusDisplay = Status.APPROVED.toString();
         setModelAttributes(model, "");
         return "contract/contracts";
     }
@@ -99,11 +128,8 @@ public class ContractController {
     }
 
     private void setModelAttributes(Model model, String message){
-        List<Contract> contracts = this.contractService.getAllContracts();
-        List<Supplier> suppliers = this.supplierService.getAllSuppliers();
-        model.addAttribute("contracts", contracts);
-        model.addAttribute("suppliers", suppliers);
         model.addAttribute("message", message);
+        getByStatus(model, statusDisplay);
     }
 
     private String checkStatusChange(String message){
@@ -112,5 +138,19 @@ public class ContractController {
         }else{
             return "contract/contracts";
         }
+    }
+
+    private void getByStatus(Model model,String status){
+        List<Contract> contracts;
+        List<Supplier> suppliers;
+        if(status == null){
+            contracts = this.contractService.getAllContracts();
+            suppliers = this.supplierService.getAllSuppliers();
+        }else{
+            contracts = this.contractService.getContractsWithStatus(status);
+            suppliers = this.supplierService.getByStatus(status);
+        }
+        model.addAttribute("contracts", contracts);
+        model.addAttribute("suppliers", suppliers);
     }
 }
