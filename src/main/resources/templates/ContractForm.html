@@ -37,7 +37,12 @@
                 </div>
 
                 <div class="md-form">
-                    <input type="number" id="form100" class="form-control" th:field="*{nationalId}">
+                    <input name="national-id" id="form100" class="form-control" th:field="*{nationalId}"
+                           oninput="javascript: if (this.value.length > this.maxLength) windows.alert('number too big');"
+                           type = "number"
+                           maxlength = "8"
+                    />
+                    
                     <label for="form100">National Id</label>
                 </div>
 
@@ -58,7 +63,7 @@
                                 <div class="md-form">
                                     <input type="number" id="form103" class="form-control"
                                            th:field="*{contract.amountPerDay}">
-                                    <label for="form103">Amount Per Day</label>
+                                    <label for="form103">Amount Per Day in litres</label>
                                 </div>
                             </td>
                             <td>
@@ -95,13 +100,9 @@
                               th:field="*{contract.description}"></textarea>
                     <label for="form107">Description</label>
                 </div>
-                <label for="photo">Passport-sized Photo</label>
-                <div id="photo" class="md-form">
-                    <input type="file" accept="image/*" class="form-control" th:name="photo">
-                </div>
                 <label for="cv">C.V</label>
                 <div class="md-form" id="cv">
-                    <input type="file" accept="application/pdf" id="form108" class="form-control" th:name="file">
+                    <input type="file" id="form108" class="form-control" th:name="file">
                 </div>
 
                 <!--Grid row-->

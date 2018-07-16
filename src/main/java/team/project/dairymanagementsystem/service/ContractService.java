@@ -9,6 +9,9 @@ import team.project.dairymanagementsystem.repository.ContractRepository;
 import java.util.ArrayList;
 import java.util.List;
 
+//import javax.mail.*;
+//import javax.mail.internet.*;
+//import javax.activation.*;
 
 @Service
 public class ContractService {
@@ -88,5 +91,9 @@ public class ContractService {
             return contractRepository.save(savedContract);
         }
         return null;
+    }
+
+    private void sendMail(String email){
+
     }
 }
