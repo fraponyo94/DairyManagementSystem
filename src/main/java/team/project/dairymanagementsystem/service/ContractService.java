@@ -55,7 +55,7 @@ public class ContractService {
                 variable.put("supplier", supplier);
                 String message = emailService.sendEmail(
                         "mozdemilly@gmail.com", supplierEmail, "Contract Application Approval", variable, "emailtrial");
-                if (message.equalsIgnoreCase("SUCCESS")) {
+                if (message.equalsIgnoreCase(SUCCESS)) {
                     return message+" Contract approved successfully";
                 }else{
                     return message+"Failed to notify supplier by email. Kindly notify him by phone";

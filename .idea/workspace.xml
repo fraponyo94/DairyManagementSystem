@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844993ca-db04-436f-88c3-d5afd9d54f1a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/newcontract.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/contract.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/newcontract.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/js/contract.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Authenticate.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Authenticate.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Gender.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Gender.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Status.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/enumerated/Status.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/toast/toastr.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/toast/toastr.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/toast/toastr.js" afterPath="$PROJECT_DIR$/target/classes/static/js/toast/toastr.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/SecurityConfig.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/SecurityConfig.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Authenticate.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/Authenticate.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/User.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/User.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Status.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/enumerated/Status.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/ContractService.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/ContractService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/SupplierService.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/SupplierService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" afterPath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" afterPath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/template.html" afterPath="$PROJECT_DIR$/target/classes/templates/template.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +40,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CustomSuccessHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -37,21 +73,19 @@
       <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state relative-caret-position="329">
+              <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="38" column="58" lean-forward="false" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,7 +103,7 @@
       <file leaf-file-name="DairyStaff.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1634">
+            <state relative-caret-position="1520">
               <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -117,7 +151,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/tender/tender-info.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" />
         <option value="/Thymeleaf Templates Expressions Fragment (tender-info.html:682).thymes" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/template.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
@@ -127,6 +160,7 @@
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -165,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,8 +309,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -298,10 +332,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,45 +478,46 @@
       <workItem from="1531555540578" duration="1235000" />
       <workItem from="1531563496090" duration="63000" />
       <workItem from="1531564112365" duration="192000" />
+      <workItem from="1531749362570" duration="1751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16078000" />
+    <option name="totallyTimeSpent" value="17829000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="4" width="1282" height="805" extended-state="6" />
+    <frame x="-2" y="4" width="1282" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31563422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31563422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -538,14 +572,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1520">
@@ -695,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -755,13 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="1623" column="5" lean-forward="true" selection-start-line="1623" selection-start-column="5" selection-end-line="1623" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -838,7 +850,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1634">
+        <state relative-caret-position="1520">
           <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -884,18 +896,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="514">
+          <caret line="91" column="41" lean-forward="true" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -913,6 +917,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="68" column="6" lean-forward="false" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="52" column="149" lean-forward="false" selection-start-line="52" selection-start-column="149" selection-end-line="52" selection-end-column="149" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="38" column="58" lean-forward="false" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
