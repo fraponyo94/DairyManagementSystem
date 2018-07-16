@@ -114,6 +114,12 @@ public class ContractController {
         return "viewSupplier";
     }
 
+    @GetMapping("/create-user/{id}")
+    public String createUser(@PathVariable(name = "id") int nationalId){
+        System.out.println("NATIONAL ID" + nationalId);
+        return "welcome";
+    }
+
     private void setModelAttributes(Model model, String message){
         List<Contract> contracts = this.contractService.getAllContracts();
         List<Supplier> suppliers = this.supplierService.getAllSuppliers();
