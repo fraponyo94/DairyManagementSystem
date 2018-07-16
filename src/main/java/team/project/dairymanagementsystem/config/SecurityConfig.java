@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -44,12 +43,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         return userDetailsService;
     }
 
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .anyRequest().authenticated()
+                .antMatchers("/","/login","/tender/tender-info","/contract/contract","/tender/tender-pdf").permitAll()
+                .antMatchers("/admin/**","/contract/contracts").hasAuthority("Admin")
                 .and()
                 .formLogin()
                 .loginPage("/login")
@@ -64,19 +65,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .logoutSuccessUrl("/logout.html?logSucc=true")
                 .deleteCookies("JSESSIONID")
                 .permitAll();
-                //.and()
-                //.exceptionHandling()
-              //  .accessDeniedHandler(accessDeniedHandler);;
+                
     }
 
 
     @Override
     public void configure(WebSecurity web) throws Exception {
         web
+
                 .ignoring()
-                .antMatchers("/","/resources/**", "/static/**", "/css/**", "/js/**", "/img/**");
+                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/img/**");
     }
 
+//mv
+//    @Bean
+//    public HttpFirewall defaultHttpFirewall() {
+//        return new DefaultHttpFirewall();
+//    }
 }
 
 

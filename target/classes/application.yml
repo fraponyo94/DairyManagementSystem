@@ -10,7 +10,7 @@ server:
 # ===============================
 spring:
   datasource:
-    username:  root
+    username: root
 
     url:  jdbc:mysql://localhost:3306/dairy?autoReconnect=true&useSSL=false
     testWhileIdle: true

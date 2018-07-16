@@ -1,0 +1,41 @@
+git <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="contbody">
+
+
+<div class="contrform">
+    <h1> APPLY FOR CONTRACT </h1>
+    <br>
+    <br>
+    <form th:method="post" th:action="@{/contract/newcontract}" th:object="${supplier}" enctype="multipart/form-data">
+
+        <label id="national_id">National Id </label>
+        <input type="number" th:field="*{nationalId}"><br>
+        <label id="name">Name</label>
+        <input id="nameI" type="text" th:field="*{name}"><br>
+        <label id="email">email </label>
+        <input id="emaili"type="text" th:field="*{email_address}"><br>
+        <label id="amou">amount/daily </label>
+        <input id="amoui" type="number" th:field="*{contract.amountPerDay}"><br>
+        <label id="cost">cost per litre </label>
+        <input id="costi" type="number" th:field="*{contract.costPerLitre}"><br>
+        <label id="address">address</label>
+        <input id="addressI" th:type="text" th:field="*{address}"><br>
+        <label id="phone">phone</label>
+        <input id="phoneI" th:type="number" th:field="*{address}"><br>
+        <label id="description">description</label>
+        <textarea id="descriptionI" th:type="text" th:field="*{contract.description}" th:height="200px" th:width="300px"></textarea><br>
+        <label id="pic">PIC</label>
+        <input th:type="file" th:name="file" ><br>
+        <button id="submit" name="submit"> APPLY </button>
+    </form>
+</div>
+
+</body>
+</html>

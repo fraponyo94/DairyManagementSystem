@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+  <!--Common css files-->
+    <div th:template="head">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" th:href="@{/css/bootstrap/font-awesome.min.css}" href="/css/bootstrap/font-awesome.min.css" />
+        <!-- Bootstrap core CSS -->
+        <link href="/css/bootstrap/bootstrap.min.css" th:href="@{/css/bootstrap/bootstrap.min.css}" rel="stylesheet" />
+
+        <!-- Material Design Bootstrap -->
+        <link href="/css/bootstrap/mdb.min.css"  th:href="@{/css/bootstrap/mdb.min.css}" rel="stylesheet" />
+        <!-- Your custom styles  -->
+        <link href="/css/welcome.css"  th:href="@{/css/welcome.css}"  rel="stylesheet" />
+    </div>
+    <!--End of common css file-->
+</head>
+<body>
+    <!--Admin Navigation-->
+    <div th:fragment="admin-nav">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <strong>Welcome <label>Username</label></strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons ml-auto">
+                        <li class="nav-item mr-4">
+                            <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block text-uppercase">Tender</span></a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link"><span class="clearfix d-none d-sm-inline-block text-uppercase">Accounts</span></a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="/contract/contracts"><span class="clearfix d-none d-sm-inline-block text-uppercase">Contracts</span></a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="/admin/preview.pdf"><span class="clearfix d-none d-sm-inline-block text-uppercase">Reports</span></a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="/logout"><button  class="clearfix d-none d-sm-inline-block">Log out</button></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+<!--End of admin navigation-->
+
+<!--Welcome page Navigation-->
+    <div th:fragment="welcome-nav">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">Our products</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">About us</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tende"> <span class="clearfix d-none d-sm-inline-block">Contact us</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login"> <span class="clearfix d-none d-sm-inline-block">Staff Login</span></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+  <!--elcome page navigation-->
+
+    <!--Common js files-->
+ <div th:fragment="js-files">
+     <!-- JQuery -->
+     <script type="text/javascript" src="/js/bootstrap/jquery-3.3.1.min.js" th:src="@{/js/bootstrap/jquery-3.3.1.min.js}"></script>
+     <!-- Bootstrap tooltips -->
+     <script type="text/javascript" src="/js/bootstrap/popper.min.js" th:src="@{/js/bootstrap/popper.min.js}"></script>
+     <!-- Bootstrap core JavaScript -->
+     <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+     <!-- MDB core JavaScript -->
+     <script type="text/javascript" src="/js/bootstrap/mdb.min.js" th:src="@{/js/bootstrap/mdb.min.js}"></script>
+     <!--Custom js file-->
+     <script type="text/javascript" src="/js/map.js" th:src="@{/js/map.js}"></script>
+ </div>
+</body>
+</html>
