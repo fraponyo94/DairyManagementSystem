@@ -37,7 +37,7 @@ public class UserController {
         user.setNationalId(id);
         System.out.println(user.getUsername());
         if (usernameCheck.getUser(user)!= null){
-            return "success";
+            return "welcome";
         }
         else {
             message = "Username or national id exist!";
