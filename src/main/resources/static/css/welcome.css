@@ -42,3 +42,8 @@ body,
     background-color: rgb(143,188,143);
     background-size: cover;
 }
+#head1{
+    background: url("static/img/factory.jpeg");
+    height: 165px;
+
+}
