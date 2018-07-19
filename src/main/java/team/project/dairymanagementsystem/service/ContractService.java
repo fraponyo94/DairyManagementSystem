@@ -103,12 +103,26 @@ public class ContractService {
         return ERROR + "Contract does not exist";
     }
 
+    //cancel an approved contract
     public String cancelContract(int id) {
         //check if contract is present
         Contract savedContract = checkContract(id);
         if (savedContract != null) {
             if(!isSameStatus(savedContract, Status.CANCELLED.toString())){
                 changeStatus(id, Status.CANCELLED.toString());
+
+                //get current total amount of milk and cost for all approved contracts
+                TenderInfo tenderInfo = tenderInfoRepository.findFirstByIdOrderByIdDesc();
+                int milkAmount = tenderInfo.getMilkAmount();
+                int totalCost = tenderInfo.getTotalCost();
+
+                //subtract this contract's milk amount and cost from total milk and cost supplied by approved suppliers
+                milkAmount -= savedContract.getAmountPerDay();
+                totalCost -= savedContract.getCostPerLitre();
+
+                //save the tender information back to the database
+                tenderInfoRepository.save(tenderInfo);
+
                 return SUCCESS + "Contract cancelled successfully";
             }else{
                 return SAME_STATUS;
@@ -137,6 +151,7 @@ public class ContractService {
         return contractRepository.findOne(id);
     }
 
+    //changes the status of the contract of the passed id to the status passed
     private void changeStatus(int id, String status) {
         Contract savedContract = checkContract(id);
         if (savedContract != null) {
@@ -146,6 +161,7 @@ public class ContractService {
         }
     }
 
+    //checks whether this contract passed has the status passed
     private boolean isSameStatus(Contract contract, String status){
         if(status.equalsIgnoreCase(contract.getStatus())){
             return true;
@@ -153,5 +169,4 @@ public class ContractService {
             return false;
         }
     }
-
 }
