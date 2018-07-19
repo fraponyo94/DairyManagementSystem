@@ -69,8 +69,8 @@
 </nav>
 
 <!-- Section: form dark -->
-<section class="contract-form form-dark" style="width: 60%">
-    <form th:action="@{/contract/newcontract}" th:method="post" th:object="${supplier}" enctype="multipart/form-data">
+<section class="contractApplication-form form-dark" style="width: 60%">
+    <form th:action="@{/contractApplication/newcontract}" th:method="post" th:object="${supplier}" enctype="multipart/form-data">
         <!--Form without header-->
         <div class="card card-image" style="">
             <div class="text-green py-5 px-5 z-depth-4">
@@ -104,14 +104,14 @@
                             <td>
                                 <div class="md-form">
                                     <input type="number" id="form103" class="form-control"
-                                           th:field="*{contract.amountPerDay}">
+                                           th:field="*{contractApplication.amountPerDay}">
                                     <label for="form103">Amount Per Day</label>
                                 </div>
                             </td>
                             <td>
                                 <div class="md-form">
                                     <input type="number" id="form104" class="form-control"
-                                           th:field="*{contract.costPerLitre}">
+                                           th:field="*{contractApplication.costPerLitre}">
                                     <label for="form104">Cost Per Litre</label>
                                 </div>
                             </td>
@@ -139,7 +139,7 @@
 
                 <div class="md-form">
                     <textarea type="text" id="form107" class="md-textarea form-control" rows="5"
-                              th:field="*{contract.description}"></textarea>
+                              th:field="*{contractApplication.description}"></textarea>
                     <label for="form107">Description</label>
                 </div>
                 <label>C.V</label>
@@ -179,7 +179,7 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" th:src="@{/js/bootstrap/mdb.min.js}"></script>
 <-- Contract jquery-->
-<script type="text/javascript" th:src="@{/js/contract.js}"></script>
+<script type="text/javascript" th:src="@{/js/contractApplication.js}"></script>
 </body>
 
 </html>

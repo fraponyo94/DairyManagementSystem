@@ -31,7 +31,7 @@
     <a id="toast_link"></a>
 </div>
 
-<!--/*@thymesVar id="contracts" type="java.util.List<team.project.dairymanagementsystem.model.Contract>"*/-->
+<!--/*@thymesVar id="contracts" type="java.util.List<team.project.dairymanagementsystem.model.ContractApplication>"*/-->
 <table id="myTable" class="table table-bordered table-striped table-responsive-md" th:object="${contracts}"
        th:if="${contracts.size() > 0}">
 
@@ -53,11 +53,11 @@
     <!--/*@thymesVar id="supplier" type="team.project.dairymanagementsystem.model.Supplier"*/-->
     <tr th:each="supplier:${suppliers}">
         <td th:text="${supplier.nationalId}"></td>
-        <td th:text="${supplier.contract.status}"></td>
-        <td th:text="${supplier.contract.amountPerDay}"></td>
-        <td th:text="${supplier.contract.costPerLitre}"></td>
+        <td th:text="${supplier.contractApplication.status}"></td>
+        <td th:text="${supplier.contractApplication.amountPerDay}"></td>
+        <td th:text="${supplier.contractApplication.costPerLitre}"></td>
         <td>
-            <form th:action="@{/contract/view-supplier/{id}(id=${supplier.nationalId})}">
+            <form th:action="@{/contractApplication/view-supplier/{id}(id=${supplier.nationalId})}">
                 <input type="submit" value="view">
             </form>
         </td>

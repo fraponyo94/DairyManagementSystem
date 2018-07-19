@@ -5,15 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import team.project.dairymanagementsystem.model.Contract;
+import team.project.dairymanagementsystem.model.ContractApplication;
 import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.model.enumerated.Status;
 import team.project.dairymanagementsystem.service.ContractService;
 import team.project.dairymanagementsystem.service.SupplierService;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 
@@ -40,8 +37,8 @@ public class ContractController {
 
     @PostMapping("/newcontract")
     public String addContract(@ModelAttribute(name = "supplier") Supplier supplier, MultipartFile file, Model model){
-        supplier.getContract().setStatus(Status.PENDING.toString());
-        supplier.getContract().setSupplierId(supplier.getNationalId());
+        supplier.getContractApplication().setStatus(Status.PENDING.toString());
+        supplier.getContractApplication().setSupplierId(supplier.getNationalId());
         System.out.println(supplier.getNationalId());
         try{
             //get uploaded files in bytes
@@ -107,7 +104,7 @@ public class ContractController {
     }
 
     private void setModelAttributes(Model model, String message){
-        List<Contract> contracts = this.contractService.getAllContracts();
+        List<ContractApplication> contracts = this.contractService.getAllContracts();
         List<Supplier> suppliers = this.supplierService.getAllSuppliers();
         model.addAttribute("contracts", contracts);
         model.addAttribute("suppliers", suppliers);

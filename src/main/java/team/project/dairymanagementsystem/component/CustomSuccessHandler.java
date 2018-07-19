@@ -29,7 +29,7 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
 
         Collection < ? extends GrantedAuthority> authorities = authentication.getAuthorities();
         authorities.forEach(authority -> {
-            System.out.println(authority.getAuthority());
+           //
             if(authority.getAuthority().equals("Admin")) {
                 try {
                     redirectStrategy.sendRedirect(request, response, "admin/");

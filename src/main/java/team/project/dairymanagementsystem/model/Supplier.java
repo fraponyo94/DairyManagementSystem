@@ -32,22 +32,22 @@ public class Supplier  {
 
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "contract")
-    private Contract contract;
+    @JoinColumn(name = "contractApplication")
+    private ContractApplication contractApplication;
 
     public Supplier(){
 
     }
 
 
-    public Supplier(int nationalId, String name, String address, String email_address, int phone, byte[] pic, Contract contract) {
+    public Supplier(int nationalId, String name, String address, String email_address, int phone, byte[] pic, ContractApplication contractApplication) {
         this.nationalId = nationalId;
         this.name = name;
         this.address = address;
         this.email_address = email_address;
         this.phone = phone;
         this.pic = pic;
-        this.contract = contract;
+        this.contractApplication = contractApplication;
     }
 
     public int getNationalId() {
@@ -98,12 +98,12 @@ public class Supplier  {
         return pic;
     }
 
-    public Contract getContract() {
-        return contract;
+    public ContractApplication getContractApplication() {
+        return contractApplication;
     }
 
-    public void setContract(Contract contract) {
-        this.contract = contract;
+    public void setContractApplication(ContractApplication contractApplication) {
+        this.contractApplication = contractApplication;
     }
 
     @Override

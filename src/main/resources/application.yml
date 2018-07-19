@@ -11,7 +11,7 @@ server:
 spring:
   datasource:
     username: root
-    password: 2535
+    password: Dref@55_A
 
     url:  jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
     testWhileIdle: true

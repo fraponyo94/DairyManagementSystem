@@ -14,7 +14,7 @@ import team.project.dairymanagementsystem.service.UserService;
 public class CustomUser {
                                                                                                                                                                                                                                     
       @Autowired
-     private DairyStaffService dairyStaffService;
+      private DairyStaffService dairyStaffService;
 
       @Autowired
       private UserService userService;
