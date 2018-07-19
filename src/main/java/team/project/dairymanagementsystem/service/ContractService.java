@@ -1,11 +1,14 @@
 package team.project.dairymanagementsystem.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.model.Contract;
 import team.project.dairymanagementsystem.model.Supplier;
+import team.project.dairymanagementsystem.model.TenderInfo;
 import team.project.dairymanagementsystem.model.enumerated.Status;
 import team.project.dairymanagementsystem.repository.ContractRepository;
+import team.project.dairymanagementsystem.repository.TenderInfoRepository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,6 +21,8 @@ public class ContractService {
     ArrayList<Contract> contract = new ArrayList<>();
     @Autowired
     private ContractRepository contractRepository;
+    @Autowired
+    private TenderInfoRepository tenderInfoRepository;
     @Autowired
     private SupplierService supplierService;
     @Autowired
@@ -36,6 +41,10 @@ public class ContractService {
         return contractRepository.findAll();
     }
 
+    public List<Contract> getContractsWithStatus(String status){
+        return contractRepository.findByStatus(status);
+    }
+
     //approve a contract
     public String approveContract(int id) {
         //check if contract is present
@@ -44,6 +53,18 @@ public class ContractService {
         if (savedContract != null) {
             if(!isSameStatus(savedContract, Status.APPROVED.toString())){
                 changeStatus(id, Status.APPROVED.toString());
+
+                //get current total amount of milk and cost for all approved contracts
+                TenderInfo tenderInfo = tenderInfoRepository.findFirstByIdOrderByIdDesc();
+                int milkAmount = tenderInfo.getMilkAmount();
+                int totalCost = tenderInfo.getTotalCost();
+
+                //add this contract's milk amount and cost to the total amount and cost respectively
+                milkAmount += savedContract.getAmountPerDay();
+                totalCost += savedContract.getCostPerLitre();
+
+                //save this information back to the database
+                tenderInfoRepository.save(tenderInfo);
 
                 //get supplier id
                 int supplierId = savedContract.getSupplierId();
@@ -82,12 +103,26 @@ public class ContractService {
         return ERROR + "Contract does not exist";
     }
 
+    //cancel an approved contract
     public String cancelContract(int id) {
         //check if contract is present
         Contract savedContract = checkContract(id);
         if (savedContract != null) {
             if(!isSameStatus(savedContract, Status.CANCELLED.toString())){
                 changeStatus(id, Status.CANCELLED.toString());
+
+                //get current total amount of milk and cost for all approved contracts
+                TenderInfo tenderInfo = tenderInfoRepository.findFirstByIdOrderByIdDesc();
+                int milkAmount = tenderInfo.getMilkAmount();
+                int totalCost = tenderInfo.getTotalCost();
+
+                //subtract this contract's milk amount and cost from total milk and cost supplied by approved suppliers
+                milkAmount -= savedContract.getAmountPerDay();
+                totalCost -= savedContract.getCostPerLitre();
+
+                //save the tender information back to the database
+                tenderInfoRepository.save(tenderInfo);
+
                 return SUCCESS + "Contract cancelled successfully";
             }else{
                 return SAME_STATUS;
@@ -116,6 +151,7 @@ public class ContractService {
         return contractRepository.findOne(id);
     }
 
+    //changes the status of the contract of the passed id to the status passed
     private void changeStatus(int id, String status) {
         Contract savedContract = checkContract(id);
         if (savedContract != null) {
@@ -125,6 +161,7 @@ public class ContractService {
         }
     }
 
+    //checks whether this contract passed has the status passed
     private boolean isSameStatus(Contract contract, String status){
         if(status.equalsIgnoreCase(contract.getStatus())){
             return true;
@@ -132,5 +169,4 @@ public class ContractService {
             return false;
         }
     }
-
 }

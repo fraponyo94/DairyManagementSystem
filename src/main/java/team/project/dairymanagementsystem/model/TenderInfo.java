@@ -15,38 +15,44 @@ public class TenderInfo {
     private Long id;
 
     @NotEmpty(message = "Tender title required")
-    @Column(name = "TenderTitle",length = 100)
+    @Column(name = "TenderTitle", length = 100)
     private String tenderTitle;
 
-    @NotEmpty( message = "Please provide tender requirements")
+    @NotEmpty(message = "Please provide tender requirements")
     @Lob
-    @Column(name = "tenderrequirements",columnDefinition = "TEXT")
+    @Column(name = "tenderrequirements", columnDefinition = "TEXT")
     private String tenderRequirements;
 
 
-    @NotEmpty( message = "provide tender description")
+    @NotEmpty(message = "provide tender description")
     @Lob
-    @Column(name = "tenderdescription",columnDefinition = "TEXT")
+    @Column(name = "tenderdescription", columnDefinition = "TEXT")
     private String tenderDescription;
 
-     @Lob
+    @Lob
     @Column(name = "fileAttachment")
     private byte[] fileAttachment;
 
-     @Column(name="status")
-     private  boolean status;
+    @Column(name = "status")
+    private boolean status;
 
-    public TenderInfo(){
+    @Column(name = "milkAmount")
+    private int milkAmount;
+
+    @Column(name = "totalCost")
+    private int totalCost;
+
+    public TenderInfo() {
 
     }
 
-    public TenderInfo(String tenderTitle, String tenderRequirements,
-                      String tenderDescription, byte[] fileAttachment, boolean status) {
+    public TenderInfo(String tenderTitle, String tenderRequirements, String tenderDescription, byte[] fileAttachment, boolean status, int milkAmount) {
         this.tenderTitle = tenderTitle;
         this.tenderRequirements = tenderRequirements;
         this.tenderDescription = tenderDescription;
         this.fileAttachment = fileAttachment;
         this.status = status;
+        this.milkAmount = milkAmount;
     }
 
     public boolean isStatus() {
@@ -95,6 +101,22 @@ public class TenderInfo {
 
     public void setFileAttachment(byte[] fileAttachment) {
         this.fileAttachment = fileAttachment;
+    }
+
+    public int getMilkAmount() {
+        return milkAmount;
+    }
+
+    public void setMilkAmount(int milkAmount) {
+        this.milkAmount = milkAmount;
+    }
+
+    public int getTotalCost() {
+        return totalCost;
+    }
+
+    public void setTotalCost(int totalCost) {
+        this.totalCost = totalCost;
     }
 
     @Override
