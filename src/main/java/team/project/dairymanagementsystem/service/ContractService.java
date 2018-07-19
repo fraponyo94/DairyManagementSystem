@@ -1,11 +1,14 @@
 package team.project.dairymanagementsystem.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.model.Contract;
 import team.project.dairymanagementsystem.model.Supplier;
+import team.project.dairymanagementsystem.model.TenderInfo;
 import team.project.dairymanagementsystem.model.enumerated.Status;
 import team.project.dairymanagementsystem.repository.ContractRepository;
+import team.project.dairymanagementsystem.repository.TenderInfoRepository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,6 +21,8 @@ public class ContractService {
     ArrayList<Contract> contract = new ArrayList<>();
     @Autowired
     private ContractRepository contractRepository;
+    @Autowired
+    private TenderInfoRepository tenderInfoRepository;
     @Autowired
     private SupplierService supplierService;
     @Autowired
@@ -48,6 +53,18 @@ public class ContractService {
         if (savedContract != null) {
             if(!isSameStatus(savedContract, Status.APPROVED.toString())){
                 changeStatus(id, Status.APPROVED.toString());
+
+                //get current total amount of milk and cost for all approved contracts
+                TenderInfo tenderInfo = tenderInfoRepository.findFirstByIdOrderByIdDesc();
+                int milkAmount = tenderInfo.getMilkAmount();
+                int totalCost = tenderInfo.getTotalCost();
+
+                //add this contract's milk amount and cost to the total amount and cost respectively
+                milkAmount += savedContract.getAmountPerDay();
+                totalCost += savedContract.getCostPerLitre();
+
+                //save this information back to the database
+                tenderInfoRepository.save(tenderInfo);
 
                 //get supplier id
                 int supplierId = savedContract.getSupplierId();
