@@ -23,8 +23,9 @@ public class ContractApplication implements Serializable {
     @Column(name = "costPerLitre",nullable = false)
     private int costPerLitre;
 
-    @Column(name = "supply_history")
-    private String supply_history;
+    @Lob
+    @Column(name = "supply_history",columnDefinition="TEXT")
+    private String supplyHistory;
 
     @Lob
     @Column(name = "reasonforapplication",nullable = false,columnDefinition = "TEXT")
@@ -46,18 +47,17 @@ public class ContractApplication implements Serializable {
     public ContractApplication() {
     }
 
-    public ContractApplication(String status, int amountPerDay, int costPerLitre, String supply_history, String reasonForApplication, byte[] nationalId,
+    public ContractApplication(String status, int amountPerDay, int costPerLitre, String supplyHistory, String reasonForApplication, byte[] nationalId,
                                byte[] attachment, ContractApplicant applicant) {
         this.status = status;
         this.amountPerDay = amountPerDay;
         this.costPerLitre = costPerLitre;
-        this.supply_history = supply_history;
+        this.supplyHistory = supplyHistory;
         this.reasonForApplication = reasonForApplication;
         this.nationalId = nationalId;
         this.attachment = attachment;
         this.applicant = applicant;
     }
-
 
     public int getId() {
         return id;
@@ -91,12 +91,12 @@ public class ContractApplication implements Serializable {
         this.costPerLitre = costPerLitre;
     }
 
-    public String getSupply_history() {
-        return supply_history;
+    public String getSupplyHistory() {
+        return supplyHistory;
     }
 
-    public void setSupply_history(String supply_history) {
-        this.supply_history = supply_history;
+    public void setSupplyHistory(String supplyHistory) {
+        this.supplyHistory = supplyHistory;
     }
 
     public String getReasonForApplication() {

@@ -34,6 +34,8 @@ spring:
   thymeleaf:
       cache: false
       mode: LEGACYHTML5
+
+
 # ===============================
 # = SPRING MAIL
 # ===============================

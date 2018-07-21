@@ -1,3 +1,4 @@
+/*
 package team.project.dairymanagementsystem.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -5,7 +6,7 @@ import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.model.ContractApplication;
 import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.model.enumerated.Status;
-import team.project.dairymanagementsystem.repository.ContractRepository;
+import team.project.dairymanagementsystem.repository.ContractApplicationRepository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,7 +18,7 @@ public class ContractService {
 
     ArrayList<ContractApplication> contract = new ArrayList<>();
     @Autowired
-    private ContractRepository contractRepository;
+    private ContractApplicationRepository contractApplicationRepository;
     @Autowired
     private SupplierService supplierService;
     @Autowired
@@ -29,11 +30,11 @@ public class ContractService {
     private String SAME_STATUS = "SAME_STATUS";
 
     public ContractApplication createContract(ContractApplication contractApplication) {
-        return contractRepository.save(contractApplication);
+        return contractApplicationRepository.save(contractApplication);
     }
 
     public List<ContractApplication> getAllContracts() {
-        return contractRepository.findAll();
+        return contractApplicationRepository.findAll();
     }
 
     //approve a contract
@@ -113,7 +114,7 @@ public class ContractService {
     private ContractApplication checkContract(int id) {
         //check if contract is present
         //return saved contract from the database
-        return contractRepository.findOne(id);
+        return contractApplicationRepository.findOne(id);
     }
 
     private void changeStatus(int id, String status) {
@@ -121,7 +122,7 @@ public class ContractService {
         if (savedContract != null) {
             savedContract.setStatus(status);
             //save the contract back to the database
-            contractRepository.save(savedContract);
+            contractApplicationRepository.save(savedContract);
         }
     }
 
@@ -134,3 +135,4 @@ public class ContractService {
     }
 
 }
+*/

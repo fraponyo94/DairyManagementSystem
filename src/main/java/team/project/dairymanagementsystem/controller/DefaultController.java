@@ -22,8 +22,8 @@ public class DefaultController{
             tender = true;
          }
          modelAndView.addObject("tender",tender);
-        // modelAndView.setViewName("welcome");
-        modelAndView.setViewName("welcome1");
+        modelAndView.setViewName("welcome");
+
         return modelAndView;
     }
 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contract login</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500" >
+        <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" th:href="@{/css/bootstrap/bootstrap.min.css}" >
+        <link rel="stylesheet" href="/css/bootstrap/font-awesome.min.css" th:href="@{/css/bootstrap/font-awesome.min.css}" >
+        <link rel="stylesheet" href="/css/bootstrap/mdb.min.css" th:href="@{/css/bootstrap/mdb.min.css}">
+        <link rel="stylesheet" href="/css/contract/form-elements.css"  th:href="@{/css/contract/form-elements.css}">
+        <link rel="stylesheet" href="/css/contract/style.css"  th:href="@{/css/contract/style.css}">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" >
+</head>
+
+<body>
+<!-- Top menu -->
+<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand " href="#">Dairy</a>
+        </div>
+    </div>
+
+</nav>
+
+<!-- Top content -->
+<div class="main-content">
+
+    <div class="inner-bg">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 title">
+                    <h1><strong>Login</strong> to apply</h1>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3 form-box">
+                    <div class="form-bottom">
+                        <form role="form" action="/login" th:action="@{/templates/login}" method="POST" class="registration-form">
+
+                            <div align="center" th:if="${param.error}">
+                                <p class="card-text text-danger">
+                                    Email or Password invalid, please try again
+                                </p>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="sr-only" for="username">Username </label>
+                                <input type="text" name="username" placeholder="username..." class="form-first-name form-control" id="username">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="password">Password</label>
+                                <input type="password" name="password" placeholder="Password..." class="form-last-name form-control" id="password">
+                            </div>
+
+                            <button type="submit" class="btn">Log in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-5 or-account">
+                    <h1> or ..</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 create-account" >
+                    <h2>Have no account ? <strong><a href="#"> Create here</a></strong></h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Javascript -->
+<script src="/js/jquery/jquery-1.11.1.min.js" th:src="@{/js/jquery/jquery-1.11.1.min.js}"></script>
+<script src="/js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<script src="/js/jquery/jquery.backstretch.min.js" th:src="@{/js/jquery/jquery.backstretch.min.js}"></script>
+<script src="/js/scripts.js" th:src="@{/js/scripts.js}"></script>
+
+</body>
+</html>

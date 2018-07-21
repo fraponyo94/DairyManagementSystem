@@ -26,6 +26,9 @@ public class ContractApplicant {
     @Column(name = "pinNumber",nullable = false)
     private String pinNumber;
 
+    @Column(name="postalAddress" ,nullable=false)
+    private String postalAddress;
+
     @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinColumn(name = "account")
     private ContractApplicantAccount account;
@@ -38,14 +41,15 @@ public class ContractApplicant {
     public ContractApplicant() {
     }
 
-    public ContractApplicant(int nationalId, String firstName, String middleName, String lastName, String phoneNumber, String pinNumber,
-                             ContractApplicantAccount account, Set<ContractApplicant> application) {
+    public ContractApplicant(int nationalId, String firstName, String middleName, String lastName, String phoneNumber, String pinNumber, String postalAddress, ContractApplicantAccount account,
+                             Set<ContractApplicant> application) {
         this.nationalId = nationalId;
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.pinNumber = pinNumber;
+        this.postalAddress = postalAddress;
         this.account = account;
         this.application = application;
     }
@@ -114,6 +118,14 @@ public class ContractApplicant {
 
     public void setApplication(Set<ContractApplicant> application) {
         this.application = application;
+    }
+
+    public String getPostalAddress() {
+        return postalAddress;
+    }
+
+    public void setPostalAddress(String postalAddress) {
+        this.postalAddress = postalAddress;
     }
 
     @Override

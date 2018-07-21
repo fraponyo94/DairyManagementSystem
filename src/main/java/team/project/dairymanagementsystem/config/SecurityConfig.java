@@ -47,10 +47,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
+                /*.csrf().disable()*/
                 .authorizeRequests()
-                .antMatchers("/","/login","/tender/tender-info","/contract/contract","/tender/tender-pdf").permitAll()
-                .antMatchers("/admin/**","/contract/contracts").hasAuthority("Admin")
+                .antMatchers("/","/login","/contract/login","/tender/tender-info","/contract/contract","/tender/tender-pdf").permitAll()
+                .antMatchers("/admin/**").hasAuthority("Admin")
                 .and()
                 .formLogin()
                 .loginPage("/login")
@@ -75,14 +75,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         web
 
                 .ignoring()
-                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/img/**");
+                .antMatchers("/resources/***");
     }
 
-//mv
-//    @Bean
-//    public HttpFirewall defaultHttpFirewall() {
-//        return new DefaultHttpFirewall();
-//    }
+
 }
 
 

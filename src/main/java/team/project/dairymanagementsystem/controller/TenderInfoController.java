@@ -13,8 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-import java.security.Principal;
-import java.util.List;
 
 @Controller
 public class TenderInfoController {
@@ -67,7 +65,7 @@ public class TenderInfoController {
     @GetMapping("/tender/tender-info")
     public ModelAndView tenderInfo(ModelAndView modelAndView){
         modelAndView.addObject("tender", tenderInfoService.findActiveTender());
-        modelAndView.setViewName("tender/tender-info");
+        modelAndView.setViewName("contract/contract-info");
         return  modelAndView;
     }
 
