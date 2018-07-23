@@ -27,10 +27,12 @@ body,
 
 /* Navbar animation */
 .navbar {
-    background-color: rgb(34,139,34); }
+    background-color: black;
+text-decoration-color: white;
+}
 
 .top-nav-collapse {
-    background-color: rgb(143,188,143); }
+    background-color: gray; }
 
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
@@ -42,8 +44,11 @@ body,
     background-color: rgb(143,188,143);
     background-size: cover;
 }
-#head1{
-    background: url("static/img/factory.jpeg");
-    height: 165px;
+#KENYAN{
+    background-color: #69f0ae;
 
+
+}
+#img3{
+    alignment: center;
 }
