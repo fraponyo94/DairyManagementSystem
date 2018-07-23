@@ -40,3 +40,20 @@ spring:
       mode: LEGACYHTML5
 
 
+# ===============================
+# = SPRING MAIL
+# ===============================
+  mail:
+      default-encoding: UTF-8
+      host: smtp.gmail.com
+      username: mozdemilly@gmail.com
+      password: 20463183
+      port: 587
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+      protocol: smtp
+test-connection: false
