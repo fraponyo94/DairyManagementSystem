@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" th:href="@{/css/contractform.css}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dairy Portal Login</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/css/bootstrap/font-awesome.min.css" th:href="@{/css/bootstrap/font-awesome.min.css}">
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
+    <!-- Material Design Bootstrap -->
+    <link href="/css/bootstrap/mdb.min.css" rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
+    <!-- custom styles -->
+
+</head>
+
+<body class="green">
+<div>
+<nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">Our products</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">About us</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#tende"> <span class="clearfix d-none d-sm-inline-block">Contact us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login"> <span
+                            class="clearfix d-none d-sm-inline-block">Staff Login</span></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- Section: form dark -->
+<section class="contract-form form-dark" style="width: 60%">
+    <form th:action="@{/contract/newcontract}" th:method="post" th:object="${supplier}" enctype="multipart/form-data">
+        <!--Form without header-->
+        <div class="card card-image" style="">
+            <div class="text-green py-5 px-5 z-depth-4">
+
+                <!--Header-->
+                <div class="text-center">
+                    <h3 class="text-green mb-5 mt-4 font-weight-bold text-uppercase"><strong>Apply Contract</strong>
+                    </h3>
+                </div>
+                <div>
+                    <p th:text="${error}" style="color: red" id="error"></p>
+                </div>
+                <div class="md-form">
+                    <input name="national-id" id="form100" class="form-control" th:field="*{nationalId}"
+                           oninput="javascript: if (this.value.length > this.maxLength) windows.alert('number too big');"
+                           type = "number"
+                           maxlength = "8"
+                    />
+                    
+                    <label for="form100">National Id</label>
+                </div>
+
+                <div class="md-form">
+                    <input type="text" id="form101" class="form-control" th:field="*{name}">
+                    <label for="form101">Name</label>
+                </div>
+
+                <div class="md-form">
+                    <input type="email" id="form102" class="form-control" th:field="*{email_address}">
+                    <label for="form102">email</label>
+                </div>
+
+                <div class="md-form">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div class="md-form">
+                                    <input type="number" id="form103" class="form-control"
+                                           th:field="*{contract.amountPerDay}">
+                                    <label for="form103">Amount Per Day in litres</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="md-form">
+                                    <input type="number" id="form104" class="form-control"
+                                           th:field="*{contract.costPerLitre}">
+                                    <label for="form104">Cost Per Litre</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="md-form">
+                                    <input type="text" id="form105" class="form-control"
+                                           th:field="*{address}">
+                                    <label for="form105">Address</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="md-form">
+                                    <input type="number" id="form106" class="form-control"
+                                           th:field="*{phone}">
+                                    <label for="form106">Phone</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <div class="md-form">
+                    <textarea type="text" id="form107" class="md-textarea form-control" rows="5"
+                              th:field="*{contract.description}"></textarea>
+                    <label for="form107">Description</label>
+                </div>
+                <label>C.V</label>
+                <div class="md-form">
+                    <input type="file" id="form108" class="form-control" th:name="file">
+
+                </div>
+
+
+                <!--Grid row-->
+                <div class="row d-flex align-items-center">
+
+                    <!--Grid column-->
+                    <div class="text-center col-md-12 mt-3 mb-2">
+                        <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1">Apply</button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+
+            </div>
+        </div>
+        <!--/Form without header-->
+    </form>
+</section>
+</div>
+<!-- Section: form dark -->
+<!-- /Start your project here-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" th:src="@{/js/bootstrap/jquery-3.3.1.min.js}"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" th:src="@{/js/bootstrap/popper.min.js}"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" th:src="@{/js/bootstrap/mdb.min.js}"></script>
+<-- Contract jquery-->
+<script type="text/javascript" th:src="@{/js/contract.js}"></script>
+</body>
+
+</html>

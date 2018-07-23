@@ -4,19 +4,15 @@
 
     display: flex;
     align-items: center;
-    background-color: green;
 }
 label{
     font-weight: bold;
     font-style: italic;
-    color: black;
+    color: aqua;
 }
 form{
     display: inline-block;
 }
-.contrbox{
-    background-color: white;
-}
-.cardtext{
-    color: black;
+a {
+    color: #6129b3;
 }

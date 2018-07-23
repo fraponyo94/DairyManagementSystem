@@ -2,19 +2,17 @@ package team.project.dairymanagementsystem.model;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import team.project.dairymanagementsystem.model.enumerated.Gender;
 
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.util.*;
+
 
 
 @Entity
 @Table(name = "DairyStaff")
-public class DairyStaff {
+public class DairyStaff extends Authenticate{
 
     @Id
     @Column(name = "payrollid", length = 10, nullable = false,unique = true)
@@ -111,23 +109,4 @@ public class DairyStaff {
                 ", fullName='" + fullName + '\'' +
                 '}';
     }
-
-
-    //User roles to be used during authentication
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        List<SimpleGrantedAuthority> simpleGrantedAuthorities = new ArrayList<>();
-        Set<RoleGroup> roles = new HashSet<>();
-
-        roles.add(getRoleGroup());
-        roles.forEach(role -> {
-            simpleGrantedAuthorities.add(new SimpleGrantedAuthority(role.toString()));
-        });
-
-        return simpleGrantedAuthorities;
-    }
-
-
-
-
-
 }

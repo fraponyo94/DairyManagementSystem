@@ -13,6 +13,7 @@ public class Contract implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+
     @Column(name = "supplierId", nullable = false,unique = true)
     private int supplierId;
 
