@@ -33,6 +33,7 @@ public class CustomUser {
 
     public User getUser(String username){
 
+
         try {
             if ((dairyStaff = dairyStaffService.findByUsername(username)) != null) {
                 return new User(dairyStaff.getPayrollId(), dairyStaff.getPassword(),
