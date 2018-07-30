@@ -4,6 +4,8 @@ package team.project.dairymanagementsystem.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "contract_applications")
@@ -31,32 +33,70 @@ public class ContractApplication implements Serializable {
     @Column(name = "reasonforapplication",nullable = false,columnDefinition = "TEXT")
     private String reasonForApplication;
 
-    @Lob
-    @Column( name = "nationalId",nullable = false)
-    private  byte[] nationalId;
+    @Column(name="dateApplied")
+    @Temporal(TemporalType.DATE)
+    private Date dateApplied;
 
-    @Lob
-    @Column(name = "attachment")
-    private byte[] attachment;
+    @Column(name = "dateApproved")
+    @Temporal(TemporalType.DATE)
+    private Date dateApproved;
 
-    @ManyToOne
-    @JoinColumn(name = "applicant",nullable = false)
-    private ContractApplicant applicant;
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(nullable = false, name = "applicant")
+    private ContractApplicantAccount account;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY,mappedBy = "application")
+    private List<ContractApplicationDocuments> attachments;
 
 
     public ContractApplication() {
     }
 
-    public ContractApplication(String status, int amountPerDay, int costPerLitre, String supplyHistory, String reasonForApplication, byte[] nationalId,
-                               byte[] attachment, ContractApplicant applicant) {
+
+    public ContractApplication(String status, int amountPerDay, int costPerLitre, String supplyHistory, String reasonForApplication, Date dateApplied, Date dateApproved, ContractApplicantAccount account,
+                               List<ContractApplicationDocuments> attachments) {
         this.status = status;
         this.amountPerDay = amountPerDay;
         this.costPerLitre = costPerLitre;
         this.supplyHistory = supplyHistory;
         this.reasonForApplication = reasonForApplication;
-        this.nationalId = nationalId;
-        this.attachment = attachment;
-        this.applicant = applicant;
+        this.dateApplied = dateApplied;
+        this.dateApproved = dateApproved;
+        this.account = account;
+        this.attachments = attachments;
+    }
+
+    public Date getDateApplied() {
+        return dateApplied;
+    }
+
+    public void setDateApplied(Date dateApplied) {
+        this.dateApplied = dateApplied;
+    }
+
+    public Date getDateApproved() {
+        return dateApproved;
+    }
+
+    public void setDateApproved(Date dateApproved) {
+        this.dateApproved = dateApproved;
+    }
+
+    public ContractApplicantAccount getAccount() {
+        return account;
+    }
+
+    public void setAccount(ContractApplicantAccount account) {
+        this.account = account;
+    }
+
+    public List<ContractApplicationDocuments> getAttachments() {
+        return attachments;
+    }
+
+    public void setAttachments(List<ContractApplicationDocuments> attachments) {
+        this.attachments = attachments;
     }
 
     public int getId() {
@@ -105,30 +145,6 @@ public class ContractApplication implements Serializable {
 
     public void setReasonForApplication(String reasonForApplication) {
         this.reasonForApplication = reasonForApplication;
-    }
-
-    public byte[] getNationalId() {
-        return nationalId;
-    }
-
-    public void setNationalId(byte[] nationalId) {
-        this.nationalId = nationalId;
-    }
-
-    public byte[] getAttachment() {
-        return attachment;
-    }
-
-    public void setAttachment(byte[] attachment) {
-        this.attachment = attachment;
-    }
-
-    public ContractApplicant getApplicant() {
-        return applicant;
-    }
-
-    public void setApplicant(ContractApplicant applicant) {
-        this.applicant = applicant;
     }
 
     @Override

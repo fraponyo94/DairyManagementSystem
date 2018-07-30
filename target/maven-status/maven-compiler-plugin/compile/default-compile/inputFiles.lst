@@ -5,7 +5,9 @@
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/ContractService.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicationRepository.java
+/home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/RoleGroupRepository.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/UserRepository.java
+/home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/ContractApplicationDocuments.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/UserService.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java
@@ -21,10 +23,12 @@
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/component/UsernameCheck.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/TenderInfoRepository.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/config/CustomUserDetailsService.java
+/home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/ContractApplicantAccountService.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractApplicationController.java
+/home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/RoleGroupService.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/SupplierRepository.java
 /home/fred/Academics/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/DairyStaffRepository.java

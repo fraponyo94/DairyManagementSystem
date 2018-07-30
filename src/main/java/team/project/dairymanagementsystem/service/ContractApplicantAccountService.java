@@ -16,6 +16,7 @@ public class ContractApplicantAccountService {
         return contractApplicantAccountRepository.findByUsername(username);
     }
 
+
     /*Find account given email*/
     public ContractApplicantAccount findByEmail(String email){
         return contractApplicantAccountRepository.findByEmail(email);

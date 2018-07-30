@@ -1,50 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="844993ca-db04-436f-88c3-d5afd9d54f1a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicantAccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicantRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractApplicantAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/contract/form-elements.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/contract/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/jquery-1.11.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/jquery.backstretch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/placeholder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contract-account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contract-login.html" afterDir="false" />
+    <list default="true" id="39947265-da66-4a66-ad47-2e9483149320" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicationDocuments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/RoleGroupRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/RoleGroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/contract/apply-css/form-elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/contract/apply.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/apply/jquery-1.11.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/apply/jquery.backstretch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/apply/placeholder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/apply/retina-1.1.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/apply/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/pwstrength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contract-apply.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DairyManagementSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairymanagementsystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dairymanagementsystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/SupplierController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractApplicantAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractApplicantAccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/multi-step.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/multistep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/contract/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/contract/apply-css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/contract-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contract-account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/contract-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contract-login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tender/tender-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contract-info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/welcome1.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/contract/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/DefaultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/DefaultController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/TenderInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/TenderInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contract/contracts.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contract/contracts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/createuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/createuser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/newcontract.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/newcontract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/ContractController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/ContractApplicant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/ContractApplicant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/ContractApplicantAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/ContractApplicantAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/ContractApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/ContractApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contract/contract-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contract/contract-login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/tender/tender-info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/viewSupplier.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/viewSupplier.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/dairymanagementsystem-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dairymanagementsystem-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/dairymanagementsystem-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/dairymanagementsystem-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
@@ -62,8 +67,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/dairymanagementsystem$DairymanagementsystemApplication.ic" NAME="DairymanagementsystemApplication Coverage Results" MODIFIED="1532873271020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>team.project.dairymanagementsystem.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -81,62 +88,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefaultController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="85" column="54" lean-forward="true" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractApplicantAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractApplicantAccountService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractApplicantAccountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractApplicantAccountRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicantAccountRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contract-account.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-account.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="70" column="66" lean-forward="true" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
+            <state relative-caret-position="18">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -144,26 +100,90 @@
       <file leaf-file-name="contract-login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="86" column="97" selection-start-line="86" selection-start-column="97" selection-end-line="86" selection-end-column="97" />
+            <state relative-caret-position="287">
+              <caret line="71" column="109" selection-start-line="71" selection-start-column="109" selection-end-line="71" selection-end-column="109" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <file leaf-file-name="contract-account.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-account.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="123">
+              <caret line="30" column="4" selection-start-line="25" selection-start-column="60" selection-end-line="30" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+      <file leaf-file-name="ContractApplicantAccount.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="981">
-              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+            <state relative-caret-position="236">
+              <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+              <folding>
+                <element signature="e#1537#1538#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#1672#1673#0" expanded="true" />
+                <element signature="e#1729#1730#0" expanded="true" />
+                <element signature="e#1763#1764#0" expanded="true" />
+                <element signature="e#1836#1837#0" expanded="true" />
+                <element signature="e#1882#1883#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContractApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="48" column="90" selection-start-line="48" selection-start-column="90" selection-end-line="48" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contract-apply.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-apply.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="123" column="65" selection-start-line="123" selection-start-column="65" selection-end-line="123" selection-end-column="65" />
+              <folding>
+                <element signature="e#5804#5805#0" expanded="true" />
+                <element signature="e#5838#5839#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-633">
+              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -173,11 +193,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-        <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -188,57 +203,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Supplier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin-home.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/home.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/SupplierRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/newcontract.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderDescription.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/TenderDescriptionRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/TenderDescriptionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/adminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/TenderInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/EmailService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/UsernameCheck.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/welcome.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/tender/tender-info.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login/login.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/multi-step.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/multi-step.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicationRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicantRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractApplicationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicant.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/bootstrap/font-awesome.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contract-info.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/contractLogin.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contractLogin.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/example.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/contract-login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/welcome.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/template.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contract-login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicantAccountRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicationDocuments.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractApplicantAccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/template.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contract-login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contract-account.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contract-apply.html" />
       </list>
     </option>
   </component>
@@ -248,27 +226,23 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dairymanagementsystem" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
-    <option name="y" value="4" />
-    <option name="width" value="1282" />
-    <option name="height" value="700" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -276,36 +250,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -313,7 +284,7 @@
               <item name="dairymanagementsystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -322,7 +293,7 @@
               <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -331,7 +302,7 @@
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -340,7 +311,7 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -349,16 +320,7 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dairymanagementsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -367,41 +329,31 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -411,7 +363,7 @@
               <item name="contract" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -420,27 +372,7 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -448,69 +380,35 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dairymanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DairyManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DairyManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="table&#9;null&#9;null&#10;/tender-info&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MariaDB&#10;Oracle" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/static/css/bootstrap" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/js/jquery" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/css/contract" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/contract" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/admin" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
     </key>
   </component>
@@ -526,9 +424,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DairymanagementsystemApplication">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="DairymanagementsystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="team.project.dairymanagementsystem.DairymanagementsystemApplication" />
+      <module name="dairymanagementsystem" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team.project.dairymanagementsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -548,34 +457,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="team.project.dairymanagementsystem.repository in DairyManagementSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DairyManagementSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team.project.dairymanagementsystem.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="team.project.dairymanagementsystem.repository" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DairymanagementsystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="DairyManagementSystem" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="team.project.dairymanagementsystem.DairymanagementsystemApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -599,160 +480,73 @@
       <properties />
       <listeners />
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.DairymanagementsystemApplication" />
-      <item itemvalue="JUnit.team.project.dairymanagementsystem.repository in DairyManagementSystem" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.team.project.dairymanagementsystem.repository in DairyManagementSystem" />
+        <item itemvalue="Application.DairymanagementsystemApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="844993ca-db04-436f-88c3-d5afd9d54f1a" name="Default" comment="" />
-      <created>1528439187212</created>
+      <changelist id="39947265-da66-4a66-ad47-2e9483149320" name="Default" comment="" />
+      <created>1532448020016</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1528439187212</updated>
-      <workItem from="1528439189362" duration="990000" />
-      <workItem from="1528451576173" duration="648000" />
-      <workItem from="1528803570929" duration="314000" />
-      <workItem from="1528811504880" duration="4764000" />
-      <workItem from="1528881811436" duration="415000" />
-      <workItem from="1528882568737" duration="189000" />
-      <workItem from="1528894564181" duration="8899000" />
-      <workItem from="1528906161793" duration="7829000" />
-      <workItem from="1528951614298" duration="2078000" />
-      <workItem from="1528972613024" duration="10574000" />
-      <workItem from="1528995683665" duration="4968000" />
-      <workItem from="1529004063292" duration="2838000" />
-      <workItem from="1529044829753" duration="1494000" />
-      <workItem from="1529051648575" duration="1617000" />
-      <workItem from="1529080723587" duration="3028000" />
-      <workItem from="1529084308602" duration="2229000" />
-      <workItem from="1529140274371" duration="7232000" />
-      <workItem from="1529161982185" duration="116000" />
-      <workItem from="1529658496454" duration="1106000" />
-      <workItem from="1529742001454" duration="4584000" />
-      <workItem from="1529747716686" duration="6266000" />
-      <workItem from="1529754723879" duration="2033000" />
-      <workItem from="1529761119908" duration="3886000" />
-      <workItem from="1529768426938" duration="1070000" />
-      <workItem from="1529843631330" duration="1756000" />
-      <workItem from="1529917309267" duration="137000" />
-      <workItem from="1529917615844" duration="3593000" />
-      <workItem from="1529922748157" duration="5549000" />
-      <workItem from="1529934301243" duration="7748000" />
-      <workItem from="1529995939083" duration="1374000" />
-      <workItem from="1529998088653" duration="929000" />
-      <workItem from="1530094067645" duration="9728000" />
-      <workItem from="1530115898246" duration="5742000" />
-      <workItem from="1530163731232" duration="760000" />
-      <workItem from="1530359837588" duration="9000" />
-      <workItem from="1530360780827" duration="86000" />
-      <workItem from="1531323610076" duration="132000" />
-      <workItem from="1531373235603" duration="6013000" />
-      <workItem from="1531802627168" duration="428000" />
-      <workItem from="1531911633024" duration="2113000" />
-      <workItem from="1532000503598" duration="1421000" />
-      <workItem from="1532006159311" duration="4722000" />
-      <workItem from="1532162422577" duration="5007000" />
-      <workItem from="1532186067240" duration="9602000" />
+      <updated>1532448020016</updated>
+      <workItem from="1532448025077" duration="277000" />
+      <workItem from="1532624788735" duration="707000" />
+      <workItem from="1532679169454" duration="1951000" />
+      <workItem from="1532683652468" duration="1031000" />
+      <workItem from="1532863001059" duration="4912000" />
+      <workItem from="1532871327588" duration="2316000" />
+      <workItem from="1532922839940" duration="5250000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="team_project_dairymanagementsystem_repository_in_DairyManagementSystem - 2018.07.19 at 17h 17m 39s.xml">
-      <configuration name="team.project.dairymanagementsystem.repository in DairyManagementSystem" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="team_project_dairymanagementsystem_repository_in_DairyManagementSystem - 2018.07.19 at 17h 17m 56s.xml">
-      <configuration name="team.project.dairymanagementsystem.repository in DairyManagementSystem" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="team_project_dairymanagementsystem_repository_in_DairyManagementSystem - 2018.07.19 at 17h 18m 25s.xml">
-      <configuration name="team.project.dairymanagementsystem.repository in DairyManagementSystem" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47198000" />
+    <option name="totallyTimeSpent" value="16444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007576" side_tool="true" weight="0.34976152" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3219697" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.32954547" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.49837664" weight="0.32954547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3290938" />
+      <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3290938" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.39109698" />
-      <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2591415" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25984848" />
-      <window_info anchor="bottom" id="Problems" order="13" weight="0.3290938" />
-      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32954547" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3290938" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32750398" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3290938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
+      <window_info anchor="right" id="Bean Validation" order="5" weight="0.32954547" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5016234" side_tool="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette" order="2" />
-      <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info id="Image Layers" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.39109698" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2591415" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007576" side_tool="true" weight="0.34976152" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3290938" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Problems" order="13" weight="0.3290938" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3290938" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3219697" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25984848" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32954547" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32954547" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -760,360 +554,412 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Authenticate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery/contracts.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/homepage.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/map.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/multistep.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/CustomUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicantRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="38" lean-forward="true" selection-end-line="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/toast/toastr.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/multi-step.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome1.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery/sort.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/jquery/sort.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery/jquery-1.11.1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap/font-awesome.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/DairyStaff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/contract/form-elements.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/contract/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="65" column="79" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractApplicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
-            <element signature="e#3148#3149#0" expanded="true" />
-            <element signature="e#3198#3199#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2163">
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" lean-forward="true" selection-start-line="1" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createuser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="61" column="74" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="981">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        <state relative-caret-position="72">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="86" column="97" selection-start-line="86" selection-start-column="97" selection-end-line="86" selection-end-column="97" />
+        <state relative-caret-position="1566">
+          <caret line="87" column="83" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="40" column="103" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="103" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/contract/apply.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractApplicantAccountRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/static/css/contract/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractApplicantAccountService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/static/css/contract/apply-css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="85" column="54" lean-forward="true" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1643#1644#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="504">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1672#1673#0" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1882#1883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="111" selection-start-line="51" selection-start-column="111" selection-end-line="51" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-apply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4716">
+          <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="2" lean-forward="true" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicationDocuments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="114" column="3" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/pwstrength.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/contract/apply.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="51" column="111" selection-start-line="51" selection-start-column="111" selection-end-line="51" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/static/css/contract/apply-css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/static/css/contract/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#5143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractApplicantAccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="26" column="74" lean-forward="true" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractApplicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicationDocuments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+          <folding>
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1643#1644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="123" column="65" selection-start-line="123" selection-start-column="65" selection-end-line="123" selection-end-column="65" />
+          <folding>
+            <element signature="e#5804#5805#0" expanded="true" />
+            <element signature="e#5838#5839#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-633">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="71" column="109" selection-start-line="71" selection-start-column="109" selection-end-line="71" selection-end-column="109" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="70" column="66" lean-forward="true" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
+        <state relative-caret-position="123">
+          <caret line="30" column="4" selection-start-line="25" selection-start-column="60" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="48" column="90" selection-start-line="48" selection-start-column="90" selection-end-line="48" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/ContractApplicantAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1672#1673#0" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1882#1883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contract-apply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

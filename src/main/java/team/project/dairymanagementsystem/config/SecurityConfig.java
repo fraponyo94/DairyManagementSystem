@@ -47,25 +47,28 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                /*.csrf().disable()*/
-                .authorizeRequests()
-                .antMatchers("/","/login","/contract/login","/tender/tender-info","/contract/contract","/tender/tender-pdf").permitAll()
-                .antMatchers("/admin/**").hasAuthority("Admin")
+                    .csrf().disable()
+                    .authorizeRequests()
+                    .antMatchers("/","/login","/contract/login","/tender/tender-info","/contract/create-account","/contract/contract","/tender/tender-pdf").permitAll()
+                    .antMatchers("/admin/**").hasAuthority("Admin")
+                    .anyRequest().authenticated()
                 .and()
-                .formLogin()
-                .loginPage("/login")
-                .successHandler(successHandler)
-                .failureUrl("/login?error=true")
-                .permitAll()
+                    .formLogin()
+                    .loginPage("/login")
+                    .successHandler(successHandler)
+                    .failureUrl("/login?error=true")
+                    .permitAll()
                 .and()
-                .logout()
-                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                .logoutSuccessHandler(logoutSuccessHandler)
-                .invalidateHttpSession(true)
-                .logoutSuccessUrl("/logout.html?logSucc=true")
-                .deleteCookies("JSESSIONID")
-                .permitAll();
-
+                    .logout()
+                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                    .logoutSuccessHandler(logoutSuccessHandler)
+                    .invalidateHttpSession(true)
+                    .logoutSuccessUrl("/logout.html?logSucc=true")
+                    .deleteCookies("JSESSIONID")
+                    .permitAll()
+                .and()
+                    .exceptionHandling()
+                .accessDeniedPage("/");
                 
     }
 
@@ -73,9 +76,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     @Override
     public void configure(WebSecurity web) throws Exception {
         web
-
                 .ignoring()
-                .antMatchers("/resources/***");
+                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/img/**");
     }
 
 

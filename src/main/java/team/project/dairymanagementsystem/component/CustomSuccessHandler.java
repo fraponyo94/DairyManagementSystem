@@ -43,8 +43,16 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-            } else {
-                throw new IllegalStateException();
+            } else if(authority.getAuthority().equals("Applicant")) {
+                try{
+                    redirectStrategy.sendRedirect(request,response,"/contract/apply");
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+
+            }else{
+                    throw new IllegalStateException();
+
             }
         });
 

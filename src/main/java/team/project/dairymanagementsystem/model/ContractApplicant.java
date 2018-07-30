@@ -8,6 +8,9 @@ import java.util.Set;
 public class ContractApplicant {
 
     @Id
+    @Column(name = "id")
+    private String id;
+
     @Column(name = "NationalId",length = 15)
     private int nationalId;
 
@@ -23,35 +26,41 @@ public class ContractApplicant {
     @Column(name = "phoneNumber",length = 15,nullable = false)
     private String phoneNumber;
 
-    @Column(name = "pinNumber",nullable = false)
-    private String pinNumber;
-
+   
     @Column(name="postalAddress" ,nullable=false)
     private String postalAddress;
 
-    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-    @JoinColumn(name = "account")
+    @MapsId
+    @OneToOne(targetEntity = ContractApplicantAccount.class, fetch = FetchType.LAZY)
+    @JoinColumn(nullable = false,name = "account")
     private ContractApplicantAccount account;
 
-    @OneToMany
-    private Set<ContractApplicant> application;
+
 
 
 
     public ContractApplicant() {
     }
 
-    public ContractApplicant(int nationalId, String firstName, String middleName, String lastName, String phoneNumber, String pinNumber, String postalAddress, ContractApplicantAccount account,
-                             Set<ContractApplicant> application) {
+
+    public ContractApplicant(String id, int nationalId, String firstName, String middleName, String lastName, String phoneNumber, String postalAddress,
+                             ContractApplicantAccount account) {
+        this.id = id;
         this.nationalId = nationalId;
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        this.pinNumber = pinNumber;
         this.postalAddress = postalAddress;
         this.account = account;
-        this.application = application;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public int getNationalId() {
@@ -91,14 +100,7 @@ public class ContractApplicant {
     }
 
 
-    public String getPinNumber() {
-        return pinNumber;
-    }
-
-    public void setPinNumber(String pinNumber) {
-        this.pinNumber = pinNumber;
-    }
-
+    
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
@@ -112,13 +114,7 @@ public class ContractApplicant {
     }
 
 
-    public Set<ContractApplicant> getApplication() {
-        return application;
-    }
 
-    public void setApplication(Set<ContractApplicant> application) {
-        this.application = application;
-    }
 
     public String getPostalAddress() {
         return postalAddress;

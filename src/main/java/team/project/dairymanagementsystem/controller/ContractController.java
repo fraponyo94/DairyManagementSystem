@@ -19,8 +19,10 @@ import org.springframework.web.servlet.ModelAndView;
 import team.project.dairymanagementsystem.component.CustomSuccessHandler;
 import team.project.dairymanagementsystem.model.ContractApplicant;
 import team.project.dairymanagementsystem.model.ContractApplicantAccount;
+import team.project.dairymanagementsystem.model.RoleGroup;
 import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.service.ContractApplicantAccountService;
+import team.project.dairymanagementsystem.service.RoleGroupService;
 import team.project.dairymanagementsystem.service.SupplierService;
 
 import javax.servlet.ServletException;
@@ -31,6 +33,7 @@ import java.io.*;
 import java.util.Map;
 
 @Controller
+@RequestMapping("contract")
 public class ContractController {
 
     @Autowired
@@ -46,17 +49,20 @@ public class ContractController {
     private CustomSuccessHandler successHandler;
 
     @Autowired
+    private RoleGroupService roleService;
+
+    @Autowired
     private SupplierService supplierService;
 
     /* Contract login*/
-    @RequestMapping(value = "contract/login",method = RequestMethod.GET)
+    @RequestMapping(value = "/login",method = RequestMethod.GET)
     public ModelAndView contractLogin(ModelAndView modelAndView){
         modelAndView.setViewName("contract/contract-login");
         return  modelAndView;
     }
 
     /* Contract application account creation --GET---*/
-    @RequestMapping(value ="contract/create-account",method = RequestMethod.GET)
+    @RequestMapping(value ="/create-account",method = RequestMethod.GET)
     public ModelAndView contractAccountCreation(ModelAndView modelAndView){
         modelAndView.addObject("contractApplicantAccount",new ContractApplicantAccount());
         modelAndView.setViewName("contract/contract-account");
@@ -64,37 +70,61 @@ public class ContractController {
     }
 
     /*Contract application account creation ---POST---*/
-    @RequestMapping(value = "contract/create-account",method = RequestMethod.POST)
+    @RequestMapping(value = "/create-account",method = RequestMethod.POST)
     public void saveContractAccountCreation(@Valid  @ModelAttribute ContractApplicantAccount contractApplicantAccount, BindingResult result, ModelAndView modelAndView,
                                                     @RequestParam Map<String, String> requestParams, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         if(result.hasErrors()){
             modelAndView.setViewName("contract/contract-account");
         }else{
-             ContractApplicantAccount account = accountService.findByUsername(contractApplicantAccount.getUsername());
-             if(account != null){
-                 result.reject("username","Username already exist,please try another one or login");
-             }
+                 ContractApplicantAccount account = accountService.findByUsername(contractApplicantAccount.getUsername());
+                 if(account != null){
+                     result.reject("username","Username already exist,please try another one or login");
+                 }else{
+                         ContractApplicantAccount account1 = accountService.findByEmail(contractApplicantAccount.getEmail());
 
-             ContractApplicantAccount account1 = accountService.findByEmail(contractApplicantAccount.getEmail());
+                         if (account != null){
+                             result.reject("email","the email you provided already exists,please login or provide a different email");
+                         }
+                         else {
 
-             if (account != null){
-                 result.reject("email","the email you provided already exists,please login or provide a different email");
-             }
+                             /*Save the Account*/
+                             contractApplicantAccount.setPassword(passwordEncoder.encode(requestParams.get("password")));
+                             contractApplicantAccount.setEnabled(true);
 
-             /*Save the Account*/
-            contractApplicantAccount.setPassword(passwordEncoder.encode(requestParams.get("password")));
-            contractApplicantAccount.setEnabled(true);
-            accountService.saveAccount(contractApplicantAccount);
+                             //Check if role exists
+                             RoleGroup role = roleService.findRole("Applicant");
+                             if(role == null){
+                                 role = new RoleGroup("Applicant");
+                             }
 
-            /*Autologin configuration after account creation*/
-            Authentication authentication = authWithAuthManager(request,requestParams.get("username"),requestParams.get("password"));
+                             contractApplicantAccount.setRole(role);
+                             accountService.saveAccount(contractApplicantAccount);
 
-            /*Redirect after auto login*/
-            successHandler.onAuthenticationSuccess(request,response,authentication);
-        }
+                             /*Autologin configuration after account creation*/
+                             Authentication authentication = authWithAuthManager(request,requestParams.get("username"),requestParams.get("password"));
+
+                             /*Redirect after auto login*/
+                             successHandler.onAuthenticationSuccess(request,response,authentication);
+                         }
+
+                     }
+            }
     }
 
+    /*Apply for contract ---GET---*/
+    @RequestMapping(value = "/apply",method = RequestMethod.GET)
+    public ModelAndView applyContract(ModelAndView modelAndView){
+        modelAndView.addObject("contractApplication",new ContractApplicantAccount());
+        modelAndView.setViewName("contract/contract-apply");
+        return modelAndView;
+    }   
 
+
+    /*Applyy for contract -----POST------*/
+    @RequestMapping(value = "/apply}",method = RequestMethod.POST )
+    public ModelAndView saveContractApplication(ModelAndView modelAndView){
+        return modelAndView;
+    }
 
 
     @GetMapping("/getCv/{id}")

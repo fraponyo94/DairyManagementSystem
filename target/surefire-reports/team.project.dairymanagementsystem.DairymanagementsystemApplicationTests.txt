@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: team.project.dairymanagementsystem.DairymanagementsystemApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.834 sec - in team.project.dairymanagementsystem.DairymanagementsystemApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.636 sec - in team.project.dairymanagementsystem.DairymanagementsystemApplicationTests

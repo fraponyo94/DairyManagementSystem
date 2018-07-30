@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+   <!-- <div  th:replace="template :: contract-head"></div> -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply Contract</title>
+
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500" >
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" th:href="@{/css/bootstrap/bootstrap.min.css}" >
+    <link rel="stylesheet" href="/css/bootstrap/font-awesome.min.css" th:href="@{/css/bootstrap/font-awesome.min.css}" >
+
+    <link rel="stylesheet" href="/css/contract/form-elements.css"  th:href="@{/css/contract/form-elements.css}">
+    <link rel="stylesheet" href="/css/contract/apply.css"  th:href="@{/css/contract/apply.css}">
+
+ 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" > 
+
+</head>
+
+<body>
+
+<!-- Top menu -->
+<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Dairy</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+            <!-- <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a href="#"><strong>links</strong></a>
+                </li>
+                <li >
+                    <a href="#"><strong>Links</strong></a>
+                </li>
+                <li>
+                    <a href="#"><strong>Links</strong></a>
+                </li>
+                <li>
+                    <a href="#"><strong>Log out</strong></a>
+                </li>
+            </ul> -->
+
+            <!-- Right -->
+                    <ul class="navbar-nav  ml-auto">
+                        <li class="nav-item mr-4">
+                            <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block text-uppercase">Apply</span></a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link"><span class="clearfix d-none d-sm-inline-block text-uppercase">Status</span></a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block text-uppercase">Notification</span></a>
+                                                </li>
+                        
+
+                    </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Top content -->
+<div class="top-content">
+
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ">
+                    <h1><strong>Dairy Milk supply </strong> contract application</h1>
+                    <div class="description">
+                        <p>
+                            Requirement description goes here
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8  form-box">
+                    <form role="form" action="/contract/apply" th:action="@{/contract/apply}" th:object="${contractApplication}" method="post" class="registration-form">
+
+                        <fieldset>
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                    <h3>Step 1 / 4</h3>
+                                    <p class="text-center">Personal information</p>
+                                </div>
+
+                            </div>
+                            <div class="form-bottom">                                                  
+                           
+                                <div class="form-group has-feedback">
+                                    <label  for="national-id">National Id Number</label>
+                                    <input type="number" name="national-id" placeholder="National Id" th:field="*{applicant.nationalId}" class="national-id form-control" id="national-id" maxlength="15" required />
+
+                                     <div th:if="${#fields.hasErrors('applicant.nationalId')}"  th:errors="*{applicant.nationalId}"
+                                     class="validation-message alert alert-danger"></div>
+                                 </div> 
+                               
+                                <div class="form-group has-feedback">
+                                    <label  for="form-first-name">First name</label>
+                                    <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control"  th:field="*{applicant.firstName}"  id="form-first-name" />
+                                  
+                                   <div th:if="${#fields.hasErrors('applicant.firstName')}"  th:errors="*{applicant.firstName}"
+                                     class="validation-message alert alert-danger">                           
+                                     </div>
+                                </div>
+
+
+                                <div class="form-group has-feedback">
+                                    <label for="form-middle-name">Middle Name</label>
+                                    <input type="text" name="form-middle-name" placeholder="Middle Name..." class="form-middle-name form-control" th:field="*{applicant.middleName}" id="form-middle-name" />
+
+                                    <div th:if="${#fields.hasErrors('applicant.middleName')}"  th:errors="*{applicant.middleName}"
+                                     class="validation-message alert alert-danger">                           
+                                     </div>
+                                </div>
+
+
+                                <div class="form-group has-feedback">
+                                    <label  for="form-last-name">Last name</label>
+                                    <input type="text" name="form-last-name" placeholder="Last name" class="form-last-name form-control"  th:field="*{applicant.lastName}" id="form-last-name" />
+                                
+                                 <div th:if="${#fields.hasErrors('applicant.middleName')}"  th:errors="*{applicant.middleName}"
+                                     class="validation-message alert alert-danger">                
+                                     </div>
+                                </div>
+
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-next btn-primary form-control">Next</button>
+                                   </div>
+                                </div>
+                              
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                    <h3>Step 2 / 4</h3>
+                                    <p class="text-center">Contact information</p>
+                                </div>
+
+                            </div>
+                            <div class="form-bottom">
+
+                                <div class="form-group has-feedback">
+                                    <label for="phone-number">Phone Number</label>
+                                    <input type="text" name="phone-number" placeholder="phone-number" class="phone-number form-control" th:field="*{applicant.phoneNumber}"  id="phone-number" />
+
+                                    <div th:if="${#fields.hasErrors('applicant.phoneNumber')}"  th:errors="*{applicant.phoneNumber}"
+                                     class="validation-message alert alert-danger">                
+                                     </div>
+                                </div>
+
+                                <div class="form-group has-feedback">
+                                    <label for="postal-address">Postal Address</label>
+                                    <input type="text" name="postal-address" placeholder="Postal Address" class="postal-address form-control" th:field="*{applicant.postalAddress}" id="postal-address" />
+
+                                     <div th:if="${#fields.hasErrors('applicant.postalAddress')}"  th:errors="*{applicant.postalAddress}"
+                                     class="validation-message alert alert-danger">                
+                                     </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-3 ml-3 ">
+                                        <button type="button" class="btn btn-next form-control">Previous</button>                                    
+
+                                   </div>
+                                   <div class="col-md-3 ">                                       
+                                        <button type="button" class="btn btn-next btn-primary form-control">Next</button>
+
+                                   </div>
+                                </div>
+                                
+                               
+                            </div>
+                        </fieldset>
+
+                        <fieldset th:each="applicat: *{application}">
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                    <h3>Step 3 / 4</h3>
+                                    <p class="text-center">Contract details</p>
+                                </div>
+
+                            </div>
+                            <div class="form-bottom">
+
+                                <div class="form-group has-feedback">
+                                    <label for="amount-per-day">Amount per day</label>
+                                    <input type="text" name="amount-per-day" placeholder="How many litres are you able to supply per day" th:field="*{applicat.amountPerDay}" class="amount-per-day form-control" id="amount-per-day">
+                                     
+                                     <div th:if="${#fields.hasErrors('applicat.amountPerDay')}"  th:errors="*{applicat.amountPerDay}"
+                                     class="validation-message alert alert-danger">  
+                                     </div>
+
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label  for="cost-per-litre">Cost per litre</label>
+                                    <input type="text" name="cost-per-litre" placeholder="Cost Per Litre" class="cost-per-litre form-control" th:field="*{applicat.costPerLitre}" id="cost-per-litre">
+
+                                    <div th:if="${#fields.hasErrors('applicat.costPerLitre')}"  th:errors="*{applicat.costPerLitre}"
+                                     class="validation-message alert alert-danger">  
+                                     </div>
+                                </div>
+
+                                <div class="form-group has-feedback">
+                                    <label for="previous-history">Previous Supply History</label>
+                                    <textarea name="previous-history" placeholder="Describe your previous milk supply history"
+                                              class="previous-history form-control" th:field="*{applicat.supplyHistory}" id="previous-history"></textarea>
+
+                                    <div th:if="${#fields.hasErrors('applicat.supplyHistory')}"  th:errors="*{applicat.supplyHistory}"
+                                     class="validation-message alert alert-danger">  
+                                     </div>
+                                </div>
+
+                                <div class="form-group has-feedback">
+                                    <label for="reason">Reason for Application</label>
+                                    <textarea name="reason" placeholder="Why are you applying for this milk supply contract?" th:field="*{applicat.reasonForApplication}"
+                                              class="reason form-control" id="reason"></textarea>
+
+                                  <div th:if="${#fields.hasErrors('applicat.reasonForApplication')}"  th:errors="*{applicat.reasonForApplication}"
+                                     class="validation-message alert alert-danger"> </div>
+
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-3 ml-3 ">
+                                        <button type="button" class="btn btn-next form-control">Previous</button>                                    
+
+                                   </div>
+                                   <div class="col-md-3 ">                                       
+                                        <button type="button" class="btn btn-next btn-primary form-control">Next</button>
+
+                                   </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                    <h3>Step 4 / 4</h3>
+                                    <p class="text-center">Attachments</p>
+                                </div>
+
+                            </div>
+                            <div class="form-bottom">
+                                <div class="form-group">
+                                    
+                              <!-- Upload application form-->
+                                <label for="application-form">Upload application form</label>
+                                <input type="file" multiple="false" allowTypes="/(\.|\/)(pdf)$/" id="application-form" name="file" class="form-control" />
+
+                                </div>                                
+
+                                <div class="row">
+                                    <div class="col-md-3 ml-3 ">
+                                        <button type="button" class="btn btn-next form-control">Previous</button>                                    
+
+                                   </div>
+                                   <div class="col-md-3 ">                                       
+                                        <button type="button" class="btn btn-next btn-primary form-control">Submit</button>
+
+                                   </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- Javascript -->
+<!-- <div th:replace="template :: apply-js"></div>
+ --><script src="/js/jquery/jquery-1.11.1.js" th:src="@{/js/jquery/jquery-1.11.1.js}"></script>
+<script src="/js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<script src="/js/scripts.js" th:src="@{/js/scripts.js}"></script>
+
+
+
+</body>
+
+</html>

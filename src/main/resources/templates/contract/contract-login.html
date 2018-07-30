@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-        <meta charset="utf-8">
+     <!-- <div  th:replace="template :: head1"></div>
+ -->
+    <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contract login</title>
-
-        <!-- CSS -->
+    
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500" >
         <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" th:href="@{/css/bootstrap/bootstrap.min.css}" >
         <link rel="stylesheet" href="/css/bootstrap/font-awesome.min.css" th:href="@{/css/bootstrap/font-awesome.min.css}" >
-        <!--<link rel="stylesheet" href="/css/bootstrap/mdb.min.css" th:href="@{/css/bootstrap/mdb.min.css}">-->
-        <link rel="stylesheet" href="/css/contract/form-elements.css"  th:href="@{/css/contract/form-elements.css}">
-        <link rel="stylesheet" href="/css/contract/style.css"  th:href="@{/css/contract/style.css}">
 
-        <!-- Font -->
+        <link rel="stylesheet" href="/css/contract/form-elements.css"  th:href="@{/css/contract/form-elements.css}">
+        <link rel="stylesheet" href="/css/contract/apply.css"  th:href="@{/css/contract/apply.css}">
+
+        <
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" >
+ <title>login to contract</title>
 </head>
 
 <body>
 <!-- Top menu -->
-<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
-    <div class="container">
+<nav class="navbar navbar-inverse " role="navigation">
+    <div class="container-fluid " style="margin-left: 2em;">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand " href="#">Dairy</a>
+           <!-- Brand name -->
+            <a class="navbar-brand " href="/">Dairy</a>
         </div>
     </div>
-
 </nav>
 
 <!-- Top content -->
 <div class="main-content">
 
-    <div class="inner-bg">
+    <div class="">
         <div class="container">
 
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 title">
+            <div class="row">              
+                <div class="col-md-8 ">
                     <h1><strong>Login</strong> to apply</h1>
                 </div>
+               
             </div>
 
-            <div class="row">
+            <div class="row">           
 
-                <div class="col-sm-6 col-sm-offset-3 form-box">
+                <div class="col-md-6  form-box">
                     <div class="form-bottom">
                         <form role="form" action="/login" th:action="@{/login}" method="POST" class="registration-form">
 
@@ -70,23 +66,34 @@
                                 <input type="password" name="password" placeholder="Password..." class="form-last-name form-control" id="password">
                             </div>
 
-                            <button type="submit" class="btn">Log in</button>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-next btn-primary form-control">Login</button>
+                                </div>
+                            </div>
+
                         </form>
                     </div>
                 </div>
+
+            
             </div>
 
             <div class="row">
-                <div class="col-sm-2 col-sm-offset-5 or-account">
+               
+                <div class="col-md-2">
                     <h1> or ..</h1>
                 </div>
+             
             </div>
 
             <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 create-account" >
+                
+                <div class="col-md-6 " >
                     <h2>Have no account ? <strong><a href="/contract/create-account" th:href="@{/contract/create-account}"> Create here</a></strong></h2>
                 </div>
-
+               
             </div>
         </div>
     </div>
@@ -94,10 +101,11 @@
 </div>
 
 <!-- Javascript -->
-<script src="/js/jquery/jquery-1.11.1.min.js" th:src="@{/js/jquery/jquery-1.11.1.min.js}"></script>
-<script src="/js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
-<script src="/js/jquery/jquery.backstretch.min.js" th:src="@{/js/jquery/jquery.backstretch.min.js}"></script>
-<script src="/js/scripts.js" th:src="@{/js/scripts.js}"></script>
+<!-- <div th:replace="template :: apply-js"></div> -->
+<script src="./static/js/jquery/jquery-1.11.1.js" th:src="@{/js/jquery/jquery-1.11.1.js}"></script>
+<script src="./static/js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<script src="./static/js/jquery/jquery.backstretch.js" th:src="@{/js/jquery/jquery.backstretch.js}"></script>
+<script src="./static/js/scripts.js" th:src="@{/js/scripts.js}"></script>
 
 </body>
 </html>

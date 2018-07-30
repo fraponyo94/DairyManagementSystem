@@ -18,6 +18,27 @@
         <link href="/css/welcome.css"  th:href="@{/css/welcome.css}"  rel="stylesheet" />
     </div>
     <!--End of common css file-->
+
+
+  <!--  Common css for contract application&ndash;&gt;
+    <div th:template="head1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        &lt;!&ndash; CSS &ndash;&gt;
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500" >
+        <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" th:href="@{/css/bootstrap/bootstrap.min.css}" >
+        <link rel="stylesheet" href="/css/bootstrap/font-awesome.min.css" th:href="@{/css/bootstrap/font-awesome.min.css}" >
+
+        <link rel="stylesheet" href="/css/contract/form-elements.css"  th:href="@{/css/contract/form-elements.css}">
+        <link rel="stylesheet" href="/css/contract/style.css"  th:href="@{/css/contract/style.css}">
+
+        &lt;!&ndash; Font &ndash;&gt;
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" >
+
+    </div>
+-->
 </head>
 <body>
     <!--Admin Navigation-->
@@ -26,7 +47,7 @@
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <strong>Welcome <label>Username</label></strong>
                 </a>
 
@@ -42,7 +63,7 @@
 
 
                     <!-- Right -->
-                    <ul class="navbar-nav nav-flex-icons ml-auto">
+                    <ul class="navbar-nav  ml-auto">
                         <li class="nav-item mr-4">
                             <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block text-uppercase">Tender</span></a>
                         </li>
@@ -77,8 +98,8 @@
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
+                <a class="navbar-brand" href="/">
+                    <strong>DAIRY PLANT</strong>
                 </a>
 
                 <!-- Collapse -->
@@ -135,6 +156,13 @@
      <script type="text/javascript" src="/js/bootstrap/mdb.min.js" th:src="@{/js/bootstrap/mdb.min.js}"></script>
      <!--Custom js file-->
      <script type="text/javascript" src="/js/map.js" th:src="@{/js/map.js}"></script>
+ </div>
+
+ <div th:fragment="apply-js">     
+    <script src="/js/jquery/jquery-1.11.1.js" th:src="@{/js/jquery/jquery-1.11.1.js}"></script>
+    <script src="/js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+    <script src="/js/scripts.js" th:src="@{/js/scripts.js}"></script>
+     
  </div>
 </body>
 </html>
