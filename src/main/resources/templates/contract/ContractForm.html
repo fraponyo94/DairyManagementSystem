@@ -85,8 +85,7 @@
                 </div>
                 <div class="md-form">
                     <input name="national-id" id="form100" class="form-control" th:field="*{nationalId}"
-                           oninput="javascript: if (this.value.length > this.maxLength) windows.alert('number too big');"
-                           type = "number"
+                           type = "tel"
                            maxlength = "8"
                     />
                     
@@ -131,7 +130,7 @@
                             </td>
                             <td>
                                 <div class="md-form">
-                                    <input type="number" id="form106" class="form-control"
+                                    <input type="tel" maxlength = "8" id="form106" class="form-control"
                                            th:field="*{phone}">
                                     <label for="form106">Phone</label>
                                 </div>
@@ -147,14 +146,7 @@
                               th:field="*{contract.description}"></textarea>
                     <label for="form107">Description</label>
                 </div>
-                <label>C.V</label>
-                <div class="md-form">
-                    <input type="file" id="form108" class="form-control" th:name="file">
 
-                </div>
-
-
-                <!--Grid row-->
                 <div class="row d-flex align-items-center">
 
                     <!--Grid column-->

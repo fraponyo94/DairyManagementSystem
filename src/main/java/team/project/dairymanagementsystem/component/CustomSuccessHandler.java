@@ -1,3 +1,4 @@
+
 package team.project.dairymanagementsystem.component;
 
 import org.springframework.security.core.Authentication;
