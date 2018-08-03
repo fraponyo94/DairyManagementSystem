@@ -27,9 +27,11 @@ public class ContractService {
     private SupplierService supplierService;
     @Autowired
     private EmailService emailService;
-//    constant to identify success messages
+    @Autowired
+    private TenderInfoService tenderInfoService;
+    //    constant to identify success messages
     private String SUCCESS = "SUCCESS: ";
-//    constant to identify error messages
+    //    constant to identify error messages
     private String ERROR = "ERROR: ";
     private String SAME_STATUS = "SAME_STATUS";
 
@@ -41,7 +43,7 @@ public class ContractService {
         return contractRepository.findAll();
     }
 
-    public List<Contract> getContractsWithStatus(String status){
+    public List<Contract> getContractsWithStatus(String status) {
         return contractRepository.findByStatus(status);
     }
 
@@ -51,11 +53,11 @@ public class ContractService {
         Contract savedContract = checkContract(id);
 
         if (savedContract != null) {
-            if(!isSameStatus(savedContract, Status.APPROVED.toString())){
+            if (!isSameStatus(savedContract, Status.APPROVED.toString())) {
                 changeStatus(id, Status.APPROVED.toString());
 
                 //get current total amount of milk and cost for all approved contracts
-                TenderInfo tenderInfo = tenderInfoRepository.findFirstByIdOrderByIdDesc();
+                TenderInfo tenderInfo = tenderInfoService.getLatestTenderInfo();
                 int milkAmount = tenderInfo.getMilkAmount();
                 int totalCost = tenderInfo.getTotalCost();
 
@@ -77,11 +79,11 @@ public class ContractService {
                 String message = emailService.sendEmail(
                         "mozdemilly@gmail.com", supplierEmail, "Contract Application Approval", variable, "emailtrial");
                 if (message.equalsIgnoreCase(SUCCESS)) {
-                    return message+" Contract approved successfully";
-                }else{
-                    return message+"Failed to notify supplier by email. Kindly notify him by phone";
+                    return message + " Contract approved successfully";
+                } else {
+                    return message + "Failed to notify supplier by email. Kindly notify him by phone";
                 }
-            }else{
+            } else {
                 return SAME_STATUS;
             }
         }
@@ -93,10 +95,10 @@ public class ContractService {
         //check if contract is present
         Contract savedContract = checkContract(id);
         if (savedContract != null) {
-            if(!isSameStatus(savedContract, Status.DENIED.toString())){
+            if (!isSameStatus(savedContract, Status.DENIED.toString())) {
                 changeStatus(id, Status.DENIED.toString());
                 return SUCCESS + "Contract denied successfully";
-            }else{
+            } else {
                 return SAME_STATUS;
             }
         }
@@ -108,11 +110,11 @@ public class ContractService {
         //check if contract is present
         Contract savedContract = checkContract(id);
         if (savedContract != null) {
-            if(!isSameStatus(savedContract, Status.CANCELLED.toString())){
+            if (!isSameStatus(savedContract, Status.CANCELLED.toString())) {
                 changeStatus(id, Status.CANCELLED.toString());
 
                 //get current total amount of milk and cost for all approved contracts
-                TenderInfo tenderInfo = tenderInfoRepository.findFirstByIdOrderByIdDesc();
+                TenderInfo tenderInfo = tenderInfoService.getLatestTenderInfo();
                 int milkAmount = tenderInfo.getMilkAmount();
                 int totalCost = tenderInfo.getTotalCost();
 
@@ -124,7 +126,7 @@ public class ContractService {
                 tenderInfoRepository.save(tenderInfo);
 
                 return SUCCESS + "Contract cancelled successfully";
-            }else{
+            } else {
                 return SAME_STATUS;
             }
         }
@@ -162,10 +164,10 @@ public class ContractService {
     }
 
     //checks whether this contract passed has the status passed
-    private boolean isSameStatus(Contract contract, String status){
-        if(status.equalsIgnoreCase(contract.getStatus())){
+    private boolean isSameStatus(Contract contract, String status) {
+        if (status.equalsIgnoreCase(contract.getStatus())) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

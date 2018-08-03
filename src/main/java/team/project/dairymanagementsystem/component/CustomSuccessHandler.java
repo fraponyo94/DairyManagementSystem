@@ -40,7 +40,6 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
                 try {
                     redirectStrategy.sendRedirect(request, response, "/");
                 } catch (Exception e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
             } else {

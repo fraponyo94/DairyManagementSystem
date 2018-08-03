@@ -46,6 +46,34 @@
         <a class="dropdown-item" th:href="@{/contract/contracts}">All Contracts</a>
     </div>
 </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    View Daily Cost and Amount
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!--/*@thymesVar id="totalAmount" type="java.lang.Integer"*/-->
+                <!--/*@thymesVar id="totalCost" type="java.lang.Integer"*/-->
+                <h2>Total Daily Cost and Amount of Approved Contracts</h2>
+                <p>Daily Amount: <span th:text="${totalAmount}"></span></p>
+                <p>Daily Cost: <span th:text="${totalCost}"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--/*@thymesVar id="contracts" type="java.util.List<team.project.dairymanagementsystem.model.Contract>"*/-->
 <table id="myTable" class="table table-bordered table-striped table-responsive-md" th:object="${contracts}"
