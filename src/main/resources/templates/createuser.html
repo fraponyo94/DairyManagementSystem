@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- user creating account with factory-->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
@@ -19,11 +21,13 @@
 
 <body class="green">
 <div>
+    <!--top navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="container">
 
             <!-- Brand -->
             <a class="navbar-brand" href="#">
+                <!--heading-->
                 <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
             </a>
 
@@ -82,16 +86,19 @@
                     </div>
                     <p th:text="${error}" style="color: red" id="error"></p>
                     <div class="md-form">
+                        <!--textfield for username-->
                         <input type="text" id="form100" class="form-control" th:field="*{username}" required placeholder="username must be more than 4 characters">
                         <label for="form100">Username</label>
                     </div>
 
                     <div class="md-form">
+                        <!--textfield for password-->
                         <input type="password" id="pass1" class="form-control" th:field="*{password}" required>
                         <label for="pass1">Password</label>
                     </div>
 
                     <div class="md-form">
+                        <!--textfield for password confirmation-->
                         <input type="password" id="pass2" class="form-control" required>
                         <label for="pass2">Confirm Password</label>
                     </div>
@@ -106,6 +113,7 @@
                     <div class="row d-flex align-items-center">
 
                         <!--Grid column-->
+                        <!--button for submiting values-->
                         <div class="text-center col-md-12 mt-3 mb-2">
                             <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1" id="signup">Sign Up</button>
                         </div>
