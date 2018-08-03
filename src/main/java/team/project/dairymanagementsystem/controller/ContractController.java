@@ -216,17 +216,6 @@ public class ContractController {
     }
 
     /**
-     * Create a new user
-     *
-     * @param nationalId - the national id of the new user
-     * @return - welcome page
-     */
-    @GetMapping("/create-user/{id}")
-    public String createUser(@PathVariable(name = "id") int nationalId) {
-        return "welcome";
-    }
-
-    /**
      * Adds necessary messages to the model attribute
      *
      * @param model   - Spring's model interface
