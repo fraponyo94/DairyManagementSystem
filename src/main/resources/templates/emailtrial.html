@@ -47,6 +47,7 @@
                 <p>Congratulations! Your contract application with the details shown below has been successfully
                     approved.<br>
                     Kindly press the button below to create an account.<br></p>
+                <!--contractor information details-->
                 <Label for="id">National Id: </Label> <span id="id" th:text="${supplier.nationalId}"></span><br>
                 <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
                 <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
@@ -61,6 +62,7 @@
         <hr class="my-4 rgba-white-light">
 
         <form th:action="@{http://localhost:8080/create-user/{id}(id=${supplier.nationalId})}" th:method="GET">
+            <!--information submission button-->
             <input class="btn btn-success btn-rounded" type="submit" value="Create Account">
         </form>
 

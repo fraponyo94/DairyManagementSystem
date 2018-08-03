@@ -2,90 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c20f477c-f897-4022-ba07-b65767a986fb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractRepository.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/ContractRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/SupplierRepository.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/SupplierRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/TenderInfoRepository.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/TenderInfoRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/EmailService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/EmailService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/SupplierService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/contracts.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/contracts.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap/mdb.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap/table.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/contractform.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/contracts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/sort.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/login.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/toast/toastr.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/viewContract.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/welcome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/butter.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/cheese.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/cow.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/dairy.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/factory.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/milk.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/pasturized_milk.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/plant.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/wholemilk.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/yorgut.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/yourgurt.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/yourgurt1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/yourgurt2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/jquery-3.3.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/mdb.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/popper.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/table.jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap/table.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/contract.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/homepage.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery/contracts.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery/sort.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/map.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/toast/toastr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/user.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/Factory Data.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/UserDetails.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/cow1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/egertonlogo.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/factory.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/factorystyle.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/juser.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/template/styling.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/admin-home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contract/contracts.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/createuser.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/editContracts.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/emailtrial.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/error.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/logout.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/newcontract.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/success.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/template.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/tender/tender-info.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/viewSupplier.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/welcome.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team/project/dairymanagementsystem/DairymanagementsystemApplicationTests.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editContracts.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,11 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createuser.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createuser.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createuser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-260">
-              <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+            <state relative-caret-position="-60">
+              <caret line="115" column="55" lean-forward="false" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailtrial.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emailtrial.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -726,7 +653,7 @@
       <workItem from="1531725709346" duration="7473000" />
       <workItem from="1531737927666" duration="785000" />
       <workItem from="1531739010112" duration="2772000" />
-      <workItem from="1533303718085" duration="726000" />
+      <workItem from="1533303718085" duration="1438000" />
     </task>
     <task id="LOCAL-00001" summary="ui renovation">
       <created>1529318474391</created>
@@ -760,7 +687,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261294000" />
+    <option name="totallyTimeSpent" value="262006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="61" width="1366" height="732" extended-state="6" />
@@ -785,7 +712,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20099668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25075758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -826,13 +753,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/jquery/sort.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1019,13 +939,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emailtrial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -1124,8 +1037,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createuser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        <state relative-caret-position="-60">
+          <caret line="115" column="55" lean-forward="false" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editContracts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emailtrial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
