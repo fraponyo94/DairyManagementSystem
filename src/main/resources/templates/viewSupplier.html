@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!--implementing contract details after application of contract-->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +27,7 @@
         <!--Title-->
         <h1 class="card-title h2-responsive mt-2 font-bold"><b th:text="${supplier.name}"></b></h1>
 
-        <!--Text-->
+        <!--Text displaying the details-->
         <div class="d-flex justify-content-center" style="min-width: 40rem;">
             <div class="card-text my-2" style="max-width: 43rem;">
                 <Label for="id">National Id: </Label> <span id="id" th:text="${supplier.nationalId}"></span><br>
@@ -42,7 +44,7 @@
 
         <hr class="my-4 rgba-white-light">
 
-        <!--if the status is pending, an approve button should appear-->
+        <!--if the status is pending, an approve   button should appear -->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('pending')}">
             <form th:action="@{/contract/approve/{id}(id=${supplier.contract.id})}" th:method="POST">
                 <input class="btn btn-success btn-rounded" type="submit" value="approve">
@@ -61,7 +63,7 @@
             </form>
         </div>
 
-        <!--if the status is denied, a delete button should appear-->
+        <!--if the status is denied , a delete button should appear-->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('denied')}">
             <form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"
                   th:object="${supplier.contract.id}">
