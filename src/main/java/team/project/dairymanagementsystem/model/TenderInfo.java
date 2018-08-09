@@ -46,7 +46,6 @@ public class TenderInfo {
     @Column(name = "totalCost")
     private int totalCost;
 
-    @Future
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(name = "deadline")
     private Date deadline;

@@ -21,13 +21,17 @@ public class TenderInfoService {
 
     /*TenderInfo whose status is active*/
     public TenderInfo   findActiveTender(){
-        return  tenderInfoRepository.findByStatus(true);
+        return  getLatestTenderInfo();
     }
 
     //get latest tender
     public TenderInfo getLatestTenderInfo() {
         //get all tenders
         List<TenderInfo> tenderInfos = tenderInfoRepository.findAll();
+        //check if the list is empty
+        if(tenderInfos.isEmpty()){
+            return null;
+        }
         //assume the first tender has the latest tender
         long max = tenderInfos.get(0).getId();
         TenderInfo tender = tenderInfos.get(0);
