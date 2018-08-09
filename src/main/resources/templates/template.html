@@ -59,7 +59,7 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="/logout"><button  class="clearfix d-none d-sm-inline-block">Log out</button></a>
+                            <a href="/logout"><button  class="clearfix d-none d-sm-inline-block">Logout</button></a>
                         </li>
                     </ul>
 
@@ -109,10 +109,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#tende"> <span class="clearfix d-none d-sm-inline-block">Contact us</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" th:unless="${loggedIn}">
                             <a class="nav-link" href="/login"> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
                         </li>
-
+                        <li class="nav-item" th:if="${loggedIn}">
+                            <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                        </li>
                     </ul>
 
                 </div>

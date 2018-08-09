@@ -26,10 +26,10 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
     public void onAuthenticationSuccess(HttpServletRequest request,
                                         HttpServletResponse response, Authentication authentication)
             throws IOException, ServletException {
-
+        HttpSession session = request.getSession();
+        session.setAttribute("loggedIn", true);
         Collection < ? extends GrantedAuthority> authorities = authentication.getAuthorities();
         authorities.forEach(authority -> {
-            System.out.println(authority.getAuthority());
             if(authority.getAuthority().equals("Admin")) {
                 try {
                     redirectStrategy.sendRedirect(request, response, "admin/");

@@ -7,6 +7,8 @@ import org.springframework.web.servlet.ModelAndView;
 import team.project.dairymanagementsystem.model.TenderInfo;
 import team.project.dairymanagementsystem.service.TenderInfoService;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -20,7 +22,7 @@ public class DefaultController {
 
     //Home page
     @GetMapping(value = {"/"})
-    public ModelAndView defaultHomePage(ModelAndView modelAndView) throws ParseException {
+    public ModelAndView defaultHomePage(ModelAndView modelAndView, HttpServletRequest request) throws ParseException {
         //get current date
         TimeZone local = TimeZone.getTimeZone("Africa/Nairobi");
         Calendar now = Calendar.getInstance(local); //get time in the current time zone
@@ -44,6 +46,12 @@ public class DefaultController {
             } else {
                 System.out.println("How did we get here?");
             }
+        }
+        //check whether user is logged in
+        if(request.getSession().getAttribute("loggedIn") != null){
+            modelAndView.addObject("loggedIn", true);
+        }else{
+            modelAndView.addObject("loggedIn", false);
         }
         modelAndView.addObject("tender", tender);
         modelAndView.setViewName("welcome");

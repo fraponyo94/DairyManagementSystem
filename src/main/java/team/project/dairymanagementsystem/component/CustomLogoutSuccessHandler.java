@@ -24,6 +24,8 @@ public class CustomLogoutSuccessHandler  implements LogoutSuccessHandler  {
         if (session != null) {
             //get user session object and remove it using its key
             session.removeAttribute("user");
+            session.removeAttribute("loggedIn");
+            session.invalidate();
         }
 
         //send user back to welcome page
