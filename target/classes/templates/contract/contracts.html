@@ -47,7 +47,7 @@
     </div>
 </div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-dark-green btn-sm" data-toggle="modal" data-target="#exampleModal">
     View Daily Cost and Amount
 </button>
 
@@ -56,7 +56,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h4 class="modal-title" id="exampleModalLabel" style="text-align: center">Total Daily Cost and Amount</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -64,12 +64,12 @@
             <div class="modal-body">
                 <!--/*@thymesVar id="totalAmount" type="java.lang.Integer"*/-->
                 <!--/*@thymesVar id="totalCost" type="java.lang.Integer"*/-->
-                <h2>Total Daily Cost and Amount of Approved Contracts</h2>
-                <p>Daily Amount: <span th:text="${totalAmount}"></span></p>
-                <p>Daily Cost: <span th:text="${totalCost}"></span></p>
+                <h5 style="text-align: center">Shows the amount of milk you expect to receive daily and at what cost depending on the contracts you have approved</h5><br>
+                <h6 style="text-align: center">Daily Amount: <span th:text="${totalAmount}"></span></h6>
+                <h6 style="text-align: center">Daily Cost: <span th:text="${totalCost}"></span></h6>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark-green" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c20f477c-f897-4022-ba07-b65767a986fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/email-cancelled.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/ContractService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/TenderInfoService.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/TenderInfoController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/TenderInfoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/TenderInfo.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/model/TenderInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/EmailService.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/service/EmailService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/EmailService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/EmailService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/TenderInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/TenderInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/admin/admin-home.html" afterPath="$PROJECT_DIR$/target/classes/templates/admin/admin-home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" afterPath="$PROJECT_DIR$/target/classes/templates/contract/ContractForm.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/emailtrial.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/email-approval.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +42,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContractService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contracts.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="66" column="170" lean-forward="false" selection-start-line="66" selection-start-column="170" selection-end-line="66" selection-end-column="170" />
+              <folding>
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h6#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContractService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -166,7 +166,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/repository/TenderInfoRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/createuser.html" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java" />
@@ -188,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/TenderInfoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
       </list>
     </option>
   </component>
@@ -312,7 +312,7 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="SearchEverywhereHistoryKey" value="Contr&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/ContractForm.html&#10;TenderI&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java&#10;c&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;cont&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;contracts.js&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/js/jquery/contracts.js&#10;viewcontract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;contracts&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;view&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/viewSupplier.html&#10;COntr&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java&#10;ContractSer&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
+    <property name="SearchEverywhereHistoryKey" value="contracts&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;Contr&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/ContractForm.html&#10;TenderI&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java&#10;c&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;cont&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;contracts.js&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/js/jquery/contracts.js&#10;viewcontract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;view&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/viewSupplier.html&#10;COntr&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java&#10;ContractSer&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -501,7 +501,7 @@
       <workItem from="1533534853484" duration="1916000" />
       <workItem from="1533796345935" duration="5447000" />
       <workItem from="1533826939672" duration="214000" />
-      <workItem from="1533828340010" duration="6518000" />
+      <workItem from="1533828340010" duration="7967000" />
     </task>
     <task id="LOCAL-00001" summary="ui renovation">
       <created>1529318474391</created>
@@ -535,7 +535,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="293721000" />
+    <option name="totallyTimeSpent" value="295170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -550,7 +550,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57822084" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7131902" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7131902" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44785276" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -721,13 +721,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editContracts.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/CustomUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -898,14 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="104" lean-forward="true" selection-start-line="32" selection-start-column="104" selection-end-line="32" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -935,6 +920,27 @@
         <state relative-caret-position="340">
           <caret line="147" column="53" lean-forward="true" selection-start-line="147" selection-start-column="53" selection-end-line="147" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="104" lean-forward="true" selection-start-line="32" selection-start-column="104" selection-end-line="32" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="66" column="170" lean-forward="false" selection-start-line="66" selection-start-column="170" selection-end-line="66" selection-end-column="170" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
