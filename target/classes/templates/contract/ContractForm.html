@@ -18,55 +18,10 @@
 </head>
 
 <body class="green">
-<div>
-<nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
 
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">
-            <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
-        </a>
+<div th:replace="template :: welcome-nav">
 
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <!-- Left -->
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-
-            <!-- Right -->
-            <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
-                    <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">Our products</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">About us</span></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#tende"> <span class="clearfix d-none d-sm-inline-block">Contact us</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/login"> <span
-                            class="clearfix d-none d-sm-inline-block">Staff Login</span></a>
-                </li>
-            </ul>
-
-        </div>
-
-    </div>
-</nav>
+</div>
 
 <!-- Section: form dark -->
 <section class="contract-form form-dark" style="width: 60%">

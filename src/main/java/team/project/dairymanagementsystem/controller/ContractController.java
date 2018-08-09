@@ -1,19 +1,24 @@
 package team.project.dairymanagementsystem.controller;
 
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import team.project.dairymanagementsystem.model.Contract;
+import team.project.dairymanagementsystem.model.DairyStaff;
 import team.project.dairymanagementsystem.model.Supplier;
 import team.project.dairymanagementsystem.model.enumerated.Status;
 import team.project.dairymanagementsystem.service.ContractService;
 import team.project.dairymanagementsystem.service.SupplierService;
+import team.project.dairymanagementsystem.service.UserService;
 
+import javax.servlet.http.HttpSession;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.Principal;
 import java.util.List;
 
 
@@ -26,6 +31,10 @@ public class ContractController {
 
     @Autowired
     private SupplierService supplierService;
+
+    @Autowired
+    private UserService userService;
+
     private String message;
     private boolean managed_contract; //determines if the admin has just managed a contract
 
@@ -68,27 +77,27 @@ public class ContractController {
     }
 
     @PostMapping("/approve/{id}")
-    public String approveContract(@PathVariable(name = "id") int id, Model model) {
+    public String approveContract(@PathVariable(name = "id") int id, Model model, Principal principal) {
 //        managed_contract = true;
         message = this.contractService.approveContract(id);
         setModelAttributes(model,message);
-        return checkStatusChange(message);
+        return checkStatusChange(message, principal);
     }
 
     @PostMapping("/deny/{id}")
-    public String denyContract(@PathVariable(name = "id") int id, Model model) {
+    public String denyContract(@PathVariable(name = "id") int id, Model model, Principal principal) {
 //        managed_contract = true;
         message = this.contractService.denyContract(id);
         setModelAttributes(model, message);
-        return checkStatusChange(message);
+        return checkStatusChange(message, principal);
     }
 
     @PostMapping("/cancel/{id}")
-    public String cancelContract(@PathVariable(name = "id") int id, Model model) {
+    public String cancelContract(@PathVariable(name = "id") int id, Model model, Principal principal) {
 //        managed_contract = true;
         message = this.contractService.cancelContract(id);
         setModelAttributes(model, message);
-        return checkStatusChange(message);
+        return checkStatusChange(message, principal);
     }
 
     @PostMapping("/delete/{id}")
@@ -114,11 +123,19 @@ public class ContractController {
         model.addAttribute("message", message);
     }
 
-    private String checkStatusChange(String message){
-        if(message.equals("SAME_STATUS")){
-            return "redirect:/contract/contracts";
-        }else{
-            return "contract/contracts";
+    private String checkStatusChange(String message, Principal principal){
+        String username = principal.getName();
+
+        if(userService.findByUsername(username)!= null){
+            return "redirect:/applicant-details";
         }
+        else {
+            if(message.equals("SAME_STATUS")){
+                return "redirect:/contract/contracts";
+            }else{
+                return "contract/contracts";
+            }
+        }
+
     }
 }

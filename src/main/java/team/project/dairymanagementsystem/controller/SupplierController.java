@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import team.project.dairymanagementsystem.model.Supplier;
@@ -33,4 +34,12 @@ public class SupplierController {
         ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(picBytes,headers, HttpStatus.OK);
         return response;
     }
+    @GetMapping("/applicant-details")
+    public String getApplicantDetails(Model model){
+        Supplier suppler =supplierService.getSupplier(123);
+        model.addAttribute("supplier", suppler);
+
+        return "Supplier";
+    }
+
 }

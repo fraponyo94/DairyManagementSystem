@@ -38,7 +38,7 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
                 }
             } else if(authority.getAuthority().equals("SUPPLIER")) {
                 try {
-                    redirectStrategy.sendRedirect(request, response, "/");
+                    redirectStrategy.sendRedirect(request, response, "/applicant-details");
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
