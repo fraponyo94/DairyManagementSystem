@@ -41,7 +41,6 @@ public class EmailService {
 
             String contentTemplate = templateEngine.process(emailTemplate, context);
 
-
             messageHelper.setText(contentTemplate, true);
         };
 

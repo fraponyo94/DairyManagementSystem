@@ -17,7 +17,6 @@ public class TenderInfoService {
     //Add Tender Description
     public void addTenderInfo(TenderInfo tenderInfo){
         tenderInfoRepository.save(tenderInfo);
-
     }
 
     /*TenderInfo whose status is active*/

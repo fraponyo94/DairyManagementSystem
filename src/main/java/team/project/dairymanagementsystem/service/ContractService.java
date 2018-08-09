@@ -64,8 +64,11 @@ public class ContractService {
                 //add this contract's milk amount and cost to the total amount and cost respectively
                 milkAmount += savedContract.getAmountPerDay();
                 totalCost += savedContract.getCostPerLitre();
+                tenderInfo.setMilkAmount(milkAmount);
+                tenderInfo.setTotalCost(totalCost);
 
                 //save this information back to the database
+                System.out.println("NEW_TENDER: " + tenderInfo);
                 tenderInfoRepository.save(tenderInfo);
 
                 //get supplier id
@@ -77,7 +80,7 @@ public class ContractService {
                 Map<String, Object> variable = new HashMap<>();
                 variable.put("supplier", supplier);
                 String message = emailService.sendEmail(
-                        "mozdemilly@gmail.com", supplierEmail, "Contract Application Approval", variable, "emailtrial");
+                        "mozdemilly@gmail.com", supplierEmail, "Contract Application Approval", variable, "email-approval");
                 if (message.equalsIgnoreCase(SUCCESS)) {
                     return message + " Contract approved successfully";
                 } else {
@@ -97,6 +100,16 @@ public class ContractService {
         if (savedContract != null) {
             if (!isSameStatus(savedContract, Status.DENIED.toString())) {
                 changeStatus(id, Status.DENIED.toString());
+                //get supplier id
+                int supplierId = savedContract.getSupplierId();
+                //get supplier
+                Supplier supplier = supplierService.getSupplier(supplierId);
+                //get supplier email
+                String supplierEmail = supplier.getEmail_address();
+                Map<String, Object> variable = new HashMap<>();
+                variable.put("supplier", supplier);
+                String message = emailService.sendEmail(
+                        "mozdemilly@gmail.com", supplierEmail, "Contract Denial", variable, "email-denial");
                 return SUCCESS + "Contract denied successfully";
             } else {
                 return SAME_STATUS;
@@ -113,6 +126,17 @@ public class ContractService {
             if (!isSameStatus(savedContract, Status.CANCELLED.toString())) {
                 changeStatus(id, Status.CANCELLED.toString());
 
+                //get supplier id
+                int supplierId = savedContract.getSupplierId();
+                //get supplier
+                Supplier supplier = supplierService.getSupplier(supplierId);
+                //get supplier email
+                String supplierEmail = supplier.getEmail_address();
+                Map<String, Object> variable = new HashMap<>();
+                variable.put("supplier", supplier);
+                String message = emailService.sendEmail(
+                        "mozdemilly@gmail.com", supplierEmail, "Contract Cancellation", variable, "email-cancelled");
+
                 //get current total amount of milk and cost for all approved contracts
                 TenderInfo tenderInfo = tenderInfoService.getLatestTenderInfo();
                 int milkAmount = tenderInfo.getMilkAmount();
@@ -121,6 +145,8 @@ public class ContractService {
                 //subtract this contract's milk amount and cost from total milk and cost supplied by approved suppliers
                 milkAmount -= savedContract.getAmountPerDay();
                 totalCost -= savedContract.getCostPerLitre();
+                tenderInfo.setMilkAmount(milkAmount);
+                tenderInfo.setTotalCost(totalCost);
 
                 //save the tender information back to the database
                 tenderInfoRepository.save(tenderInfo);

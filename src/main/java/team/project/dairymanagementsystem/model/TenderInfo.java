@@ -2,8 +2,12 @@ package team.project.dairymanagementsystem.model;
 
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.Future;
+import java.util.Arrays;
+import java.util.Date;
 
 @Entity
 @Table(name = "tenderinfo")
@@ -42,17 +46,23 @@ public class TenderInfo {
     @Column(name = "totalCost")
     private int totalCost;
 
-    public TenderInfo() {
+    @Future
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @Column(name = "deadline")
+    private Date deadline;
 
+    public TenderInfo() {
     }
 
-    public TenderInfo(String tenderTitle, String tenderRequirements, String tenderDescription, byte[] fileAttachment, boolean status, int milkAmount) {
+    public TenderInfo(String tenderTitle, String tenderRequirements, String tenderDescription, byte[] fileAttachment, boolean status, int milkAmount, int totalCost, Date deadline) {
         this.tenderTitle = tenderTitle;
         this.tenderRequirements = tenderRequirements;
         this.tenderDescription = tenderDescription;
         this.fileAttachment = fileAttachment;
         this.status = status;
         this.milkAmount = milkAmount;
+        this.totalCost = totalCost;
+        this.deadline = deadline;
     }
 
     public boolean isStatus() {
@@ -119,10 +129,25 @@ public class TenderInfo {
         this.totalCost = totalCost;
     }
 
+    public Date getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
+    }
+
     @Override
     public String toString() {
         return "TenderInfo{" +
-                "tenderTitle='" + tenderTitle + '\'' +
+                "id=" + id +
+                ", tenderTitle='" + tenderTitle + '\'' +
+                ", tenderRequirements='" + tenderRequirements + '\'' +
+                ", tenderDescription='" + tenderDescription + '\'' +
+                ", status=" + status +
+                ", milkAmount=" + milkAmount +
+                ", totalCost=" + totalCost +
+                ", deadline=" + deadline +
                 '}';
     }
 }
