@@ -69,7 +69,7 @@ public class TenderInfoController {
     //Go to tender information
     @GetMapping("/tender/tender-info")
     public ModelAndView tenderInfo(ModelAndView modelAndView) {
-        modelAndView.addObject("tender", tenderInfoService.findActiveTender());
+        modelAndView.addObject("tender", tenderInfoService.findLatestTender());
         modelAndView.setViewName("tender/tender-info");
         return modelAndView;
     }
@@ -80,7 +80,7 @@ public class TenderInfoController {
 
 
         try {
-            TenderInfo tenderInfo = tenderInfoService.findActiveTender();
+            TenderInfo tenderInfo = tenderInfoService.findLatestTender();
             byte[] bytes = tenderInfo.getFileAttachment();
             response.setHeader("Content-Disposition", "inline; filename=\"dairy-tender.pdf\"");
             //response.setDateHeader("Expires", -1);

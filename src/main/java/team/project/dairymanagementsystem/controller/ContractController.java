@@ -277,7 +277,7 @@ public class ContractController {
      * expected to be supplied by approved contracts
      */
     private Map<String, Integer> getTotalCostAndAmountOfMilk() {
-        TenderInfo tenderInfo = tenderInfoService.getLatestTenderInfo();
+        TenderInfo tenderInfo = tenderInfoService.findLatestTender();
         int totalCost = tenderInfo.getTotalCost();
         int totalAmount = tenderInfo.getMilkAmount();
         Map<String, Integer> map = new HashMap<>();

@@ -19,13 +19,13 @@ public class TenderInfoService {
         tenderInfoRepository.save(tenderInfo);
     }
 
-    /*TenderInfo whose status is active*/
-    public TenderInfo   findActiveTender(){
+    /*get more recent tender*/
+    public TenderInfo findLatestTender(){
         return  getLatestTenderInfo();
     }
 
-    //get latest tender
-    public TenderInfo getLatestTenderInfo() {
+    //filter out the latest tender
+    private TenderInfo getLatestTenderInfo() {
         //get all tenders
         List<TenderInfo> tenderInfos = tenderInfoRepository.findAll();
         //check if the list is empty

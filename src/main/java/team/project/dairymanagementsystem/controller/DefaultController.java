@@ -29,19 +29,18 @@ public class DefaultController {
         String date = formatter.format(now.getTime());
         Date currentDate = formatter.parse(date);
 
-        TenderInfo activeTenderInfo = tenderInfoService.findActiveTender();
+        TenderInfo latestTenderInfo = tenderInfoService.findLatestTender();
         boolean tender = false;
-        if (activeTenderInfo != null) {
-            Date deadline = activeTenderInfo.getDeadline();
-
+        if (latestTenderInfo != null) {
+            Date deadline = latestTenderInfo.getDeadline();
             //check whether deadline has passed
             if (currentDate.compareTo(deadline) > 0) {
                 //deadline has passed
-                activeTenderInfo.setStatus(false);
-                tenderInfoService.addTenderInfo(activeTenderInfo);
+                latestTenderInfo.setStatus(false);
+                tenderInfoService.addTenderInfo(latestTenderInfo);
             } else if (currentDate.compareTo(deadline) < 0) {
                 tender = true; //a tender is available
-                modelAndView.addObject("tenderInfo", activeTenderInfo);
+                modelAndView.addObject("tenderInfo", latestTenderInfo);
             } else {
                 System.out.println("How did we get here?");
             }

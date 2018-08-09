@@ -57,7 +57,7 @@ public class ContractService {
                 changeStatus(id, Status.APPROVED.toString());
 
                 //get current total amount of milk and cost for all approved contracts
-                TenderInfo tenderInfo = tenderInfoService.getLatestTenderInfo();
+                TenderInfo tenderInfo = tenderInfoService.findLatestTender();
                 int milkAmount = tenderInfo.getMilkAmount();
                 int totalCost = tenderInfo.getTotalCost();
 
@@ -138,7 +138,7 @@ public class ContractService {
                         "mozdemilly@gmail.com", supplierEmail, "Contract Cancellation", variable, "email-cancelled");
 
                 //get current total amount of milk and cost for all approved contracts
-                TenderInfo tenderInfo = tenderInfoService.getLatestTenderInfo();
+                TenderInfo tenderInfo = tenderInfoService.findLatestTender();
                 int milkAmount = tenderInfo.getMilkAmount();
                 int totalCost = tenderInfo.getTotalCost();
 

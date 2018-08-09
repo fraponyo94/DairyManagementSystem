@@ -38,7 +38,7 @@ public class TenderInfo {
     private byte[] fileAttachment;
 
     @Column(name = "status")
-    private boolean status;
+    public boolean status;
 
     @Column(name = "milkAmount")
     private int milkAmount;
