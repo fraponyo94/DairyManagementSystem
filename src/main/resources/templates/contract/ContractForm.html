@@ -84,17 +84,17 @@
                     <p th:text="${error}" style="color: red" id="error"></p>
                 </div>
                 <div class="md-form">
-                    <input type="number" id="form100" class="form-control" th:field="*{nationalId}">
+                    <input type="number" id="form100" class="form-control" th:field="*{nationalId}" required>
                     <label for="form100">National Id</label>
                 </div>
 
                 <div class="md-form">
-                    <input type="text" id="form101" class="form-control" th:field="*{name}">
+                    <input type="text" id="form101" class="form-control" th:field="*{name}" required>
                     <label for="form101">Name</label>
                 </div>
 
                 <div class="md-form">
-                    <input type="email" id="form102" class="form-control" th:field="*{email_address}">
+                    <input type="email" id="form102" class="form-control" th:field="*{email_address}" required>
                     <label for="form102">email</label>
                 </div>
 
@@ -104,14 +104,14 @@
                             <td>
                                 <div class="md-form">
                                     <input type="number" id="form103" class="form-control"
-                                           th:field="*{contract.amountPerDay}">
+                                           th:field="*{contract.amountPerDay}" required>
                                     <label for="form103">Amount Per Day</label>
                                 </div>
                             </td>
                             <td>
                                 <div class="md-form">
                                     <input type="number" id="form104" class="form-control"
-                                           th:field="*{contract.costPerLitre}">
+                                           th:field="*{contract.costPerLitre}" max="80" required>
                                     <label for="form104">Cost Per Litre</label>
                                 </div>
                             </td>
@@ -120,14 +120,14 @@
                             <td>
                                 <div class="md-form">
                                     <input type="text" id="form105" class="form-control"
-                                           th:field="*{address}">
+                                           th:field="*{address}" required>
                                     <label for="form105">Address</label>
                                 </div>
                             </td>
                             <td>
                                 <div class="md-form">
                                     <input type="number" id="form106" class="form-control"
-                                           th:field="*{phone}">
+                                           th:field="*{phone}" required>
                                     <label for="form106">Phone</label>
                                 </div>
                             </td>
@@ -139,10 +139,10 @@
 
                 <div class="md-form">
                     <textarea type="text" id="form107" class="md-textarea form-control" rows="5"
-                              th:field="*{contract.description}"></textarea>
+                              th:field="*{contract.description}" required></textarea>
                     <label for="form107">Description</label>
                 </div>
-                <label>C.V</label>
+                <label>Attachment</label>
                 <div class="md-form">
                     <input type="file" id="form108" class="form-control" th:name="file">
 
