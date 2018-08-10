@@ -32,6 +32,7 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
         authorities.forEach(authority -> {
             if(authority.getAuthority().equals("Admin")) {
                 try {
+                    session.setAttribute("admin", true);
                     redirectStrategy.sendRedirect(request, response, "admin/");
                 } catch (Exception e) {
                     e.printStackTrace();

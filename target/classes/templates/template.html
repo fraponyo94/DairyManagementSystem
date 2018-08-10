@@ -25,8 +25,8 @@
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <strong>Welcome <label>Username</label></strong>
+                <a class="navbar-brand" href="/admin/">
+                    <strong>Administration Panel</strong>
                 </a>
 
                 <!-- Collapse -->
@@ -42,24 +42,17 @@
 
                     <!-- Right -->
                     <ul class="navbar-nav nav-flex-icons ml-auto">
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="/"> <span class="clearfix d-none d-sm-inline-block text-uppercase">Home</span></a>
+                        </li>
                         <li class="nav-item mr-4" th:unless="${active}">
                             <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block text-uppercase">Tender</span></a>
-                        </li>
-                        <li class="nav-item mr-4">
-                            <a class="nav-link"><span class="clearfix d-none d-sm-inline-block text-uppercase">Accounts</span></a>
                         </li>
                         <li class="nav-item mr-4">
                             <a class="nav-link" href="/contract/contracts"><span class="clearfix d-none d-sm-inline-block text-uppercase">Contracts</span></a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a class="nav-link" href="/admin/preview.pdf"><span class="clearfix d-none d-sm-inline-block text-uppercase">Reports</span></a>
-                        </li>
-
-                    </ul>
-
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="/logout"><button  class="clearfix d-none d-sm-inline-block">Logout</button></a>
+                            <a class="nav-link" href="/logout"><span class="clearfix d-none d-sm-inline-block text-uppercase">Logout</span></a>
                         </li>
                     </ul>
 
@@ -96,8 +89,8 @@
 
                     <!-- Right -->
                     <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
+                        <li class="nav-item" th:if="${admin}">
+                            <a class="nav-link" href="admin/"> <span class="clearfix d-none d-sm-inline-block">Admin Panel</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"><span class="clearfix d-none d-sm-inline-block">Our products</span></a>

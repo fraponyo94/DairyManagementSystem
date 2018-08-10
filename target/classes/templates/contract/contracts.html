@@ -22,10 +22,16 @@
     <!--toast-->
     <link rel="stylesheet" th:href="@{/css/toast/toastr.css}">
     <script th:src="@{/js/toast/toastr.js}"></script>
-    <link rel="stylesheet" href="../../static/css/contracts.css">
+    <link rel="stylesheet" th:href="@{/css/welcome.css}">
 </head>
 <body>
 
+<!-- Navbar -->
+<div th:replace="template :: admin-nav">
+</div>
+<!-- Navbar -->
+
+<div id="table-contracts">
 <!--hidden link that shows an information message as a toast-->
 <!--/*@thymesVar id="message" type="java.lang.String"*/-->
 <div th:if="${message!=null}">
@@ -109,5 +115,6 @@
     </tbody>
 </table>
 <p th:if="${contracts.size() == 0}">No contracts to display</p>
+</div>
 </body>
 </html>

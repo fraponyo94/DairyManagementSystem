@@ -47,9 +47,13 @@ public class DefaultController {
                 System.out.println("How did we get here?");
             }
         }
-        //check whether user is logged in
+        //check whether user is logged in to determine whether to show a logout or login button
         if(request.getSession().getAttribute("loggedIn") != null){
             modelAndView.addObject("loggedIn", true);
+            //check if the user is an admin
+            if(request.getSession().getAttribute("admin") != null){
+                modelAndView.addObject("admin", true);
+            }
         }else{
             modelAndView.addObject("loggedIn", false);
         }

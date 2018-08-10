@@ -77,8 +77,6 @@ public class TenderInfoController {
     //   Access dairy tender description pdf
     @RequestMapping(value = "/tender/tender-pdf", method = RequestMethod.GET)
     public String getDairyTenderPdfDescription(HttpServletRequest request, HttpSession httpSession, HttpServletResponse response) {
-
-
         try {
             TenderInfo tenderInfo = tenderInfoService.findLatestTender();
             byte[] bytes = tenderInfo.getFileAttachment();
