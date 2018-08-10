@@ -117,6 +117,50 @@
     </div>
   <!--welcome page navigation-->
 
+    <!--Contract Application Page Navigation-->
+    <div th:fragment="contract-application-nav">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="/">
+                    <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item" th:if="${admin}">
+                            <a class="nav-link" href="/admin/"> <span class="clearfix d-none d-sm-inline-block">Admin Panel</span></a>
+                        </li>
+                        <li class="nav-item" th:unless="${loggedIn}">
+                            <a class="nav-link" href="/login"> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
+                        </li>
+                        <li class="nav-item" th:if="${loggedIn}">
+                            <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!--Contract Application Page Navigation-->
+
     <!--Common js files-->
  <div th:fragment="js-files">
      <!-- JQuery -->

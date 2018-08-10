@@ -13,6 +13,7 @@ import team.project.dairymanagementsystem.service.ContractService;
 import team.project.dairymanagementsystem.service.SupplierService;
 import team.project.dairymanagementsystem.service.TenderInfoService;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,9 +45,19 @@ public class ContractController {
      * @return - the contract application template
      */
     @GetMapping("/contract")
-    public String addContract(Model model) {
+    public String addContract(Model model, HttpServletRequest request) {
         model.addAttribute("supplier", new Supplier()); //add a supplier object to the template to store supplier details
         model.addAttribute("error", ""); //no error message
+        //check whether user is logged in to determine whether to show a logout or login button
+        if(request.getSession().getAttribute("loggedIn") != null){
+            model.addAttribute("loggedIn", true);
+            //check if the user is an admin
+            if(request.getSession().getAttribute("admin") != null){
+                model.addAttribute("admin", true);
+            }
+        }else{
+            model.addAttribute("loggedIn", false);
+        }
         return "contract/ContractForm";
     }
 
