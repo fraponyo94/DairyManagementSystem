@@ -10,5 +10,4 @@ import java.util.List;
 @Repository
 public interface TenderInfoRepository extends JpaRepository<TenderInfo,Long> {
     TenderInfo findByStatus(Boolean status);
-    TenderInfo findFirstByIdOrderByIdDesc();
 }

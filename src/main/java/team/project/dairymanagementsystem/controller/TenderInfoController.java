@@ -40,16 +40,19 @@ public class TenderInfoController {
 
     /*Add Tender -------POST-----*/
     @PostMapping("/tender/add")
-    public ModelAndView addContract(@Valid  @ModelAttribute TenderInfo tenderInfo, BindingResult result, MultipartFile file,ModelAndView modelAndView){
+    public ModelAndView addContract(@Valid @ModelAttribute TenderInfo tenderInfo, BindingResult result, MultipartFile file, ModelAndView modelAndView) {
 
-        if(result.hasErrors()){
-              modelAndView.setViewName("admin/admin-home");
-        }else {
-            if(!file.isEmpty()){
+        System.out.println(tenderInfo.toString());
+
+        if (result.hasErrors()) {
+            System.out.println(result.getAllErrors().toString());
+            modelAndView.setViewName("admin/admin-home");
+        } else {
+            if (!file.isEmpty()) {
                 try {
                     byte[] fileAttachment = file.getBytes();
                     tenderInfo.setFileAttachment(fileAttachment);
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -60,24 +63,22 @@ public class TenderInfoController {
 
         }
 
-           return modelAndView;
+        return modelAndView;
     }
 
-  //Go to tender information
+    //Go to tender information
     @GetMapping("/tender/tender-info")
-    public ModelAndView tenderInfo(ModelAndView modelAndView){
-        modelAndView.addObject("tender", tenderInfoService.findActiveTender());
+    public ModelAndView tenderInfo(ModelAndView modelAndView) {
+        modelAndView.addObject("tender", tenderInfoService.findLatestTender());
         modelAndView.setViewName("tender/tender-info");
-        return  modelAndView;
+        return modelAndView;
     }
 
-   //   Access dairy tender description pdf
+    //   Access dairy tender description pdf
     @RequestMapping(value = "/tender/tender-pdf", method = RequestMethod.GET)
-    public String getDairyTenderPdfDescription(HttpServletRequest request,HttpSession httpSession, HttpServletResponse response) {
-
-
+    public String getDairyTenderPdfDescription(HttpServletRequest request, HttpSession httpSession, HttpServletResponse response) {
         try {
-            TenderInfo tenderInfo = tenderInfoService.findActiveTender();
+            TenderInfo tenderInfo = tenderInfoService.findLatestTender();
             byte[] bytes = tenderInfo.getFileAttachment();
             response.setHeader("Content-Disposition", "inline; filename=\"dairy-tender.pdf\"");
             //response.setDateHeader("Expires", -1);
@@ -85,11 +86,11 @@ public class TenderInfoController {
             response.setContentLength(bytes.length);
 
             response.getOutputStream().write(bytes);
-      }catch (Exception ioe){
+        } catch (Exception ioe) {
 
-      }finally {
+        } finally {
 
-      }
+        }
         return null;
 
     }

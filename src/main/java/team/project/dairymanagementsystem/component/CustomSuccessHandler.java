@@ -26,21 +26,21 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
     public void onAuthenticationSuccess(HttpServletRequest request,
                                         HttpServletResponse response, Authentication authentication)
             throws IOException, ServletException {
-
+        HttpSession session = request.getSession();
+        session.setAttribute("loggedIn", true);
         Collection < ? extends GrantedAuthority> authorities = authentication.getAuthorities();
         authorities.forEach(authority -> {
-            System.out.println(authority.getAuthority());
             if(authority.getAuthority().equals("Admin")) {
                 try {
+                    session.setAttribute("admin", true);
                     redirectStrategy.sendRedirect(request, response, "admin/");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             } else if(authority.getAuthority().equals("SUPPLIER")) {
                 try {
-                    redirectStrategy.sendRedirect(request, response, "/");
+                    redirectStrategy.sendRedirect(request, response, "/applicant-details");
                 } catch (Exception e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
             } else {
