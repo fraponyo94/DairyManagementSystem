@@ -51,7 +51,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .authorizeRequests()
                 .antMatchers("/","/login","/tender/tender-info","/contract/contract","/tender/tender-pdf").permitAll()
                 .antMatchers("/admin/**","/contract/contracts").hasAuthority("Admin")
-                //.antMatchers("/applicant-details").hasAuthority("SUPPLIER")
+                .antMatchers("/applicant-details/").hasAuthority("SUPPLIER")
                 .and()
                 .formLogin()
                 .loginPage("/login")
