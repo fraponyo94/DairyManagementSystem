@@ -2,26 +2,17 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <div th:replace="template :: head"> </div>
+    <title>Apply for a contract</title>
     <link rel="stylesheet" th:href="@{/css/contractform.css}">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dairy Portal Login</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/css/bootstrap/font-awesome.min.css" th:href="@{/css/bootstrap/font-awesome.min.css}">
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
-    <!-- Material Design Bootstrap -->
-    <link href="/css/bootstrap/mdb.min.css" rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
-    <!-- custom styles -->
-
 </head>
 
 <body class="green">
 
-<div th:replace="template :: welcome-nav">
-
+<!-- Navbar -->
+<div th:replace="template :: contract-application-nav">
 </div>
+<!-- Navbar -->
 
 <!-- Section: form dark -->
 <section class="contract-form form-dark" style="width: 60%">
@@ -39,7 +30,7 @@
                     <p th:text="${error}" style="color: red" id="error"></p>
                 </div>
                 <div class="md-form">
-                    <input type="number" id="form100" class="form-control" th:field="*{nationalId}" required>
+                    <input type="tel" id="form100" class="form-control" th:field="*{nationalId}" required maxlength="8">
                     <label for="form100">National Id</label>
                 </div>
 
@@ -59,14 +50,14 @@
                             <td>
                                 <div class="md-form">
                                     <input type="number" id="form103" class="form-control"
-                                           th:field="*{contract.amountPerDay}" required>
+                                           th:field="*{contract.amountPerDay}" required max="200">
                                     <label for="form103">Amount Per Day</label>
                                 </div>
                             </td>
                             <td>
                                 <div class="md-form">
                                     <input type="number" id="form104" class="form-control"
-                                           th:field="*{contract.costPerLitre}" max="80" required>
+                                           th:field="*{contract.costPerLitre}" required max="70">
                                     <label for="form104">Cost Per Litre</label>
                                 </div>
                             </td>
@@ -81,7 +72,7 @@
                             </td>
                             <td>
                                 <div class="md-form">
-                                    <input type="number" id="form106" class="form-control"
+                                    <input type="tel" id="form106" class="form-control"
                                            th:field="*{phone}" required>
                                     <label for="form106">Phone</label>
                                 </div>
@@ -97,7 +88,7 @@
                               th:field="*{contract.description}" required></textarea>
                     <label for="form107">Description</label>
                 </div>
-                <label>Attachment</label>
+                <label>Attachments</label>
                 <div class="md-form">
                     <input type="file" id="form108" class="form-control" th:name="file">
 
@@ -120,9 +111,7 @@
         <!--/Form without header-->
     </form>
 </section>
-</div>
 <!-- Section: form dark -->
-<!-- /Start your project here-->
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
@@ -133,7 +122,7 @@
 <script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" th:src="@{/js/bootstrap/mdb.min.js}"></script>
-<-- Contract jquery-->
+<!-- Contract jquery-->
 <script type="text/javascript" th:src="@{/js/contract.js}"></script>
 </body>
 

@@ -9,6 +9,7 @@
     <script th:src="@{/js/jquery/sort.js}"></script>
     <script th:src="@{/js/jquery/contracts.js}"></script>
     <!--boostrap-->
+    <script th:src="@{/js/bootstrap/popper.min.js}"></script>
     <script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" th:href="@{/css/bootstrap/font-awesome.min.css}">
@@ -21,14 +22,63 @@
     <!--toast-->
     <link rel="stylesheet" th:href="@{/css/toast/toastr.css}">
     <script th:src="@{/js/toast/toastr.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/welcome.css}">
 </head>
 <body>
 
+<!-- Navbar -->
+<div th:replace="template :: admin-nav">
+</div>
+<!-- Navbar -->
+
+<div id="table-contracts">
 <!--hidden link that shows an information message as a toast-->
 <!--/*@thymesVar id="message" type="java.lang.String"*/-->
 <div th:if="${message!=null}">
     <span id="toast_msg" th:text="${message}"></span>
     <a id="toast_link"></a>
+</div>
+
+<!--dropdown-->
+<div class="btn-group">
+    <button id="contracts-dropdown" class="btn btn-dark-green btn-sm" style="font-weight: bold" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By Status</button>
+
+    <div class="dropdown-menu">
+        <a class="dropdown-item" th:href="@{/contract/approved}">Approved Contracts</a>
+        <a class="dropdown-item" th:href="@{/contract/pending}">Pending Contracts</a>
+        <a class="dropdown-item" th:href="@{/contract/denied}">Denied Contracts</a>
+        <a class="dropdown-item" th:href="@{/contract/cancelled}">Cancelled Contracts</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" th:href="@{/contract/contracts}">All Contracts</a>
+    </div>
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-dark-green btn-sm" data-toggle="modal" data-target="#exampleModal">
+    View Daily Cost and Amount
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel" style="text-align: center">Total Daily Cost and Amount</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!--/*@thymesVar id="totalAmount" type="java.lang.Integer"*/-->
+                <!--/*@thymesVar id="totalCost" type="java.lang.Integer"*/-->
+                <h5 style="text-align: center">Shows the amount of milk you expect to receive daily and at what cost depending on the contracts you have approved</h5><br>
+                <h6 style="text-align: center">Daily Amount: <span th:text="${totalAmount}"></span></h6>
+                <h6 style="text-align: center">Daily Cost: <span th:text="${totalCost}"></span></h6>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--/*@thymesVar id="contracts" type="java.util.List<team.project.dairymanagementsystem.model.Contract>"*/-->
@@ -65,5 +115,6 @@
     </tbody>
 </table>
 <p th:if="${contracts.size() == 0}">No contracts to display</p>
+</div>
 </body>
 </html>

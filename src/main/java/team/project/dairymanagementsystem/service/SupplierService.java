@@ -31,6 +31,10 @@ public class SupplierService {
         return this.supplierRepository.findAll();
     }
 
+    public List<Supplier> getByStatus(String status){
+        return this.supplierRepository.findByContractStatus(status);
+    }
+
     public void deleteSupplier(int supplierId) {
         supplierRepository.delete(supplierId);
     }

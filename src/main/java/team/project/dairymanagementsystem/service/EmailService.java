@@ -41,7 +41,6 @@ public class EmailService {
 
             String contentTemplate = templateEngine.process(emailTemplate, context);
 
-
             messageHelper.setText(contentTemplate, true);
         };
 
@@ -49,7 +48,7 @@ public class EmailService {
             mailSender.send(messagePreparator);
             return "SUCCESS: ";
         }catch(MailException ex){
-            ex.printStackTrace();
+            System.out.println("Failed to send email with error: " + ex.getMessage());
             return "ERROR: ";
         }
     }

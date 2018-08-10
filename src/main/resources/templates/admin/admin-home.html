@@ -1,19 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <title>admin home page</title>
-    <div th:replace ="template :: head"> </div>
+    <div th:replace="template :: head"></div>
+
 </head>
 <body>
 <!-- Navbar -->
- <div th:replace="template :: admin-nav">
- </div>
+<div th:replace="template :: admin-nav">
+</div>
 <!-- Navbar -->
 
 <!-- Full Page Intro -->
-<div class="view full-page-intro" >
+<div class="view full-page-intro" th:unless="${active}">
 
     <!-- Mask & flexbox options  -->
     <div class="mask  d-flex justify-content-center align-items-center">
@@ -29,28 +29,35 @@
                         <!--Card content-->
                         <div class="card-body">
                             <p class="h4 text-center mb-2">Add Tender</p>
-                          <form action="/admin/tender/add" autocomplete="off" th:action="@{/tender/add}"
-                                method="post" th:object="${tenderInfo}" enctype="multipart/form-data" >
-                           <!-- &lt;!&ndash;Tender title &ndash;&gt;-->
-                            <label for="tender-title">Tender Title</label>
-                            <input type="text" id="tender-title"  th:field=*{tenderTitle}  class="form-control">
+                            <form action="/admin/tender/add" autocomplete="off" th:action="@{/tender/add}"
+                                  method="post" th:object="${tenderInfo}" enctype="multipart/form-data">
+                                <!-- &lt;!&ndash;Tender title &ndash;&gt;-->
+                                <label for="tender-title">Tender Title</label>
+                                <input type="text" id="tender-title" th:field="*{tenderTitle}" class="form-control">
 
-                            <!--Tender Description -->
-                            <label for="tender-description">Tender Decription</label>
-                            <textarea  type="text" id="tender-description" th:field="*{tenderDescription}" class="form-control md-textarea" rows="3" ></textarea>
+                                <!--Tender Description -->
+                                <label for="tender-description">Tender Decription</label>
+                                <textarea type="text" id="tender-description" th:field="*{tenderDescription}"
+                                          class="form-control md-textarea" rows="3"></textarea>
 
-                             <!--Tender Requirements-->
-                            <label for="tender-requirement">Reguirements/Eligibility</label>
-                            <textarea th:type="text" id="tender-requirement"  th:field="*{tenderRequirements}"  class="form-control md-textarea"  rows="3" ></textarea>
+                                <!--Tender Requirements-->
+                                <label for="tender-requirement">Reguirements/Eligibility</label>
+                                <textarea th:type="text" id="tender-requirement" th:field="*{tenderRequirements}"
+                                          class="form-control md-textarea" rows="3"></textarea>
 
-                              <!-- Upload application form-->
-                            <label for="application-form">Upload application form</label>
-                            <input type="file" multiple="false" allowTypes="/(\.|\/)(pdf)$/" id="application-form" name="file" class="form-control">
+                                <!-- Upload application form-->
+                                <label for="application-form">Upload application form</label>
+                                <input type="file" multiple="false" allowTypes="/(\.|\/)(pdf)$/" id="application-form"
+                                       name="file" class="form-control">
 
-                              <div class="offset-md-3 col-md-6">
-                                  <button type="submit" class="btn btn-primary btn-block">Login</button>
-                              </div>
-                          </form>
+                                <!--End date for applying-->
+                                <label for="date-picker-example">Deadline for applying: </label><br>
+                                <input type="date" id="date-picker-example" th:field="*{deadline}">
+
+                                <div class="offset-md-3 col-md-6">
+                                    <button type="submit" class="btn btn-primary btn-block">Create Tender</button>
+                                </div>
+                            </form>
 
                         </div>
 
@@ -65,10 +72,8 @@
     </div>
 
 
-
 </div>
 <!-- Full Page Intro -->
-
 
 
 <!--Footer-->
