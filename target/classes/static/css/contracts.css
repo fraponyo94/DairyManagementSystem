@@ -1,0 +1,31 @@
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    table-layout: fixed;
+}
+thead {
+    background-color: green;
+}
+th {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
+}
+th,td {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+#toast_link{
+    display: none;
+}
+#toast_msg{
+     display: none;
+}
+#contracts-dropdown{
+    background-color: green;
+    color: white;
+}

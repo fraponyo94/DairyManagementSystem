@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>admin home page</title>
+    <div th:replace ="template :: head"> </div>
+</head>
+<body>
+<!-- Navbar -->
+ <div th:replace="template :: admin-nav">
+ </div>
+<!-- Navbar -->
+
+<!-- Full Page Intro -->
+<div class="view full-page-intro" >
+
+    <!-- Mask & flexbox options  -->
+    <div class="mask  d-flex justify-content-center align-items-center">
+        <!-- Main contents -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row  text-center text-md-left">
+                <!-- Left Grid Column-->
+                <div class="col-md-8 mb-2 mr-1">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <p class="h4 text-center mb-2">Add Tender</p>
+                          <form action="/admin/tender/add" autocomplete="off" th:action="@{/tender/add}"
+                                method="post" th:object="${tenderInfo}" enctype="multipart/form-data" >
+                           <!-- &lt;!&ndash;Tender title &ndash;&gt;-->
+                            <label for="tender-title">Tender Title</label>
+                            <input type="text" id="tender-title"  th:field=*{tenderTitle}  class="form-control">
+
+                            <!--Tender Description -->
+                            <label for="tender-description">Tender Decription</label>
+                            <textarea  type="text" id="tender-description" th:field="*{tenderDescription}" class="form-control md-textarea" rows="3" ></textarea>
+
+                             <!--Tender Requirements-->
+                            <label for="tender-requirement">Reguirements/Eligibility</label>
+                            <textarea th:type="text" id="tender-requirement"  th:field="*{tenderRequirements}"  class="form-control md-textarea"  rows="3" ></textarea>
+
+                              <!-- Upload application form-->
+                            <label for="application-form">Upload application form</label>
+                            <input type="file" multiple="false" allowTypes="/(\.|\/)(pdf)$/" id="application-form" name="file" class="form-control">
+
+                              <div class="offset-md-3 col-md-6">
+                                  <button type="submit" class="btn btn-primary btn-block">Login</button>
+                              </div>
+                          </form>
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+<!-- Full Page Intro -->
+
+
+
+<!--Footer-->
+<footer class="page-footer text-center font-small mt-0">
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+        © 2018 Copyright:
+
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<div th:replace="template :: js-files"></div>
+
+</body>
+
+</html>

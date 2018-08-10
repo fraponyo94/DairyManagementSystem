@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Schools Visit Form</title>
+    <link rel="stylesheet" type="text/css" href="schoolVisitCss.css">
+    <link rel="stylesheet" href="bootstrap.min.css" >
+    <link rel="stylesheet" href="bootstrap.js" >
+    <script src="formvalidation.js"> </script>
+</head>
+
+<body id="formbdy">
+    <div class="container responsive">
+        <br>
+        <!-- header part-->
+        <header id="head2" onsubmit="alerting()">
+            <br><br>
+
+
+
+        </header>
+        <hr>
+
+        <!--left navbar-->
+
+
+        <h1 align="center" id="hb"><b>SCHOOLS VISIT FORM</b></h1>
+        <br><br>
+        <div class="row" id="">
+            <div class="col-md-3">
+                <br>Registration Details<br>
+                <!--navbar creation-->
+                <div class="navbar navbar-collapse navbar-primary-info  navbar-fixed-side float-lg-left  " id="naving">
+                    <p>Egerton University Dairy Department offer students of different instutions to come
+                    to our factory.The institutions who would like to visit us must first register and fill the form
+                    on the right hand side .</p>
+                    <p>You have to give your  full correct details ,failure to do so you will not be guaranteed a chance.
+                    If given a chance ,you will receive the notification through the email that you have given us
+                        <br>
+                    Thank you for having a chance to visit us<br>
+
+                    For more information you can visit
+                        <a href="www.egerton.ac.ke">www.egerton.ac.ke</a></p>
+                </div>
+            </div>
+            <!--second column-->
+            <div class="col-md-5" id="middle">
+                <form id="foming" >
+                    <p><label><b> Full School Name</b></label>
+
+                    <input type="text"  id="fname"> </p>
+                    <br>
+                    <p>
+                        <label></label><b>School code</b></label
+                        <br>
+                       <input type="number" value="">
+                    </p>
+                <br>
+                <p>
+                    <label><b>number of students</b></label>
+
+                    <input type="number" value="">
+                </p>
+                <br>
+                <p>
+                    <label><b>School mail</b></label>
+
+                    <input type="email" value="">
+                </p>
+                <br>
+                <p>
+                    <label><b>County</b></label>
+
+                    <input type="text" value="">
+                </p>
+                <br><br>
+                <h5 id="btnmod3"> Give the date you would like to visit</h5>
+
+                <div class="dropdown">
+
+                    <select><button type="button"  class="dropdown-toggle btn-info btn-lg" data-toggle="dropdown" >
+                        <span class="caret"></span><ul><li>February</li>
+                        <li>march</li></ul></button>
+                    <ul>
+                            <li>
+                                <option><li>January</li></option>
+                        <option><li>February</li></option>
+                        <option><li>March</li></option>
+                        <option><li>Aril</li></option>
+                        <option><li>May</li></option>
+                        <option><li>June</li></option>
+                        <option><li>July</li></option>
+                        <option><li>August</li></option>
+                        <option><li>September</li></option>
+                        <option><li>October</li></option>
+                        <option><li>November</li></option>
+                        <option><li>December</li></option>
+                        </li>
+                    </ul>
+
+                    </select>
+                </div>
+                <br>
+
+
+                <button type="submit" class=" btn btn-danger btn-lg " onsubmit="validateform()" formaction="Factory Data.html" formmethod="" method="post" >SUBMIT</button>
+
+
+            </form>
+            </div>
+            <!--third collumn-->
+            <div class="col-md-4">
+                <p ><h5 id="btnmod">Choose the level of your school</h5></p>
+                <br>
+                <div class="card card-body bg-light ">
+
+                    <form>
+                        <br>
+                        <input type="radio" value="Primary school"> Primary school<br>
+                        <input type="radio" value="Primary school"> High school<br>
+                        <input type="radio" value="Primary school"> Universty / collage
+
+                    </form>
+                </div>
+                <br>
+                <p><h5 id="btnmod2">what category does your school belongs </h5></p>
+                <br>
+                <div class="card card-body bg-light ">
+
+                    <form>
+                        <br>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="boding school">
+                                Bording school
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="Day school">
+                                Day school
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="Mixed school">
+                                Mixed school
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="Pure girls">
+                                Pure girls
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="Pure boys">
+                                Pure boys
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+                <!--footer part-->
+            <footer id="footing4">
+
+                    <br><br>
+
+                    <div class="row" align="left">
+                        <div class="col-md-8"><img src="egertonlogo.jpeg" height="75px" width="75px">
+                         <i><a href="www.egerton.ac.ke">www.egerton.ac.ke</a> egerton iso 1999</i></div>
+
+                        <div class="col-md-1"><Button type="button" class="btn btn-info btn-md">HOME</Button> </div>
+                        <div class="col-md-1"><Button type="button" class="btn btn-info btn-md">SIGN UP</Button> </div>
+                        <div class="col-md-1"><Button type="button " class="btn btn-info btn-md">LOG IN </Button></div>
+                    </div>
+
+            </footer>
+
+
+
+    </div>
+
+</body>
+</html>
