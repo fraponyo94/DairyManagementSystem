@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c20f477c-f897-4022-ba07-b65767a986fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomSuccessHandler.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/component/CustomSuccessHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/DefaultController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/DefaultController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/TenderInfoController.class" afterPath="$PROJECT_DIR$/target/classes/team/project/dairymanagementsystem/controller/TenderInfoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/contracts.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/contracts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/template.html" afterPath="$PROJECT_DIR$/target/classes/templates/template.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +31,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+            <state relative-caret-position="374">
+              <caret line="47" column="75" lean-forward="true" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContractForm.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1706">
+              <caret line="174" column="38" lean-forward="false" selection-start-line="174" selection-start-column="38" selection-end-line="174" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TenderAdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -76,7 +84,7 @@
       <file leaf-file-name="welcome.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/welcome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-249">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -86,8 +94,8 @@
       <file leaf-file-name="admin-home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,6 +120,7 @@
       <find>backgro</find>
       <find>card</find>
       <find>h2</find>
+      <find>active</find>
     </findStrings>
     <replaceStrings>
       <replace>Label</replace>
@@ -341,7 +350,7 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="SearchEverywhereHistoryKey" value="contracts.css&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;welcome.css&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/welcome.css&#10;welcom&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/welcome.html&#10;admin&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/admin/admin-home.html&#10;contracts&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;template&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/template.html&#10;Ten&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java&#10;TenderI&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/TenderInfoService.java&#10;welcome&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/welcome.html&#10;Contr&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/ContractForm.html&#10;c&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;cont&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;contracts.js&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/js/jquery/contracts.js&#10;viewcontract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;view&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/viewSupplier.html&#10;COntr&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java&#10;ContractSer&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
+    <property name="SearchEverywhereHistoryKey" value="contrac&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/ContractForm.html&#10;contracts.css&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;welcome.css&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/welcome.css&#10;welcom&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/welcome.html&#10;admin&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/admin/admin-home.html&#10;contracts&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;template&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/template.html&#10;Ten&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java&#10;TenderI&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/TenderInfoService.java&#10;welcome&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/welcome.html&#10;Contr&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/ContractForm.html&#10;c&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;cont&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;contracts.js&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/js/jquery/contracts.js&#10;viewcontract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;view&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/viewSupplier.html&#10;COntr&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java&#10;ContractSer&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/ContractService.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -531,7 +540,7 @@
       <workItem from="1533796345935" duration="5447000" />
       <workItem from="1533826939672" duration="214000" />
       <workItem from="1533828340010" duration="17607000" />
-      <workItem from="1533873613060" duration="2185000" />
+      <workItem from="1533873613060" duration="2861000" />
     </task>
     <task id="LOCAL-00001" summary="ui renovation">
       <created>1529318474391</created>
@@ -565,36 +574,37 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306995000" />
+    <option name="totallyTimeSpent" value="307671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57822084" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7131902" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44785276" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2375189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7131902" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44785276" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2375189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -604,7 +614,6 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -841,17 +850,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/bootstrap/datePicker.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1519">
-          <caret line="174" column="38" lean-forward="false" selection-start-line="174" selection-start-column="38" selection-end-line="174" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-376">
           <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -859,6 +862,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -873,6 +880,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="279" column="68" lean-forward="false" selection-start-line="279" selection-start-column="68" selection-end-line="279" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -883,24 +891,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomLogoutSuccessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -908,6 +903,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -915,14 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,10 +922,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/welcome.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -950,6 +946,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/welcome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -958,10 +962,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+        <state relative-caret-position="374">
+          <caret line="47" column="75" lean-forward="true" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1706">
+          <caret line="174" column="38" lean-forward="false" selection-start-line="174" selection-start-column="38" selection-end-line="174" selection-end-column="38" />
           <folding />
         </state>
       </provider>
