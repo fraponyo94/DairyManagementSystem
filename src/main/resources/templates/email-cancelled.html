@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Contract Approval Confirmation</title>
+    <title>Contract Cancelled</title>
     <style>
         .centered {
             min-height: 100%; /* Fallback for browsers do NOT support vh unit */
@@ -38,15 +38,15 @@
     <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2" th:object="${supplier}">
 
         <!--Title-->
-        <h1 class="card-title h2-responsive mt-2 font-bold"><b>Confirmation of Approval for your Contract Application</b>
+        <h1 class="card-title h2-responsive mt-2 font-bold"><b>Confirmation of Denial of your Contract Application</b>
         </h1>
 
         <!--Text-->
         <div class="d-flex justify-content-center" style="min-width: 40rem;">
             <div class="card-text my-2" style="max-width: 43rem;">
-                <p>Congratulations! Your contract application with the details shown below has been successfully
-                    approved.<br>
-                    Kindly press the button below to create an account.<br></p>
+                <p>This is to inform you that your contract application with the following details has been cancelled.<br>
+                Many factors are taken into consideration before cancellation of any contract. You can contact us to find out the
+                reasons behind the cancellation of your contract.</p>
                 <Label for="id">National Id: </Label> <span id="id" th:text="${supplier.nationalId}"></span><br>
                 <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
                 <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
@@ -55,15 +55,10 @@
                                                                  th:text="${supplier.contract.amountPerDay}"></span><br>
                 <Label for="cost">Litre Cost: </Label> <span id="cost"
                                                              th:text="${supplier.contract.costPerLitre}"></span><br>
+                <p>We wish you all the best in your endeavors</p>
             </div>
         </div>
-
-        <hr class="my-4 rgba-white-light">
-
-        <form th:action="@{http://localhost:8080/create-user/{id}(id=${supplier.nationalId})}" th:method="GET">
-            <input class="btn btn-success btn-rounded" type="submit" value="Create Account">
-        </form>
-
-
+    </div>
+</div>
 </body>
 </html>

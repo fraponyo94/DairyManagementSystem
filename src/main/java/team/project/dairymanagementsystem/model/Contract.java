@@ -30,8 +30,6 @@ public class Contract implements Serializable {
     @Column(name = "description", nullable = false)
     private String description;
 
-
-
     public Contract() {
     }
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <div th:replace="template :: head"> </div>
+    <meta charset="UTF-8">
+    <title>Supplier Details</title>
+
+</head>
+<body>
+<div th:replace="template :: welcome-nav">
+
+</div>
+<br>
+<br>
+
+<p>
+<div class="d-flex justify-content-center" style="min-width: 40rem;">
+    <div class="card-text my-2" style="max-width: 43rem; position: relative">
+        <Label for="id">National Id: </Label> <span id="id" th:text="${supplier.nationalId}"></span><br>
+        <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
+        <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
+        <Label for="phone">Phone: </Label> <span id="phone" th:text="${supplier.phone}"></span><br>
+        <Label for="status">Contract Status: </Label> <span id="status" th:text="${supplier.contract.status}"></span><br>
+        <Label for="amount">Daily Amount: </Label> <span id="amount" th:text="${supplier.contract.amountPerDay}"></span><br>
+        <Label for="cost">Litre Cost: </Label> <span id="cost" th:text="${supplier.contract.costPerLitre}"></span><br>
+        <Label for="description">Description: </Label> <span id="description" th:text="${supplier.contract.description}"></span><br>
+        <Label for="pic">CV: </Label> <a target="_blank" id="pic" th:object="${supplier.pic}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
+
+        <div>
+            <div th:if="${supplier.contract.status.equalsIgnoreCase('pending')}">
+                <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
+                      th:object="${supplier.contract.id}">
+                    <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</p>
+
+
+<div th:replace="template :: js-files"></div>
+</body>
+
+</html>

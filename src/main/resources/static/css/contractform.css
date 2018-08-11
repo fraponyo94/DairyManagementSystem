@@ -44,6 +44,8 @@ section {
 
 .contract-form {
     background-color: #fffde7;
+    position: relative;
+    top: 64px;
 }
 .text-green {
     text-decoration-color: green;

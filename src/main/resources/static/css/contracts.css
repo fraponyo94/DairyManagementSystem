@@ -29,3 +29,7 @@ form {
     background-color: green;
     color: white;
 }
+#table-contracts{
+    position: relative;
+    top: 59px;
+}
