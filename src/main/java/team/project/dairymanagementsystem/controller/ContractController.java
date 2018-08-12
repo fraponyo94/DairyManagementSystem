@@ -79,7 +79,7 @@ public class ContractController {
             //get uploaded files in bytes
             byte[] bytes = file.getBytes();
             //set bytes to corresponding supplier attributes
-            supplier.setPic(bytes);
+            supplier.setAttachment(bytes);
         } catch (Exception e) {
             e.printStackTrace();
         }

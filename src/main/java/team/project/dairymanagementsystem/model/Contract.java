@@ -2,7 +2,6 @@
 package team.project.dairymanagementsystem.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
@@ -13,32 +12,42 @@ public class Contract implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-
-    @Column(name = "supplierId", nullable = false,unique = true)
+    @Column(name = "supplierId", nullable = false, unique = true)
     private int supplierId;
 
-
-    @Column(name = "status",nullable = false)
+    @Column(name = "status", nullable = false)
     private String status;
 
-    @Column(name = "amountPerDay",nullable = false)
+    @Column(name = "amountPerDay", nullable = false)
     private int amountPerDay;
 
-    @Column(name = "costPerLitre",nullable = false)
+    @Column(name = "costPerLitre", nullable = false)
     private int costPerLitre;
 
     @Column(name = "description", nullable = false)
     private String description;
 
+    @Column(name = "tenderInfoId", nullable = false)
+    private long tenderInfoId;
+
     public Contract() {
     }
 
-    public Contract(int supplierId,String status, int amountPerDay, int costPerLitre, String description) {
+    public Contract(int supplierId, String status, int amountPerDay, int costPerLitre, String description, int tenderInfoId) {
         this.supplierId = supplierId;
         this.status = status;
         this.amountPerDay = amountPerDay;
         this.costPerLitre = costPerLitre;
         this.description = description;
+        this.tenderInfoId = tenderInfoId;
+    }
+
+    public long getTenderInfoId() {
+        return tenderInfoId;
+    }
+
+    public void setTenderInfoId(long tenderInfoId) {
+        this.tenderInfoId = tenderInfoId;
     }
 
     public int getId() {
@@ -97,7 +106,8 @@ public class Contract implements Serializable {
                 ", status='" + status + '\'' +
                 ", amountPerDay=" + amountPerDay +
                 ", costPerLitre=" + costPerLitre +
-                ", description=" + description +
+                ", description='" + description + '\'' +
+                ", tenderInfoId=" + tenderInfoId +
                 '}';
     }
 }

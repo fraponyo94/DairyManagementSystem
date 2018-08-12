@@ -34,9 +34,9 @@ public class SupplierController {
 
         headers.add("content-disposition", "inline;filename=" + fileName);
         headers.setCacheControl("must-revalidate,post-check=0,pre-check=0");
-        byte[] picBytes = supplier.getPic();
+        byte[] attachment = supplier.getAttachment();
 
-        ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(picBytes,headers, HttpStatus.OK);
+        ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(attachment,headers, HttpStatus.OK);
         return response;
     }
     @GetMapping("/applicant-details")
