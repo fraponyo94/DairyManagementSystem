@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import team.project.dairymanagementsystem.model.TenderInfo;
+import team.project.dairymanagementsystem.model.checkLoginStatus.CheckLoginStatus;
 import team.project.dairymanagementsystem.service.TenderInfoService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -68,7 +69,8 @@ public class TenderInfoController {
 
     //Go to tender information
     @GetMapping("/tender/tender-info")
-    public ModelAndView tenderInfo(ModelAndView modelAndView) {
+    public ModelAndView tenderInfo(ModelAndView modelAndView, HttpServletRequest request) {
+        CheckLoginStatus.checkStatus(modelAndView,request);
         modelAndView.addObject("tender", tenderInfoService.findLatestTender());
         modelAndView.setViewName("tender/tender-info");
         return modelAndView;

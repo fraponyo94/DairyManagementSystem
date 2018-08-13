@@ -20,7 +20,7 @@
 <div class="d-flex justify-content-center align-items-center centered">
     <!--Jumbotron-->
     <!--/*@thymesVar id="supplier" type="team.project.dairymanagementsystem.model.Supplier"*/-->
-    <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2" th:object="${supplier}">
+    <div class="jumbotron text-center lighten-2 white-text z-depth-2" th:object="${supplier}">
 
         <!--Title-->
         <h1 class="card-title h2-responsive mt-2 font-bold"><b th:text="${supplier.name}"></b></h1>
@@ -55,11 +55,11 @@
 
         <!--if the status is approved, a cancel button should appear-->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('approved')}">
-            <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
-                  th:object="${supplier.contract.id}">
-                <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
-            </form>
-        </div>
+        <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
+              th:object="${supplier.contract.id}">
+            <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
+        </form>
+    </div>
 
         <!--if the status is denied, a delete button should appear-->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('denied')}">

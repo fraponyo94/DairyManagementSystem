@@ -8,11 +8,17 @@
 label{
     font-weight: bold;
     font-style: italic;
-    color: aqua;
+    color: #17f30b;
 }
 form{
     display: inline-block;
 }
 a {
     color: #6129b3;
+}
+span{
+    color: black;
+}
+h1{
+    color: black;
 }
