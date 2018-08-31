@@ -40,7 +40,7 @@
 <body>
 
 <!-- Navbar -->
-<div th:replace="template :: welcome-nav">
+<div th:replace="template :: tender-info-nav">
 
 </div>
 <!-- Navbar -->
@@ -50,18 +50,19 @@
 
         <div class="jumbotron">
 
+            <!--/*@thymesVar id="tender" type="team.project.dairymanagementsystem.model.TenderInfo"*/-->
             <h2 class="display-4 text-center" th:text="${tender.tenderTitle}">Tender Title</h2>
              <hr class="my-3">
 
             <h3 class="mb-3">Tender Description</h3>
-            <p th:text="${tender.tenderDescription}" >This is a detailed descriptio of the tender being advertised, this content is fetched database to be displayed to the user</p>
+            <p th:text="${tender.tenderDescription}" >This is a detailed description of the tender being advertised, this content is fetched database to be displayed to the user</p>
 
             <hr class="my-3">
 
             <h3 class="mb-3">Tender Requirements</h3>
             <p class="mb-4" th:text="${tender.tenderRequirements}">A brief description of the tender requirements is displayed here</p>
 
-            <p><label>Click <a href="/tender/tender-pdf" th:href="@{/tender/tender-pdf}">here</a> to find a detailed document describing all requirements required for the tender </label></p>
+            <p th:if="${tender.fileAttachment != null}"><label>Click <a href="/tender/tender-pdf" th:href="@{/tender/tender-pdf}">here</a> to find a detailed document describing all requirements required for the tender </label></p>
 
             <a class="btn btn-primary btn-lg text-center" href="/contract/contract" th:href="@{/contract/contract}" role="button">Apply Now</a>
 

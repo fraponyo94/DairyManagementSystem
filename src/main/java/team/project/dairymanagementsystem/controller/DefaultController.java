@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 import team.project.dairymanagementsystem.model.TenderInfo;
+import team.project.dairymanagementsystem.model.checkLoginStatus.CheckLoginStatus;
 import team.project.dairymanagementsystem.service.TenderInfoService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -47,16 +48,7 @@ public class DefaultController {
                 System.out.println("How did we get here?");
             }
         }
-        //check whether user is logged in to determine whether to show a logout or login button
-        if(request.getSession().getAttribute("loggedIn") != null){
-            modelAndView.addObject("loggedIn", true);
-            //check if the user is an admin
-            if(request.getSession().getAttribute("admin") != null){
-                modelAndView.addObject("admin", true);
-            }
-        }else{
-            modelAndView.addObject("loggedIn", false);
-        }
+        CheckLoginStatus.checkStatus(modelAndView,request);
         modelAndView.addObject("tender", tender);
         modelAndView.setViewName("welcome");
         return modelAndView;
