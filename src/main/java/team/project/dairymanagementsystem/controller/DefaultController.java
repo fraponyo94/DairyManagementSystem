@@ -20,6 +20,7 @@ import java.util.TimeZone;
 public class DefaultController {
     @Autowired
     private TenderInfoService tenderInfoService;
+    public static String message;
 
     //Home page
     @GetMapping(value = {"/"})
@@ -48,8 +49,13 @@ public class DefaultController {
                 System.out.println("How did we get here?");
             }
         }
-        CheckLoginStatus.checkStatus(modelAndView,request);
+        CheckLoginStatus.checkStatus(modelAndView, request);
         modelAndView.addObject("tender", tender);
+        if (message != null) {
+            modelAndView.addObject("message", message);
+            //reset message
+            message = null;
+        }
         modelAndView.setViewName("welcome");
         return modelAndView;
     }

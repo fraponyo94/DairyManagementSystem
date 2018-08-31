@@ -35,6 +35,5 @@ $(document).ready(function () {
     //get the type of the message from the first word of the message
     msgType = msg.substr(0, msg.indexOf(':'));
     $('#myTable').DataTable();
-    // msg_display.show();
     $('#toast_link').click();
 });

@@ -19,6 +19,10 @@ import java.util.List;
 
 @Controller
 public class TenderInfoController {
+    //    constant to identify success messages
+    private String SUCCESS = "SUCCESS: ";
+    //    constant to identify error messages
+    private String ERROR = "ERROR: ";
 
     @Autowired
     private TenderInfoService tenderInfoService;
@@ -57,11 +61,10 @@ public class TenderInfoController {
                     e.printStackTrace();
                 }
             }
-
             tenderInfo.setStatus(true);
             tenderInfoService.addTenderInfo(tenderInfo);
+            DefaultController.message = SUCCESS + "Tender created successfully";
             modelAndView.setViewName("redirect:/");
-
         }
 
         return modelAndView;

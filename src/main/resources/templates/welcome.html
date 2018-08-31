@@ -4,6 +4,7 @@
 <head>
     <div th:replace="template :: head">
     </div>
+    <link rel="stylesheet" th:href="@{/css/toast/toastr.css}">
     <title>Dairy plant</title>
 
     <style type="text/css">
@@ -36,6 +37,16 @@
                 background: #1C2331!important;
             }
         }
+        #toast-container > .toast-success{
+            background-image: none;
+            background-color: black;
+            color: white;
+        }
+        #toast-container > .toast-error{
+            background-image: none;
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 
@@ -45,6 +56,13 @@
  <div th:replace="template :: welcome-nav">
  </div>
 <!-- Navbar -->
+
+<!--hidden link that shows an information message as a toast-->
+<!--/*@thymesVar id="message" type="java.lang.String"*/-->
+<div th:if="${message!=null}">
+    <span id="toast_msg" th:text="${message}"></span>
+    <a id="toast_link"></a>
+</div>
 
 <!-- Full Page Intro -->
 <div class="view full-page-intro" >
@@ -256,12 +274,6 @@
 
             <h2 class="my-5 h3 text-center">ABOUT US</h2>
 
-            <!--First row-->
-            <body class="boding responsive">
-            <script src="bootstrap.js" href="style/css">
-                window.alert("Welcome to our Dairy Factory management");
-            </script>
-
             <div class="container" >
                 <br>
                 <!-- header part-->
@@ -308,7 +320,7 @@
                     </div>
 
                 </div>
-
+            </div>
         </section>
         <!--Section: Not enough-->
 
@@ -433,8 +445,8 @@
 <!--/.Footer-->
 
 <!-- SCRIPTS -->
-<!-- SCRIPTS -->
 <div th:replace="template :: js-files"></div>
+<script th:src="@{/js/welcome.js}"></script>
 
 </body>
 
