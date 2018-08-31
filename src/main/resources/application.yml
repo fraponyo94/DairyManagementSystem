@@ -13,8 +13,6 @@ spring:
     username: root
     password: 07022tolb
 
-
-
     url:  jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1

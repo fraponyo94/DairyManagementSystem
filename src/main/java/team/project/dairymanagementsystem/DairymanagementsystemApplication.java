@@ -4,12 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import team.project.dairymanagementsystem.model.DairyStaff;
-import team.project.dairymanagementsystem.model.enumerated.Gender;
 import team.project.dairymanagementsystem.model.RoleGroup;
+import team.project.dairymanagementsystem.model.enumerated.Gender;
 import team.project.dairymanagementsystem.model.enumerated.Roles;
 import team.project.dairymanagementsystem.service.DairyStaffService;
 
