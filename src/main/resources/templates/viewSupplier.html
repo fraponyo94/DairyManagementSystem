@@ -70,21 +70,21 @@
             </form>
         </div>
 
-        <!--if the status is denied, a delete button should appear-->
-        <div th:if="${supplier.contract.status.equalsIgnoreCase('denied')}">
-            <form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"
-                  th:object="${supplier.contract.id}">
-                <input class="btn btn-danger btn-rounded" type="submit" value="delete">
-            </form>
-        </div>
+        <!--&lt;!&ndash;if the status is denied, a delete button should appear&ndash;&gt;-->
+        <!--<div th:if="${supplier.contract.status.equalsIgnoreCase('denied')}">-->
+            <!--<form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"-->
+                  <!--th:object="${supplier.contract.id}">-->
+                <!--<input class="btn btn-danger btn-rounded" type="submit" value="delete">-->
+            <!--</form>-->
+        <!--</div>-->
 
-        <!--if the status is cancelled, a delete button should appear-->
-        <div th:if="${supplier.contract.status.equalsIgnoreCase('cancelled')}">
-            <form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"
-                  th:object="${supplier.contract.id}">
-                <input class="btn btn-danger btn-rounded" type="submit" value="delete">
-            </form>
-        </div>
+        <!--&lt;!&ndash;if the status is cancelled, a delete button should appear&ndash;&gt;-->
+        <!--<div th:if="${supplier.contract.status.equalsIgnoreCase('cancelled')}">-->
+            <!--<form th:action="@{/contract/delete/{id}(id=${supplier.contract.id})}" th:method="POST"-->
+                  <!--th:object="${supplier.contract.id}">-->
+                <!--<input class="btn btn-danger btn-rounded" type="submit" value="delete">-->
+            <!--</form>-->
+        <!--</div>-->
 
     </div>
     <!--Jumbotron-->
