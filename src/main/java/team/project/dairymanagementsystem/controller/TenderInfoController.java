@@ -27,22 +27,6 @@ public class TenderInfoController {
     @Autowired
     private TenderInfoService tenderInfoService;
 
-   /* //Admin home
-    @GetMapping("/")
-    public ModelAndView adminHome(ModelAndView modelAndView){
-
-        modelAndView.setViewName("admin/admin-home");
-        return modelAndView;
-    }*/
-
-   /*Add Tender---GET----*//*
-    @GetMapping("/tender-info")
-    public ModelAndView addTenderInfo(ModelAndView modelAndView){
-        modelAndView.addObject("tenderInfo",new TenderInfo());
-        modelAndView.setViewName("admin/admin-home");
-        return modelAndView;
-    }*/
-
     /*Add Tender -------POST-----*/
     @PostMapping("/tender/add")
     public ModelAndView addContract(@Valid @ModelAttribute TenderInfo tenderInfo, BindingResult result, MultipartFile file, ModelAndView modelAndView) {

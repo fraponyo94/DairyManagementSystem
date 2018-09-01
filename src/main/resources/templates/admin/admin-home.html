@@ -2,9 +2,30 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>admin home page</title>
+    <title>Admin | Home</title>
     <div th:replace="template :: head"></div>
+    <style type="text/css">
+        main {
+            margin: 0 auto;
+            padding-bottom: 200px;
+            max-width: 100%;
+            width: 100%;
+        }
 
+        .page-footer {
+            clear: bottom;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        div.jumbotron {
+            margin-top: 100px;
+        }
+    </style>
 </head>
 <body>
 <!-- Navbar -->
@@ -13,6 +34,7 @@
 <!-- Navbar -->
 
 <!-- Full Page Intro -->
+<main class="mt-2">
 <div class="view full-page-intro" th:unless="${active}">
 
     <!-- Mask & flexbox options  -->
@@ -73,15 +95,39 @@
 
 
 </div>
-<!-- Full Page Intro -->
 
+<div class="container" th:if="${active}">
+
+    <div class="jumbotron">
+
+        <!--/*@thymesVar id="tender" type="team.project.dairymanagementsystem.model.TenderInfo"*/-->
+        <h2 class="display-4 text-center" th:text="${tender.tenderTitle}">Tender Title</h2>
+        <hr class="my-3">
+
+        <h3 class="mb-3">Tender Description</h3>
+        <p th:text="${tender.tenderDescription}">This is a detailed description of the tender being advertised, this
+            content is fetched database to be displayed to the user</p>
+
+        <hr class="my-3">
+
+        <h3 class="mb-3">Tender Requirements</h3>
+        <p class="mb-4" th:text="${tender.tenderRequirements}">A brief description of the tender requirements is
+            displayed here</p>
+
+        <p th:if="${tender.fileAttachment != null}"><label>Click <a href="/tender/tender-pdf"
+                                                                    th:href="@{/tender/tender-pdf}">here</a> to find a
+            detailed document describing all requirements for the tender </label></p>
+
+    </div>
+</div>
+<!-- Full Page Intro -->
+</main>
 
 <!--Footer-->
-<footer class="page-footer text-center font-small mt-0">
+<footer class="page-footer text-center font-small mt-4">
     <!--Copyright-->
-    <div class="footer-copyright py-3">
+    <div class="py-3">
         © 2018 Copyright:
-
     </div>
     <!--/.Copyright-->
 
