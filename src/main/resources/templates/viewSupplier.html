@@ -39,17 +39,13 @@
                 <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
                 <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
                 <Label for="phone">Phone: </Label> <span id="phone" th:text="${supplier.phone}"></span><br>
-                <Label for="status">Contract Status: </Label> <span id="status"
-                                                                    th:text="${supplier.contract.status}"></span><br>
-                <Label for="amount">Daily Amount: </Label> <span id="amount"
-                                                                 th:text="${supplier.contract.amountPerDay}"></span><br>
-                <Label for="cost">Litre Cost: </Label> <span id="cost"
-                                                             th:text="${supplier.contract.costPerLitre}"></span><br>
-                <Label for="description">Description: </Label> <span id="description"
-                                                                     th:text="${supplier.contract.description}"></span><br>
-                <Label for="attachment">CV: </Label> <a target="_blank" id="attachment"
-                                                        th:object="${supplier.attachment}"
-                                                        th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
+                <Label for="status">Contract Status: </Label> <span id="status" th:text="${supplier.contract.status}"></span><br>
+                <Label for="amount">Daily Amount: </Label> <span id="amount" th:text="${supplier.contract.amountPerDay}"></span><br>
+                <Label for="cost">Litre Cost: </Label> <span id="cost" th:text="${supplier.contract.costPerLitre}"></span><br>
+                <Label for="description">Description: </Label> <span id="description" th:text="${supplier.contract.description}"></span><br>
+                <div th:if="${supplier.attachment.length>0}">
+                    <Label for="attachment">CV: </Label> <a target="_blank" id="attachment" th:object="${supplier.attachment}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
+                </div>
             </div>
         </div>
 

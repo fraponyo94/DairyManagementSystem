@@ -43,7 +43,9 @@
                 <Label for="amount">Daily Amount: </Label> <span id="amount" th:text="${supplier.contract.amountPerDay}"></span><br>
                 <Label for="cost">Litre Cost: </Label> <span id="cost" th:text="${supplier.contract.costPerLitre}"></span><br>
                 <Label for="description">Description: </Label> <span id="description" th:text="${supplier.contract.description}"></span><br>
-                <Label for="attachment">CV: </Label> <a target="_blank" id="attachment" th:object="${supplier.attachment}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
+                <div th:if="${supplier.attachment.length>0}">
+                    <Label for="attachment">CV: </Label> <a target="_blank" id="attachment" th:object="${supplier.attachment}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
+                </div>
             </div>
         </div>
 
@@ -62,11 +64,11 @@
 
         <!--if the status is approved, a cancel button should appear-->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('approved')}">
-        <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
-              th:object="${supplier.contract.id}">
-            <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
-        </form>
-    </div>
+            <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
+                  th:object="${supplier.contract.id}">
+                <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
+            </form>
+        </div>
 
         <!--if the status is denied, a delete button should appear-->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('denied')}">
