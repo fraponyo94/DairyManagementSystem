@@ -12,9 +12,12 @@ public class CheckLoginStatus {
             //check if the user is an admin
             if(request.getSession().getAttribute("admin") != null){
                 modelAndView.addObject("admin", true);
+            }else{
+                modelAndView.addObject("admin", false);
             }
         }else{
             modelAndView.addObject("loggedIn", false);
+            modelAndView.addObject("admin", false);
         }
     }
 }

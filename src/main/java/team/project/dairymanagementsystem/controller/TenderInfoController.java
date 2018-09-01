@@ -75,9 +75,7 @@ public class TenderInfoController {
             response.setContentLength(bytes.length);
 
             response.getOutputStream().write(bytes);
-        } catch (Exception ioe) {
-
-        } finally {
+        } catch (Exception ignored) {
 
         }
         return null;

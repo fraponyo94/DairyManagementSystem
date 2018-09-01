@@ -68,7 +68,7 @@
                 a detailed document describing all requirements required for the tender </label></p>
 
             <a class="btn btn-primary btn-lg text-center" href="/contract/contract" th:href="@{/contract/contract}"
-               role="button">Apply Now</a>
+               role="button" th:if="${admin==false}">Apply Now</a>
 
         </div>
     </div>
@@ -79,8 +79,7 @@
 <footer class="page-footer text-center font-small mt-4 ">
     <!--Copyright-->
     <div class="py-3">
-        © 2018 Copyright:
-
+        © 2018 Copyright
     </div>
     <!--/.Copyright-->
 
