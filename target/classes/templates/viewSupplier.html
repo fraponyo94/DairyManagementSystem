@@ -15,9 +15,16 @@
     <link rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
     <!--custom css-->
     <link rel="stylesheet" th:href="@{/css/viewContract.css}">
+    <link rel="stylesheet" th:href="@{/css/welcome.css}">
 </head>
 <body>
-<div class="d-flex justify-content-center align-items-center centered">
+
+<!-- Navbar -->
+<div th:replace="template :: admin-nav">
+</div>
+<!-- Navbar -->
+
+<div class="d-flex justify-content-center align-items-center centered" id="supplierDetails">
     <!--Jumbotron-->
     <!--/*@thymesVar id="supplier" type="team.project.dairymanagementsystem.model.Supplier"*/-->
     <div class="jumbotron text-center lighten-2 white-text z-depth-2" th:object="${supplier}">

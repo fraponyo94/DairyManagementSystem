@@ -22,3 +22,10 @@ span{
 h1{
     color: black;
 }
+li span{
+    color: white;
+}
+#supplierDetails{
+    position: relative;
+    top: 45px;
+}

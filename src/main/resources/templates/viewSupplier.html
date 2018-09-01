@@ -15,9 +15,16 @@
     <link rel="stylesheet" th:href="@{/css/bootstrap/mdb.min.css}">
     <!--custom css-->
     <link rel="stylesheet" th:href="@{/css/viewContract.css}">
+    <link rel="stylesheet" th:href="@{/css/welcome.css}">
 </head>
 <body>
-<div class="d-flex justify-content-center align-items-center centered">
+
+<!-- Navbar -->
+<div th:replace="template :: admin-nav">
+</div>
+<!-- Navbar -->
+
+<div class="d-flex justify-content-center align-items-center centered" id="supplierDetails">
     <!--Jumbotron-->
     <!--/*@thymesVar id="supplier" type="team.project.dairymanagementsystem.model.Supplier"*/-->
     <div class="jumbotron text-center lighten-2 white-text z-depth-2" th:object="${supplier}">
@@ -32,11 +39,17 @@
                 <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
                 <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
                 <Label for="phone">Phone: </Label> <span id="phone" th:text="${supplier.phone}"></span><br>
-                <Label for="status">Contract Status: </Label> <span id="status" th:text="${supplier.contract.status}"></span><br>
-                <Label for="amount">Daily Amount: </Label> <span id="amount" th:text="${supplier.contract.amountPerDay}"></span><br>
-                <Label for="cost">Litre Cost: </Label> <span id="cost" th:text="${supplier.contract.costPerLitre}"></span><br>
-                <Label for="description">Description: </Label> <span id="description" th:text="${supplier.contract.description}"></span><br>
-                <Label for="attachment">CV: </Label> <a target="_blank" id="attachment" th:object="${supplier.attachment}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
+                <Label for="status">Contract Status: </Label> <span id="status"
+                                                                    th:text="${supplier.contract.status}"></span><br>
+                <Label for="amount">Daily Amount: </Label> <span id="amount"
+                                                                 th:text="${supplier.contract.amountPerDay}"></span><br>
+                <Label for="cost">Litre Cost: </Label> <span id="cost"
+                                                             th:text="${supplier.contract.costPerLitre}"></span><br>
+                <Label for="description">Description: </Label> <span id="description"
+                                                                     th:text="${supplier.contract.description}"></span><br>
+                <Label for="attachment">CV: </Label> <a target="_blank" id="attachment"
+                                                        th:object="${supplier.attachment}"
+                                                        th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
             </div>
         </div>
 
@@ -55,11 +68,11 @@
 
         <!--if the status is approved, a cancel button should appear-->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('approved')}">
-        <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
-              th:object="${supplier.contract.id}">
-            <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
-        </form>
-    </div>
+            <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
+                  th:object="${supplier.contract.id}">
+                <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
+            </form>
+        </div>
 
         <!--if the status is denied, a delete button should appear-->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('denied')}">

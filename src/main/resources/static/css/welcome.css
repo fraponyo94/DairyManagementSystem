@@ -47,3 +47,14 @@ body,
     height: 165px;
 
 }
+
+#toast-container > .toast-success{
+    background-image: none;
+    background-color: black;
+    color: white;
+}
+#toast-container > .toast-error{
+    background-image: none;
+    background-color: black;
+    color: white;
+}
