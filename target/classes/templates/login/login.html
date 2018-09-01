@@ -16,39 +16,39 @@
     <link href="css/login.css" rel="stylesheet" th:href="@{css/login.css}">
 </head>
 
-<body>
+<body style="background-color: #dad4d4">
 
 <!-- Portal login page-->
 <div style="height: 100vh">
     <div class="flex-center flex-column">
         <!--Login page starts here-->
-        <section class="form-dark">
+        <section>
 
             <!--F-->
-            <div class=" card-image" style=" width: 30rem;">
-                <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+            <div class="card card-image" style=" width: 30rem;">
+                <div class="text-white py-5 px-5 z-depth-4">
 
                     <!--Header-->
                     <div class="text-center">
-                        <h3 class="white-text mb-5 mt-4 font-weight-bold"><strong>Dairy Portal</strong></h3>
+                        <h3 class="mb-5 mt-4 font-weight-bold" style="color: black"><strong>Dairy Portal</strong></h3>
                     </div>
 
                     <!--Body-->
                     <form action="/login" th:action="@{/login}" method="POST" class="login">
 
                         <div align="center" th:if="${param.error}">
-                            <p class="card-text text-danger">
+                            <p class="card-text">
                                 Email or Password invalid, please try again
                             </p>
                         </div>
 
                         <div class="md-form">
-                            <input type="text" id="username" class="form-control white-text" name="username" autocomplete="false">
+                            <input type="text" id="username" class="form-control" name="username" autocomplete="false">
                             <label for="username">Username</label>
                         </div>
 
                         <div class="md-form pb-3">
-                            <input type="password" id="password" class="form-control white-text" name="password" autocomplete="false">
+                            <input type="password" id="password" class="form-control" name="password" autocomplete="false">
                             <label for="password">Your password</label>
                         </div>
 
@@ -57,7 +57,7 @@
 
                             <!--Grid column-->
                             <div class="text-center mb-3 col-md-12">
-                                <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1">Login</button>
+                                <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1"><b>Login</b></button>
                             </div>
 
                         </div>
@@ -66,9 +66,9 @@
 
                     <!--Grid column-->
                     <div class="col-md-12">
-                        <p class="font-small white-text d-flex justify-content-end">Forgot your password? <a href="#" class="green-text ml-1 font-weight-bold"> Click to reset</a></p>
+                        <p class="font-small d-flex justify-content-end" style="color: black">Forgot your password? <a href="#" class="green-text ml-1 font-weight-bold"> Click to reset</a></p>
                         <br>
-                        <p class="font-small white-text d-flex justify-content-end"><a href="/" class="green-text ml-1 font-weight-bold">Home</a></p>
+                        <p class="font-small d-flex justify-content-end"><a href="/" class="green-text ml-1 font-weight-bold">Home</a></p>
                     </div>
                     <!--Grid column-->
 
@@ -83,14 +83,8 @@
 <!--End of login page-->
 
 <!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/bootstrap/jquery-3.3.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/bootstrap/mdb.min.js"></script>
+<!-- SCRIPTS -->
+<div th:replace="template :: js-files"></div>
 </body>
 
 </html>

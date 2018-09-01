@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844993ca-db04-436f-88c3-d5afd9d54f1a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/contracts.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/contracts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/viewSupplier.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/viewSupplier.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/login.css" afterPath="$PROJECT_DIR$/target/classes/static/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/login/login.html" afterPath="$PROJECT_DIR$/target/classes/templates/login/login.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,66 +21,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="viewContract.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/viewContract.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewSupplier.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/viewSupplier.html">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java">
+      <file leaf-file-name="ContractForm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-929">
-              <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/welcome.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contracts.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+            <state relative-caret-position="153">
+              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
               <folding>
-                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#form#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contracts.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/contracts.css">
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contractform.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/contractform.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/welcome.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -87,21 +83,9 @@
       <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="176">
+              <caret line="423" column="0" lean-forward="true" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractForm.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/CustomSuccessHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Supplier.html" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/PdfConverter.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/DairymanagementsystemApplication.java" />
@@ -183,6 +166,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/viewSupplier.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/contract/contracts.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/contracts.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/login.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login/login.html" />
       </list>
     </option>
   </component>
@@ -424,7 +409,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="SearchEverywhereHistoryKey" value="contracts&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;ContractC&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java&#10;contractF&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/ContractForm.html&#10;welcome&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/welcome.html&#10;we&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/welcome.css&#10;welcome.css&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Supplier.java&#10;Suppl&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Supplier.java&#10;view&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;viewS&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/viewSupplier.html&#10;templa&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/template.html&#10;templates&#9;PSI&#9;JAVA://javax.xml.transform.Templates&#10;viewC&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;contract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;contractC&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java&#10;Def&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java&#10;tender&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java&#10;contractf&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/ContractForm.html&#10;wel&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/welcome.html&#10;admin&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java&#10;te&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java&#10;admin-hom&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/admin/admin-home.html&#10;SupplierRe&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/SupplierRepository.java&#10;SUCCESS&#9;PSI&#9;JAVA://team.project.dairymanagementsystem.controller.TenderInfoController#SUCCESS&#10;getLatest&#9;PSI&#9;JAVA://team.project.dairymanagementsystem.service.TenderInfoService#getLatestTenderInfo&#10;TenderInfo&#9;PSI&#9;JAVA://team.project.dairymanagementsystem.repository.TenderInfoRepository&#10;ContractS&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/ContractService.java&#10;viewContract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;ten&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java&#10;ContractR&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/ContractRepository.java&#10;Supplier&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Supplier.java&#10;Supplier.ja&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Supplier.java&#10;Contract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Contract.java&#10;table&#9;null&#9;null&#10;/tender-info&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="login.css&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/login.css&#10;contractf&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contractform.css&#10;contractF&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/ContractForm.html&#10;wel&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/js/welcome.js&#10;template&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/template.html&#10;login&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/login/login.html&#10;contracts&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/contracts.css&#10;ContractC&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java&#10;welcome&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/welcome.html&#10;we&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/welcome.css&#10;welcome.css&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Supplier.java&#10;Suppl&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Supplier.java&#10;view&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;viewS&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/viewSupplier.html&#10;templa&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/template.html&#10;templates&#9;PSI&#9;JAVA://javax.xml.transform.Templates&#10;viewC&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;contract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/contract/contracts.html&#10;contractC&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/ContractController.java&#10;Def&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/DefaultController.java&#10;tender&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java&#10;admin&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java&#10;te&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/controller/TenderInfoController.java&#10;admin-hom&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/templates/admin/admin-home.html&#10;SupplierRe&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/SupplierRepository.java&#10;SUCCESS&#9;PSI&#9;JAVA://team.project.dairymanagementsystem.controller.TenderInfoController#SUCCESS&#10;getLatest&#9;PSI&#9;JAVA://team.project.dairymanagementsystem.service.TenderInfoService#getLatestTenderInfo&#10;TenderInfo&#9;PSI&#9;JAVA://team.project.dairymanagementsystem.repository.TenderInfoRepository&#10;ContractS&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/service/ContractService.java&#10;viewContract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/resources/static/css/viewContract.css&#10;ten&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/TenderInfo.java&#10;ContractR&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/repository/ContractRepository.java&#10;Supplier&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Supplier.java&#10;Supplier.ja&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Supplier.java&#10;Contract&#9;FILE&#9;file://D:/code/IntellijProjects/DairyManagementSystem/src/main/java/team/project/dairymanagementsystem/model/Contract.java&#10;table&#9;null&#9;null&#10;/tender-info&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -571,12 +556,12 @@
       <workItem from="1535744028232" duration="12964000" />
       <workItem from="1535782037437" duration="2457000" />
       <workItem from="1535787520152" duration="7194000" />
-      <workItem from="1535797236484" duration="12465000" />
+      <workItem from="1535797236484" duration="14634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116870000" />
+    <option name="totallyTimeSpent" value="119039000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,7 +574,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -680,20 +664,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/config/CustomUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/component/UsernameCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -712,13 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -945,14 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/welcome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/controller/TenderAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -985,20 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="51" column="124" lean-forward="false" selection-start-line="51" selection-start-column="124" selection-end-line="51" selection-end-column="124" />
-          <folding>
-            <element signature="n#div#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/project/dairymanagementsystem/model/Supplier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-147">
@@ -1007,32 +948,6 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1203#1204#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/welcome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,6 +993,83 @@
         <state relative-caret-position="533">
           <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1014">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/welcome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/welcome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="423" column="0" lean-forward="true" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/contractform.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contract/ContractForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#form#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
