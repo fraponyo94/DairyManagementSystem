@@ -46,7 +46,7 @@ public class ContractService {
 
     public Contract createContract(Contract contract) {
         long tenderInfoId = getLatestTenderInfoId();
-        contract.setTenderInfoId(tenderInfoId);
+        contract.setTenderInfoId(tenderInfoService.findLatestTender());
         return contractRepository.save(contract);
     }
 

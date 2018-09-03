@@ -30,7 +30,7 @@ public class SupplierService {
         if (object != null) {
             if (contract == null) { //no application made for current tender
                 supplierRepository.delete(object.getNationalId());
-                supplier.getContract().setTenderInfoId(getLatestTenderInfoId());
+                supplier.getContract().setTenderInfoId(tenderInfoService.findLatestTender());
                 supplierRepository.save(supplier); //update supplier contract with new contract
                 DefaultController.message = SUCCESS + "Application sent successfully";
             } else {
@@ -38,8 +38,7 @@ public class SupplierService {
             }
             return null;
         } else {
-            long tenderInfoId = getLatestTenderInfoId();
-            supplier.getContract().setTenderInfoId(tenderInfoId);
+            supplier.getContract().setTenderInfoId(tenderInfoService.findLatestTender());
             return this.supplierRepository.save(supplier);
         }
     }

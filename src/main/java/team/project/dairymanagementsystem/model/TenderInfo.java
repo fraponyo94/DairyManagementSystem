@@ -8,6 +8,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Future;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "tenderinfo")
@@ -50,10 +51,14 @@ public class TenderInfo {
     @Column(name = "deadline")
     private Date deadline;
 
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "tenderInfoId")
+    private List<Contract> contracts;
+
     public TenderInfo() {
     }
 
-    public TenderInfo(String tenderTitle, String tenderRequirements, String tenderDescription, byte[] fileAttachment, boolean status, int milkAmount, int totalCost, Date deadline) {
+    public TenderInfo(String tenderTitle, String tenderRequirements, String tenderDescription, byte[] fileAttachment, boolean status,
+                      int milkAmount, int totalCost, Date deadline, List<Contract> contracts) {
         this.tenderTitle = tenderTitle;
         this.tenderRequirements = tenderRequirements;
         this.tenderDescription = tenderDescription;
@@ -62,6 +67,15 @@ public class TenderInfo {
         this.milkAmount = milkAmount;
         this.totalCost = totalCost;
         this.deadline = deadline;
+        this.contracts = contracts;
+    }
+
+    public List<Contract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(List<Contract> contracts) {
+        this.contracts = contracts;
     }
 
     public boolean isStatus() {

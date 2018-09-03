@@ -27,13 +27,15 @@ public class Contract implements Serializable {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @Column(name = "tenderInfoId", nullable = false)
-    private long tenderInfoId;
+
+    @ManyToOne
+    @JoinColumn(name = "tenderInfo",nullable = false)
+    private TenderInfo tenderInfoId;
 
     public Contract() {
     }
 
-    public Contract(int supplierId, String status, int amountPerDay, int costPerLitre, String description, int tenderInfoId) {
+    public Contract(int supplierId, String status, int amountPerDay, int costPerLitre, String description, TenderInfo tenderInfoId) {
         this.supplierId = supplierId;
         this.status = status;
         this.amountPerDay = amountPerDay;
@@ -42,11 +44,11 @@ public class Contract implements Serializable {
         this.tenderInfoId = tenderInfoId;
     }
 
-    public long getTenderInfoId() {
+    public TenderInfo getTenderInfoId() {
         return tenderInfoId;
     }
 
-    public void setTenderInfoId(long tenderInfoId) {
+    public void setTenderInfoId(TenderInfo tenderInfoId) {
         this.tenderInfoId = tenderInfoId;
     }
 
