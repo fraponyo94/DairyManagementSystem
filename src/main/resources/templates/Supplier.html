@@ -40,6 +40,9 @@
                     <li class="nav-item" th:if="${loggedIn}">
                         <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
                     </li>
+                    <li class="nav-item" th:if="${loggedIn}">
+                        <a class="nav-link" href="https://drive.google.com/open?id=1rrW4f_KPDulr6jmsjpojzIECJ8gJlsWn" target="_blank"> <span class="clearfix d-none d-sm-inline-block">Help</span></a>
+                    </li>
                 </ul>
 
             </div>
@@ -61,15 +64,6 @@
         <Label for="cost">Litre Cost: </Label> <span id="cost" th:text="${supplier.contract.costPerLitre}"></span><br>
         <Label for="description">Description: </Label> <span id="description" th:text="${supplier.contract.description}"></span><br>
         <Label for="pic">CV: </Label> <a target="_blank" id="pic" th:object="${supplier.attachment}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
-
-        <div>
-            <div th:if="${supplier.contract.status.equalsIgnoreCase('pending')}">
-                <form th:action="@{/contract/cancel/{id}(id=${supplier.contract.id})}" th:method="POST"
-                      th:object="${supplier.contract.id}">
-                    <input class="btn btn-warning btn-rounded" type="submit" value="cancel">
-                </form>
-            </div>
-        </div>
     </div>
 </div>
 </p>

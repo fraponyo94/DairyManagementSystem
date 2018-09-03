@@ -53,6 +53,9 @@
                         <li class="nav-item mr-4">
                             <a class="nav-link" href="/logout"><span class="clearfix d-none d-sm-inline-block"><b>Logout</b></span></a>
                         </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="https://drive.google.com/file/d/18e--5f2YyrO626LMYlynxbZcxj-oTrAK/view?usp=sharing" target="_blank"><span class="clearfix d-none d-sm-inline-block"><b>Help</b></span></a>
+                        </li>
                     </ul>
 
                 </div>
@@ -107,6 +110,9 @@
                         <li class="nav-item" th:if="${loggedIn}">
                             <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
                         </li>
+                        <li class="nav-item" th:if="${loggedIn==false}">
+                            <a class="nav-link" href="https://drive.google.com/open?id=10NenhRHZLYfUVXVAvKlsYzd_x21wZYDP" target="_blank"> <span class="clearfix d-none d-sm-inline-block">Help</span></a>
+                        </li>
                     </ul>
 
                 </div>
@@ -151,6 +157,9 @@
                         <li class="nav-item" th:if="${loggedIn}">
                             <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
                         </li>
+                        <li class="nav-item" th:if="${loggedIn==false}">
+                            <a class="nav-link" href="https://drive.google.com/open?id=10NenhRHZLYfUVXVAvKlsYzd_x21wZYDP" target="_blank"> <span class="clearfix d-none d-sm-inline-block">Help</span></a>
+                        </li>
                     </ul>
 
                 </div>
@@ -194,6 +203,9 @@
                         </li>
                         <li class="nav-item" th:if="${loggedIn}">
                             <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                        </li>
+                        <li class="nav-item" th:if="${loggedIn==false}">
+                            <a class="nav-link" href="https://drive.google.com/open?id=10NenhRHZLYfUVXVAvKlsYzd_x21wZYDP" target="_blank"> <span class="clearfix d-none d-sm-inline-block">Help</span></a>
                         </li>
                     </ul>
 
