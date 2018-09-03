@@ -11,8 +11,9 @@ server:
 spring:
   datasource:
     username: root
+    password: 07022tolb
 
-    url:  jdbc:mysql://localhost:3306/dairy?autoReconnect=true&useSSL=false
+    url:  jdbc:mysql://localhost:3306/dairyManagementSystem?autoReconnect=true&useSSL=false
     testWhileIdle: true
     validationQuery: SELECT 1
 # ===============================
