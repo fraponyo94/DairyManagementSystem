@@ -3,22 +3,27 @@ package team.project.dairymanagementsystem.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
+import team.project.dairymanagementsystem.model.VisitorEmail;
 import team.project.dairymanagementsystem.model.TenderInfo;
+import team.project.dairymanagementsystem.model.checkLoginStatus.CheckLoginStatus;
+import team.project.dairymanagementsystem.service.EmailService;
 import team.project.dairymanagementsystem.service.TenderInfoService;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
+import java.util.*;
 
 @Controller
 public class DefaultController {
     @Autowired
     private TenderInfoService tenderInfoService;
+    @Autowired
+    private EmailService emailService;
+    public static String message;
 
     //Home page
     @GetMapping(value = {"/"})
@@ -47,17 +52,14 @@ public class DefaultController {
                 System.out.println("How did we get here?");
             }
         }
-        //check whether user is logged in to determine whether to show a logout or login button
-        if(request.getSession().getAttribute("loggedIn") != null){
-            modelAndView.addObject("loggedIn", true);
-            //check if the user is an admin
-            if(request.getSession().getAttribute("admin") != null){
-                modelAndView.addObject("admin", true);
-            }
-        }else{
-            modelAndView.addObject("loggedIn", false);
-        }
+        CheckLoginStatus.checkStatus(modelAndView, request);
         modelAndView.addObject("tender", tender);
+        if (message != null) {
+            modelAndView.addObject("message", message);
+            //reset message
+            message = null;
+        }
+        modelAndView.addObject("visitorEmail", new VisitorEmail());
         modelAndView.setViewName("welcome");
         return modelAndView;
     }
@@ -66,6 +68,22 @@ public class DefaultController {
     @GetMapping(value = "/login")
     public ModelAndView loginPage(ModelAndView modelAndView) {
         modelAndView.setViewName("login/login");
+        return modelAndView;
+    }
+
+    @PostMapping("/email")
+    public ModelAndView sendMail(@ModelAttribute(name = "senderEmail") VisitorEmail visitorEmail, ModelAndView modelAndView) {
+        Map<String, Object> variable = new HashMap<>();
+        variable.put("visitorEmail", visitorEmail);
+        String response = emailService.sendEmail(visitorEmail.getEmail(), "ricdechox@gmail.com",
+                visitorEmail.getSubject(), variable, "visitor-email");
+        if (response.equals("SUCCESS: ")) {
+            response += "Email sent successfully";
+        } else {
+            response += "An error occurred. Please try again later";
+        }
+        message = response;
+        modelAndView.setViewName("redirect:/");
         return modelAndView;
     }
 

@@ -1,7 +1,6 @@
 package team.project.dairymanagementsystem.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import team.project.dairymanagementsystem.model.Contract;
 import team.project.dairymanagementsystem.model.Supplier;
@@ -35,16 +34,28 @@ public class ContractService {
     private String ERROR = "ERROR: ";
     private String SAME_STATUS = "SAME_STATUS";
 
+
+    private long getLatestTenderInfoId() {
+        TenderInfo tenderInfo = tenderInfoService.findLatestTender();
+        if (tenderInfo != null) {
+            return tenderInfo.getId();
+        }else{
+            return -1;
+        }
+    }
+
     public Contract createContract(Contract contract) {
+        long tenderInfoId = getLatestTenderInfoId();
+        contract.setTenderInfoId(tenderInfoId);
         return contractRepository.save(contract);
     }
 
     public List<Contract> getAllContracts() {
-        return contractRepository.findAll();
+        return contractRepository.findAllByTenderInfoId(getLatestTenderInfoId());
     }
 
     public List<Contract> getContractsWithStatus(String status) {
-        return contractRepository.findByStatus(status);
+        return contractRepository.findByStatusAndTenderInfoId(status, getLatestTenderInfoId());
     }
 
     //approve a contract

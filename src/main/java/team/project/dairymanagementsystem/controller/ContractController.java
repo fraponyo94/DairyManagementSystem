@@ -37,6 +37,10 @@ public class ContractController {
     private SupplierService supplierService;
     private String message; //holds any necessary notification message
     private String statusDisplay;  //determines the contracts to show according to their status
+    //constant to identify success messages
+    private String SUCCESS = "SUCCESS: ";
+    //constant to identify error messages
+    private String ERROR = "ERROR: ";
 
     /**
      * This method allows redirection to the contract application page
@@ -49,13 +53,13 @@ public class ContractController {
         model.addAttribute("supplier", new Supplier()); //add a supplier object to the template to store supplier details
         model.addAttribute("error", ""); //no error message
         //check whether user is logged in to determine whether to show a logout or login button
-        if(request.getSession().getAttribute("loggedIn") != null){
+        if (request.getSession().getAttribute("loggedIn") != null) {
             model.addAttribute("loggedIn", true);
             //check if the user is an admin
-            if(request.getSession().getAttribute("admin") != null){
+            if (request.getSession().getAttribute("admin") != null) {
                 model.addAttribute("admin", true);
             }
-        }else{
+        } else {
             model.addAttribute("loggedIn", false);
         }
         return "contract/ContractForm";
@@ -79,14 +83,15 @@ public class ContractController {
             //get uploaded files in bytes
             byte[] bytes = file.getBytes();
             //set bytes to corresponding supplier attributes
-            supplier.setPic(bytes);
+            supplier.setAttachment(bytes);
         } catch (Exception e) {
             e.printStackTrace();
         }
         if (this.supplierService.createSupplier(supplier) == null) {
-            model.addAttribute("error", "National Id exists!");
-            return "contract/ContractForm";
+            return "redirect:/";
         } else {
+            //new applicant
+            DefaultController.message = SUCCESS + "Application sent successfully";
             return "redirect:/";
         }
     }
@@ -289,8 +294,12 @@ public class ContractController {
      */
     private Map<String, Integer> getTotalCostAndAmountOfMilk() {
         TenderInfo tenderInfo = tenderInfoService.findLatestTender();
-        int totalCost = tenderInfo.getTotalCost();
-        int totalAmount = tenderInfo.getMilkAmount();
+        int totalCost = 0;
+        int totalAmount = 0;
+        if (tenderInfo != null) {
+            totalCost = tenderInfo.getTotalCost();
+            totalAmount = tenderInfo.getMilkAmount();
+        }
         Map<String, Integer> map = new HashMap<>();
         map.put("cost", totalCost);
         map.put("amount", totalAmount);

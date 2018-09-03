@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Contract Approval Confirmation</title>
+    <title>Visitor | Email</title>
     <style>
         .centered {
             min-height: 100%; /* Fallback for browsers do NOT support vh unit */
@@ -34,27 +34,20 @@
 
 <div class="d-flex justify-content-center align-items-center centered">
     <!--Jumbotron-->
-    <!--/*@thymesVar id="supplier" type="team.project.dairymanagementsystem.model.Supplier"*/-->
-    <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2" th:object="${supplier}">
+    <!--/*@thymesVar id="visitorEmail" type="team.project.dairymanagementsystem.model.VisitorEmail"*/-->
+    <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2" th:object="${visitorEmail}">
 
         <!--Title-->
-        <h1 class="card-title h2-responsive mt-2 font-bold"><b>Confirmation of Approval for your Contract Application</b>
-        </h1>
-
+        <h2 class="card-title h2-responsive mt-2 font-bold"><b><span th:text="${visitorEmail.subject}"></span></b>
+        </h2>
+        <h3 th:text="${visitorEmail.name}"></h3>
         <!--Text-->
         <div class="d-flex justify-content-center" style="min-width: 40rem;">
             <div class="card-text my-2" style="max-width: 43rem;">
-                <p>Congratulations! Your contract application has been successfully
-                    approved.<br>
-                    Kindly press the button below to create an account.<br></p>
+                <p th:text="${visitorEmail.message}"></p>
             </div>
         </div>
 
-        <hr class="my-4 rgba-white-light">
-
-        <form th:action="@{http://localhost:3074/create-user/{id}(id=${supplier.nationalId})}" th:method="GET">
-            <input class="btn btn-success btn-rounded" type="submit" value="Create Account">
-        </form>
     </div>
 </div>
 </body>

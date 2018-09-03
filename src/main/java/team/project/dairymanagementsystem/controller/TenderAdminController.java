@@ -22,6 +22,9 @@ public class TenderAdminController {
         if (tenderInfo != null) {
             boolean active = tenderInfo.isStatus();
             modelAndView.addObject("active", active);
+            modelAndView.addObject("tender", tenderInfo);
+        }else{
+            modelAndView.addObject("active", false);
         }
         modelAndView.addObject("tenderInfo", new TenderInfo());
         modelAndView.setViewName("admin/admin-home");

@@ -44,15 +44,8 @@
         <!--Text-->
         <div class="d-flex justify-content-center" style="min-width: 40rem;">
             <div class="card-text my-2" style="max-width: 43rem;">
-                <p>This is to inform you that your contract application with the following details has been denied.<br></p>
-                <Label for="id">National Id: </Label> <span id="id" th:text="${supplier.nationalId}"></span><br>
-                <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
-                <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
-                <Label for="phone">Phone: </Label> <span id="phone" th:text="${supplier.phone}"></span><br>
-                <Label for="amount">Daily Amount: </Label> <span id="amount"
-                                                                 th:text="${supplier.contract.amountPerDay}"></span><br>
-                <Label for="cost">Litre Cost: </Label> <span id="cost"
-                                                             th:text="${supplier.contract.costPerLitre}"></span><br>
+                <p>This is to inform you that your contract application has been denied.<br>
+                You are welcome to try next time.</p>
                 <p>We wish you all the best in your endeavors</p>
             </div>
         </div>

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import team.project.dairymanagementsystem.model.TenderInfo;
+import team.project.dairymanagementsystem.model.checkLoginStatus.CheckLoginStatus;
 import team.project.dairymanagementsystem.service.TenderInfoService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -18,25 +19,13 @@ import java.util.List;
 
 @Controller
 public class TenderInfoController {
+    //    constant to identify success messages
+    private String SUCCESS = "SUCCESS: ";
+    //    constant to identify error messages
+    private String ERROR = "ERROR: ";
 
     @Autowired
     private TenderInfoService tenderInfoService;
-
-   /* //Admin home
-    @GetMapping("/")
-    public ModelAndView adminHome(ModelAndView modelAndView){
-
-        modelAndView.setViewName("admin/admin-home");
-        return modelAndView;
-    }*/
-
-   /*Add Tender---GET----*//*
-    @GetMapping("/tender-info")
-    public ModelAndView addTenderInfo(ModelAndView modelAndView){
-        modelAndView.addObject("tenderInfo",new TenderInfo());
-        modelAndView.setViewName("admin/admin-home");
-        return modelAndView;
-    }*/
 
     /*Add Tender -------POST-----*/
     @PostMapping("/tender/add")
@@ -56,11 +45,10 @@ public class TenderInfoController {
                     e.printStackTrace();
                 }
             }
-
             tenderInfo.setStatus(true);
             tenderInfoService.addTenderInfo(tenderInfo);
+            DefaultController.message = SUCCESS + "Tender created successfully";
             modelAndView.setViewName("redirect:/");
-
         }
 
         return modelAndView;
@@ -68,9 +56,15 @@ public class TenderInfoController {
 
     //Go to tender information
     @GetMapping("/tender/tender-info")
-    public ModelAndView tenderInfo(ModelAndView modelAndView) {
-        modelAndView.addObject("tender", tenderInfoService.findLatestTender());
-        modelAndView.setViewName("tender/tender-info");
+    public ModelAndView tenderInfo(ModelAndView modelAndView, HttpServletRequest request) {
+        CheckLoginStatus.checkStatus(modelAndView, request);
+        TenderInfo tenderInfo = tenderInfoService.findLatestTender();
+        modelAndView.addObject("tender", tenderInfo);
+        if (tenderInfo.isStatus()) {
+            modelAndView.setViewName("tender/tender-info");
+        }else{
+            modelAndView.setViewName("redirect:/");
+        }
         return modelAndView;
     }
 
@@ -86,9 +80,7 @@ public class TenderInfoController {
             response.setContentLength(bytes.length);
 
             response.getOutputStream().write(bytes);
-        } catch (Exception ioe) {
-
-        } finally {
+        } catch (Exception ignored) {
 
         }
         return null;

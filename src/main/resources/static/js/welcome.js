@@ -31,9 +31,7 @@ $(document).on('click', '#toast_link', function () {
 });
 $(document).ready(function () {
     msg = $("#toast_msg").text();
-    console.log(msg);
     //get the type of the message from the first word of the message
     msgType = msg.substr(0, msg.indexOf(':'));
-    $('#myTable').DataTable();
     $('#toast_link').click();
 });

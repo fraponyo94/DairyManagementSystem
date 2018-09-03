@@ -8,5 +8,9 @@ import java.util.List;
 
 @Repository
 public interface ContractRepository extends JpaRepository<Contract, Integer>{
-    List<Contract> findByStatus(String status);
+    List<Contract> findByStatusAndTenderInfoId(String status, long id);
+    List<Contract> findAllByTenderInfoId(long tenderInfoId);
+    Contract findBySupplierId(int id);
+    //check if a potential supplier has already applied for a particular tender
+    Contract findBySupplierIdAndTenderInfoId(int nationalId, long tenderInfoId);
 }
