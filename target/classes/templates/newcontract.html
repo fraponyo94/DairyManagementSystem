@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<!--supplier applying contract-->
+git <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -15,7 +14,7 @@
     <br>
     <br>
     <form th:method="post" th:action="@{/contract/newcontract}" th:object="${supplier}" enctype="multipart/form-data">
-<!--user entering his/her details-->
+
         <label id="national_id">National Id </label>
         <input type="number" th:field="*{nationalId}"><br>
         <label id="name">Name</label>
@@ -34,7 +33,6 @@
         <textarea id="descriptionI" th:type="text" th:field="*{contract.description}" th:height="200px" th:width="300px"></textarea><br>
         <label id="pic">PIC</label>
         <input th:type="file" th:name="file" ><br>
-        <!--submitting button-->
         <button id="submit" name="submit"> APPLY </button>
     </form>
 </div>

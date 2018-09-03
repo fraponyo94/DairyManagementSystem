@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<!--welcoming page to the user-->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <!--head stylling and appearence modification-->
     <div th:replace="template :: head">
     </div>
+    <link rel="stylesheet" th:href="@{/css/toast/toastr.css}">
     <title>Dairy plant</title>
 
     <style type="text/css">
@@ -33,23 +32,31 @@
                 height: 650px;
             }
         }
+
         @media (min-width: 800px) and (max-width: 850px) {
             .navbar:not(.top-nav-collapse) {
-                background: #1C2331!important;
+                background: #1C2331 !important;
             }
         }
     </style>
 </head>
 
-<body id="KENYAN">
+<body>
 
 <!-- Navbar -->
- <div th:replace="template :: welcome-nav">
- </div>
+<div th:replace="template :: welcome-nav">
+</div>
 <!-- Navbar -->
+
+<!--hidden link that shows an information message as a toast-->
+<!--/*@thymesVar id="message" type="java.lang.String"*/-->
+<div th:if="${message!=null}">
+    <span id="toast_msg" th:text="${message}"></span>
+    <a id="toast_link"></a>
+</div>
 
 <!-- Full Page Intro -->
-<div class="view full-page-intro" >
+<div class="view full-page-intro">
 
     <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/93.jpg');
     background-repeat: no-repeat; background-size: cover;">
@@ -60,7 +67,7 @@
             <div class="text-center white-text mx-5 wow fadeIn">
 
                 <!--Content dispalayed incase there is tender info-->
-                <div  th:if="${tenderInfo}">
+                <div th:if="${tenderInfo}">
                     <h1 class="mb-4">
                         <strong>Tender</strong>
                     </h1>
@@ -134,20 +141,20 @@
         <!--Section: Our products info -->
         <section id="products">
 
-            <h3 class="h3 text-center mb-5">DAIRY FACTORY PRODUCTS</h3>
+            <h3 class="h3 text-center mb-5">OUR PRODUCTS</h3>
 
             <!--Grid row-->
             <div class="row wow fadeIn">
 
                 <!--Grid column-->
-                <div class="col-lg-4  mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
 
                     <!-- Card -->
                     <div class="card card-cascade wider reverse">
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="img/pasturized_milk.jpg" height="200px" width="300" alt="Pasturized milk">
+                            <img class="card-img-top" src="img/pasturized_milk.jpg" alt="Pasturized milk">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -161,10 +168,14 @@
 
                             <!-- Info -->
                             <p class="card-text">
-                                It is widely utilized by the population because of the 'safety' it provides and is said to minimize the risk
-                                of contracting milk-borne bacteriaand diseases.It is prepared by heating milk to a temperature higher than the boiling
-                                point and then rapidly cooling it.This eventually removes the bacteria and other harmful particles found in conventionally
-                                produced milk.Our pasturized milk will give a taste and experience you've never had  before.
+                                It is widely utilized by the population because of the 'safety' it provides and is said
+                                to minimize the risk
+                                of contracting milk-borne bacteriaand diseases.It is prepared by heating milk to a
+                                temperature higher than the boiling
+                                point and then rapidly cooling it.This eventually removes the bacteria and other harmful
+                                particles found in conventionally
+                                produced milk.Our pasturized milk will give a taste and experience you've never had
+                                before.
                             </p>
 
 
@@ -178,18 +189,18 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-4  mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
 
                     <!-- Card -->
                     <div class="card card-cascade wider reverse">
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="img/yourgurt.jpg" height="200px" width="300" alt="Yourgut">
+                            <img class="card-img-top" src="img/yourgurt.jpg" alt="Yourgut">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
-                            </div>
+                        </div>
 
                         <!-- Card content -->
                         <div class="card-body card-body-cascade ">
@@ -203,7 +214,8 @@
                                 Yoghurt has a higher nutritional value than fresh milk due to the live cultures which
                                 provide immune boosting to the digestive system.
                                 A part from boosting immunity, it is a rich source of protein,
-                                nutrients such as calcium, vitamin B2, vitamin B12, Potassium etc. Children and the elderly will benefit more from it
+                                nutrients such as calcium, vitamin B2, vitamin B12, Potassium etc. Children and the
+                                elderly will benefit more from it
                                 due to their enormous calcium requirement. Calcium is also important
                                 in the prevention of bone loss in women and bone mass
                                 development in all ages.
@@ -219,14 +231,14 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-4  mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
 
                     <!--Card-->
                     <div class="card card-cascade wider reverse">
 
                         <!--Card image-->
                         <div class="view view-cascade overlay">
-                            <img src="img/milk.jpg" class="card-img-top" height="200px" width="300" alt="Fresh milk">
+                            <img src="img/milk.jpg" class="card-img-top" alt="Fresh milk">
                             <a href="#">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -237,12 +249,7 @@
                             <!--Title-->
                             <h4 class="card-title text-center"><strong>Fresh Milk</strong></h4>
                             <!--Text-->
-                            <p class="card-text">Fresh milk is known for its nutritious value to health. It contains
-                            vitamin c which is important in bone development especiall children.Our milk is highly preserved
-                            and it can take long time before expiry date. Whole milk is made from cows milk and it contains
-                            almost all nutients. We pack the milk in differnt sizes as per our costomers requirements, in 250 ml,
-                            500ml and one litre. You can buy or milk in our shop or anywhere near Nakuru town.Welcome and buy our milk.
-                            </p>
+                            <p class="card-text">Fresh milk is known for its nutritious value to health</p>
 
                         </div>
 
@@ -253,188 +260,64 @@
                 <!--Grid column-->
             </div>
             <!--/Grid row-->
-    <!--second row-->
 
-            <div class="row wow fadeIn">
-
-                <!--Grid column-->
-                <div class="col-lg-4  mb-4">
-
-                    <!-- Card -->
-                    <div class="card card-cascade wider reverse">
-
-                        <!-- Card image -->
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="img/wholemilk.jpeg" height="200px" width="300" alt="Whole-milk">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body card-body-cascade ">
-
-                            <!-- Title -->
-                            <h4 class="card-title text-center"><strong>Whole Milk</strong></h4>
-
-                            <!-- Info -->
-                            <p class="card-text">
-                                It is widely utilized by the population because of the 'safety' it provides and is said to minimize the risk
-                                of contracting milk-borne bacteriaand diseases.It is prepared by heating milk to a temperature higher than the boiling
-                                point and then rapidly cooling it.This eventually removes the bacteria and other harmful particles found in conventionally
-                                produced milk.Our pasturized milk will give a taste and experience you've never had  before.
-                            </p>
-
-
-                        </div>
-                        <!--End of Card content-->
-
-                    </div>
-                    <!-- Card -->
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-4  mb-4">
-
-                    <!-- Card -->
-                    <div class="card card-cascade wider reverse">
-
-                        <!-- Card image -->
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="img/cheese.jpeg" height="200px" width="300" alt="Cheese">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body card-body-cascade ">
-
-                            <!-- Title -->
-                            <h4 class="card-title text-center"><strong>Cheese</strong></h4>
-
-                            <!-- Info -->
-                            <p class="card-text">
-
-                                 Cheese is a dairy product derived from milk that is produced in a wide range of flavors,
-                                textures, and forms by coagulation of the milk protein casein. It comprises proteins and
-                                fat from milk, usually cows' milk.
-                                Cheese is valued for its portability, long life, and high content of fat, protein, calcium,
-                                and phosphorus. Cheese is more compact and has a longer shelf life than milk, although how
-                                long a cheese will keep depends on the type of cheese; labels on packets of cheese often claim
-                                that a cheese should be consumed within three to five days of opening.
-                            </p>
-
-
-                        </div>
-                        <!--End of Card content-->
-                    </div>
-                    <!--Card-->
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-4  mb-4">
-
-                    <!--Card-->
-                    <div class="card card-cascade wider reverse">
-
-                        <!--Card image-->
-                        <div class="view view-cascade overlay">
-                            <img src="img/butter.jpeg" class="card-img-top" height="200px" width="300" alt="Butter">
-                            <a href="#">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title text-center"><strong>Butter</strong></h4>
-                            <!--Text-->
-                            <p class="card-text">Butter is a dairy product containing up to 80% butterfat
-                                which is solid when chilled and at room temperature in some regions and liquid when warmed.
-                                It is made by churning fresh or fermented cream or milk to separate the butterfat from
-                                the buttermilk. It is generally used as a spread on plain or toasted bread products and
-                                a condiment on cooked vegetables, as well as in cooking, such as baking, sauce making, and
-                                pan frying. Butter consists of butterfat, milk proteins and water, and in some types, added salt.
-                                Butter may also be sold with added flavourings, such as garlic butter. </p>
-
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-
-                </div>
-                <!--Grid column-->
-            </div>
-<!--grid row-->
         </section>
         <!--Section: Our product-->
 
         <hr class="my-5">
         <!--Section: About us-->
-        <section id="aboutUs"  >
+        <section id="aboutUs">
 
+            <h2 class="my-5 h3 text-center">ABOUT US</h2>
 
-
-            <!--First row-->
-            <body class="boding responsive">
-            <script src="bootstrap.js" href="style/css">
-                window.alert("Welcome to our Dairy Factory management");
-            </script>
-
-            <div >
+            <div class="container">
                 <br>
                 <!-- header part-->
-                <header id="head1"   >
-                    <br>
-                    <h1 align="center" id="ha" style="color:white"><b>DAIRY MANAGEMENT FACTORY INFORMATION</b></h1>
+                <header id="head1">
+                    <br><br>
 
-                    <img src="" th:src="@{/img/factory.jpeg}" height="175px" width="1100px " id="img3">
+                    <h1 align="center" id="ha"><b>DAIRY MANAGEMENT FACTORY</b></h1>
 
                 </header>
             </div>
             <div>
-                <!--body part-->
-                <div class="row">
-                    <div class="col-md-12"><img src=""> </div>
-                </div>
-
-                <div class="row">
+                <div class="row" style="margin-left: 20%">
                     <div class="col-md-5">
-                        <p>
-                        <h3 id="subh1">Factory Background</h3>
-                        Egerton Dairy factory is located in Njoro Nakuru county, kenya.It is inside Egerton university.
-                        The factory was started in the year 2001 as a laboratory where Egerton students taking bachelor in
-                        Dairy and Food sciences would take their practical work and do their research work. This was  primary
-                        reason why it was made.
-
-
-                        </p>
-                        <br><br>
-                        <p>
                         <h3 id="subh2">The Management</h3>
-                        As the years went by,it grew into a bigger factory, as the number of students,staff and employees
-                        increased yearly.It was later made a department of its own within the university.Though its activity
-                        has increased over the the years, it primary goal is still highly regaded ,to serve students.
+                        <p>
+                            As the years went by,it grew into a bigger factory, as the number of students,staff and
+                            employees
+                            increased yearly.It was later made a department of its own within the university.Though its
+                            activity
+                            has increased over the the years, it primary goal is still highly regarded,to serve
+                            students.
                         </p>
                         <P>
-                            The factory is being managed by the General manager who is under the Dean of students in the faculty
-                            of Dairy Technology.The general manager is responsible for the management of the factory, he oversees
-                            the day to day activity of the the factory, then gives the report to the Dean. The Dean on the other hand
-                            checks the afairs of the students in relation to the factory and the general welfare of students taking the course.
-
-
+                            The factory is being managed by the General manager who is under the Dean of students in the
+                            faculty
+                            of Dairy Technology.The general manager is responsible for the management of the factory, he
+                            oversees
+                            the day to day activity of the the factory, then gives the report to the Dean. The Dean on
+                            the other hand
+                            checks the affairs of the students in relation to the factory and the general welfare of
+                            students taking the course.
                         </P>
-
                     </div>
-
+                    <div class="col-md-5">
+                        <h3 id="subh1">Factory Background</h3>
+                        <p>
+                            Egerton Dairy factory is located in Njoro Nakuru county, kenya.It is inside Egerton
+                            university.
+                            The factory was started in the year 2001 as a laboratory where Egerton students taking
+                            bachelor
+                            in
+                            Dairy and Food sciences would take their practical work and do their research work. This was
+                            primary
+                            reason why it was made.
+                        </p>
+                    </div>
                 </div>
-
+            </div>
         </section>
         <!--Section: Not enough-->
 
@@ -442,110 +325,72 @@
 
 
         <!-- Section: Contact us -->
-        <section class="my-5" id="contactUs">
+        <section class="my-4" id="contactUs">
 
             <!-- Section heading -->
             <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
             <!-- Section description -->
-            <p class="text-center w-responsive mx-auto pb-5">For any inquiries, please feel free to contact us or reach out to our premises </p>
+            <p class="text-center w-responsive mx-auto pb-5">For any inquiries, please feel free to contact us or reach
+                out to our premises </p>
 
-            <!-- Grid row -->
-            <div class="row">
+            <!-- Contact us form  -->
+            <div class="card" style="width: 70%; margin: 0 auto; padding: 10px">
 
-                <!-- Grid column -->
-                <div class="col-lg-5 mb-lg-0 mb-4">
+                <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class="dark-grey-text text-center">
+                        <strong>Write to us</strong>
+                    </h4>
+                    <hr>
 
-                    <!-- Contact us form  -->
-                    <div class="card">
-
-                        <div class="card-body">
-                            <!-- Heading -->
-                            <h4 class="dark-grey-text text-center">
-                                <strong>Write to us</strong>
-                            </h4>
-                            <hr>
-
-                            <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
-                            <!-- Body -->
-                            <div class="md-form">
-                                <i class="fa fa-user prefix grey-text"></i>
-                                <input type="text" id="form-name" class="form-control">
-                                <label for="form-name">Your name</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fa fa-envelope prefix grey-text"></i>
-                                <input type="text" id="form-email" class="form-control">
-                                <label for="form-email">Your email</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fa fa-tag prefix grey-text"></i>
-                                <input type="text" id="form-Subject" class="form-control">
-                                <label for="form-Subject">Subject</label>
-                            </div>
-                            <div class="md-form" >
-                                <textarea class="form-control z-depth-1" id="message" rows="3"></textarea>
-                                <label for="message">Write something to us here...</label>
-
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-light-blue">Submit</button>
-                            </div>
+                    <p class="dark-grey-text text-center">We'll write rarely, but only the best content.</p>
+                    <!-- Body -->
+                    <!--/*@thymesVar id="visitorEmail" type="team.project.dairymanagementsystem.model.VisitorEmail"*/-->
+                    <form th:action="@{/email}" th:method="POST" th:object="${visitorEmail}">
+                        <div class="md-form">
+                            <input type="text" id="form-name" class="form-control" th:field="*{name}">
+                            <label for="form-name">Your name</label>
                         </div>
-                    </div>
-                    <!-- End of Contact us form -->
-
+                        <div class="md-form">
+                            <input type="text" id="form-email" class="form-control" th:field="*{email}">
+                            <label for="form-email">Your email</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="text" id="form-Subject" class="form-control" th:field="*{subject}">
+                            <label for="form-Subject">Subject</label>
+                        </div>
+                        <div class="md-form" style="padding: 10px 0">
+                            <textarea class="form-control z-depth-1" id="message" rows="3" th:field="*{message}"></textarea>
+                            <label for="message" style="padding: 0 10px">Write something to us here...</label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn navbarColor">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-lg-7">
-
-                    <!-- Google map-->
-                    <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px"></div>
-                    <br>
-                    <!-- Buttons-->
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <a class="btn-floating blue accent-1">
-                                <i class="fa fa-map-marker"></i>
-                            </a>
-                            <p>P.O BOX 536-20255</p>
-                            <p class="mb-md-0">Egerton,Njoro</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn-floating blue accent-1">
-                                <i class="fa fa-phone"></i>
-                            </a>
-                            <p>+ 2547000000000</p>
-                            <p class="mb-md-0">Mon - Fri, 8:00-5:00 PM</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn-floating blue accent-1">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                            <p>dairyplant.info@egerton.ac.ke</p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Grid column -->
-
             </div>
-            <!-- Grid row -->
+            <!-- End of Contact us form -->
 
         </section>
         <!-- Section: Contact us -->
 
-
+        <!-- Buttons-->
+        <div class="text-center">
+            <div class="text-center">
+                <p>P.O BOX 536-20255</p>
+                <p>Egerton,Njoro</p>
+                <p>Mon - Fri, 8:00-5:00 PM</p>
+                <p>+ 254700000000</p>
+                <p>dairyplant.info@egerton.ac.ke</p>
+            </div>
+        </div>
 
     </div>
 </main>
 <!--Main layout-->
 
 <!--Footer-->
-<footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
+<footer class="page-footer text-center font-small mt-4">
 
 
     <!--Copyright-->
@@ -559,8 +404,8 @@
 <!--/.Footer-->
 
 <!-- SCRIPTS -->
-<!-- SCRIPTS -->
 <div th:replace="template :: js-files"></div>
+<script th:src="@{/js/welcome.js}"></script>
 
 </body>
 

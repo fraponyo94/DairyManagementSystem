@@ -20,7 +20,7 @@ import team.project.dairymanagementsystem.component.CustomSuccessHandler;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter{
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private CustomSuccessHandler successHandler;
@@ -49,8 +49,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/","/login","/tender/tender-info","/contract/contract","/tender/tender-pdf").permitAll()
-                .antMatchers("/admin/**","/contract/contracts").hasAuthority("Admin")
+                .antMatchers("/", "/login", "/tender/tender-info", "/contract/contract", "/tender/tender-pdf").permitAll()
+                .antMatchers("/admin/**", "/contract/contracts", "/contract/pending", "/contract/denied",
+                        "/contract/cancelled", "/contract/approved", "/contract/view-supplier/**",
+                        "/contract/approve/**","/contract/deny/**","/contract/cancel/**","/contract/delete/**").hasAuthority("Admin")
                 .antMatchers("/applicant-details/").hasAuthority("SUPPLIER")
                 .and()
                 .formLogin()
@@ -67,7 +69,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .deleteCookies("JSESSIONID")
                 .permitAll();
 
-                
+
     }
 
 

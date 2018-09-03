@@ -2,8 +2,8 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <div th:replace="template :: head"> </div>
-    <title>tender-info</title>
+    <div th:replace="template :: head"></div>
+    <title>Tender | Apply</title>
 
     <style type="text/css">
 
@@ -14,10 +14,9 @@
             max-width: 100%;
             width: 100%;
 
-
-
         }
-        .page-footer{
+
+        .page-footer {
             clear: bottom;
             position: relative;
             right: 0;
@@ -28,12 +27,12 @@
             text-align: center;
         }
 
-        div.jumbotron{
+        div.jumbotron {
             margin-top: 100px;
         }
 
 
-        </style>
+    </style>
 
 </head>
 
@@ -52,19 +51,24 @@
 
             <!--/*@thymesVar id="tender" type="team.project.dairymanagementsystem.model.TenderInfo"*/-->
             <h2 class="display-4 text-center" th:text="${tender.tenderTitle}">Tender Title</h2>
-             <hr class="my-3">
+            <hr class="my-3">
 
             <h3 class="mb-3">Tender Description</h3>
-            <p th:text="${tender.tenderDescription}" >This is a detailed description of the tender being advertised, this content is fetched database to be displayed to the user</p>
+            <p th:text="${tender.tenderDescription}">This is a detailed description of the tender being advertised, this
+                content is fetched from the database to be displayed to the user</p>
 
             <hr class="my-3">
 
             <h3 class="mb-3">Tender Requirements</h3>
-            <p class="mb-4" th:text="${tender.tenderRequirements}">A brief description of the tender requirements is displayed here</p>
+            <p class="mb-4" th:text="${tender.tenderRequirements}">A brief description of the tender requirements is
+                displayed here</p>
 
-            <p th:if="${tender.fileAttachment != null}"><label>Click <a href="/tender/tender-pdf" th:href="@{/tender/tender-pdf}">here</a> to find a detailed document describing all requirements required for the tender </label></p>
+            <p th:if="${tender.fileAttachment != null}"><label>Click <a href="/tender/tender-pdf"
+                                                                        th:href="@{/tender/tender-pdf}">here</a> to find
+                a detailed document describing all requirements required for the tender </label></p>
 
-            <a class="btn btn-primary btn-lg text-center" href="/contract/contract" th:href="@{/contract/contract}" role="button">Apply Now</a>
+            <a class="btn btn-lg text-center navbarColor" href="/contract/contract" th:href="@{/contract/contract}"
+               role="button" th:if="${admin==false}">Apply Now</a>
 
         </div>
     </div>
@@ -75,8 +79,7 @@
 <footer class="page-footer text-center font-small mt-4 ">
     <!--Copyright-->
     <div class="py-3">
-        © 2018 Copyright:
-
+        © 2018 Copyright
     </div>
     <!--/.Copyright-->
 

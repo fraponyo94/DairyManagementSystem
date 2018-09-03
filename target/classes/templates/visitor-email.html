@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor | Email</title>
+    <style>
+        .centered {
+            min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+            min-height: 100vh; /* These two lines are counted as one       */
+
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            font-style: italic;
+            color: aqua;
+        }
+    </style>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="d-flex justify-content-center align-items-center centered">
+    <!--Jumbotron-->
+    <!--/*@thymesVar id="visitorEmail" type="team.project.dairymanagementsystem.model.VisitorEmail"*/-->
+    <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2" th:object="${visitorEmail}">
+
+        <!--Title-->
+        <h2 class="card-title h2-responsive mt-2 font-bold"><b><span th:text="${visitorEmail.subject}"></span></b>
+        </h2>
+        <h3 th:text="${visitorEmail.name}"></h3>
+        <!--Text-->
+        <div class="d-flex justify-content-center" style="min-width: 40rem;">
+            <div class="card-text my-2" style="max-width: 43rem;">
+                <p th:text="${visitorEmail.message}"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

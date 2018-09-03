@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<!--home welcome page-->
-<html lang="en" xmlns:th="www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <!--Common css files-->
     <div th:template="head">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!--favicon-->
+        <link rel="icon" type="image/png" th:href="@{/img/favicon.png}">
         <!-- Font Awesome -->
         <link rel="stylesheet" th:href="@{/css/bootstrap/font-awesome.min.css}" href="/css/bootstrap/font-awesome.min.css" />
         <!-- Bootstrap core CSS -->
@@ -26,8 +27,8 @@
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <strong>Welcome <label>Username</label></strong>
+                <a class="navbar-brand" href="/admin/">
+                    <strong>Administration Panel</strong>
                 </a>
 
                 <!-- Collapse -->
@@ -44,24 +45,13 @@
                     <!-- Right -->
                     <ul class="navbar-nav nav-flex-icons ml-auto">
                         <li class="nav-item mr-4">
-                            <a class="nav-link"> <span class="clearfix d-none d-sm-inline-block text-uppercase">Tender</span></a>
+                            <a class="nav-link" href="/"> <span class="clearfix d-none d-sm-inline-block"><b>Home</b></span></a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a class="nav-link"><span class="clearfix d-none d-sm-inline-block text-uppercase">Accounts</span></a>
+                            <a class="nav-link" href="/contract/contracts"><span class="clearfix d-none d-sm-inline-block"><b>Contracts</b></span></a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a class="nav-link" href="/contract/contracts"><span class="clearfix d-none d-sm-inline-block text-uppercase">Contracts</span></a>
-                        </li>
-                        <li class="nav-item mr-4">
-                            <a class="nav-link" href="/admin/preview.pdf"><span class="clearfix d-none d-sm-inline-block text-uppercase">Reports</span></a>
-                        </li>
-
-                    </ul>
-
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <!-- user log out button-->
-                            <a href="/logout"><button  class="clearfix d-none d-sm-inline-block">Log out</button></a>
+                            <a class="nav-link" href="/logout"><span class="clearfix d-none d-sm-inline-block"><b>Logout</b></span></a>
                         </li>
                     </ul>
 
@@ -78,7 +68,61 @@
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
+                <span class="navbar-brand">
+                    <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
+                </span>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item" th:if="${admin}">
+                            <a class="nav-link" href="admin/"> <span class="clearfix d-none d-sm-inline-block">Admin Panel</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products"><span class="clearfix d-none d-sm-inline-block">Our products</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUs"><span class="clearfix d-none d-sm-inline-block">About us</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactUs"> <span class="clearfix d-none d-sm-inline-block">Contact us</span></a>
+                        </li>
+                        <li class="nav-item" th:unless="${loggedIn}">
+                            <a class="nav-link" href="/login"> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
+                        </li>
+                        <li class="nav-item" th:if="${loggedIn}">
+                            <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+  <!--welcome page navigation-->
+
+    <!--Tender-info page Navigation-->
+    <div th:fragment="tender-info-nav">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="/">
                     <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
                 </a>
 
@@ -98,23 +142,15 @@
 
                     <!-- Right -->
                     <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
+                        <li class="nav-item" th:if="${admin}">
+                            <a class="nav-link" href="/admin/"> <span class="clearfix d-none d-sm-inline-block">Admin Panel</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#products"><span class="clearfix d-none d-sm-inline-block">Our products</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutUs"><span class="clearfix d-none d-sm-inline-block">About us</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contactUs"> <span class="clearfix d-none d-sm-inline-block">Contact us</span></a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item" th:unless="${loggedIn}">
                             <a class="nav-link" href="/login"> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
                         </li>
-
+                        <li class="nav-item" th:if="${loggedIn}">
+                            <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                        </li>
                     </ul>
 
                 </div>
@@ -122,20 +158,69 @@
             </div>
         </nav>
     </div>
-  <!--welcome page navigation-->
+    <!--TenderInfo page navigation-->
+
+    <!--Contract Application Page Navigation-->
+    <div th:fragment="contract-application-nav">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="/">
+                    <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item" th:if="${admin}">
+                            <a class="nav-link" href="/admin/"> <span class="clearfix d-none d-sm-inline-block">Admin Panel</span></a>
+                        </li>
+                        <li class="nav-item" th:unless="${loggedIn}">
+                            <a class="nav-link" href="/login"> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
+                        </li>
+                        <li class="nav-item" th:if="${loggedIn}">
+                            <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!--Contract Application Page Navigation-->
 
     <!--Common js files-->
  <div th:fragment="js-files">
      <!-- JQuery -->
-     <script type="text/javascript" src="/js/bootstrap/jquery-3.3.1.min.js" th:src="@{/js/bootstrap/jquery-3.3.1.min.js}"></script>
+     <script type="text/javascript" src="/js/bootstrap/jquery-3.3.1.min.js"
+             th:src="@{/js/bootstrap/jquery-3.3.1.min.js}"></script>
      <!-- Bootstrap tooltips -->
-     <script type="text/javascript" src="/js/bootstrap/popper.min.js" th:src="@{/js/bootstrap/popper.min.js}"></script>
+     <script type="text/javascript" src="/js/bootstrap/popper.min.js"
+             th:src="@{/js/bootstrap/popper.min.js}"></script>
      <!-- Bootstrap core JavaScript -->
-     <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+     <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"
+             th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
      <!-- MDB core JavaScript -->
-     <script type="text/javascript" src="/js/bootstrap/mdb.min.js" th:src="@{/js/bootstrap/mdb.min.js}"></script>
-     <!--Custom js file-->
-     <script type="text/javascript" src="/js/map.js" th:src="@{/js/map.js}"></script>
+     <script type="text/javascript" src="/js/bootstrap/mdb.min.js"
+             th:src="@{/js/bootstrap/mdb.min.js}"></script>
+     <script type="text/javascript" src="/js/map.js"
+             th:src="@{/js/map.js}"></script>
+     <script th:src="@{/js/toast/toastr.js}"></script>
  </div>
 </body>
 </html>

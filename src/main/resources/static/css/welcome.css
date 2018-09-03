@@ -27,12 +27,10 @@ body,
 
 /* Navbar animation */
 .navbar {
-    background-color: black;
-text-decoration-color: white;
-}
+    background-color: rgb(34,139,34); }
 
 .top-nav-collapse {
-    background-color: gray; }
+    background-color: rgb(34,139,34); }
 
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
@@ -43,12 +41,39 @@ text-decoration-color: white;
 .page-footer {
     background-color: rgb(143,188,143);
     background-size: cover;
+    position: relative;
+    bottom: 0;
+    clear: bottom;
+    right: 0;
+    left: 0;
+    text-align: center;
 }
-#KENYAN{
-    background-color: #69f0ae;
-
+#head1{
+    background: url("static/img/factory.jpeg");
+    height: 165px;
 
 }
-#img3{
-    alignment: center;
+
+#toast-container > .toast-success{
+    background-image: none;
+    background-color: black;
+    color: white;
+}
+#toast-container > .toast-error{
+    background-image: none;
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: #dad4d4;
+}
+button{
+    color: white;
+    text-align: center;
+}
+.navbarColor {
+    background-color: rgb(34,139,34);
+}
+.navColorText {
+    color: rgb(34,139,34);
 }
