@@ -54,7 +54,7 @@
         <!--if the status is pending, an approve button should appear-->
         <div th:if="${supplier.contract.status.equalsIgnoreCase('pending')}">
             <form th:action="@{/contract/approve/{id}(id=${supplier.contract.id})}" th:method="POST">
-                <input class="btn btn-success btn-rounded" type="submit" value="approve">
+                <input class="btn navbarColor btn-rounded" type="submit" value="approve">
             </form>
             <form th:action="@{/contract/deny/{id}(id=${supplier.contract.id})}" th:method="POST"
                   th:object="${supplier.contract.id}">
@@ -71,7 +71,7 @@
         </div>
 
         <form th:action="@{/contract/contracts}" th:method="GET">
-            <input class="btn btn-success btn-rounded" type="submit" value="back">
+            <input class="btn navbarColor btn-rounded" type="submit" value="back">
         </form>
 
         <!--&lt;!&ndash;if the status is denied, a delete button should appear&ndash;&gt;-->

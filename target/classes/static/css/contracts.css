@@ -5,11 +5,10 @@ table,th,td {
     table-layout: fixed;
 }
 thead {
-    background-color: green;
+    background-color: rgb(34,139,34);
 }
 th {
     color: white;
-    font-weight: bold;
     text-transform: uppercase;
     font-size: medium;
 }
@@ -26,7 +25,7 @@ form {
      display: none;
 }
 #contracts-dropdown{
-    background-color: green;
+    background-color: rgb(34,139,34);
     color: white;
 }
 #table-contracts{

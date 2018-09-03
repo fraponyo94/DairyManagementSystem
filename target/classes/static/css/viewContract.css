@@ -7,8 +7,7 @@
 }
 label{
     font-weight: bold;
-    font-style: italic;
-    color: #17f30b;
+    color: rgb(34,139,34);
 }
 form{
     display: inline-block;

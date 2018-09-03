@@ -41,6 +41,12 @@ body,
 .page-footer {
     background-color: rgb(143,188,143);
     background-size: cover;
+    position: relative;
+    bottom: 0;
+    clear: bottom;
+    right: 0;
+    left: 0;
+    text-align: center;
 }
 #head1{
     background: url("static/img/factory.jpeg");
@@ -60,4 +66,14 @@ body,
 }
 body{
     background-color: #dad4d4;
+}
+button{
+    color: white;
+    text-align: center;
+}
+.navbarColor {
+    background-color: rgb(34,139,34);
+}
+.navColorText {
+    color: rgb(34,139,34);
 }

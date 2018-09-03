@@ -57,9 +57,14 @@ public class TenderInfoController {
     //Go to tender information
     @GetMapping("/tender/tender-info")
     public ModelAndView tenderInfo(ModelAndView modelAndView, HttpServletRequest request) {
-        CheckLoginStatus.checkStatus(modelAndView,request);
-        modelAndView.addObject("tender", tenderInfoService.findLatestTender());
-        modelAndView.setViewName("tender/tender-info");
+        CheckLoginStatus.checkStatus(modelAndView, request);
+        TenderInfo tenderInfo = tenderInfoService.findLatestTender();
+        modelAndView.addObject("tender", tenderInfo);
+        if (tenderInfo.isStatus()) {
+            modelAndView.setViewName("tender/tender-info");
+        }else{
+            modelAndView.setViewName("redirect:/");
+        }
         return modelAndView;
     }
 

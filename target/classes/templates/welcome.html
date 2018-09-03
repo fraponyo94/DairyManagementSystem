@@ -285,11 +285,12 @@
                     <div class="col-md-5">
                         <h3 id="subh2">The Management</h3>
                         <p>
-                        As the years went by,it grew into a bigger factory, as the number of students,staff and
-                        employees
-                        increased yearly.It was later made a department of its own within the university.Though its
-                        activity
-                        has increased over the the years, it primary goal is still highly regarded,to serve students.
+                            As the years went by,it grew into a bigger factory, as the number of students,staff and
+                            employees
+                            increased yearly.It was later made a department of its own within the university.Though its
+                            activity
+                            has increased over the the years, it primary goal is still highly regarded,to serve
+                            students.
                         </p>
                         <P>
                             The factory is being managed by the General manager who is under the Dean of students in the
@@ -305,8 +306,10 @@
                     <div class="col-md-5">
                         <h3 id="subh1">Factory Background</h3>
                         <p>
-                            Egerton Dairy factory is located in Njoro Nakuru county, kenya.It is inside Egerton university.
-                            The factory was started in the year 2001 as a laboratory where Egerton students taking bachelor
+                            Egerton Dairy factory is located in Njoro Nakuru county, kenya.It is inside Egerton
+                            university.
+                            The factory was started in the year 2001 as a laboratory where Egerton students taking
+                            bachelor
                             in
                             Dairy and Food sciences would take their practical work and do their research work. This was
                             primary
@@ -331,7 +334,7 @@
                 out to our premises </p>
 
             <!-- Contact us form  -->
-            <div class="card" style="width: 70%; margin: 0 auto">
+            <div class="card" style="width: 70%; margin: 0 auto; padding: 10px">
 
                 <div class="card-body">
                     <!-- Heading -->
@@ -340,51 +343,36 @@
                     </h4>
                     <hr>
 
-                    <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+                    <p class="dark-grey-text text-center">We'll write rarely, but only the best content.</p>
                     <!-- Body -->
-                    <div class="md-form">
-                        <i class="fa fa-user prefix grey-text"></i>
-                        <input type="text" id="form-name" class="form-control">
-                        <label for="form-name">Your name</label>
-                    </div>
-                    <div class="md-form">
-                        <i class="fa fa-envelope prefix grey-text"></i>
-                        <input type="text" id="form-email" class="form-control">
-                        <label for="form-email">Your email</label>
-                    </div>
-                    <div class="md-form">
-                        <i class="fa fa-tag prefix grey-text"></i>
-                        <input type="text" id="form-Subject" class="form-control">
-                        <label for="form-Subject">Subject</label>
-                    </div>
-                    <div class="md-form" style="padding: 10px">
-                        <textarea class="form-control z-depth-1" id="message" rows="3"></textarea>
-                        <label for="message" style="padding-left: 10px">Write something to us here...</label>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-light-blue">Submit</button>
-                    </div>
+                    <!--/*@thymesVar id="visitorEmail" type="team.project.dairymanagementsystem.model.VisitorEmail"*/-->
+                    <form th:action="@{/email}" th:method="POST" th:object="${visitorEmail}">
+                        <div class="md-form">
+                            <input type="text" id="form-name" class="form-control" th:field="*{name}">
+                            <label for="form-name">Your name</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="text" id="form-email" class="form-control" th:field="*{email}">
+                            <label for="form-email">Your email</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="text" id="form-Subject" class="form-control" th:field="*{subject}">
+                            <label for="form-Subject">Subject</label>
+                        </div>
+                        <div class="md-form" style="padding: 10px 0">
+                            <textarea class="form-control z-depth-1" id="message" rows="3" th:field="*{message}"></textarea>
+                            <label for="message" style="padding: 0 10px">Write something to us here...</label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn navbarColor">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!-- End of Contact us form -->
 
         </section>
         <!-- Section: Contact us -->
-
-        <!--&lt;!&ndash; Buttons&ndash;&gt;-->
-        <!--<div class="row">-->
-            <!--<div class="col-md-4">-->
-                <!--<p>P.O BOX 536-20255</p>-->
-                <!--<p class="mb-md-0">Egerton,Njoro</p>-->
-            <!--</div>-->
-            <!--<div class="col-md-4">-->
-                <!--<p>+ 254700000000</p>-->
-                <!--<p class="mb-md-0">Mon - Fri, 8:00-5:00 PM</p>-->
-            <!--</div>-->
-            <!--<div class="col-md-4">-->
-                <!--<p>dairyplant.info@egerton.ac.ke</p>-->
-            <!--</div>-->
-        <!--</div>-->
 
         <!-- Buttons-->
         <div class="text-center">

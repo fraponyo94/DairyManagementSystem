@@ -81,8 +81,6 @@
                     </table>
                 </div>
 
-
-
                 <div class="md-form">
                     <textarea type="text" id="form107" class="md-textarea form-control" rows="5"
                               th:field="*{contract.description}" required></textarea>
@@ -90,8 +88,7 @@
                 </div>
                 <label>Attachments</label>
                 <div class="md-form">
-                    <input type="file" id="form108" class="form-control" th:name="file">
-
+                    <input type="file" id="form108" class="form-control" th:name="file" required>
                 </div>
 
 
@@ -100,7 +97,7 @@
 
                     <!--Grid column-->
                     <div class="text-center col-md-12 mt-3 mb-2">
-                        <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1">Apply</button>
+                        <button type="submit" class="btn navbarColor btn-block btn-rounded z-depth-1">Apply</button>
                     </div>
                     <!--Grid column-->
                 </div>

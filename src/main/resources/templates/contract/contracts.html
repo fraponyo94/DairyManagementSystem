@@ -40,7 +40,7 @@
 
 <!--dropdown-->
 <div class="btn-group">
-    <button id="contracts-dropdown" class="btn btn-dark-green btn-sm" style="font-weight: bold" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By Status</button>
+    <button id="contracts-dropdown" class="btn navbarColor btn-sm" style="font-weight: bold" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By Status</button>
 
     <div class="dropdown-menu">
         <a class="dropdown-item" th:href="@{/contract/approved}">Approved Contracts</a>
@@ -52,7 +52,7 @@
     </div>
 </div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-dark-green btn-sm" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn navbarColor btn-sm" data-toggle="modal" data-target="#exampleModal">
     <b>View Daily Cost and Amount</b>
 </button>
 
@@ -107,7 +107,7 @@
         <td th:text="${supplier.contract.costPerLitre}"></td>
         <td>
             <form th:action="@{/contract/view-supplier/{id}(id=${supplier.nationalId})}">
-                <input type="submit" value="view">
+                <input type="submit" value="click to view">
             </form>
         </td>
     </tr>

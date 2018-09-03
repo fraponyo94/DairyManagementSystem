@@ -30,14 +30,14 @@
 
                     <!--Header-->
                     <div class="text-center">
-                        <h3 class="mb-5 mt-4 font-weight-bold" style="color: black"><strong>Dairy Portal</strong></h3>
+                        <h3 class="mb-5 mt-4 font-weight-bold navColorText"><strong>Dairy Portal</strong></h3>
                     </div>
 
                     <!--Body-->
                     <form action="/login" th:action="@{/login}" method="POST" class="login">
 
                         <div align="center" th:if="${param.error}">
-                            <p class="card-text">
+                            <p class="card-text" style="color: red">
                                 Email or Password invalid, please try again
                             </p>
                         </div>
@@ -47,7 +47,7 @@
                             <label for="username">Username</label>
                         </div>
 
-                        <div class="md-form pb-3">
+                        <div class="md-form">
                             <input type="password" id="password" class="form-control" name="password" autocomplete="false">
                             <label for="password">Your password</label>
                         </div>
@@ -57,7 +57,7 @@
 
                             <!--Grid column-->
                             <div class="text-center mb-3 col-md-12">
-                                <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1"><b>Login</b></button>
+                                <button type="submit" class="btn btn-block btn-rounded z-depth-1 navbarColor"><b>Login</b></button>
                             </div>
 
                         </div>
@@ -66,9 +66,9 @@
 
                     <!--Grid column-->
                     <div class="col-md-12">
-                        <p class="font-small d-flex justify-content-end" style="color: black">Forgot your password? <a href="#" class="green-text ml-1 font-weight-bold"> Click to reset</a></p>
+                        <p class="font-small d-flex justify-content-end" style="color: black">Forgot your password? <a href="#" class="ml-1 font-weight-bold navColorText"> Click to reset</a></p>
                         <br>
-                        <p class="font-small d-flex justify-content-end"><a href="/" class="green-text ml-1 font-weight-bold">Home</a></p>
+                        <p class="font-small d-flex justify-content-end"><a href="/" class="ml-1 font-weight-bold navColorText">Return Home</a></p>
                     </div>
                     <!--Grid column-->
 

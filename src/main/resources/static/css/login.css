@@ -19,3 +19,11 @@
 
 .form-dark input[type=password]:focus:not([readonly]) + label {
     color: #fff; }
+
+.navbarColor {
+    background-color: rgb(34,139,34);
+}
+
+.navColorText {
+    color: rgb(34,139,34);
+}

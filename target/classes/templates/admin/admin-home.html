@@ -7,23 +7,16 @@
     <style type="text/css">
         main {
             margin: 0 auto;
-            padding-bottom: 200px;
-            max-width: 100%;
-            width: 100%;
-        }
-
-        .page-footer {
-            clear: bottom;
-            position: relative;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 1rem;
-            text-align: center;
         }
 
         div.jumbotron {
             margin-top: 100px;
+        }
+        #createTender {
+            position: relative;
+            top: 65px;
+            margin: 0 auto;
+            width: 70%;
         }
     </style>
 </head>
@@ -34,17 +27,13 @@
 <!-- Navbar -->
 
 <!-- Full Page Intro -->
-<main class="mt-2">
-<div class="view full-page-intro" th:unless="${active}">
+<main>
+<div th:if="${active==false}" id="createTender">
 
     <!-- Mask & flexbox options  -->
-    <div class="mask  d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center align-items-center">
         <!-- Main contents -->
         <div class="container">
-            <!-- Row -->
-            <div class="row  text-center text-md-left">
-                <!-- Left Grid Column-->
-                <div class="col-md-8 mb-2 mr-1">
                     <!--Card-->
                     <div class="card">
 
@@ -55,29 +44,29 @@
                                   method="post" th:object="${tenderInfo}" enctype="multipart/form-data">
                                 <!-- &lt;!&ndash;Tender title &ndash;&gt;-->
                                 <label for="tender-title">Tender Title</label>
-                                <input type="text" id="tender-title" th:field="*{tenderTitle}" class="form-control">
+                                <input type="text" id="tender-title" th:field="*{tenderTitle}" class="form-control" required>
 
                                 <!--Tender Description -->
                                 <label for="tender-description">Tender Decription</label>
                                 <textarea type="text" id="tender-description" th:field="*{tenderDescription}"
-                                          class="form-control md-textarea" rows="3"></textarea>
+                                          class="form-control md-textarea" rows="3" required></textarea>
 
                                 <!--Tender Requirements-->
                                 <label for="tender-requirement">Reguirements/Eligibility</label>
                                 <textarea th:type="text" id="tender-requirement" th:field="*{tenderRequirements}"
-                                          class="form-control md-textarea" rows="3"></textarea>
+                                          class="form-control md-textarea" rows="3" required></textarea>
 
                                 <!-- Upload application form-->
                                 <label for="application-form">Upload tender application form</label>
                                 <input type="file" multiple="false" allowTypes="/(\.|\/)(pdf)$/" id="application-form"
-                                       name="file" class="form-control">
+                                       name="file" class="form-control" required>
 
                                 <!--End date for applying-->
                                 <label for="date-picker-example">Deadline for applying: </label><br>
-                                <input type="date" id="date-picker-example" th:field="*{deadline}">
-
-                                <div class="offset-md-3 col-md-6">
-                                    <button type="submit" class="btn btn-primary btn-block">Create Tender</button>
+                                <input type="date" id="date-picker-example" th:field="*{deadline}" required>
+                                <br><br>
+                                <div>
+                                    <button type="submit" class="btn navbarColor" style="width: 30%; margin: auto"><span style="margin: auto">Create Tender</span></button>
                                 </div>
                             </form>
 
@@ -85,11 +74,6 @@
 
                     </div>
                     <!--/.Card-->
-
-                </div>
-
-            </div>
-
         </div>
     </div>
 
@@ -122,17 +106,6 @@
 </div>
 <!-- Full Page Intro -->
 </main>
-
-<!--Footer-->
-<footer class="page-footer text-center font-small mt-4">
-    <!--Copyright-->
-    <div class="py-3">
-        © 2018 Copyright
-    </div>
-    <!--/.Copyright-->
-
-</footer>
-<!--/.Footer-->
 
 <!-- SCRIPTS -->
 <div th:replace="template :: js-files"></div>
