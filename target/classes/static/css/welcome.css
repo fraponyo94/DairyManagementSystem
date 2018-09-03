@@ -56,13 +56,13 @@ body,
 
 #toast-container > .toast-success{
     background-image: none;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: rgb(34,139,34);
 }
 #toast-container > .toast-error{
     background-image: none;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: red;
 }
 body{
     background-color: #dad4d4;
