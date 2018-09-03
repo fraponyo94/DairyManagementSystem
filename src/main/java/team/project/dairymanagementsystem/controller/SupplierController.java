@@ -9,10 +9,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.servlet.ModelAndView;
 import team.project.dairymanagementsystem.model.Supplier;
+import team.project.dairymanagementsystem.model.checkLoginStatus.CheckLoginStatus;
 import team.project.dairymanagementsystem.service.SupplierService;
 import team.project.dairymanagementsystem.service.UserService;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.*;
 import java.security.Principal;
 
@@ -36,17 +39,24 @@ public class SupplierController {
         headers.setCacheControl("must-revalidate,post-check=0,pre-check=0");
         byte[] attachment = supplier.getAttachment();
 
-        ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(attachment,headers, HttpStatus.OK);
+        ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(attachment, headers, HttpStatus.OK);
         return response;
     }
+
     @GetMapping("/applicant-details")
-    public String getApplicantDetails(Model model, Principal principal){
-        String username = principal.getName();
-        int id = userService.findByUsername(username).getNationalId();
-        Supplier suppler =supplierService.getSupplier(id);
-        model.addAttribute("supplier", suppler);
-        System.out.println("mosesssjknkdms");
-        return "Supplier";
+    public ModelAndView getApplicantDetails(Principal principal, ModelAndView modelAndView, HttpServletRequest request) {
+        String username;
+        if (principal != null) {
+            username = principal.getName();
+            int id = userService.findByUsername(username).getNationalId();
+            Supplier suppler = supplierService.getSupplier(id);
+            modelAndView.addObject("supplier", suppler);
+            CheckLoginStatus.checkStatus(modelAndView, request);
+            modelAndView.setViewName("Supplier");
+        }else{
+            modelAndView.setViewName("redirect:/");
+        }
+        return modelAndView;
     }
 
 }

@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import team.project.dairymanagementsystem.component.UsernameCheck;
 import team.project.dairymanagementsystem.model.User;
+import team.project.dairymanagementsystem.model.VisitorEmail;
 import team.project.dairymanagementsystem.repository.SupplierRepository;
 import team.project.dairymanagementsystem.service.UserService;
 
@@ -22,6 +23,11 @@ public class UserController {
     private int variable_id;
 
     private String message;
+
+    //constant to identify success messages
+    private String SUCCESS = "SUCCESS: ";
+    //constant to identify error messages
+    private String ERROR = "ERROR: ";
 
     @Autowired
     private UsernameCheck usernameCheck;
@@ -41,7 +47,8 @@ public class UserController {
         user.setNationalId(id);
         System.out.println(user.getUsername());
         if (usernameCheck.getUser(user)!= null){
-            return "welcome";
+            DefaultController.message = SUCCESS + "Account created successfully";
+            return "redirect:/";
         }
         else {
             message = "Username or national id exist!";

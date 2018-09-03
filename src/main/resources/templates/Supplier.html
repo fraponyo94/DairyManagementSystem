@@ -7,9 +7,45 @@
 
 </head>
 <body>
-<div th:replace="template :: welcome-nav">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
 
-</div>
+            <!-- Brand -->
+            <span class="navbar-brand">
+                        <strong>EGERTON UNIVERSITY DAIRY PLANT</strong>
+                    </span>
+
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Left -->
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
+                    </li>
+                    <li class="nav-item" th:unless="${loggedIn}">
+                        <a class="nav-link" href="/login"> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
+                    </li>
+                    <li class="nav-item" th:if="${loggedIn}">
+                        <a class="nav-link" href="/logout"> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+</nav>
 <br>
 <br>
 
@@ -20,11 +56,11 @@
         <Label for="address">Address: </Label> <span id="address" th:text="${supplier.address}"></span><br>
         <Label for="email">Email: </Label> <span id="email" th:text="${supplier.email_address}"></span><br>
         <Label for="phone">Phone: </Label> <span id="phone" th:text="${supplier.phone}"></span><br>
-        <Label for="status">Contract Status: </Label> <span id="status" th:text="${supplier.contract.status}"></span><br>
+        <Label for="status">Contract Status: </Label> <span class="navColorText" id="status" th:text="${supplier.contract.status}"></span><br>
         <Label for="amount">Daily Amount: </Label> <span id="amount" th:text="${supplier.contract.amountPerDay}"></span><br>
         <Label for="cost">Litre Cost: </Label> <span id="cost" th:text="${supplier.contract.costPerLitre}"></span><br>
         <Label for="description">Description: </Label> <span id="description" th:text="${supplier.contract.description}"></span><br>
-        <Label for="pic">CV: </Label> <a target="_blank" id="pic" th:object="${supplier.pic}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
+        <Label for="pic">CV: </Label> <a target="_blank" id="pic" th:object="${supplier.attachment}" th:href="@{/getCv/{id}(id=${supplier.nationalId})}">View</a>
 
         <div>
             <div th:if="${supplier.contract.status.equalsIgnoreCase('pending')}">
