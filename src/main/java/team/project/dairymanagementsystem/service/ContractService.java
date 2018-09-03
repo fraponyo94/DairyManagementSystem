@@ -45,17 +45,16 @@ public class ContractService {
     }
 
     public Contract createContract(Contract contract) {
-        long tenderInfoId = getLatestTenderInfoId();
         contract.setTenderInfoId(tenderInfoService.findLatestTender());
         return contractRepository.save(contract);
     }
 
     public List<Contract> getAllContracts() {
-        return contractRepository.findAllByTenderInfoId(getLatestTenderInfoId());
+        return contractRepository.findAllByTenderInfoId(tenderInfoService.findLatestTender());
     }
 
     public List<Contract> getContractsWithStatus(String status) {
-        return contractRepository.findByStatusAndTenderInfoId(status, getLatestTenderInfoId());
+        return contractRepository.findByStatusAndTenderInfoId(status, tenderInfoService.findLatestTender());
     }
 
     //approve a contract

@@ -54,15 +54,15 @@ public class SupplierService {
         long tenderId = tenderInfoService.findLatestTender().getId(); //get the id of the latest tender
         int nationalId = supplier.getNationalId();
         //return true if he/she has already made an application for the current tender
-        return contractRepository.findBySupplierIdAndTenderInfoId(nationalId, tenderId);
+        return contractRepository.findBySupplierIdAndTenderInfoId(nationalId, tenderInfoService.findLatestTender());
     }
 
     public List<Supplier> getAllSuppliers() {
-        return this.supplierRepository.findAllByContractTenderInfoId(getLatestTenderInfoId());
+        return this.supplierRepository.findAllByContractTenderInfoId(tenderInfoService.findLatestTender());
     }
 
     public List<Supplier> getByStatus(String status) {
-        return this.supplierRepository.findByContractStatusAndContractTenderInfoId(status, getLatestTenderInfoId());
+        return this.supplierRepository.findByContractStatusAndContractTenderInfoId(status, tenderInfoService.findLatestTender());
     }
 
     public void deleteSupplier(int supplierId) {
